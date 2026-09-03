@@ -19,6 +19,7 @@ src/data/          the site's content, lifted out of that mirror into structured
 src/assets/        the authored front end: one stylesheet, two scripts
 tools/extract.py   original-site/  →  src/data/
 tools/build.py     src/data/ + src/assets/  →  dist/
+tools/audit.py     parity audit: does dist/ still carry everything the mirror has?
 tools/serve.py     local preview server
 dist/              the generated static site — this is what you host
 ```
@@ -29,6 +30,7 @@ dist/              the generated static site — this is what you host
 pip install requests beautifulsoup4 lxml     # extraction only
 python3 tools/extract.py                     # re-read the mirror into JSON
 python3 tools/build.py                       # render dist/
+python3 tools/audit.py                       # check dist/ against the mirror
 python3 tools/serve.py                       # preview at http://localhost:8000
 ```
 
@@ -91,6 +93,14 @@ Rebuilding from the data surfaced content that was present but unreachable:
    it is attached to chapter 1.
 4. **Three verses share a number with another** (०१४, ०२४, ११५१). The folio number is shown exactly
    as the school wrote it; only the anchor gets a suffix, so every verse stays reachable by link.
+5. **Every line break in both stotra texts.** The stotra pages break their lines with `</br>` — a
+   stray *end* tag. Browsers render it as a break; an HTML parser drops it on the floor, and with
+   it every line of both stotras, which arrived as one unreadable run-on paragraph. The extractor
+   now normalises `</br>` before parsing, and the texts are set as verses again.
+6. **The Dhātupāṭha's publication note** — book, author, publisher, year and the archive.org link —
+   was being lost to a variable of mine that shadowed it. It is back on the page.
+7. **Three source citations** (archive.org, two on sanskritdocuments.org) survived as text but had
+   lost their anchors when the surrounding markup was flattened; they are links again.
 
 One upstream duplicate was dropped: the Courses page listed the Amarakośa card twice, the second
 mislabelled "Devavan" but pointing at the same course.
@@ -139,6 +149,15 @@ environment rather than an interface.
   so they are set as one. Each QR sits in an ivory card held by a brass keyline.
 - **A recitation player**, not the browser's grey slab: a gold-leaf transport ring, a seekable
   bar, 0.75× for chanting along, and a loop for memorising.
+- **Stotras.** The index is a wall of recitation plates — one per stotra per script, each naming
+  its script as a rubric, carrying its recording, and linking to the text. The text pages are set
+  as verses: the Devanagari stanza crowned, its IAST transliteration beneath it behind a hairline,
+  and the school's English rendering below both in a brass-ruled panel.
+- **Lessons.** A course volume carries its plate, its lesson count and its languages; the course
+  page is a syllabus — one ruled row per lesson, numbered in Devanagari, with Watch and Worksheet
+  where each exists, and the language switch moved into the sticky toolbar.
+- **Prahelikās.** Each set has its own drawn cover in Telugu; each puzzle is a parlour card with a
+  live `n / total` counter, so you can see how much of a riddle you have opened.
 
 ### Behaviour
 
@@ -202,6 +221,35 @@ the IAST conversion, and the three mobile views.
 | ![Home](preview/01-home.png) | ![Text contents](preview/03-texts.png) |
 | ![Hitopadeśa](preview/04-hitopadesha.png) | ![Dark mode](preview/11-dark.png) |
 | ![IAST conversion](preview/12-iast-dark.png) | ![Prahelikās](preview/07-prahelikas.png) |
+
+---
+
+## Parity with the original
+
+`tools/audit.py` compares `dist/` against `original-site/` on every build. As of the last run:
+
+```
+468 embedded videos ........................ all present
+19 outbound citations ...................... all present
+Hitopadeśa registers ....................... 174 702 Devanagari characters, exact
+Subhāṣita registers ........................  94 815 Devanagari characters, exact
+dhātu cells ................................ 112 921 Devanagari characters, exact
+227 / 136 verses · 2 101 dhātus · 1 557 entries · 530 lessons · 446 questions · 59 passages
+all 13 of the original's menu labels appear somewhere
+38 images, 30 recordings, 3 fonts shipped and referenced
+1 960 internal references resolve · no duplicate ids
+```
+
+The original's menu also advertised **Songs, Articles, Worker Links, Blogs and FAQs**. Every one of
+them pointed at `home.php` or `#` — announced, never published. They are named in the footer and
+marked *soon* rather than dropped, so nothing the school advertised disappears and nothing pretends
+to work. **Contact** and **Useful Links**, which likewise pointed back at the home page, are now a
+real contact section on `/about/#contact` and the footer's link column.
+
+Two deliberate differences: the original's home page carried a search box wired to `action="#"` —
+it did nothing, and the modern site has working search on every corpus instead; and `loading.gif`
+ships but is unused, because the original needed a spinner while it fetched `adhyayanam.xml` at
+runtime and these pages are pre-rendered.
 
 ---
 

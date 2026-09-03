@@ -35,7 +35,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       </span>
     </a>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <ul><li><a href="../">Home</a></li><li><a href="../stotras/">Stotras</a></li><li><a href="../texts/">Texts</a></li><li><a href="../lessons/" aria-current="page">Lessons</a></li><li><a href="../prahelikas/" class="telu">ప్రహేళికలు</a></li><li><a href="../about/">About</a></li><li><a href="../donate/">Donate</a></li></ul>
+      <ul><li><a href="../">Home</a></li><li><a href="../stotras/">Stotras</a></li><li><a href="../texts/">Texts</a></li><li><a href="../lessons/" aria-current="page">Lessons</a></li><li><a href="../prahelikas/" class="telu">ప్రహేళికలు</a></li><li><a href="../about/">About</a></li><li><a href="../about/#contact">Contact</a></li><li><a href="../donate/">Donate</a></li></ul>
     </nav>
     <div class="header-tools tools-anchor">
       <button class="icon-btn" data-prefs-toggle aria-expanded="false" aria-controls="prefs-panel" aria-label="Reading preferences" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg></button>
@@ -79,77 +79,89 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   <button class="field__clear" type="button" aria-label="Clear search" hidden>×</button>
 </div>
 <p class="result-count" id="course-count" role="status" aria-live="polite"></p></div>
-    <div class="grid grid--3" id="course-list"><article class="card" data-search="सुरवाणीविलासः SURAVANI VILAASAH suravani suravani सुरवाणीविलासः हिन्दी తెలుగు English">
+    <div class="grid grid--3" id="course-list"><article class="card course" data-search="सुरवाणीविलासः SURAVANI VILAASAH suravani suravani सुरवाणीविलासः हिन्दी తెలుగు English">
   <div class="card__media"><img src="../assets/img/Suravani-Tel-WS.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">सुरवाणीविलासः SURAVANI VILAASAH</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="suravani-hindi/">हिन्दी <span class="card__meta">· 67</span></a><a class="btn btn--ghost btn--sm" href="suravani-telugu/">తెలుగు <span class="card__meta">· 61</span></a><span class="btn btn--muted btn--sm" title="No lessons recorded yet">English <span class="card__meta">· soon</span></span></div>
+    <p class="course__count">128 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="suravani-hindi/">हिन्दी <span class="card__meta">· 67</span></a><a class="btn btn--ghost btn--sm" href="suravani-telugu/">తెలుగు <span class="card__meta">· 61</span></a><span class="btn btn--muted btn--sm" title="No lessons recorded yet">English <span class="card__meta">· soon</span></span></div>
   </div>
-</article><article class="card" data-search="DYUSHADVANIVILASAH dyushadvani dyushadvani हिन्दी తెలుగు English">
+</article><article class="card course" data-search="DYUSHADVANIVILASAH dyushadvani dyushadvani हिन्दी తెలుగు English">
   <div class="card__media"><img src="../assets/img/DyushadVani-Main-WS.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">DYUSHADVANIVILASAH</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="dyushadvani-hindi/">हिन्दी <span class="card__meta">· 9</span></a><span class="btn btn--muted btn--sm" title="No lessons recorded yet">తెలుగు <span class="card__meta">· soon</span></span><span class="btn btn--muted btn--sm" title="No lessons recorded yet">English <span class="card__meta">· soon</span></span></div>
+    <p class="course__count">9 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="dyushadvani-hindi/">हिन्दी <span class="card__meta">· 9</span></a><span class="btn btn--muted btn--sm" title="No lessons recorded yet">తెలుగు <span class="card__meta">· soon</span></span><span class="btn btn--muted btn--sm" title="No lessons recorded yet">English <span class="card__meta">· soon</span></span></div>
   </div>
-</article><article class="card" data-search="AMARAVANIVILASA amaravani amaravani हिन्दी తెలుగు">
+</article><article class="card course" data-search="AMARAVANIVILASA amaravani amaravani हिन्दी తెలుగు">
   <div class="card__media"><img src="../assets/img/amaravani.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">AMARAVANIVILASA</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="amaravani-hindi/">हिन्दी <span class="card__meta">· 16</span></a><a class="btn btn--ghost btn--sm" href="amaravani-telugu/">తెలుగు <span class="card__meta">· 16</span></a></div>
+    <p class="course__count">32 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="amaravani-hindi/">हिन्दी <span class="card__meta">· 16</span></a><a class="btn btn--ghost btn--sm" href="amaravani-telugu/">తెలుగు <span class="card__meta">· 16</span></a></div>
   </div>
-</article><article class="card" data-search="AMARAVANIVILASA-STOTRAS amaravanistotra amaravani हिन्दी">
+</article><article class="card course" data-search="AMARAVANIVILASA-STOTRAS amaravanistotra amaravani हिन्दी">
   <div class="card__media"><img src="../assets/img/amaravani%20stotra.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">AMARAVANIVILASA-STOTRAS</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="amaravanistotra-hindi/">हिन्दी <span class="card__meta">· 11</span></a></div>
+    <p class="course__count">11 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="amaravanistotra-hindi/">हिन्दी <span class="card__meta">· 11</span></a></div>
   </div>
-</article><article class="card" data-search="DEVAVANI-VILASAH devavani devavani हिन्दी తెలుగు">
+</article><article class="card course" data-search="DEVAVANI-VILASAH devavani devavani हिन्दी తెలుగు">
   <div class="card__media"><img src="../assets/img/Devavani-Main-WS.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">DEVAVANI-VILASAH</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="devavani-hindi/">हिन्दी <span class="card__meta">· 67</span></a><a class="btn btn--ghost btn--sm" href="devavani-telugu/">తెలుగు <span class="card__meta">· 30</span></a></div>
+    <p class="course__count">97 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="devavani-hindi/">हिन्दी <span class="card__meta">· 67</span></a><a class="btn btn--ghost btn--sm" href="devavani-telugu/">తెలుగు <span class="card__meta">· 30</span></a></div>
   </div>
-</article><article class="card" data-search="GIRVANAVANIVILASAH girvanavani girvanavani हिन्दी తెలుగు English">
+</article><article class="card course" data-search="GIRVANAVANIVILASAH girvanavani girvanavani हिन्दी తెలుగు English">
   <div class="card__media"><img src="../assets/img/girvanavani.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">GIRVANAVANIVILASAH</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="girvanavani-hindi/">हिन्दी <span class="card__meta">· 16</span></a><a class="btn btn--ghost btn--sm" href="girvanavani-telugu/">తెలుగు <span class="card__meta">· 16</span></a><span class="btn btn--muted btn--sm" title="No lessons recorded yet">English <span class="card__meta">· soon</span></span></div>
+    <p class="course__count">32 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="girvanavani-hindi/">हिन्दी <span class="card__meta">· 16</span></a><a class="btn btn--ghost btn--sm" href="girvanavani-telugu/">తెలుగు <span class="card__meta">· 16</span></a><span class="btn btn--muted btn--sm" title="No lessons recorded yet">English <span class="card__meta">· soon</span></span></div>
   </div>
-</article><article class="card" data-search="RIBHUVANI-VILASAH ribhuvani ribhuvani हिन्दी తెలుగు English">
+</article><article class="card course" data-search="RIBHUVANI-VILASAH ribhuvani ribhuvani हिन्दी తెలుగు English">
   <div class="card__media"><img src="../assets/img/ribhuvani.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">RIBHUVANI-VILASAH</h3>
-    <div class="cluster" style="margin-top:.75rem"><span class="btn btn--muted btn--sm" title="No lessons recorded yet">हिन्दी <span class="card__meta">· soon</span></span><span class="btn btn--muted btn--sm" title="No lessons recorded yet">తెలుగు <span class="card__meta">· soon</span></span><a class="btn btn--ghost btn--sm" href="ribhuvani-english/">English <span class="card__meta">· 6</span></a></div>
+    <p class="course__count">6 recorded lessons</p>
+    <div class="cluster course__langs"><span class="btn btn--muted btn--sm" title="No lessons recorded yet">हिन्दी <span class="card__meta">· soon</span></span><span class="btn btn--muted btn--sm" title="No lessons recorded yet">తెలుగు <span class="card__meta">· soon</span></span><a class="btn btn--ghost btn--sm" href="ribhuvani-english/">English <span class="card__meta">· 6</span></a></div>
   </div>
-</article><article class="card" data-search="Paniniya Praveshini panini paniniya पाणिनीयप्रवेशिनी పాణినీయప్రవేశినీ తెలుగు">
+</article><article class="card course" data-search="Paniniya Praveshini panini paniniya पाणिनीयप्रवेशिनी పాణినీయప్రవేశినీ తెలుగు">
   <div class="card__media"><img src="../assets/img/Panini-Main-WS.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">Paniniya Praveshini</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="panini-telugu/">తెలుగు <span class="card__meta">· 63</span></a></div>
+    <p class="course__count">63 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="panini-telugu/">తెలుగు <span class="card__meta">· 63</span></a></div>
   </div>
-</article><article class="card" data-search="Suparvanavani suparvanavani suparvanavani सुपर्वणवाणि సుపర్వణవాణి हिन्दी తెలుగు">
+</article><article class="card course" data-search="Suparvanavani suparvanavani suparvanavani सुपर्वणवाणि సుపర్వణవాణి हिन्दी తెలుగు">
   <div class="card__media"><img src="../assets/img/suparvanavani.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">Suparvanavani</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="suparvanavani-hindi/">हिन्दी <span class="card__meta">· 4</span></a><a class="btn btn--ghost btn--sm" href="suparvanavani-telugu/">తెలుగు <span class="card__meta">· 4</span></a></div>
+    <p class="course__count">8 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="suparvanavani-hindi/">हिन्दी <span class="card__meta">· 4</span></a><a class="btn btn--ghost btn--sm" href="suparvanavani-telugu/">తెలుగు <span class="card__meta">· 4</span></a></div>
   </div>
-</article><article class="card" data-search="Vibudhavani vibudhavani vibudhavani विबुधवाणि విబుధవాణి हिन्दी తెలుగు">
+</article><article class="card course" data-search="Vibudhavani vibudhavani vibudhavani विबुधवाणि విబుధవాణి हिन्दी తెలుగు">
   <div class="card__media"><img src="../assets/img/vibudhavani.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">Vibudhavani</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="vibudhavani-hindi/">हिन्दी <span class="card__meta">· 17</span></a><a class="btn btn--ghost btn--sm" href="vibudhavani-telugu/">తెలుగు <span class="card__meta">· 16</span></a></div>
+    <p class="course__count">33 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="vibudhavani-hindi/">हिन्दी <span class="card__meta">· 17</span></a><a class="btn btn--ghost btn--sm" href="vibudhavani-telugu/">తెలుగు <span class="card__meta">· 16</span></a></div>
   </div>
-</article><article class="card" data-search="Sumanovani sumanovani sumanovani सुमनोवाणि సుమనోవాణి हिन्दी తెలుగు">
+</article><article class="card course" data-search="Sumanovani sumanovani sumanovani सुमनोवाणि సుమనోవాణి हिन्दी తెలుగు">
   <div class="card__media"><img src="../assets/img/sumanovani.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">Sumanovani</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="sumanovani-hindi/">हिन्दी <span class="card__meta">· 17</span></a><a class="btn btn--ghost btn--sm" href="sumanovani-telugu/">తెలుగు <span class="card__meta">· 17</span></a></div>
+    <p class="course__count">34 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="sumanovani-hindi/">हिन्दी <span class="card__meta">· 17</span></a><a class="btn btn--ghost btn--sm" href="sumanovani-telugu/">తెలుగు <span class="card__meta">· 17</span></a></div>
   </div>
-</article><article class="card" data-search="Amarakosha amarakosa amarakosha अमरकोश అమరకోశ తెలుగు">
+</article><article class="card course" data-search="Amarakosha amarakosa amarakosha अमरकोश అమరకోశ తెలుగు">
   <div class="card__media"><img src="../assets/img/amarakosa.jpg" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">Amarakosha</h3>
-    <div class="cluster" style="margin-top:.75rem"><a class="btn btn--ghost btn--sm" href="amarakosa-telugu/">తెలుగు <span class="card__meta">· 77</span></a></div>
+    <p class="course__count">77 recorded lessons</p>
+    <div class="cluster course__langs"><a class="btn btn--ghost btn--sm" href="amarakosa-telugu/">తెలుగు <span class="card__meta">· 77</span></a></div>
   </div>
 </article>
       <p class="empty-state" data-empty hidden>No course matches that search.</p>
@@ -174,6 +186,12 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <div>
         <h4>Useful links</h4>
         <ul><li><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank">Facebook</a></li><li><a href="https://www.pinterest.com/" rel="noopener" target="_blank">Pinterest</a></li><li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank">Youtube</a></li><li><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank">Instagram</a></li><li><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank">Twitter</a></li></ul>
+      </div>
+      <div>
+        <h4>Announced</h4>
+        <ul><li><span class="footer-soon">Songs</span></li><li><span class="footer-soon">Articles</span></li><li><span class="footer-soon">Worker Links</span></li><li><span class="footer-soon">Blogs</span></li><li><span class="footer-soon">FAQs</span></li></ul>
+        <p style="font-size:.82rem;margin-top:.9rem">Listed on the school's menu,
+          not yet published.</p>
       </div>
       <div>
         <h4>Get in touch</h4>

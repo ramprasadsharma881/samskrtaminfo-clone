@@ -27,7 +27,12 @@ OUT = ROOT / "src" / "data"
 # helpers
 # --------------------------------------------------------------------------- #
 def soup_of(name: str) -> BeautifulSoup:
-    return BeautifulSoup((SRC / name).read_text("utf-8", errors="replace"), "lxml")
+    raw = (SRC / name).read_text("utf-8", errors="replace")
+    # The stotra and donate pages break their lines with `</br>` — a stray end
+    # tag. Browsers render it as a line break; a parser drops it on the floor,
+    # taking every line break in the stotra texts with it. Normalise first.
+    raw = re.sub(r"</\s*br\s*>", "<br>", raw, flags=re.I)
+    return BeautifulSoup(raw, "lxml")
 
 
 def clean(text: str | None) -> str:
@@ -469,9 +474,9 @@ def extract_dhatupathah() -> dict:
     for tr in table.select("tbody tr"):
         tds = tr.find_all("td")
         cells = [clean(td.get_text()) for td in tds]
-        note = cells[8] if len(cells) > 8 else ""
+        tail = cells[8] if len(cells) > 8 else ""          # the hidden ninth column
         cells = cells[:8] + [""] * max(0, 8 - len(cells))
-        row = cells[:8] + [note]
+        row = cells[:8] + [tail]
         if any(row):
             rows.append(row)
     return {

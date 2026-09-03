@@ -858,6 +858,41 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
 .card--link:hover .cover__title { color: #fbeecb; }
 .cover + .card__body { padding-top: 1.05rem; }
 
+/* the school's own cover art, mounted where it belongs — on its own text */
+.text-plate {
+  margin: 0 0 1.75rem;
+  max-width: 420px;
+  padding: 0.8rem;
+  background: linear-gradient(var(--gold-tint), var(--surface));
+  border: 1px solid var(--line-faint);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-warm-sm);
+}
+.text-plate img {
+  width: 100%;
+  border-radius: var(--radius-xs);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold) 42%, transparent),
+              inset 0 0 24px rgba(28, 25, 23, 0.14);
+}
+
+.footer-soon {
+  color: var(--colophon-soft);
+  opacity: 0.75;
+}
+.footer-soon::after {
+  content: "soon";
+  font-family: var(--font-ui);
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(180, 136, 37, 0.4);
+  border-radius: var(--radius-xs);
+  padding: 0.04rem 0.36rem 0.08rem;
+  margin-left: 0.6rem;
+  vertical-align: 0.08em;
+}
+
 .panel {
   background: var(--surface);
   border: 1px solid var(--line-faint);
@@ -1112,6 +1147,96 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
 .video--lazy:hover .play { transform: scale(1.07); background: var(--saffron-hover); }
 
 /* --------------------------------------------------------------------------
+   14b · Recitation plates (stotras index)
+   -------------------------------------------------------------------------- */
+.stotra { display: flex; flex-direction: column; }
+.stotra[hidden] { display: none; }
+.stotra__head {
+  padding: 1.15rem 1.35rem 1rem;
+  border-bottom: 1px solid var(--gold-line);
+  background: linear-gradient(var(--gold-tint), transparent);
+}
+.stotra__script {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-bottom: 0.4rem;
+}
+.stotra__script.deva, .stotra__script.telu {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+}
+.stotra__name { margin: 0; font-size: var(--step-1); line-height: 1.3; }
+.stotra .video { border: 0; border-radius: 0; }
+.stotra__foot { padding: 0.9rem 1.35rem 1.05rem; margin-top: auto; }
+.stotra__read {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--saffron-text);
+}
+.stotra__read svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.9; transition: transform 0.2s; }
+.stotra__read:hover svg { transform: translateX(3px); }
+.stotra__intro { color: var(--ink-soft); }
+
+/* --------------------------------------------------------------------------
+   14c · Stanzas (stotra texts)
+   The original ran each stotra together as one column of <br>s. A stotra is
+   verses: each one is set as a stanza, with its transliteration beneath it
+   and the English rendering below both.
+   -------------------------------------------------------------------------- */
+.stanzas { display: grid; gap: 1.1rem; }
+.stanza__head {
+  font-family: var(--font-deva);
+  font-size: calc(1.32rem * var(--read-scale));
+  line-height: var(--lead-scripture);
+  text-align: center;
+  color: var(--ink-primary);
+  margin: 0 0 0.4rem;
+}
+.stanza {
+  background: var(--surface);
+  border: 1px solid var(--line-faint);
+  border-left: 3px solid var(--gold-line);
+  border-radius: var(--radius-md);
+  padding: 1.3rem 1.6rem;
+  box-shadow: var(--shadow-warm-sm);
+}
+.stanza__line { display: block; }
+.stanza__text {
+  font-family: var(--font-deva);
+  font-size: calc(1.24rem * var(--read-scale));
+  line-height: var(--lead-scripture);
+  color: var(--ink-primary);
+}
+.stanza__text.latn { font-family: var(--font-ui); font-size: calc(1.06rem * var(--read-scale)); line-height: 1.8; }
+.stanza__iast {
+  margin-top: 0.7rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed var(--line);
+  font-size: calc(1.02rem * var(--read-scale));
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+.stanza__gloss {
+  margin-top: 0.85rem;
+  padding: 0.85rem 1.05rem;
+  border-radius: var(--radius-xs);
+  background: var(--gold-tint);
+  border-left: 3px solid var(--gold);
+  font-size: calc(1rem * var(--read-scale));
+  line-height: 1.75;
+  color: var(--ink-body);
+}
+
+/* --------------------------------------------------------------------------
    15 · Reading toolbar
    -------------------------------------------------------------------------- */
 .toolbar {
@@ -1316,6 +1441,9 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
 .gloss__eq { color: var(--ink-faint); padding-inline: 0.25em; }
 .gloss__def { color: var(--ink-body); }
 .layer[hidden] { display: none; }
+/* a section that only borrows the layer toggle, not its two-column ruling */
+.layer--plain:not([hidden]) { display: block; padding: 0; }
+.layer--plain::before { content: none; }
 
 @media (max-width: 640px) {
   .layer { grid-template-columns: 1fr; gap: 0.2rem; padding: 0.8rem 1.1rem 0.85rem 1.15rem; }
@@ -1779,6 +1907,22 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
   box-shadow: var(--shadow-warm-sm);
 }
 .puzzle__head { border-bottom: 1px solid var(--gold-line); padding-bottom: 1rem; margin-bottom: 1.1rem; }
+.puzzle__title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 0.9rem; }
+.puzzle__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  margin-top: 0.95rem;
+}
+.puzzle__progress {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+.puzzle__progress[data-done="true"] { color: var(--teal); }
+
 .puzzle__name {
   font-family: var(--font-telu);
   color: var(--ink-primary);
@@ -1798,7 +1942,7 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
 
 .qa { border-bottom: 1px solid var(--line-faint); padding: 0.85rem 0; }
 .qa:last-child { border-bottom: 0; padding-bottom: 0; }
-.qa__row { display: flex; gap: 0.9rem; align-items: flex-start; }
+.qa__row { display: flex; gap: 0.75rem; align-items: flex-start; }
 /* the riddle line itself, distinct from the Telugu gloss beneath it */
 .qa__q {
   overflow-wrap: anywhere;
@@ -1900,6 +2044,30 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
   .lesson { grid-template-columns: auto 1fr; }
   .lesson__actions { grid-column: 1 / -1; }
 }
+
+/* --------------------------------------------------------------------------
+   23b · Course volumes and the syllabus
+   -------------------------------------------------------------------------- */
+.course__count {
+  font-family: var(--font-ui);
+  font-size: 0.86rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin: 0 0 0.85rem;
+}
+.course__langs { gap: 0.4rem; }
+
+.syllabus {
+  background: var(--surface);
+  border: 1px solid var(--line-faint);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-warm-sm);
+  overflow: hidden;
+}
+.syllabus .lesson:first-child { border-top: 0; }
+.syllabus .lesson:last-child { border-bottom: 0; }
+.syllabus .lesson__num { font-family: var(--font-deva); font-size: 0.95rem; min-width: 2.6ch; }
 
 /* --------------------------------------------------------------------------
    24 · Pagination & jump navigation

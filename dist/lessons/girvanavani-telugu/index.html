@@ -35,7 +35,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       </span>
     </a>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <ul><li><a href="../../">Home</a></li><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/" aria-current="page">Lessons</a></li><li><a href="../../prahelikas/" class="telu">ప్రహేళికలు</a></li><li><a href="../../about/">About</a></li><li><a href="../../donate/">Donate</a></li></ul>
+      <ul><li><a href="../../">Home</a></li><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/" aria-current="page">Lessons</a></li><li><a href="../../prahelikas/" class="telu">ప్రహేళికలు</a></li><li><a href="../../about/">About</a></li><li><a href="../../about/#contact">Contact</a></li><li><a href="../../donate/">Donate</a></li></ul>
     </nav>
     <div class="header-tools tools-anchor">
       <button class="icon-btn" data-prefs-toggle aria-expanded="false" aria-controls="prefs-panel" aria-label="Reading preferences" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg></button>
@@ -66,87 +66,95 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   <div class="wrap">
     <span class="eyebrow deva">पाठमाला</span>
     <h1>GirvanavaniVilasah- Telugu</h1>
-    <p class="hero__lede">16 lessons.</p>
+    <p class="hero__lede">16 recorded lessons, in order.</p>
   </div>
 </section>
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    <div class="cluster" style="margin-bottom:1.25rem"><a class="btn btn--ghost btn--sm" href="../girvanavani-english/">English</a><a class="btn btn--ghost btn--sm" href="../girvanavani-hindi/">हिन्दी</a><a class="btn btn--primary btn--sm" href="../girvanavani-telugu/" aria-current="page">తెలుగు</a></div>
-    <div style="max-width:520px;margin-bottom:1.25rem"><div class="field">
+<div class="toolbar">
+  <div class="wrap toolbar__inner">
+    <span class="toolbar__label">Language</span>
+    <div class="chip-row"><a class="chip" href="../girvanavani-hindi/" aria-pressed="false" style="--chip:var(--saffron)">हिन्दी</a><a class="chip" href="../girvanavani-telugu/" aria-current="page" aria-pressed="true" style="--chip:var(--saffron)">తెలుగు</a></div>
+    <div class="cluster">
+      <div class="toolbar__search"><div class="field">
   <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
   <label class="visually-hidden" for="q-lesson-list">Filter lessons…</label>
   <input id="q-lesson-list" type="search" placeholder="Filter lessons…" autocomplete="off"
          data-filter-input="lesson-list" data-filter-count="lesson-count">
   <button class="field__clear" type="button" aria-label="Clear search" hidden>×</button>
 </div>
-<p class="result-count" id="lesson-count" role="status" aria-live="polite"></p></div>
-    <div id="lesson-list"><div class="lesson" data-search>
-  <span class="lesson__num">01</span>
+</div>
+    </div>
+  </div>
+</div>
+<section class="section" style="padding-top:0">
+  <div class="wrap-narrow">
+    <div class="syllabus" id="lesson-list"><div class="lesson" data-search>
+  <span class="lesson__num">०१</span>
   <p class="lesson__title">L-01-Samskrta Katha - Story-01-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=rz0uauxNGv4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">02</span>
+  <span class="lesson__num">०२</span>
   <p class="lesson__title">L-02-Samskrta Katha - Story-02-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=hLlNCeLu3ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">03</span>
+  <span class="lesson__num">०३</span>
   <p class="lesson__title">L-03-Samskrta Katha - Story-03,04-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_-geIiVMh2o"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">04</span>
+  <span class="lesson__num">०४</span>
   <p class="lesson__title">L-04- Samskrta Katha - Story-05 Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=D1wTu0fpzFw"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">05</span>
+  <span class="lesson__num">०५</span>
   <p class="lesson__title">L-05-Samskrta Katha - Story-06-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=le_75kRxeto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">06</span>
+  <span class="lesson__num">०६</span>
   <p class="lesson__title">L-06-Katha - Story-07-Samskrta Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=QtNf6vN11h4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">07</span>
+  <span class="lesson__num">०७</span>
   <p class="lesson__title">L-07-Samskrta Katha - Story-08-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=2futh1sgR8E"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">08</span>
+  <span class="lesson__num">०८</span>
   <p class="lesson__title">L-08-Samskrta Katha - Story-09,10-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ktrxsAAojEQ"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">09</span>
+  <span class="lesson__num">०९</span>
   <p class="lesson__title">L-09-Samskrta Katha - Story-11-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=fuPOyz5OBvc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">10</span>
+  <span class="lesson__num">१०</span>
   <p class="lesson__title">L-10-Samskrta Katha - Story-12-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=6RwTROhWUZc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">11</span>
+  <span class="lesson__num">११</span>
   <p class="lesson__title">L-11-Samskrta Katha - Story-13-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=mGVuklAYKGA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">12</span>
+  <span class="lesson__num">१२</span>
   <p class="lesson__title">L-12-Samskrta Katha - Story-14-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_NexqFP_6No"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">13</span>
+  <span class="lesson__num">१३</span>
   <p class="lesson__title">L-13-Samskrta Katha - Story-15-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=6f_OJnNDjXo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">14</span>
+  <span class="lesson__num">१४</span>
   <p class="lesson__title">L-14-Samskrta Katha - Story-16-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=jHnE7IyR0kg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">15</span>
+  <span class="lesson__num">१५</span>
   <p class="lesson__title">L-15-Samskrta Katha - Story-17-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=JDT8KfPfq6A"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div><div class="lesson" data-search>
-  <span class="lesson__num">16</span>
+  <span class="lesson__num">१६</span>
   <p class="lesson__title">L-16-Samskrta Katha - Story-18-Lessons</p>
   <div class="lesson__actions"><a class="btn btn--accent btn--sm" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=CxcDHMltZBA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 4 14 8-14 8z" fill="currentColor" stroke="none"/></svg> Watch</a></div>
 </div>
       <p class="empty-state" data-empty hidden>No lesson matches that search.</p>
     </div>
+    <p class="result-count" id="lesson-count" role="status" aria-live="polite"></p>
   </div>
 </section>
 </main>
@@ -167,6 +175,12 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <div>
         <h4>Useful links</h4>
         <ul><li><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank">Facebook</a></li><li><a href="https://www.pinterest.com/" rel="noopener" target="_blank">Pinterest</a></li><li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank">Youtube</a></li><li><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank">Instagram</a></li><li><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank">Twitter</a></li></ul>
+      </div>
+      <div>
+        <h4>Announced</h4>
+        <ul><li><span class="footer-soon">Songs</span></li><li><span class="footer-soon">Articles</span></li><li><span class="footer-soon">Worker Links</span></li><li><span class="footer-soon">Blogs</span></li><li><span class="footer-soon">FAQs</span></li></ul>
+        <p style="font-size:.82rem;margin-top:.9rem">Listed on the school's menu,
+          not yet published.</p>
       </div>
       <div>
         <h4>Get in touch</h4>

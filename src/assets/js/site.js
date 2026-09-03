@@ -572,6 +572,17 @@
   /* Puzzle answers                                                         */
   /* ===================================================================== */
   function initPuzzles() {
+    function progress(scope) {
+      var box = scope && scope.closest ? scope.closest(".puzzle") : null;
+      if (!box) return;
+      var el = $("[data-progress]", box);
+      if (!el) return;
+      var total = box.getAttribute("data-total") || $$(".qa", box).length;
+      var open = $$(".qa__a", box).filter(function (a) { return !a.hidden; }).length;
+      el.textContent = open + " / " + total;
+      el.setAttribute("data-done", String(String(open) === String(total)));
+    }
+
     function toggle(btn) {
       var wrap = btn.closest(".qa");
       if (!wrap) return;
@@ -580,6 +591,7 @@
       if (!ans || !reveal) return;
       ans.hidden = !ans.hidden;
       reveal.setAttribute("aria-expanded", String(!ans.hidden));
+      progress(wrap);
     }
     $$(".qa__btn").forEach(function (b) {
       b.addEventListener("click", function () { toggle(b); });
@@ -590,6 +602,7 @@
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(q); }
       });
     });
+    $$("[data-progress]").forEach(function (el) { progress(el); });
     $$("[data-reveal-all]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var scope = btn.closest(".puzzle") || document;
@@ -598,6 +611,7 @@
         $$(".qa__btn", scope).forEach(function (b) { b.setAttribute("aria-expanded", String(open)); });
         btn.setAttribute("aria-pressed", String(open));
         btn.textContent = open ? btn.getAttribute("data-label-hide") : btn.getAttribute("data-label-show");
+        progress(btn);
       });
     });
   }

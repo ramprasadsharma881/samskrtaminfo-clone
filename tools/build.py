@@ -177,12 +177,111 @@ def set_glosses(value: str) -> str:
     return "".join(out) if out else value
 
 
+# "Translation-" on the Narasimha page, "Meaning-" on the Totakāṣṭaka page;
+# sometimes its own block, sometimes just another line inside the verse block.
+GLOSS_CUE = re.compile(r"^\s*(?:Translation|Meaning)\s*[-–:]\s*", re.I)
+LABEL_CUE = re.compile(r"^\s*(?:Mulam[^:]*|Introduction)\s*:\s*", re.I)
+# Devanagari letters only — U+0964/5 are the daṇḍa, which IAST lines also use,
+# so including them would make every transliterated line look like Devanagari.
+DEVA_LETTER = re.compile(r"[\u0900-\u0963\u0966-\u097f]")
+RULE_OFF = set("-–—_ ")
+
+
+def _lines(block: str) -> list[str]:
+    return [ln.strip() for ln in block.split("<br>") if ln.strip()]
+
+
+def stanzas(body: str) -> list[dict]:
+    """Recover a stotra's stanza structure from its <br>-separated blob.
+
+    Each block is one verse. Within a block the Devanagari setting, its IAST
+    transliteration and an English rendering may all be present, in that order,
+    the last introduced by "Translation-" or "Meaning-".
+    """
+    body = LABEL_CUE.sub("", body.strip(), count=1)
+    out: list[dict] = []
+    for block in re.split(r"(?:<br>\s*){2,}", body):
+        lines = _lines(block)
+        if not lines:
+            continue
+
+        # a translation block that stands on its own belongs to the verse above
+        if GLOSS_CUE.match(lines[0]) and len(out):
+            gloss = GLOSS_CUE.sub("", "<br>".join(lines), count=1)
+            out[-1]["gloss"] = gloss
+            continue
+
+        gloss = ""
+        for i, ln in enumerate(lines):
+            if GLOSS_CUE.match(ln):
+                gloss = GLOSS_CUE.sub("", "<br>".join(lines[i:]), count=1)
+                lines = lines[:i]
+                break
+        if not lines:
+            if gloss and out:
+                out[-1]["gloss"] = gloss
+            continue
+
+        if all(set(ln) <= RULE_OFF for ln in lines):
+            continue                                   # the ------- rule-offs
+
+        deva = [ln for ln in lines if DEVA_LETTER.search(ln)]
+        latn = [ln for ln in lines if not DEVA_LETTER.search(ln)]
+        entry: dict = {"kind": "verse" if deva else "iast", "lines": deva or latn}
+        if deva and latn:
+            entry["iast"] = latn
+        if gloss:
+            entry["gloss"] = gloss
+        out.append(entry)
+    return out
+
+
+def render_stanzas(body: str) -> str:
+    """A stotra set as verses: Devanagari crowned, IAST beneath it, the English
+    rendering below both — instead of one continuous run of <br>s."""
+    items = stanzas(body)
+    if not items:
+        return body
+    parts = []
+    for i, st in enumerate(items):
+        # the opening ॥श्री…॥ / अथ … lines name the stotra; they are not verses
+        if i < 2 and len(st["lines"]) == 1 and not st.get("gloss") and not st.get("iast"):
+            parts.append(f'<p class="stanza__head deva">{st["lines"][0]}</p>')
+            continue
+        lines = "".join(f'<span class="stanza__line">{ln}</span>' for ln in st["lines"])
+        iast = ""
+        if st.get("iast"):
+            iast = ('<div class="stanza__iast latn">'
+                    + "".join(f'<span class="stanza__line">{ln}</span>' for ln in st["iast"])
+                    + "</div>")
+        gloss = f'<div class="stanza__gloss latn">{st["gloss"]}</div>' if st.get("gloss") else ""
+        script = "deva" if st["kind"] == "verse" else "latn"
+        parts.append(
+            f'<div class="stanza"><div class="stanza__text {script}">{lines}</div>{iast}{gloss}</div>'
+        )
+    return "".join(parts)
+
+
+URL_RE = re.compile(r"(?<![\w/@.\-])(https?://[^\s<>\u0900-\u097f\u0c00-\u0c7f\]\)]+)")
+
+
+def linkify(text: str) -> str:
+    """Make the school's source citations clickable again.
+
+    Several of them sit inside <pre> blocks and verse cells, where the original
+    markup carried an <a> that text extraction necessarily flattened. The URL
+    itself survived; this puts the anchor back."""
+    if "<a " in text:
+        return text
+    return URL_RE.sub(lambda m: f'<a href="{m.group(1)}" rel="noopener">{m.group(1)}</a>', text)
+
+
 def set_register(key: str, value: str) -> str:
     if key == "moolam":
         return set_padas(value)
     if key == "prati":
         return set_glosses(value)
-    return value
+    return linkify(value)
 
 
 def search_key(*parts) -> str:
@@ -254,8 +353,15 @@ NAV = [
     ("lessons/", "Lessons", "पाठाः"),
     ("prahelikas/", "ప్రహేళికలు", ""),
     ("about/", "About", "परिचयः"),
+    ("about/#contact", "Contact", "सम्पर्कः"),
     ("donate/", "Donate", "सहयोगः"),
 ]
+
+# The original's menu also listed Songs, Articles, Worker Links, Blogs and FAQs.
+# Every one of them pointed at home.php or "#" — announced, never published.
+# They are named here rather than dropped, so nothing the school advertised
+# disappears, and nothing pretends to work.
+ANNOUNCED = ["Songs", "Articles", "Worker Links", "Blogs", "FAQs"]
 
 
 def header(depth: int, active: str) -> str:
@@ -316,7 +422,11 @@ def footer(depth: int, home: dict) -> str:
         for s in home.get("social", [])
     )
     explore = "".join(
-        f'<li><a href="{r}{href}">{e(label)}</a></li>' for href, label, _ in NAV[1:]
+        f'<li><a href="{r}{href}">{e(label)}</a></li>'
+        for href, label, _ in NAV[1:] if not href.startswith("about/#")
+    )
+    announced = "".join(
+        f'<li><span class="footer-soon">{e(x)}</span></li>' for x in ANNOUNCED
     )
     return f"""<footer class="site-footer">
   <div class="wrap">
@@ -335,6 +445,12 @@ def footer(depth: int, home: dict) -> str:
       <div>
         <h4>Useful links</h4>
         <ul>{useful}</ul>
+      </div>
+      <div>
+        <h4>Announced</h4>
+        <ul>{announced}</ul>
+        <p style="font-size:.82rem;margin-top:.9rem">Listed on the school's menu,
+          not yet published.</p>
       </div>
       <div>
         <h4>Get in touch</h4>
@@ -622,6 +738,11 @@ def build_about(home: dict) -> None:
     """The original nav promised an About page but linked back to the home page.
     This one is written entirely out of the school's own words on the site."""
     vishnu = load("vishnu")
+    contact_social = "".join(
+        f'<a class="btn btn--ghost btn--sm" href="{e(x["href"])}" target="_blank" rel="noopener">'
+        f'{e(x["name"].title())}</a>'
+        for x in home.get("social", [])
+    )
     signature = ""
     for para in vishnu.get("intro", []):
         if "उषाराणी" in para:
@@ -668,11 +789,17 @@ def build_about(home: dict) -> None:
       </ul>
       {f'<p class="signature deva">{e(signature)}</p>' if signature else ''}
     </div>
-    <div class="note" style="margin-top:1.5rem">
-      <strong>Get in touch.</strong> Corrections and suggestions are welcome — write to
-      <a href="mailto:{EMAIL}">{EMAIL}</a>. If a reading looks wrong anywhere on the site,
-      please say so; it will be fixed.
-    </div>
+    <section class="panel" id="contact" style="margin-top:1.75rem">
+      <span class="eyebrow deva">सम्पर्कः</span>
+      <h2 style="margin-bottom:1rem">Contact</h2>
+      <p>Corrections and suggestions are welcome. If a reading looks wrong anywhere on
+        this site, please say so — it will be fixed.</p>
+      <ul class="link-list" style="margin-top:1.25rem">
+        <li><a class="latn" href="mailto:{EMAIL}">{EMAIL}</a></li>
+        <li><a class="latn" href="{BASE_URL}">{BASE_URL}</a></li>
+      </ul>
+      <div class="cluster" style="margin-top:1.25rem">{contact_social}</div>
+    </section>
   </div>
 </section>"""
     page(path="about/index.html", depth=1, title="About",
@@ -704,18 +831,18 @@ def build_stotras(stotras: list, details: list, home: dict) -> None:
         href = f"{detail['slug']}/" if detail else ""
         for v in st["versions"]:
             cls = SCRIPT_CLASS.get(v["script"], "latn")
-            title_link = (
-                f'<a href="{e(href)}" class="btn btn--primary btn--sm" style="width:100%">'
-                f'{e(st["title"])} · {e(SCRIPT_LABEL.get(v["script"], ""))}</a>'
-                if href else
-                f'<span class="badge">{e(SCRIPT_LABEL.get(v["script"], ""))}</span>'
-            )
-            cards += f"""<article class="card" data-script="{e(v['script'])}"
-              data-search="{search_key(st['title'], st['keywords'], v['label'], SCRIPT_LABEL.get(v['script'], ''))}">
-              <div class="card__body" style="display:grid;gap:.75rem">
-                {title_link}
-                {video(v['youtube'], v['label'])}
-              </div>
+            script_label = SCRIPT_LABEL.get(v["script"], "")
+            script_cls = SCRIPT_CLASS.get(v["script"], "latn")
+            read = (f'<a class="stotra__read" href="{e(href)}">Read the text {icon("arrow")}</a>'
+                    if href else "")
+            cards += f"""<article class="card stotra" data-script="{e(v['script'])}"
+              data-search="{search_key(st['title'], st['keywords'], v['label'], script_label)}">
+              <header class="stotra__head">
+                <span class="stotra__script {script_cls}">{e(script_label)}</span>
+                <h3 class="stotra__name">{e(st['title'])}</h3>
+              </header>
+              {video(v['youtube'], v['label'])}
+              <footer class="stotra__foot">{read}</footer>
             </article>"""
 
     body = crumbs(1, [("", "Home"), (None, "Stotras")]) + f"""
@@ -747,17 +874,16 @@ def build_stotras(stotras: list, details: list, home: dict) -> None:
             for i, s in enumerate(d["sections"])
         )
         sections = "".join(
-            f'<div class="scroll-block layer" data-layer="{e(s["id"])}">'
-            f'<h3 class="latn" style="font-family:var(--font-sans);font-size:.8rem;letter-spacing:.14em;'
-            f'text-transform:uppercase;color:var(--ink-faint)">{e(s["heading"] or s["tab"])}</h3>'
-            f'<div class="deva scripture">{s["body"]}</div></div>'
+            f'<section class="layer layer--plain" data-layer="{e(s["id"])}" style="margin-bottom:2.5rem">'
+            f'<div class="chapter-head"><h3 class="latn">{e(s["heading"] or s["tab"])}</h3></div>'
+            f'<div class="stanzas">{render_stanzas(s["body"])}</div></section>'
             for s in d["sections"]
         )
         sec_body = crumbs(2, [("", "Home"), ("stotras/", "Stotras"), (None, d["title"])]) + f"""
 {page_hero('स्तोत्रम्', d['title'], '', deva=False)}
 <section class="section" style="padding-top:0">
   <div class="wrap-narrow">
-    {f'<div class="panel" style="margin-bottom:1.5rem"><div class="latn">{d["intro"]}</div></div>' if d.get('intro') else ''}
+    {f'<div class="panel" style="margin-bottom:1.75rem"><span class="eyebrow">From the teacher</span><div class="latn stotra__intro">{d["intro"]}</div></div>' if d.get('intro') else ''}
     {video(d.get('youtube', ''), d['title'])}
   </div>
 </section>
@@ -823,7 +949,7 @@ COVER_PIGMENTS = [
 ]
 
 
-def cover(title: str, index: int) -> str:
+def cover(title: str, index: int, script: str = "deva") -> str:
     """An illuminated cover drawn in CSS: jālī ground, brass keyline, the
     Sanskrit title engraved in gold. No raster, no request, sharp at any DPI.
 
@@ -837,6 +963,21 @@ def cover(title: str, index: int) -> str:
     )
 
 
+TEXT_IMAGES: dict[str, str] = {}
+
+
+def text_plate(route: str) -> str:
+    """The school's own cover for this text, mounted as a plate.
+
+    The index carries drawn covers now, but the artwork is the pāṭhaśālā's own
+    work — it belongs on the text it was made for, not thrown away."""
+    img = TEXT_IMAGES.get(route)
+    if not img:
+        return ""
+    return (f'<figure class="text-plate"><img src="../../assets/img/{asset(img)}" '
+            f'alt="" loading="lazy"></figure>')
+
+
 def build_texts_index(texts: list, home: dict) -> None:
     groups = ""
     n = 0
@@ -846,6 +987,7 @@ def build_texts_index(texts: list, home: dict) -> None:
             route = TEXT_ROUTES.get(it["href"])
             if not route:
                 continue
+            TEXT_IMAGES[route] = Path(it["image"]).name
             if USE_ORIGINAL_TEXT_COVERS:
                 img = asset(Path(it["image"]).name)
                 face = (f'<div class="card__media"><img src="../assets/img/{img}" '
@@ -947,7 +1089,7 @@ def build_verse_corpus(name: str, route: str, home: dict) -> None:
     body = crumbs(2, [("", "Home"), ("texts/", "Texts"), (None, data["title"])]) + f"""
 {page_hero('श्लोकव्याख्यानम्', data['title'])}
 <section class="section" style="padding-top:0">
-  <div class="wrap">{intro}{audio_note}</div>
+  <div class="wrap">{text_plate(route)}{intro}{audio_note}</div>
 </section>
 {layer_toolbar(name, toggles, f'<div class="toolbar__search">{filter_field(route + "-list", "Search verses…", route + "-count")}</div>')}
 <section class="section" style="padding-top:0">
@@ -1082,7 +1224,7 @@ def build_adhyayanam(home: dict) -> None:
     body = crumbs(2, [("", "Home"), ("texts/", "Texts"), (None, data["title"])]) + f"""
 {page_hero('अध्ययनम्', data['title'], 'The complete Hitopadeśa, entry by entry, with word-splits, notes (टिप्पणी), analysis and an English rendering.', deva=False)}
 <section class="section" style="padding-top:0">
-  <div class="wrap"><div class="grid grid--3">{listing}</div></div>
+  <div class="wrap">{text_plate('adhyayanam')}<div class="grid grid--3">{listing}</div></div>
 </section>"""
     page(path="texts/adhyayanam/index.html", depth=2, title=data["title"],
          description="The complete Hitopadeśa with word-splits, notes, analysis and English meaning.",
@@ -1146,6 +1288,7 @@ def build_dhatupathah(home: dict) -> None:
 {page_hero('सन्दर्भः', data['title'])}
 <section class="section" style="padding-top:0">
   <div class="wrap">
+    {text_plate('dhatupathah')}
     <div class="panel" style="margin-bottom:1.75rem">{note}</div>
   </div>
 </section>
@@ -1228,11 +1371,11 @@ def build_pre_corpus(name: str, route: str, eyebrow: str, home: dict, jump: bool
         first, rest = s["parts"][0], s["parts"][1:]
         more = ""
         if rest:
-            inner = "".join(f"<pre>{e(p)}</pre>" for p in rest)
+            inner = "".join(f"<pre>{linkify(e(p))}</pre>" for p in rest)
             more = f'<details class="expander"><summary>Read the rest · अधिकम्</summary>{inner}</details>'
         blocks += (
             f'<section class="scroll-block" id="{e(s["id"])}">{heading}'
-            f"<pre>{e(first)}</pre>{more}</section>"
+            f"<pre>{linkify(e(first))}</pre>{more}</section>"
         )
 
     intro = ""
@@ -1244,7 +1387,7 @@ def build_pre_corpus(name: str, route: str, eyebrow: str, home: dict, jump: bool
     body = crumbs(2, [("", "Home"), ("texts/", "Texts"), (None, data["title"])]) + f"""
 {page_hero(eyebrow, data['title'])}
 <section class="section" style="padding-top:0">
-  <div class="wrap">{intro}{nav}{blocks}</div>
+  <div class="wrap">{text_plate(route)}{intro}{nav}{blocks}</div>
 </section>"""
     page(path=f"texts/{route}/index.html", depth=2, title=data["title"],
          description=f"{data['title']} — Sanskrit text arranged in anvaya order with meanings in brackets.",
@@ -1302,7 +1445,7 @@ def build_gita(home: dict) -> None:
 
     body = crumbs(2, [("", "Home"), ("texts/", "Texts"), (None, data["title"])]) + f"""
 {page_hero('अन्वयः', data['title'])}
-<section class="section" style="padding-top:0"><div class="wrap">{intro}</div></section>
+<section class="section" style="padding-top:0"><div class="wrap">{text_plate('gita')}{intro}</div></section>
 <div class="toolbar" data-speakers>
   <div class="wrap toolbar__inner">
     <span class="toolbar__label">Speaker</span>
@@ -1327,19 +1470,19 @@ def build_vishnu(home: dict) -> None:
         )
         speeches += (
             f'<article class="speech" data-speaker="{e(b["speaker"])}">{avatar}'
-            f'<div><p class="speech__text">{e(b["text"])}</p></div></article>'
+            f'<div><p class="speech__text">{linkify(e(b["text"]))}</p></div></article>'
         )
     sections = ""
     for s in data["sections"]:
         first, rest = s["parts"][0], s["parts"][1:]
         more = ""
         if rest:
-            inner = "".join(f"<pre>{e(p)}</pre>" for p in rest)
+            inner = "".join(f"<pre>{linkify(e(p))}</pre>" for p in rest)
             more = f'<details class="expander"><summary>Read the rest · अधिकम्</summary>{inner}</details>'
         heading = f"<h3>{e(s['title'])}</h3>" if s["title"] else ""
         sections += (
             f'<section class="scroll-block" id="{e(s["id"])}">{heading}'
-            f"<pre>{e(first)}</pre>{more}</section>"
+            f"<pre>{linkify(e(first))}</pre>{more}</section>"
         )
     intro = '<div class="panel" style="margin-bottom:1.75rem">' + "".join(
         f'<p class="deva scripture">{p}</p>' for p in data.get("intro", [])
@@ -1348,7 +1491,7 @@ def build_vishnu(home: dict) -> None:
     body = crumbs(2, [("", "Home"), ("texts/", "Texts"), (None, data["title"])]) + f"""
 {page_hero('अन्वयक्रमे', data['title'])}
 <section class="section" style="padding-top:0">
-  <div class="wrap">{intro}{speeches}{sections}</div>
+  <div class="wrap">{text_plate('vishnusahasranama')}{intro}{speeches}{sections}</div>
 </section>"""
     page(path="texts/vishnusahasranama/index.html", depth=2, title=data["title"],
          description="The phalaśruti of the Viṣṇusahasranāma re-ordered into anvaya sequence for reading.",
@@ -1393,11 +1536,14 @@ def build_lessons(courses: list, details: list, home: dict) -> None:
                     f'<span class="btn btn--muted btn--sm" title="No lessons recorded yet">'
                     f'{label} <span class="card__meta">· soon</span></span>'
                 )
-        cards += f"""<article class="card" data-search="{search_key(c['title'], c['key'], c['keywords'], [LANG_NATIVE.get(l['lang'], '') for l in c['languages']])}">
+        taught = sum(len(by_key[(c["key"], l["lang"])]["lessons"])
+                     for l in c["languages"] if (c["key"], l["lang"]) in by_key)
+        cards += f"""<article class="card course" data-search="{search_key(c['title'], c['key'], c['keywords'], [LANG_NATIVE.get(l['lang'], '') for l in c['languages']])}">
   <div class="card__media"><img src="../assets/img/{asset(Path(c["image"]).name)}" alt="" loading="lazy"></div>
   <div class="card__body">
     <h3 class="card__title deva">{e(c['title'])}</h3>
-    <div class="cluster" style="margin-top:.75rem">{langs}</div>
+    <p class="course__count">{taught} recorded {'lesson' if taught == 1 else 'lessons'}</p>
+    <div class="cluster course__langs">{langs}</div>
   </div>
 </article>"""
 
@@ -1432,29 +1578,38 @@ def build_lessons(courses: list, details: list, home: dict) -> None:
                     f'{icon("pdf")} Worksheet</a>'
                 )
             rows += f"""<div class="lesson" data-search>
-  <span class="lesson__num">{i:02d}</span>
+  <span class="lesson__num">{deva_num(f'{i:02d}')}</span>
   <p class="lesson__title">{e(lesson['title'])}</p>
   <div class="lesson__actions">{actions}</div>
 </div>"""
         lang_switch = ""
         for other in details:
-            if other["key"] == d["key"]:
-                current = ' aria-current="page"' if other["lang"] == d["lang"] else ""
+            if other["key"] == d["key"] and other["lessons"]:
+                here = other["lang"] == d["lang"]
+                current = ' aria-current="page"' if here else ""
                 lang_switch += (
-                    f'<a class="btn {"btn--primary" if other["lang"] == d["lang"] else "btn--ghost"} btn--sm" '
-                    f'href="../{e(other["key"])}-{e(other["lang"])}/"{current}>'
+                    f'<a class="chip" href="../{e(other["key"])}-{e(other["lang"])}/"{current} '
+                    f'aria-pressed="{"true" if here else "false"}" style="--chip:var(--saffron)">'
                     f'{e(LANG_NATIVE.get(other["lang"], other["lang"]))}</a>'
                 )
 
         body = crumbs(2, [("", "Home"), ("lessons/", "Lessons"), (None, d["title"])]) + f"""
-{page_hero('पाठमाला', d['title'], f'{len(d["lessons"])} lessons.', deva=False)}
+{page_hero('पाठमाला', d['title'], f'{len(d["lessons"])} recorded lessons, in order.', deva=False)}
+<div class="toolbar">
+  <div class="wrap toolbar__inner">
+    <span class="toolbar__label">Language</span>
+    <div class="chip-row">{lang_switch}</div>
+    <div class="cluster">
+      <div class="toolbar__search">{filter_field('lesson-list', 'Filter lessons…', 'lesson-count', with_count=False)}</div>
+    </div>
+  </div>
+</div>
 <section class="section" style="padding-top:0">
-  <div class="wrap">
-    <div class="cluster" style="margin-bottom:1.25rem">{lang_switch}</div>
-    <div style="max-width:520px;margin-bottom:1.25rem">{filter_field('lesson-list', 'Filter lessons…', 'lesson-count')}</div>
-    <div id="lesson-list">{rows}
+  <div class="wrap-narrow">
+    <div class="syllabus" id="lesson-list">{rows}
       <p class="empty-state" data-empty hidden>No lesson matches that search.</p>
     </div>
+    <p class="result-count" id="lesson-count" role="status" aria-live="polite"></p>
   </div>
 </section>"""
         page(path=f"lessons/{d['key']}-{d['lang']}/index.html", depth=2, title=d["title"],
@@ -1480,12 +1635,13 @@ def prahelika_slug(s: dict) -> str:
 
 def build_prahelikas(data: dict, home: dict) -> None:
     cards = ""
-    for s in data["sets"]:
+    for i, s in enumerate(data["sets"]):
         n = sum(len(p["questions"]) for p in s["puzzles"])
         cards += (
             f'<a class="card card--link" href="{prahelika_slug(s)}/">'
-            f'<div class="card__body"><h3 class="card__title telu">{e(s["title"])}</h3>'
-            f'<p class="card__meta">{len(s["puzzles"])} prahelikās · {n} questions</p></div></a>'
+            f'{cover(s["title"], i + 3, script="telu")}'
+            f'<div class="card__body">'
+            f'<p class="card__meta">{len(s["puzzles"])} ప్రహేళికలు · {n} ప్రశ్నలు</p></div></a>'
         )
 
     body = crumbs(1, [("", "Home"), (None, "ప్రహేళికలు")]) + f"""
@@ -1516,15 +1672,17 @@ def build_prahelikas(data: dict, home: dict) -> None:
   </div>
   <p class="qa__a telu" hidden>{e(q['a'])}</p>
 </div>"""
-            puzzles += f"""<article class="puzzle" data-search>
+            puzzles += f"""<article class="puzzle" data-search data-total="{len(p['questions'])}">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">{e(p['name'])}</h2>
-    {f'<p class="puzzle__author">{e(p["author"])}</p>' if p['author'] else ''}
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">{e(p['name'])}</h2>
+      {f'<p class="puzzle__author">{e(p["author"])}</p>' if p['author'] else ''}
+    </div>
     {f'<p class="puzzle__prompt">{p["prompt"]}</p>' if p['prompt'] else ''}
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">{len(p['questions'])} ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / {len(p['questions'])}</span>
     </div>
   </header>
   {qa}
@@ -1694,7 +1852,7 @@ def main() -> None:
     build_home(home, texts, courses, stotras, prahelikas)
     build_about(home)
     build_stotras(stotras, stotra_details, home)
-    build_texts_index(texts, home)
+    build_texts_index(texts, home)   # populates TEXT_IMAGES for the pages below
     build_verse_corpus("hitopadesha", "hitopadesha", home)
     build_verse_corpus("subhashitas", "subhashitas", home)
     build_adhyayanam(home)

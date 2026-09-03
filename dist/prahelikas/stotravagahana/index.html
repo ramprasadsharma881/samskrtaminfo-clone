@@ -35,7 +35,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       </span>
     </a>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <ul><li><a href="../../">Home</a></li><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/" aria-current="page" class="telu">ప్రహేళికలు</a></li><li><a href="../../about/">About</a></li><li><a href="../../donate/">Donate</a></li></ul>
+      <ul><li><a href="../../">Home</a></li><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/" aria-current="page" class="telu">ప్రహేళికలు</a></li><li><a href="../../about/">About</a></li><li><a href="../../about/#contact">Contact</a></li><li><a href="../../donate/">Donate</a></li></ul>
     </nav>
     <div class="header-tools tools-anchor">
       <button class="icon-btn" data-prefs-toggle aria-expanded="false" aria-controls="prefs-panel" aria-label="Reading preferences" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg></button>
@@ -79,15 +79,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   <button class="field__clear" type="button" aria-label="Clear search" hidden>×</button>
 </div>
 <p class="result-count" id="puzzle-count" role="status" aria-live="polite"></p></div>
-    <div id="puzzle-list"><article class="puzzle" data-search>
+    <div id="puzzle-list"><article class="puzzle" data-search data-total="16">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.1</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.1</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి శ్రీచండికాస్తుతి స్తోత్రంలో పంక్తులను గుర్తించండి- <a href="https://sanskritdocuments.org/doc_devii/chaNDikAstutiH.html">https://sanskritdocuments.org/doc_devii/chaNDikAstutiH.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">16 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 16</span>
     </div>
   </header>
   <div class="qa">
@@ -203,15 +205,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: త్రివిధ-దుఃఖ-నిర్వాసికాం</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.2</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.2</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి కుండలినీస్తవ స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య. పంక్తుల క్రమం యథాతథం- <a href="https://sanskritdocuments.org/doc_devii/kuNDalinIstava.html">https://sanskritdocuments.org/doc_devii/kuNDalinIstava.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">12 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
   <div class="qa">
@@ -299,15 +303,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: సర్వసురేశ్వరః</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="15">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.3</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.3</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి ఆర్యాపంచదశీస్తోత్రం స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య. పంక్తుల క్రమం యథాతథం- <a href="https://sanskritdocuments.org/doc_devii/aaryaa15.html">https://sanskritdocuments.org/doc_devii/aaryaa15.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">15 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 15</span>
     </div>
   </header>
   <div class="qa">
@@ -416,15 +422,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: హ్రీంకారకేలిభవనే</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="16">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.4</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.4</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి శ్రీకాలికాష్టకం స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య- ముఖ్య గమనిక- అథ స్తుతిః అని ఉంటుంది- దాని కిందనుంచి లెక్కపెట్టండి- <a href="https://sanskritdocuments.org/doc_devii/kAlikAShTakam.html">https://sanskritdocuments.org/doc_devii/kAlikAShTakam.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">16 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 16</span>
     </div>
   </header>
   <div class="qa">
@@ -540,15 +548,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: అష్టసిద్ధిః</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.5</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.5</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి శ్రీకామాక్షీస్తోత్రం స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య- <a href="https://sanskritdocuments.org/doc_devii/kAmAkShIstotram4.html">https://sanskritdocuments.org/doc_devii/kAmAkShIstotram4.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">12 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
   <div class="qa">
@@ -636,15 +646,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: కల్పవల్లీముపాసే</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="15">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.6</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.6</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి మీనాక్షీ పంచరత్నం స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య- <a href="https://sanskritdocuments.org/doc_devii/miinaakshii5.html">https://sanskritdocuments.org/doc_devii/miinaakshii5.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">15 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 15</span>
     </div>
   </header>
   <div class="qa">
@@ -753,15 +765,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: కారుణ్యవారాంనిధిం</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.7</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.7</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి మహాగాయత్రీ స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య. పంక్తుల క్రమం యథాతథం- <a href="https://sanskritdocuments.org/doc_devii/mahAgAyatrilIlAstuti.html">https://sanskritdocuments.org/doc_devii/mahAgAyatrilIlAstuti.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">12 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
   <div class="qa">
@@ -849,15 +863,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: స్వతంత్రశక్తిరీశ్వరీ</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.8</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.8</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి ఈ అంబాష్టకం స్తోత్రంలో మాటలను గుర్తించండి- (పంక్తుల క్రమం యథాతథం) (కోష్టకాలలో చరణాల సంఖ్య) <a href="https://sanskritdocuments.org/doc_devii/ambAShTakam.html">https://sanskritdocuments.org/doc_devii/ambAShTakam.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">12 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
   <div class="qa">
@@ -945,15 +961,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: ఉదారనిలయా</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.9</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.9</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి ఈ దుర్గాచంద్రకలాస్తుతి స్తోత్రంలో పంక్తులను గుర్తించండి-(పంక్తుల క్రమం యథాతథం- కోష్టకాలలో శ్లోక సంఖ్య) <a href="https://sanskritdocuments.org/doc_devii/durgAchandra.html">https://sanskritdocuments.org/doc_devii/durgAchandra.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">12 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
   <div class="qa">
@@ -1041,15 +1059,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: సన్ధ్యయోరనుసన్ధేయా</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.10</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.10</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి ఈ గిరిజాదశకస్తోత్రంలో పంక్తులను గుర్తించండి-(పంక్తుల క్రమం యథాతథం) <a href="https://sanskritdocuments.org/doc_devii/annapUrNAstotram.html">https://sanskritdocuments.org/doc_devii/annapUrNAstotram.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">12 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
   <div class="qa">
@@ -1137,15 +1157,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: కారుణ్యపూర్ణనయనే</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.11</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.11</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">సూచనలను బట్టి లలితాసహస్రనామస్తోత్రంలో (37 నుండి 42 వరకు) ఈ నామాలను గుర్తించండి-(పంక్తుల క్రమం యథాతథం) <a href="https://sanskritdocuments.org/doc_devii/lalitacomplete.html">https://sanskritdocuments.org/doc_devii/lalitacomplete.html</a></p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">12 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
   <div class="qa">
@@ -1233,15 +1255,17 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
   <p class="qa__a telu" hidden>స: శరచ్చంద్రనిభాననా</p>
 </div>
-</article><article class="puzzle" data-search>
+</article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
-    <h2 class="puzzle__name">ప్రహేళిక 1.12</h2>
-    <p class="puzzle__author">సంకా ఉషారాణి</p>
+    <div class="puzzle__title">
+      <h2 class="puzzle__name">ప్రహేళిక 1.12</h2>
+      <p class="puzzle__author">సంకా ఉషారాణి</p>
+    </div>
     <p class="puzzle__prompt">ఈ స్తోత్రంలో పదాలను సూచనవాక్యం ద్వారా గుర్తు పట్టండి-</p>
-    <div class="cluster" style="margin-top:.85rem">
+    <div class="puzzle__bar">
       <button class="btn btn--ghost btn--sm telu" type="button" data-reveal-all aria-pressed="false"
               data-label-show="ఈ ప్రహేళిక అన్ని సమాధానాలు" data-label-hide="సమాధానాలు దాచు">ఈ ప్రహేళిక అన్ని సమాధానాలు</button>
-      <span class="badge">12 ప్రశ్నలు</span>
+      <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
   <div class="qa">
@@ -1352,6 +1376,12 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <div>
         <h4>Useful links</h4>
         <ul><li><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank">Facebook</a></li><li><a href="https://www.pinterest.com/" rel="noopener" target="_blank">Pinterest</a></li><li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank">Youtube</a></li><li><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank">Instagram</a></li><li><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank">Twitter</a></li></ul>
+      </div>
+      <div>
+        <h4>Announced</h4>
+        <ul><li><span class="footer-soon">Songs</span></li><li><span class="footer-soon">Articles</span></li><li><span class="footer-soon">Worker Links</span></li><li><span class="footer-soon">Blogs</span></li><li><span class="footer-soon">FAQs</span></li></ul>
+        <p style="font-size:.82rem;margin-top:.9rem">Listed on the school's menu,
+          not yet published.</p>
       </div>
       <div>
         <h4>Get in touch</h4>
