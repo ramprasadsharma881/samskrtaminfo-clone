@@ -1,0 +1,62 @@
+[
+ {
+  "title": "Sloka Explanation",
+  "items": [
+   {
+    "href": "hitopadesha.php",
+    "title": "हितोपदेश-सुभाषित-श्लोकाः",
+    "image": "images/Hitopadesa.jpg"
+   },
+   {
+    "href": "subhashitas.php",
+    "title": "सुभाषितदैनन्दिनम्",
+    "image": "images/Subhaashitas.jpg"
+   },
+   {
+    "href": "hitopadesha-adhyayana.php",
+    "title": "हितोपदेश-अध्ययनम्",
+    "image": "images/hitopadesa_adhyayanam.jpg"
+   }
+  ]
+ },
+ {
+  "title": "RESOURCES",
+  "items": [
+   {
+    "href": "dhatupathah.php",
+    "title": "धातुपाठविस्तरः",
+    "image": "images/Dhatupatha.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Anvayas",
+  "items": [
+   {
+    "href": "raamayan.php",
+    "title": "श्रीमद्रामायण-विषयाणामनुक्रमणिका",
+    "image": "images/Raamaayan.jpg"
+   },
+   {
+    "href": "gita.php",
+    "title": "श्रीमद्भगवद्गीतान्वयः",
+    "image": "images/Gita.jpg"
+   },
+   {
+    "href": "sulakshana.php",
+    "title": "सुलक्षणाचरितम्",
+    "image": "images/Sulakshana.jpg"
+   },
+   {
+    "href": "saritsaagara.php",
+    "title": "सरित्सागरसंवादः",
+    "image": "images/Saritsaagara.jpg"
+   },
+   {
+    "href": "vishnu.php",
+    "title": "विष्णुसहस्रनामान्त-फलश्रुतिः",
+    "image": "images/VishnuSahasra.jpg"
+   }
+  ]
+ }
+]

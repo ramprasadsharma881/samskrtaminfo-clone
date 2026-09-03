@@ -1,0 +1,74 @@
+{
+ "title": "Samskrtam - Home",
+ "meta_description": "Learn Sanskrit (Samskrta). To read, write, understand treatises like Srimadramayana, Mahabhaarata and other books",
+ "welcome": {
+  "sanskrit": "नमस्ते\nसंस्कृत जगत् में आपका स्वागत है।\nक्या आप संस्कृत सीखना चाहते हैं? सही तरीके न जानने से हैं परेशान?\nतो यहाँ प्रयत्न कीजिये। हमारी पूरी कोशिश है कि आप संस्कृत में पारंगत हों।\nक्या श्रीमद्रमायण महाभारत को स्रोत को ही पढ़ना और समझना है?\nक्या आप स्वयं संस्कृत में कुछ लिखना चाहते हैं? क्या आप पुराणों को पढ़ना और पद्यों को पढ़ना\nऔर स्पष्ट रूप से समझना चाहते हैं? क्या आप उचित उच्चारण के साथ स्तोत्र पढ़ना सीखना चाहते हैं?\nतो आप सही स्थान पर हैं।\nसंस्कृति और परंपराओं को संरक्षित करने के उद्देश्य से संस्कृत का अध्ययन करने के लिए स्थापित इस स्वर्वाणीप्रकाश-सेवा\nनिकुंजम् पाठशाला में आपका स्वागत है। यदि आप हमारे बारे में अधिक जानना चाहते हैं तो आप यहां देख सकतेहैं।\nसफलतासिद्धिरस्तु। भाषाज्ञानानुग्रहप्राप्तिरस्तु",
+  "telugu": "నమస్కారం\nసంస్కృత జగత్తులోకి స్వాగతం.\nసంస్కృతభాష నేర్చుకోవాలనుకుంటున్నారా? సరైన మార్గాలు తెలియక ఇబ్బంది పడుతున్నారా?\nఒక్కసారి ఇక్కడ ప్రయత్నించండి. మీరు సంస్కృతంలో నిష్ణాతులు కావటానికే మా ఈ ప్రయత్నమంతా.\nశ్రీమద్రామాయణ-భారతాదులు మూలంతో చదివి స్వయంగా అర్థం చేసుకోవాలని ఉన్నదా?\nస్వయంగా సంస్కృతంలో ఏదైనా వ్రాయాలని ఉన్నదా?పురాణాలు చదివి శ్లోకాలు చదివి స్పష్టంగా అర్థం చేసుకోవాలని\nఉన్నదా? స్తోత్రాలను చదవటం సరైన ఉచ్చారణతో నేర్చుకోవాలని పట్టుదలతో ఉన్నారా?అయితే మీరు సరైన చోటే ఉన్నారు.\nసంస్కృతి సనాతనధర్మాల రక్షణే ఉద్దేశ్యంగా సంస్కృతాధ్యయనం చేసుకునేందుకు ఏర్పరచిన ఈ స్వర్వాణీప్రకాశ-సేవానికుంజం\nపాఠశాలకుమీ అందరికీ స్వాగతం. మా గురించి మరింత తెలుసుకోవాలనుకుంటే ఇక్కడ చూడగలరు. సఫలతాసిద్ధిరస్తు.\nభాషాజ్ఞానానుగ్రహప్రాప్తిరస్తు.",
+  "english": "Namaste\nWelcome to the Samskrta world.\nWant to learn Samskrta? Troubled by not knowing the right ways? Give it a try here.\nAll our efforts are for you to become proficient in Samskrta.\nDo you wish to read Srimadramayana, Mahabhaarata and understand the source directly itself?\nDo you want to write anything in Samskrta by yourself?\nDo you want to read the Puranas and read the verses and understand clearly?\nAre you persevering to learn to read stotras with proper pronunciation?\nThen, you are in the right place.\nWelcome to this Swarvaniprakasha-Sevanikunjam - land of Learning, which was set up to study Samskrta\nwith the aim of preserving the culture and traditions.\nIf you want to know more about us you can see here.\nWe wish you Success. bhāṣājñānānugrahaprāptirastu."
+ },
+ "videos": [
+  {
+   "title": "WELCOME VIDEO",
+   "youtube": "98diCJvU1uU"
+  },
+  {
+   "title": "notice board",
+   "youtube": "98diCJvU1uU"
+  }
+ ],
+ "tiles": [
+  {
+   "image": "images/Stotras.JPG",
+   "href": "stotras.php",
+   "label": "Stotras"
+  },
+  {
+   "image": "images/Songs.JPG",
+   "href": "#",
+   "label": "Songs"
+  },
+  {
+   "image": "images/Text.JPG",
+   "href": "texts.php",
+   "label": "Text"
+  },
+  {
+   "image": "images/Lessons.JPG",
+   "href": "courses.php",
+   "label": "Lessons"
+  },
+  {
+   "image": "images/Interesting.JPG",
+   "href": "#",
+   "label": "Interesting"
+  },
+  {
+   "image": "images/faqs.JPG",
+   "href": "#",
+   "label": "faqs"
+  }
+ ],
+ "social": [
+  {
+   "name": "facebook",
+   "href": "https://www.facebook.com/svarvaniprakash"
+  },
+  {
+   "name": "pinterest",
+   "href": "https://www.pinterest.com/"
+  },
+  {
+   "name": "youtube",
+   "href": "https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured"
+  },
+  {
+   "name": "instagram",
+   "href": "https://www.instagram.com/svarvani24/"
+  },
+  {
+   "name": "twitter",
+   "href": "https://twitter.com/SvarvaniS"
+  }
+ ],
+ "contact": ""
+}

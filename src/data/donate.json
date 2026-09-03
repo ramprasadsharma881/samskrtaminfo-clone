@@ -1,0 +1,22 @@
+{
+ "title": "Namaste",
+ "paragraphs": [
+  "Being a Samskrtam worker is a past-life punya. To learn her is a great happiness. If you like this work for Samskrta cause, if you are benefitted any way with our site material and want to support us - please donate. Every rupee will be used for a good purpose.",
+  "Please follow the below steps and use one of the three donation options to make the donation.",
+  "1. Please take a photo of any one image (any option of your choice).\n 2. Then it prompts to enter the amount with my name - S Usha Rani.\n 3. Please enter the amount (anything that you wish) and proceed.\n 4. Then when prompted, please enter your transaction pin and confirm the pay.\n 5. After the confirmation with a tick and a success sound, please send the image to my number on WApp.\n 6. Ours is not a registered institute yet; but still a thankful acknowlegement will be provided over WApp."
+ ],
+ "options": [
+  {
+   "label": "Google Pay",
+   "image": "images/GPay2.jpeg"
+  },
+  {
+   "label": "Phone Pay",
+   "image": "images/PhonePe2.jpeg"
+  },
+  {
+   "label": "PayTM",
+   "image": "images/Paytm4.jpeg"
+  }
+ ]
+}

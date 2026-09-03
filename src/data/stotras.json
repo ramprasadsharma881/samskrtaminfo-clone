@@ -1,0 +1,54 @@
+[
+ {
+  "slug": "narasimha-mantraraja-pada-stotram",
+  "title": "Narasimha Mantraraja Pada Stotram",
+  "keywords": [
+   "narasimha",
+   "mantraraja",
+   "pada"
+  ],
+  "detail": "stotra.php?id=1",
+  "versions": [
+   {
+    "script": "devanagari",
+    "label": "Narasimha Mantraraja Pada Stotram- Devanagari",
+    "youtube": "w5bx1bYzArE"
+   },
+   {
+    "script": "telugu",
+    "label": "Narasimha Mantraraja Pada Stotram- Devanagari Telugu",
+    "youtube": "87EDqz84pC0"
+   },
+   {
+    "script": "iast",
+    "label": "Narasimha Mantraraja Pada Stotram- Devanagari IAST",
+    "youtube": "QB-yshy8REk"
+   }
+  ]
+ },
+ {
+  "slug": "totakashtakam",
+  "title": "Totakashtakam",
+  "keywords": [
+   "totakashtakam"
+  ],
+  "detail": "stotra.php?id=2",
+  "versions": [
+   {
+    "script": "devanagari",
+    "label": "Totakashtakam- Devanagari",
+    "youtube": "ztRmo2T9Rvg"
+   },
+   {
+    "script": "telugu",
+    "label": "Totakashtakam- Devanagari Telugu",
+    "youtube": "q4rTTi3BrC0"
+   },
+   {
+    "script": "iast",
+    "label": "Totakashtakam- Devanagari IAST",
+    "youtube": "Ki8USTSmo1Y"
+   }
+  ]
+ }
+]

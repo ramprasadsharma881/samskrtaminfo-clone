@@ -1,0 +1,275 @@
+[
+ {
+  "key": "suravani",
+  "title": "सुरवाणीविलासः SURAVANI VILAASAH",
+  "image": "images/Suravani-Tel-WS.jpg",
+  "keywords": [
+   "suravani",
+   "सुरवाणीविलासः"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=suravani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=suravani"
+   },
+   {
+    "lang": "english",
+    "label": "ENGLISH",
+    "href": "course.php?lang=english&name=suravani"
+   }
+  ]
+ },
+ {
+  "key": "dyushadvani",
+  "title": "DYUSHADVANIVILASAH",
+  "image": "images/DyushadVani-Main-WS.jpg",
+  "keywords": [
+   "dyushadvani"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=dyushadvani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=dyushadvani"
+   },
+   {
+    "lang": "english",
+    "label": "ENGLISH",
+    "href": "course.php?lang=english&name=dyushadvani"
+   }
+  ]
+ },
+ {
+  "key": "amaravani",
+  "title": "AMARAVANIVILASA",
+  "image": "images/amaravani.jpg",
+  "keywords": [
+   "amaravani"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=amaravani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=amaravani"
+   }
+  ]
+ },
+ {
+  "key": "amaravanistotra",
+  "title": "AMARAVANIVILASA-STOTRAS",
+  "image": "images/amaravani stotra.jpg",
+  "keywords": [
+   "amaravani"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=amaravanistotra"
+   }
+  ]
+ },
+ {
+  "key": "devavani",
+  "title": "DEVAVANI-VILASAH",
+  "image": "images/Devavani-Main-WS.jpg",
+  "keywords": [
+   "devavani"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=devavani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=devavani"
+   }
+  ]
+ },
+ {
+  "key": "girvanavani",
+  "title": "GIRVANAVANIVILASAH",
+  "image": "images/girvanavani.jpg",
+  "keywords": [
+   "girvanavani"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=girvanavani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=girvanavani"
+   },
+   {
+    "lang": "english",
+    "label": "ENGLISH",
+    "href": "course.php?lang=english&name=girvanavani"
+   }
+  ]
+ },
+ {
+  "key": "ribhuvani",
+  "title": "RIBHUVANI-VILASAH",
+  "image": "images/ribhuvani.jpg",
+  "keywords": [
+   "ribhuvani"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=ribhuvani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=ribhuvani"
+   },
+   {
+    "lang": "english",
+    "label": "ENGLISH",
+    "href": "course.php?lang=english&name=ribhuvani"
+   }
+  ]
+ },
+ {
+  "key": "panini",
+  "title": "Paniniya Praveshini",
+  "image": "images/Panini-Main-WS.jpg",
+  "keywords": [
+   "paniniya",
+   "पाणिनीयप्रवेशिनी",
+   "పాణినీయప్రవేశినీ"
+  ],
+  "languages": [
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=panini"
+   }
+  ]
+ },
+ {
+  "key": "suparvanavani",
+  "title": "Suparvanavani",
+  "image": "images/suparvanavani.jpg",
+  "keywords": [
+   "suparvanavani",
+   "सुपर्वणवाणि",
+   "సుపర్వణవాణి"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=suparvanavani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=suparvanavani"
+   }
+  ]
+ },
+ {
+  "key": "vibudhavani",
+  "title": "Vibudhavani",
+  "image": "images/vibudhavani.jpg",
+  "keywords": [
+   "vibudhavani",
+   "विबुधवाणि",
+   "విబుధవాణి"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=vibudhavani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=vibudhavani"
+   }
+  ]
+ },
+ {
+  "key": "sumanovani",
+  "title": "Sumanovani",
+  "image": "images/sumanovani.jpg",
+  "keywords": [
+   "sumanovani",
+   "सुमनोवाणि",
+   "సుమనోవాణి"
+  ],
+  "languages": [
+   {
+    "lang": "hindi",
+    "label": "हिन्दी",
+    "href": "course.php?lang=hindi&name=sumanovani"
+   },
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=sumanovani"
+   }
+  ]
+ },
+ {
+  "key": "amarakosa",
+  "title": "Amarakosha",
+  "image": "images/amarakosa.jpg",
+  "keywords": [
+   "amarakosha",
+   "अमरकोश",
+   "అమరకోశ"
+  ],
+  "languages": [
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=amarakosa"
+   }
+  ]
+ },
+ {
+  "key": "amarakosa",
+  "title": "Devavan",
+  "image": "images/amarakosa.jpg",
+  "keywords": [
+   "amarakosha",
+   "अमरकोश",
+   "అమరకోశ"
+  ],
+  "languages": [
+   {
+    "lang": "telugu",
+    "label": "తెలుగు",
+    "href": "course.php?lang=telugu&name=amarakosa"
+   }
+  ]
+ }
+]
