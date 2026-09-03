@@ -445,19 +445,44 @@
   }
 
   /* ===================================================================== */
+  /* Anchor offset — the sticky header and the sticky register toolbar vary in
+     height per page, so measure them rather than hard-coding a value.        */
+  /* ===================================================================== */
+  function syncScrollPadding() {
+    var header = $(".site-header");
+    var toolbar = $(".toolbar");
+    var offset = (header ? header.offsetHeight : 0) + (toolbar ? toolbar.offsetHeight : 0) + 14;
+    document.documentElement.style.scrollPaddingTop = offset + "px";
+    return offset;
+  }
+
+  /* ===================================================================== */
   /* Deep-link flash: /texts/hitopadesha/#v-1.42 highlights that verse      */
   /* ===================================================================== */
   function initHashFlash() {
-    function flash() {
+    function flash(realign) {
       var id = location.hash.slice(1);
       if (!id) return;
       var el = document.getElementById(id);
       if (!el) return;
       el.classList.add("is-flash");
       setTimeout(function () { el.classList.remove("is-flash"); }, 2400);
+
+      /* `content-visibility: auto` means the browser sizes off-screen entries
+         from an estimate, so the initial jump to a deep anchor lands short.
+         Re-align once the real geometry is known. */
+      if (realign) {
+        /* Fonts load after first paint and reflow the verse above the target,
+           so nudge the alignment once the layout has settled. */
+        var settle = function () { el.scrollIntoView({ block: "start", behavior: "auto" }); };
+        requestAnimationFrame(settle);
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(settle);
+      }
     }
-    window.addEventListener("hashchange", flash);
-    flash();
+    syncScrollPadding();
+    window.addEventListener("resize", syncScrollPadding, { passive: true });
+    window.addEventListener("hashchange", function () { flash(true); });
+    flash(true);
   }
 
   /* ===================================================================== */

@@ -149,6 +149,20 @@ assistive technology, and remembered between visits:
 
 ---
 
+## Screenshots
+
+`preview/` carries a rendered walkthrough — home, texts, a verse corpus with its
+register toolbar, the dhātu table, a course, the prahelikās, the Gītā, dark mode,
+the IAST conversion, and the three mobile views.
+
+| | |
+|---|---|
+| ![Home](preview/01-home.png) | ![Text contents](preview/03-texts.png) |
+| ![Hitopadeśa](preview/04-hitopadesha.png) | ![Dark mode](preview/11-dark.png) |
+| ![IAST conversion](preview/12-iast-dark.png) | ![Prahelikās](preview/07-prahelikas.png) |
+
+---
+
 ## Notes for whoever picks this up
 
 - `original-site/` is the reference. Never edit it — re-run `tools/extract.py` instead, so the

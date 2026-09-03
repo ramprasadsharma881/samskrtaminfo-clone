@@ -96,6 +96,8 @@
   --wrap: 1180px;
   --wrap-narrow: 820px;
   --header-h: 68px;
+  /* header row + 2px accent rule + 1px border — what sticky elements must clear */
+  --sticky-top: 71px;
 }
 
 :root[data-theme="dark"] {
@@ -188,7 +190,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-h) + 16px);
+  scroll-padding-top: calc(var(--sticky-top) + 16px);
   -webkit-text-size-adjust: 100%;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -292,7 +294,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 560px) { .wrap, .wrap-narrow { width: calc(100% - 1.75rem); } }
 
 .section { padding-block: clamp(2.5rem, 5vw, 4.5rem); }
-.section--tight { padding-block: clamp(1.75rem, 3vw, 2.75rem); }
+.section--tight { padding-block: clamp(1.5rem, 2.5vw, 2.25rem) clamp(1rem, 2vw, 1.75rem); }
 
 .grid { display: grid; gap: clamp(1rem, 2vw, 1.6rem); }
 .grid--3 { grid-template-columns: repeat(auto-fill, minmax(285px, 1fr)); }
@@ -309,7 +311,7 @@ p { margin: 0 0 1em; }
   position: sticky;
   top: 0;
   z-index: 60;
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  background: color-mix(in srgb, var(--paper) 96%, transparent);
   backdrop-filter: saturate(1.5) blur(14px);
   border-bottom: 1px solid var(--line);
 }
@@ -409,13 +411,13 @@ p { margin: 0 0 1em; }
   .nav-toggle { display: inline-grid; }
   .nav {
     position: fixed;
-    inset: var(--header-h) 0 auto 0;
+    inset: var(--sticky-top) 0 auto 0;
     background: var(--surface);
     border-bottom: 1px solid var(--line);
     box-shadow: var(--shadow-2);
     padding: 0.75rem 1.25rem 1.25rem;
     display: none;
-    max-height: calc(100dvh - var(--header-h));
+    max-height: calc(100dvh - var(--sticky-top));
     overflow-y: auto;
   }
   .nav[data-open="true"] { display: block; }
@@ -512,6 +514,9 @@ p { margin: 0 0 1em; }
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
+a.card, a.card:hover { text-decoration: none; color: inherit; }
+a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
+.card--link:hover .card__title { color: var(--saffron-600); }
 .card--link:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-2);
@@ -708,9 +713,9 @@ p { margin: 0 0 1em; }
    -------------------------------------------------------------------------- */
 .toolbar {
   position: sticky;
-  top: var(--header-h);
+  top: var(--sticky-top);
   z-index: 40;
-  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  background: color-mix(in srgb, var(--paper) 97%, transparent);
   backdrop-filter: blur(12px) saturate(1.4);
   border-bottom: 1px solid var(--line);
   padding-block: 0.7rem;
@@ -729,10 +734,40 @@ p { margin: 0 0 1em; }
 .toolbar__inner > .cluster { align-items: center; }
 .toolbar__search { min-width: min(290px, 42vw); }
 .toolbar__search .result-count { display: none; }
+/* On a phone a wrapped seven-chip row ate a third of the viewport; scroll it
+   sideways instead so the toolbar stays two compact rows. */
+@media (max-width: 760px) {
+  .toolbar .chip-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding-block: 2px;
+    margin-inline: -0.2rem;
+    padding-inline: 0.2rem;
+  }
+  .toolbar .chip-row::-webkit-scrollbar { display: none; }
+  .toolbar .chip { flex: 0 0 auto; }
+}
 @media (max-width: 900px) {
   .toolbar__inner { grid-template-columns: 1fr; }
   .toolbar__inner > * { grid-column: 1 !important; justify-self: stretch !important; }
   .toolbar__search { min-width: 0; }
+}
+/* Keep the sticky toolbar to two rows on a phone: the "Show" label is implied
+   by the chips, and the actions sit beside the search field. */
+@media (max-width: 760px) {
+  .toolbar__inner > .toolbar__label { display: none; }
+  .toolbar__inner { gap: 0.5rem; }
+  .toolbar__inner > .cluster {
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    gap: 0.4rem;
+    align-items: center;
+  }
+  .toolbar__inner > .cluster > .toolbar__search { min-width: 0; }
+  .toolbar .field { padding-left: 0.75rem; }
+  .toolbar .field input { padding-block: 0.5rem; font-size: 0.92rem; }
 }
 .toolbar__label {
   font-family: var(--font-sans);
@@ -751,8 +786,6 @@ p { margin: 0 0 1em; }
   margin-bottom: 1.1rem;
   overflow: hidden;
   box-shadow: var(--shadow-1);
-  content-visibility: auto;
-  contain-intrinsic-size: auto 320px;
 }
 .verse__head {
   display: flex;
@@ -840,8 +873,6 @@ p { margin: 0 0 1em; }
   padding: 1.3rem 1.5rem;
   margin-bottom: 1.25rem;
   box-shadow: var(--shadow-1);
-  content-visibility: auto;
-  contain-intrinsic-size: auto 420px;
 }
 .scroll-block h3 { color: var(--teal); font-family: var(--font-deva); margin-bottom: 0.8rem; }
 .scroll-block pre {
@@ -892,8 +923,6 @@ details.expander[open] > summary { margin-bottom: 0.9rem; }
   background: var(--surface);
   margin-bottom: 1rem;
   box-shadow: var(--shadow-1);
-  content-visibility: auto;
-  contain-intrinsic-size: auto 260px;
 }
 .speech[data-speaker="krishna"] { --sp: #1e5fa8; }
 .speech[data-speaker="arjuna"] { --sp: #b8322f; }
@@ -1056,8 +1085,6 @@ table.data tr[hidden] { display: none; }
   padding: 1.3rem 1.5rem 1.5rem;
   margin-bottom: 1.3rem;
   box-shadow: var(--shadow-1);
-  content-visibility: auto;
-  contain-intrinsic-size: auto 480px;
 }
 .puzzle__head { border-bottom: 1px solid var(--line); padding-bottom: 0.85rem; margin-bottom: 1rem; }
 .puzzle__name { font-family: var(--font-telu); color: var(--indigo); font-size: var(--step-1); margin: 0 0 0.2rem; }

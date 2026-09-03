@@ -1220,7 +1220,7 @@ def build_lessons(courses: list, details: list, home: dict) -> None:
             pdf = lesson.get("pdf", "")
             if pdf and media_exists(pdf):
                 actions += (
-                    f'<a class="btn btn--ghost btn--sm" href="../../assets/{asset(pdf)}" download>'
+                    f'<a class="btn btn--ghost btn--sm" href="../../{asset(pdf)}" download>'
                     f'{icon("pdf")} Worksheet</a>'
                 )
             rows += f"""<div class="lesson" data-search>
