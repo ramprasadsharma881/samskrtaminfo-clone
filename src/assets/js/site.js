@@ -300,10 +300,23 @@
       .replace(/[\u0300-\u036f]/g, "");
   }
 
+  /* scope element -> its re-filter function, so the facet chips can drive the
+     same pass as the search box instead of fighting it over `hidden` */
+  var filterRuns = [];
+
+  function facetsMatch(el, facets) {
+    for (var key in facets) {
+      if (!facets[key]) continue;
+      if (el.getAttribute("data-facet-" + key) !== facets[key]) return false;
+    }
+    return true;
+  }
+
   function initFilters() {
     $$("[data-filter-input]").forEach(function (input) {
       var scope = document.getElementById(input.getAttribute("data-filter-input"));
       if (!scope) return;
+      if (!scope.svpFacets) scope.svpFacets = {};
       var items = $$("[data-search]", scope);
       var counter = document.getElementById(input.getAttribute("data-filter-count") || "");
       var clear = input.parentElement && $(".field__clear", input.parentElement);
@@ -323,14 +336,20 @@
       }
 
       function run() {
-        var q = normalise(input.value.trim());
+        var raw = input.value.trim();
+        var q = normalise(raw);
         var shown = 0;
         var hay = q ? index() : null;
+        var toMark = [];
         for (var i = 0; i < items.length; i++) {
-          var hit = !q || hay[i].indexOf(q) > -1;
+          var hit = (!q || hay[i].indexOf(q) > -1) && facetsMatch(items[i], scope.svpFacets);
           items[i].hidden = !hit;
-          if (hit) shown++;
+          if (hit) {
+            shown++;
+            if (toMark.length < 200) toMark.push(items[i]);
+          }
         }
+        if (scope.hasAttribute("data-highlight")) highlight(scope, toMark, raw);
         if (counter) {
           counter.textContent = q
             ? shown + " of " + items.length + " match “" + input.value.trim() + "”"
@@ -340,6 +359,8 @@
         var empty = $("[data-empty]", scope);
         if (empty) empty.hidden = shown !== 0;
       }
+
+      filterRuns.push({ scope: scope, run: run });
 
       var t;
       input.addEventListener("input", function () {
@@ -354,6 +375,196 @@
         });
       }
       run();
+    });
+  }
+
+  /* ===================================================================== */
+  /* Search highlighting                                                    */
+  /* Wraps literal matches in <mark> inside the rows that survived the       */
+  /* filter, and unwraps them cleanly on the next pass.                     */
+  /* ===================================================================== */
+  var marked = [];
+
+  function clearMarks() {
+    var parents = [];
+    marked.forEach(function (m) {
+      if (!m.parentNode) return;
+      parents.push(m.parentNode);
+      m.parentNode.replaceChild(document.createTextNode(m.textContent), m);
+    });
+    parents.forEach(function (p) { p.normalize(); });
+    marked = [];
+  }
+
+  function highlight(scope, items, raw) {
+    clearMarks();
+    var needle = (raw || "").toLowerCase();
+    if (needle.length < 2) return;
+
+    items.forEach(function (item) {
+      var walker = document.createTreeWalker(item, NodeFilter.SHOW_TEXT, {
+        acceptNode: function (node) {
+          var p = node.parentNode;
+          if (!p || p.nodeName === "MARK" || p.nodeName === "SCRIPT") return NodeFilter.FILTER_REJECT;
+          return node.nodeValue.toLowerCase().indexOf(needle) > -1
+            ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        }
+      });
+      var nodes = [];
+      var n;
+      while ((n = walker.nextNode())) nodes.push(n);
+
+      nodes.forEach(function (node) {
+        var text = node.nodeValue;
+        var lower = text.toLowerCase();
+        var frag = document.createDocumentFragment();
+        var from = 0;
+        var at;
+        while ((at = lower.indexOf(needle, from)) > -1) {
+          if (at > from) frag.appendChild(document.createTextNode(text.slice(from, at)));
+          var m = document.createElement("mark");
+          m.textContent = text.slice(at, at + needle.length);
+          frag.appendChild(m);
+          marked.push(m);
+          from = at + needle.length;
+        }
+        if (from < text.length) frag.appendChild(document.createTextNode(text.slice(from)));
+        node.parentNode.replaceChild(frag, node);
+      });
+    });
+  }
+
+  /* ===================================================================== */
+  /* Facet chips (gaṇa on the dhātupāṭha)                                   */
+  /* ===================================================================== */
+  function initFacets() {
+    $$("[data-facets]").forEach(function (bar) {
+      var scope = document.getElementById(bar.getAttribute("data-facets"));
+      if (!scope) return;
+      if (!scope.svpFacets) scope.svpFacets = {};
+      var buttons = $$("[data-facet]", bar);
+
+      buttons.forEach(function (b) {
+        b.addEventListener("click", function () {
+          var name = b.getAttribute("data-facet");
+          var value = b.getAttribute("data-facet-value") || "";
+          scope.svpFacets[name] = value;
+          buttons.forEach(function (x) {
+            if (x.getAttribute("data-facet") !== name) return;
+            x.setAttribute("aria-pressed",
+              String((x.getAttribute("data-facet-value") || "") === value));
+          });
+          filterRuns.forEach(function (f) { if (f.scope === scope) f.run(); });
+        });
+      });
+    });
+  }
+
+  /* ===================================================================== */
+  /* Recitation player                                                      */
+  /* The browser's default widget is a grey slab. Students need a transport, */
+  /* a half-speed setting to chant along with, and a loop to memorise by.    */
+  /* ===================================================================== */
+  var SVG = {
+    play: '<svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M7 4l13 8-13 8z"/></svg>',
+    pause: '<svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path d="M7 4h4v16H7zM13 4h4v16h-4z"/></svg>',
+    loop: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>'
+  };
+
+  function clock(seconds) {
+    if (!isFinite(seconds)) return "--:--";
+    var m = Math.floor(seconds / 60);
+    var s = Math.floor(seconds % 60);
+    return m + ":" + (s < 10 ? "0" : "") + s;
+  }
+
+  function initPlayers() {
+    var all = [];
+
+    $$('.layer[data-layer="audio"] audio').forEach(function (audio) {
+      var host = audio.parentNode;
+      if (!host) return;
+
+      var wrap = document.createElement("div");
+      wrap.className = "player";
+      wrap.innerHTML =
+        '<button class="player__play" type="button" aria-label="Play recitation">' +
+          SVG.play + SVG.pause +
+        '</button>' +
+        '<div class="player__bar" role="slider" tabindex="0" aria-label="Seek"' +
+        ' aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="player__fill"></div></div>' +
+        '<span class="player__time">--:--</span>' +
+        '<div class="player__opts">' +
+          '<button class="player__opt" type="button" data-speed aria-pressed="false"' +
+          ' aria-label="Half speed for learning">0.75&times;</button>' +
+          '<button class="player__opt" type="button" data-loop aria-pressed="false"' +
+          ' aria-label="Loop this verse">' + SVG.loop + '</button>' +
+        '</div>';
+
+      host.insertBefore(wrap, audio);
+      audio.classList.add("player__native");
+      audio.removeAttribute("controls");
+      wrap.appendChild(audio);
+      all.push(audio);
+
+      var playBtn = $(".player__play", wrap);
+      var bar = $(".player__bar", wrap);
+      var fill = $(".player__fill", wrap);
+      var time = $(".player__time", wrap);
+      var speed = $("[data-speed]", wrap);
+      var loop = $("[data-loop]", wrap);
+
+      function paint() {
+        var pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+        fill.style.width = pct + "%";
+        bar.setAttribute("aria-valuenow", String(Math.round(pct)));
+        time.textContent = audio.duration
+          ? clock(audio.duration - audio.currentTime)
+          : "--:--";
+      }
+
+      playBtn.addEventListener("click", function () {
+        if (audio.paused) {
+          all.forEach(function (other) { if (other !== audio) other.pause(); });
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      });
+      audio.addEventListener("play", function () {
+        wrap.setAttribute("data-playing", "true");
+        playBtn.setAttribute("aria-label", "Pause recitation");
+      });
+      audio.addEventListener("pause", function () {
+        wrap.setAttribute("data-playing", "false");
+        playBtn.setAttribute("aria-label", "Play recitation");
+      });
+      audio.addEventListener("timeupdate", paint);
+      audio.addEventListener("loadedmetadata", paint);
+      audio.addEventListener("ended", paint);
+
+      function seek(clientX) {
+        var box = bar.getBoundingClientRect();
+        var ratio = Math.min(1, Math.max(0, (clientX - box.left) / box.width));
+        if (audio.duration) audio.currentTime = ratio * audio.duration;
+      }
+      bar.addEventListener("click", function (ev) { seek(ev.clientX); });
+      bar.addEventListener("keydown", function (ev) {
+        if (!audio.duration) return;
+        if (ev.key === "ArrowRight") { audio.currentTime = Math.min(audio.duration, audio.currentTime + 5); ev.preventDefault(); }
+        if (ev.key === "ArrowLeft") { audio.currentTime = Math.max(0, audio.currentTime - 5); ev.preventDefault(); }
+      });
+
+      speed.addEventListener("click", function () {
+        var slow = speed.getAttribute("aria-pressed") !== "true";
+        audio.playbackRate = slow ? 0.75 : 1;
+        speed.setAttribute("aria-pressed", String(slow));
+      });
+      loop.addEventListener("click", function () {
+        var on = loop.getAttribute("aria-pressed") !== "true";
+        audio.loop = on;
+        loop.setAttribute("aria-pressed", String(on));
+      });
     });
   }
 
@@ -453,6 +664,8 @@
     var toolbar = $(".toolbar");
     var offset = (header ? header.offsetHeight : 0) + (toolbar ? toolbar.offsetHeight : 0) + 14;
     document.documentElement.style.scrollPaddingTop = offset + "px";
+    /* the dhātu table's column heads stick just below the same chrome */
+    document.documentElement.style.setProperty("--sticky-total", (offset - 14) + "px");
     return offset;
   }
 
@@ -522,6 +735,8 @@
     initSpeakers();
     initScripts();
     initFilters();
+    initFacets();
+    initPlayers();
     initPuzzles();
     initVideos();
     initProgress();

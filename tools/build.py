@@ -86,6 +86,105 @@ def rel(depth: int) -> str:
     return "../" * depth if depth else ""
 
 
+DEVA_DIGITS = str.maketrans("0123456789", "०१२३४५६७८९")
+
+
+def deva_num(text: str) -> str:
+    """Verse numbers are set in Devanagari numerals, as a scribe would."""
+    return str(text).translate(DEVA_DIGITS)
+
+
+def unique_ids(prefix: str):
+    """Anchor-id allocator.
+
+    The school's numbering repeats in a few places (two verses numbered ०२४,
+    a duplicated ११५१). The displayed folio number stays exactly as written;
+    only the anchor gets a disambiguating suffix, so every verse remains
+    reachable by link.
+    """
+    seen: dict[str, int] = {}
+
+    def make(raw: str) -> str:
+        base = f"{prefix}-{slug(raw, raw)}"
+        n = seen.get(base, 0)
+        seen[base] = n + 1
+        return base if n == 0 else f"{base}-{chr(ord('a') + n)}"
+
+    return make
+
+
+def folio(text: str) -> str:
+    """An illuminated medallion: ॥ ०३ ॥ — danda, numeral, danda."""
+    return (f'<span class="verse__num"><span class="danda">॥</span>'
+            f'<span class="folio">{e(deva_num(text))}</span>'
+            f'<span class="danda">॥</span></span>')
+
+
+PADA_END = re.compile(r"(?<=।)\s*")
+VERSE_NUM = re.compile(r"(॥[^॥]*॥)\s*$")
+
+
+def set_padas(value: str) -> str:
+    """Set a verse as hemistiches: one pāda group per line, a breath at the
+    caesura where the single danda falls, the verse number hanging after.
+
+    Only plain readings are re-set; anything already carrying markup is left
+    exactly as the school wrote it."""
+    if "<" in value or "।" not in value:
+        return value
+    text = value.strip()
+    number = ""
+    m = VERSE_NUM.search(text)
+    if m:
+        number = m.group(1)
+        text = text[: m.start()].strip()
+    parts = [p.strip() for p in PADA_END.split(text) if p.strip()]
+    if len(parts) < 2 and not number:
+        return value
+    out = []
+    for i, part in enumerate(parts):
+        last = i == len(parts) - 1
+        cls = "pada pada--break" if part.rstrip().endswith("।") and not last else "pada"
+        tail = f' <span class="pada--num">{number}</span>' if last and number else ""
+        out.append(f'<span class="{cls}">{part}{tail}</span>')
+    if number and not parts:
+        out.append(f'<span class="pada"><span class="pada--num">{number}</span></span>')
+    return "".join(out)
+
+
+GLOSS_EQ = re.compile(r"\s*=\s*")
+
+
+def set_glosses(value: str) -> str:
+    """प्रतिपदार्थः is a run of `term = gloss;` pairs. Set each on its own line
+    with the headword picked out, so the eye can scan the terms."""
+    if "<" in value or "=" not in value:
+        return value
+    out = []
+    for chunk in value.split(";"):
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        if "=" in chunk:
+            term, _, rest = chunk.partition("=")
+            out.append(
+                f'<span class="gloss"><span class="gloss__term">{term.strip()}</span>'
+                f'<span class="gloss__eq">=</span>'
+                f'<span class="gloss__def">{rest.strip()}</span></span>'
+            )
+        else:
+            out.append(f'<span class="gloss">{chunk}</span>')
+    return "".join(out) if out else value
+
+
+def set_register(key: str, value: str) -> str:
+    if key == "moolam":
+        return set_padas(value)
+    if key == "prati":
+        return set_glosses(value)
+    return value
+
+
 def search_key(*parts) -> str:
     """Build the haystack used by the client-side filters.
 
@@ -333,7 +432,12 @@ def video(yt: str, title: str, lazy: bool = True) -> str:
     )
 
 
-def filter_field(target_id: str, placeholder: str, count_id: str) -> str:
+def filter_field(target_id: str, placeholder: str, count_id: str,
+                 with_count: bool = True) -> str:
+    """A search box. `with_count=False` when the live count is rendered
+    elsewhere on the page, so the id stays unique."""
+    count = (f'<p class="result-count" id="{count_id}" role="status" aria-live="polite"></p>'
+             if with_count else "")
     return f"""<div class="field">
   {icon('search')}
   <label class="visually-hidden" for="q-{target_id}">{e(placeholder)}</label>
@@ -341,14 +445,14 @@ def filter_field(target_id: str, placeholder: str, count_id: str) -> str:
          data-filter-input="{target_id}" data-filter-count="{count_id}">
   <button class="field__clear" type="button" aria-label="Clear search" hidden>×</button>
 </div>
-<p class="result-count" id="{count_id}" role="status" aria-live="polite"></p>"""
+{count}"""
 
 
 def layer_toolbar(scope: str, toggles: list[dict], extra_right: str = "") -> str:
     chips = "".join(
         f'<button class="chip deva" type="button" data-layer-toggle="{e(t["key"])}" '
         f'aria-pressed="true" style="--chip:var(--layer-{e(t["key"])}, var(--layer-extra))">'
-        f'<span class="dot"></span>{e(t["label"])}</button>'
+        f'{e(t["label"])}</button>'
         for t in toggles
     )
     return f"""<div class="toolbar" data-layers="{e(scope)}">
@@ -402,7 +506,7 @@ TILE_TARGETS = {
 WELCOME_META = {
     "sanskrit": ("संस्कृतम्", "deva", "var(--saffron)", "sa"),
     "telugu": ("తెలుగు", "telu", "var(--teal)", "te"),
-    "english": ("English", "latn", "var(--indigo)", "en"),
+    "english": ("English", "latn", "var(--layer-extra)", "en"),
 }
 
 
@@ -415,6 +519,7 @@ def build_home(home: dict, texts: list, courses: list, stotras: list, prahelikas
         label, cls, colour, lang = WELCOME_META[key]
         welcome_cards += (
             f'<article class="welcome-card {cls}" style="--accent:{colour}">'
+            f'<span class="welcome-card__ornament" aria-hidden="true">ॐ</span>'
             f"<h3>{e(label)}</h3><p lang=\"{lang}\">{e(text)}</p></article>"
         )
 
@@ -456,7 +561,7 @@ def build_home(home: dict, texts: list, courses: list, stotras: list, prahelikas
     ]
     stat_cards = "".join(
         f'<a class="card card--link" href="{href}"><div class="card__body">'
-        f'<div style="font-size:var(--step-3);font-weight:700;color:var(--saffron-600);line-height:1">{e(n)}</div>'
+        f'<div style="font-size:var(--step-3);font-weight:700;color:var(--saffron);line-height:1">{e(n)}</div>'
         f'<p class="card__meta" style="margin:.4rem 0 0">{e(label)}</p></div></a>'
         for n, label, href in stats
     )
@@ -465,13 +570,13 @@ def build_home(home: dict, texts: list, courses: list, stotras: list, prahelikas
   <img class="hero__seal" src="assets/img/logo.png" alt="" aria-hidden="true" width="500" height="499">
   <div class="wrap hero__inner">
     <p class="hero__eyebrow">{e(SITE_ORG_LATIN)}</p>
-    <h1>The light of <span style="color:var(--saffron-600)">Saṃskṛtam</span></h1>
+    <h1>The light of <span style="color:var(--saffron)">Saṃskṛtam</span></h1>
     <p class="hero__motto deva">{e(MOTTO)}</p>
     <p class="hero__lede">A pāṭhaśālā for reading Śrīmadrāmāyaṇa, the Mahābhārata and the śāstras
       in the original — with word-splits, anvayas, glosses and recorded pronunciation for every verse.</p>
-    <div class="cluster" style="margin-top:1.6rem">
-      <a class="btn btn--accent" href="lessons/">Start learning {icon('arrow')}</a>
-      <a class="btn btn--ghost" href="texts/">{icon('book')} Browse the texts</a>
+    <div class="cluster hero__cta">
+      <a class="btn btn--accent" href="lessons/">Begin the lessons {icon('arrow')}</a>
+      <a class="btn btn--ghost" href="texts/">{icon('book')} Enter the library</a>
     </div>
   </div>
 </section>
@@ -480,14 +585,14 @@ def build_home(home: dict, texts: list, courses: list, stotras: list, prahelikas
   <div class="wrap">
     <div class="section-head section-head--center">
       <span class="eyebrow">Namaste · नमस्ते · నమస్కారం</span>
-      <h2>Welcome to <span style="color:var(--saffron-600)">SAMSKRTAM</span></h2>
+      <h2>Welcome to <span style="color:var(--saffron)">SAMSKRTAM</span></h2>
       <p>The same welcome, in the three languages this school teaches in.</p>
     </div>
     <div class="welcome-grid">{welcome_cards}</div>
   </div>
 </section>
 
-<section class="section" style="background:var(--paper-2);border-block:1px solid var(--line)">
+<section class="section" style="background:var(--paper-subtle);border-block:1px solid var(--line-faint)">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">From the school</span><h2>Welcome video &amp; notice board</h2></div>
     <div class="grid grid--2">{videos}</div>
@@ -530,6 +635,7 @@ def build_about(home: dict) -> None:
         label, cls, colour, lang = WELCOME_META[key]
         cards += (
             f'<article class="welcome-card {cls}" style="--accent:{colour}">'
+            f'<span class="welcome-card__ornament" aria-hidden="true">ॐ</span>'
             f"<h3>{e(label)}</h3><p lang=\"{lang}\">{e(text)}</p></article>"
         )
 
@@ -587,7 +693,7 @@ def build_stotras(stotras: list, details: list, home: dict) -> None:
     chips = "".join(
         f'<button class="chip {SCRIPT_CLASS[k]}" type="button" data-script-toggle="{k}" aria-pressed="true" '
         f'style="--chip:var(--layer-{"moolam" if k == "devanagari" else "pada" if k == "telugu" else "prati"})">'
-        f'<span class="dot"></span>{e(v)}</button>'
+        f'{e(v)}</button>'
         for k, v in SCRIPT_LABEL.items()
     )
 
@@ -637,7 +743,7 @@ def build_stotras(stotras: list, details: list, home: dict) -> None:
         tabs = "".join(
             f'<button class="chip" type="button" data-layer-toggle="{e(s["id"])}" aria-pressed="true" '
             f'style="--chip:var(--layer-{"moolam" if i == 0 else "pada" if i == 1 else "prati"})">'
-            f'<span class="dot"></span>{e(s["heading"] or s["tab"])}</button>'
+            f'{e(s["heading"] or s["tab"])}</button>'
             for i, s in enumerate(d["sections"])
         )
         sections = "".join(
@@ -697,21 +803,62 @@ TEXT_BLURB = {
 }
 
 
+# The texts index used the school's raster cover art — wooden planks with
+# flower clipart that only repeat the title the card already carries. It is
+# drawn in CSS instead. Flip this to True to go back to the original plates;
+# the artwork is still in original-site/ and dist/assets/img/ either way.
+USE_ORIGINAL_TEXT_COVERS = False
+
+# one pigment per text, so the library reads as a shelf of bound volumes
+COVER_PIGMENTS = [
+    "#1e293b",  # iron-gall
+    "#0c5c55",  # mineral emerald
+    "#4a1d73",  # deep jamun
+    "#7d1c23",  # madder
+    "#8a4008",  # burnt sienna
+    "#1b3a8f",  # indigo
+    "#2f3d33",  # olive slate
+    "#12494a",  # verdigris
+    "#5c2410",  # rust
+]
+
+
+def cover(title: str, index: int) -> str:
+    """An illuminated cover drawn in CSS: jālī ground, brass keyline, the
+    Sanskrit title engraved in gold. No raster, no request, sharp at any DPI.
+
+    The title lives here rather than being repeated underneath — the cover is
+    the volume's face, the line below it is the catalogue entry."""
+    pigment = COVER_PIGMENTS[index % len(COVER_PIGMENTS)]
+    return (
+        f'<div class="cover" style="--cover:{pigment}">'
+        f'<div><h3 class="cover__title deva">{e(title)}</h3>'
+        f'<span class="cover__rule" aria-hidden="true"></span></div></div>'
+    )
+
+
 def build_texts_index(texts: list, home: dict) -> None:
     groups = ""
+    n = 0
     for g in texts:
         items = ""
         for it in g["items"]:
             route = TEXT_ROUTES.get(it["href"])
             if not route:
                 continue
-            img = Path(it["image"]).name
+            if USE_ORIGINAL_TEXT_COVERS:
+                img = asset(Path(it["image"]).name)
+                face = (f'<div class="card__media"><img src="../assets/img/{img}" '
+                        f'alt="" loading="lazy"></div>'
+                        f'<div class="card__body">'
+                        f'<h3 class="card__title deva">{e(it["title"])}</h3>')
+            else:
+                face = f'{cover(it["title"], n)}<div class="card__body">'
             items += (
-                f'<a class="card card--link" href="{route}/">'
-                f'<div class="card__media"><img src="../assets/img/{asset(img)}" alt="" loading="lazy"></div>'
-                f'<div class="card__body"><h3 class="card__title deva">{e(it["title"])}</h3>'
+                f'<a class="card card--link" href="{route}/">{face}'
                 f'<p class="card__meta">{e(TEXT_BLURB.get(route, ""))}</p></div></a>'
             )
+            n += 1
         groups += f"""<section class="section section--tight">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">{e(g['title'])}</span></div>
@@ -737,8 +884,9 @@ def build_verse_corpus(name: str, route: str, home: dict) -> None:
 
     have_audio = 0
     verses_html = []
+    next_id = unique_ids("v")
     for v in data["verses"]:
-        vid = f"v-{slug(v['id'], v['id'])}"
+        vid = next_id(v["id"])
         rows = ""
         keys = [k for k in LAYER_ORDER if k in v["fields"]]
         keys += [k for k in v["fields"] if k not in LAYER_ORDER]
@@ -747,7 +895,7 @@ def build_verse_corpus(name: str, route: str, home: dict) -> None:
             rows += (
                 f'<div class="layer" data-layer="{e(k)}">'
                 f'<div class="layer__label">{e(f["label"])}</div>'
-                f'<div class="layer__value">{f["value"]}</div></div>'
+                f'<div class="layer__value">{set_register(k, f["value"])}</div></div>'
             )
         audio_html = ""
         if v.get("audio") and media_exists(v["audio"]):
@@ -766,10 +914,9 @@ def build_verse_corpus(name: str, route: str, home: dict) -> None:
         )
         verses_html.append(f"""<article class="verse" id="{vid}" data-search>
   <div class="verse__head">
-    <span class="verse__num">{e(v['id'])}</span>
+    {folio(v['id'])}
     <div class="verse__tools">{tools}
-      <button class="icon-btn" type="button" data-copy-link="{vid}" aria-label="Copy link to this verse"
-              style="width:30px;height:30px;border-radius:8px">{icon('link')}</button>
+      <button class="icon-btn" type="button" data-copy-link="{vid}" aria-label="Copy link to this verse">{icon('link')}</button>
     </div>
   </div>
   <div class="verse__body">{rows}{audio_html}</div>
@@ -859,8 +1006,9 @@ def build_adhyayanam(home: dict) -> None:
         chunk = sec["groups"][(pnum - 1) * PER_PAGE: pnum * PER_PAGE]
 
         cards = []
+        next_id = unique_ids("g")
         for g in chunk:
-            gid = "g-" + slug(g["ident"], "g")
+            gid = next_id(g["ident"])
             rows = ""
             for key, label in ADHY_LABEL.items():
                 lines = g.get(key)
@@ -868,6 +1016,8 @@ def build_adhyayanam(home: dict) -> None:
                     continue
                 cls = "latn" if key in ("english", "vishleshanam") else "deva"
                 value = "<br>".join(e(x) for x in lines)
+                if key == "moolam":
+                    value = "".join(f'<span class="pada">{e(x)}</span>' for x in lines)
                 rows += (
                     f'<div class="layer" data-layer="{key}">'
                     f'<div class="layer__label">{e(label)}</div>'
@@ -875,11 +1025,10 @@ def build_adhyayanam(home: dict) -> None:
                 )
             cards.append(f"""<article class="verse" id="{gid}" data-search>
   <div class="verse__head">
-    <span class="verse__num">{e(g['ident'])}</span>
+    {folio(g['ident'])}
     <span class="badge" style="font-size:.65rem">{e(g['type'])}</span>
     <div class="verse__tools">
-      <button class="icon-btn" type="button" data-copy-link="{gid}" aria-label="Copy link"
-              style="width:30px;height:30px;border-radius:8px">{icon('link')}</button>
+      <button class="icon-btn" type="button" data-copy-link="{gid}" aria-label="Copy link">{icon('link')}</button>
     </div>
   </div>
   <div class="verse__body">{rows}</div>
@@ -943,32 +1092,91 @@ def build_adhyayanam(home: dict) -> None:
 # --------------------------------------------------------------------------- #
 # 6. Dhātupāṭha
 # --------------------------------------------------------------------------- #
+# how each column of the dhātu table is set: a key for the mobile card layout
+# and the treatment its value gets
+# Only the three values that read as grammatical categories get a badge; the
+# rest are coloured by column position, which costs nothing in markup — at
+# 2 101 rows a wrapper span per cell is half a megabyte of nothing.
+DHATU_BADGE = {0: "dhatu", 3: "tag tag--gana", 4: "tag tag--karma", 6: "tag tag--pada"}
+
+
 def build_dhatupathah(home: dict) -> None:
     data = load("dhatupathah")
-    head = "".join(f"<th>{e(c)}</th>" for c in data["columns"])
-    rows = "".join(
-        "<tr data-search>" + "".join(f"<td>{e(c)}</td>" for c in r) + "</tr>"
-        for r in data["rows"]
+    labels = data["columns"]
+    head = "".join(f'<th scope="col">{e(c)}</th>' for c in labels)
+
+    ganas: dict[str, int] = {}
+    for r in data["rows"]:
+        g = r[3] if len(r) > 3 else ""
+        if g:
+            ganas[g] = ganas.get(g, 0) + 1
+
+    rows = []
+    for r in data["rows"]:
+        cells = ""
+        for i, value in enumerate(r):
+            inner = e(value)
+            cls = DHATU_BADGE.get(i)
+            if value and cls:
+                inner = f'<span class="{cls}">{inner}</span>'
+            cells += f"<td>{inner}</td>"
+        gana = r[3] if len(r) > 3 else ""
+        rows.append(f'<tr data-search data-facet-gana="{e(gana)}">{cells}</tr>')
+
+    # Under 768px every cell needs its own label. Carrying that as a data
+    # attribute would repeat the column headings 18 909 times, so the labels
+    # are stamped once, by column position.
+    col_css = "\n".join(
+        f'  table.data td:nth-child({i + 1})::before {{ content: "{c}"; }}'
+        for i, c in enumerate(labels)
     )
+    head_extra = (
+        "<style>\n@media (max-width: 768px) {\n" + col_css + "\n}\n</style>"
+    )
+
+    facets = "".join(
+        f'<button class="chip" type="button" data-facet="gana" data-facet-value="{e(g)}" '
+        f'aria-pressed="false" style="--chip:var(--teal)">{e(g)} '
+        f'<span class="card__meta" style="margin-left:.35rem">{n}</span></button>'
+        for g, n in sorted(ganas.items(), key=lambda kv: -kv[1])
+    )
+
     note = "".join(f'<p style="margin-bottom:.5rem">{p}</p>' for p in data["note"])
     body = crumbs(2, [("", "Home"), ("texts/", "Texts"), (None, data["title"])]) + f"""
 {page_hero('सन्दर्भः', data['title'])}
 <section class="section" style="padding-top:0">
   <div class="wrap">
-    <div class="panel" style="margin-bottom:1.5rem">{note}</div>
-    <div style="max-width:520px;margin-bottom:1rem">{filter_field('dhatu-table', 'Search dhātu, meaning, gaṇa…', 'dhatu-count')}</div>
-    <div class="table-wrap" id="dhatu-table">
+    <div class="panel" style="margin-bottom:1.75rem">{note}</div>
+  </div>
+</section>
+<div class="toolbar" data-facets="dhatu-table">
+  <div class="wrap toolbar__inner">
+    <span class="toolbar__label deva">गणः</span>
+    <div class="chip-row">
+      <button class="chip" type="button" data-facet="gana" data-facet-value="" aria-pressed="true"
+              style="--chip:var(--saffron)">All</button>
+      {facets}
+    </div>
+    <div class="cluster">
+      <div class="toolbar__search">{filter_field('dhatu-table', 'Search dhātu, meaning, form…', 'dhatu-count', with_count=False)}</div>
+    </div>
+  </div>
+</div>
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="table-wrap" id="dhatu-table" data-highlight>
       <table class="data">
         <thead><tr>{head}</tr></thead>
-        <tbody>{rows}</tbody>
+        <tbody>{''.join(rows)}</tbody>
       </table>
     </div>
     <p class="empty-state" data-empty hidden>No dhātu matches that search.</p>
+    <p class="result-count" id="dhatu-count" role="status" aria-live="polite"></p>
   </div>
 </section>"""
     page(path="texts/dhatupathah/index.html", depth=2, title=data["title"],
          description=f"{data['title']} — a searchable table of {len(data['rows'])} Sanskrit dhātus with gaṇa, transitivity, iṭ and forms.",
-         body=body, active="texts/", home=home)
+         body=body, active="texts/", home=home, head_extra=head_extra)
 
 
 # --------------------------------------------------------------------------- #
@@ -976,22 +1184,22 @@ def build_dhatupathah(home: dict) -> None:
 # --------------------------------------------------------------------------- #
 def verse_cards(verses: list, prefix: str) -> str:
     out = []
+    next_id = unique_ids(prefix)
     for v in verses:
-        vid = f"{prefix}-{slug(v['id'], v['id'])}"
+        vid = next_id(v["id"])
         rows = ""
         for k in [x for x in LAYER_ORDER if x in v["fields"]]:
             f = v["fields"][k]
             rows += (
                 f'<div class="layer" data-layer="{e(k)}">'
                 f'<div class="layer__label">{e(f["label"])}</div>'
-                f'<div class="layer__value">{f["value"]}</div></div>'
+                f'<div class="layer__value">{set_register(k, f["value"])}</div></div>'
             )
         out.append(
             f'<article class="verse" id="{vid}" data-search>'
-            f'<div class="verse__head"><span class="verse__num">{e(v["id"])}</span>'
+            f'<div class="verse__head">{folio(v["id"])}'
             f'<div class="verse__tools"><button class="icon-btn" type="button" data-copy-link="{vid}" '
-            f'aria-label="Copy link to this verse" style="width:30px;height:30px;border-radius:8px">'
-            f'{icon("link")}</button></div></div>'
+            f'aria-label="Copy link to this verse">{icon("link")}</button></div></div>'
             f'<div class="verse__body">{rows}</div></article>'
         )
     return "".join(out)
@@ -1051,15 +1259,15 @@ def build_gita(home: dict) -> None:
     chips = "".join(
         f'<button class="chip deva" type="button" data-speaker-toggle="{e(s["key"])}" aria-pressed="true" '
         f'style="--chip:{{krishna:"#1e5fa8",arjuna:"#b8322f",sanjaya:"#0f766e",dritarashtra:"#7a4bb8"}}">'
-        f'<span class="dot"></span>{e(s["label"])}</button>'
+        f'{e(s["label"])}</button>'
         for s in data["speakers"]
     )
     # inline style above needs literal colours, not a JS object
     colours = {"krishna": "#1e5fa8", "arjuna": "#b8322f", "sanjaya": "#0f766e", "dritarashtra": "#7a4bb8"}
     chips = "".join(
         f'<button class="chip deva" type="button" data-speaker-toggle="{e(s["key"])}" aria-pressed="true" '
-        f'style="--chip:{colours.get(s["key"], "var(--indigo)")}">'
-        f'<span class="dot"></span>{e(s["label"])}</button>'
+        f'style="--chip:{colours.get(s["key"], "var(--gold)")}">'
+        f'{e(s["label"])}</button>'
         for s in data["speakers"]
     )
 
@@ -1303,7 +1511,8 @@ def build_prahelikas(data: dict, home: dict) -> None:
                 qa += f"""<div class="qa">
   <div class="qa__row">
     <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">{e(q['q'])}</p>
-    <button class="qa__btn" type="button" aria-expanded="false">సమా.</button>
+    <button class="qa__btn" type="button" aria-expanded="false"
+            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
   </div>
   <p class="qa__a telu" hidden>{e(q['a'])}</p>
 </div>"""
@@ -1347,33 +1556,71 @@ def build_prahelikas(data: dict, home: dict) -> None:
 # 11. Donate
 # --------------------------------------------------------------------------- #
 def build_donate(data: dict, home: dict) -> None:
-    paras = "".join(f"<p>{p}</p>" for p in data["paragraphs"])
-    options = "".join(
-        f'<figure class="card" style="margin:0"><div class="card__media" style="aspect-ratio:auto">'
-        f'<img src="../assets/img/{asset(Path(o["image"]).name)}" alt="{e(o["label"])} QR code" loading="lazy"></div>'
-        f'<figcaption class="card__body"><h3 class="card__title">{e(o["label"])}</h3></figcaption></figure>'
+    """विद्यादानम् · Gurukula Sevā.
+
+    The school's own words are kept exactly; only their setting changes. The
+    numbered instructions were one run-on paragraph of <br>s in the original —
+    they are a rite, so they are set as one.
+    """
+    intro, steps = [], []
+    for para in data["paragraphs"]:
+        plain = strip_tags(para)
+        if re.match(r"^\s*1\s*\.", plain):
+            steps = [re.sub(r"^\s*\d+\s*\.\s*", "", line).strip()
+                     for line in re.split(r"(?=\b\d\s*\.\s)", plain) if line.strip()]
+        else:
+            intro.append(para)
+
+    steps_html = ""
+    if steps:
+        items = "".join(f"<li>{e(x)}</li>" for x in steps)
+        steps_html = f"""<div class="panel" style="margin-top:1.5rem">
+      <span class="eyebrow">How to give</span>
+      <ol class="steps">{items}</ol>
+    </div>"""
+
+    plates = "".join(
+        f'<figure class="qr-plate">'
+        f'<div class="qr-plate__mount">'
+        f'<img src="../assets/img/{asset(Path(o["image"]).name)}" alt="{e(o["label"])} payment QR code" loading="lazy">'
+        f"</div>"
+        f'<figcaption><h3>{e(o["label"])}</h3>'
+        f'<p>Scan with the {e(o["label"])} app</p>'
+        f'<span class="qr-plate__upi">UPI</span></figcaption></figure>'
         for o in data["options"]
     )
-    body = crumbs(1, [("", "Home"), (None, "Donate")]) + f"""
-{page_hero('सहयोगः', data['title'], '', deva=False)}
+
+    intro_html = "".join(f"<p>{p}</p>" for p in intro)
+
+    body = crumbs(1, [("", "Home"), (None, "विद्यादानम्")]) + f"""
+<section class="section section--tight">
+  <div class="wrap">
+    <span class="eyebrow deva">विद्यादानम्</span>
+    <h1>Gurukula Sevā</h1>
+    <p class="hero__lede">{e(data['title'])}. Every reading, gloss and recording on this site was
+      prepared by hand at this pāṭhaśālā and given away. If it has been of use to you, you can
+      return something towards the work.</p>
+  </div>
+</section>
 <section class="section" style="padding-top:0">
   <div class="wrap-narrow">
-    <div class="panel">{paras}</div>
+    <div class="panel">{intro_html}</div>
+    {steps_html}
   </div>
 </section>
 <section class="section" style="padding-top:0">
   <div class="wrap">
     <div class="section-head section-head--center">
       <span class="eyebrow">Three ways to give</span>
-      <h2>Scan and pay</h2>
+      <h2>Scan and offer</h2>
+      <p>Payment goes directly to S Usha Rani through your own UPI app.
+         Nothing is collected, stored or processed on this site.</p>
     </div>
-    <div class="grid grid--3">{options}</div>
-    <p class="note" style="margin-top:1.75rem"><strong>Note.</strong> Payments go directly to
-    S Usha Rani through your own UPI app — nothing is collected on this site.</p>
+    <div class="grid grid--3">{plates}</div>
   </div>
 </section>"""
-    page(path="donate/index.html", depth=1, title="Donate",
-         description="Support the Svarvāṇī Prakāśa Sanskrit pāṭhaśālā.",
+    page(path="donate/index.html", depth=1, title="विद्यादानम् · Gurukula Sevā",
+         description="Support the Svarvāṇī Prakāśa Sanskrit pāṭhaśālā — विद्यादानम्.",
          body=body, active="donate/", home=home)
 
 

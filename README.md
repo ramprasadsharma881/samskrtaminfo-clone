@@ -89,30 +89,63 @@ Rebuilding from the data surfaced content that was present but unreachable:
    now a visible, searchable **टिप्पणी** column.
 3. **Gītā 1.1** (धृतराष्ट्र उवाच) sat before the chapter-1 heading in the markup and was easy to lose;
    it is attached to chapter 1.
+4. **Three verses share a number with another** (०१४, ०२४, ११५१). The folio number is shown exactly
+   as the school wrote it; only the anchor gets a suffix, so every verse stays reachable by link.
 
 One upstream duplicate was dropped: the Courses page listed the Amarakośa card twice, the second
 mislabelled "Devavan" but pointing at the same course.
 
-### Design
+### Design — "The Illuminated Scriptorium"
 
-A palm-leaf-and-ink system built around what the school already used — cobalt headings, green
-actions, a red accent, a black line-art seal — warmed and given a proper scale:
+The first rebuild was technically clean but visually a dashboard: pill buttons, top-striped
+cards, badge dots and grey tabular rules. This pass takes the school's own materials — a black
+line-art seal, cobalt headings, green actions, a red accent — and rebuilds them as a reading
+environment rather than an interface.
 
-- **Colour**: deep indigo ink on parchment, saffron for action, teal and crimson as secondary
-  accents, gold hairlines. Each register of a verse (मूलम् / पदविभागः / अन्वयः / प्रतिपदार्थः /
-  तात्पर्यम् / …) has its own hue, so the eye can find a layer without reading labels.
-- **Type**: the school's own faces do the work — Sanskrit2003 for Devanāgarī, Suranna for Telugu,
-  Charter Indologique for Latin and IAST diacritics. Indic text never gets letter-spaced or
-  uppercased, which is what broke the conjuncts in the original's headings.
-- **Full dark mode**, following the device by default and overridable, with a persisted choice.
-- **Responsive** from 320 px up, with a real mobile menu; no page scrolls sideways.
+- **Colour.** Hand-pressed parchment (`#FAF6EE`) and warm soot ink (`#1C1917`), with the pigments a
+  scribe actually had: roasted saffron (केसर), temple brass (सुवर्ण), mineral emerald (हरित्),
+  kumkum vermillion, jamun purple. There is no grey in the document. Dark mode is a candlelit
+  scriptorium (`#121114`), not a developer slate.
+- **Nothing is a pill.** Radii are editorial (6–24px). Colour appears as rubric, rule and tint —
+  never as a filled slab behind body text.
+- **Typography.** Devanagari runs at 2.05 leading and verse settings at 2.25, because the script
+  carries śirorekhā above and mātrās below. Telugu gets its own leading and a size bump so
+  Suranna's hairlines stop shimmering in long passages. Indic text is never tracked or
+  uppercased. Font stacks fall back through Shobhika / Noto Serif Devanagari and
+  Tenali Ramakrishna / Noto Serif Telugu.
+- **Hemistich setting.** Each pāda of a mūlam verse sits on its own line, with a breath at the
+  caesura where the single daṇḍa falls and the verse number hanging after it in brass.
+- **The verse leaf.** An illuminated medallion — `॥ ०२ ॥` in Devanagari numerals between daṇḍa —
+  a crowned mūlam, and one pigment gutter per register. प्रतिपदार्थः is set as `term = gloss`
+  pairs with the headword picked out, so the eye can scan the terms instead of wading through a
+  semicolon run.
+- **Illuminated covers.** The texts index used 2005 raster banner art — wooden planks with flower
+  clipart — that only repeated the title beneath it. Those covers are now drawn in CSS: a jālī
+  lattice ground in a dyed binding colour, a double brass keyline, corner rosettes and the
+  Sanskrit title engraved in gold. Sharp at any DPI, no request. Where the artwork carries
+  information — a course's name and teacher — the original plate is kept and mounted in a
+  passe-partout instead. `USE_ORIGINAL_TEXT_COVERS = True` in `tools/build.py` restores the
+  original plates everywhere.
+- **The dhātu lexicon.** Roots are set as lemmas in a brass keyline; gaṇa, transitivity and pada
+  are badges; the column heads are struck in gold on ink and stay put as the page scrolls. There
+  is one scrollbar, not two. Under 768px each root becomes its own card with every cell labelled,
+  so 2 101 roots can be studied on a phone without scrolling sideways.
+- **Prahelikās.** The reveal reads as an invitation — *సమాధానం చూడండి* — and the answer unfolds
+  with a brief brass glow instead of appearing behind a repeated green oval.
+- **Speakers.** Kṛṣṇa is illuminated in peacock blue with a gold keyline and a faint aura; Arjuna
+  in hero cinnabar, Sañjaya in sage emerald, Dhṛtarāṣṭra in imperial jamun. Avatars sit in a
+  double-circle mount.
+- **विद्यादानम्.** The giving instructions were one run-on paragraph of `<br>`s; they are a rite,
+  so they are set as one. Each QR sits in an ivory card held by a brass keyline.
+- **A recitation player**, not the browser's grey slab: a gold-leaf transport ring, a seekable
+  bar, 0.75× for chanting along, and a loop for memorising.
 
 ### Behaviour
 
 Every interaction the original offered is kept, and rebuilt to be keyboard-reachable, announced to
 assistive technology, and remembered between visits:
 
-- **Register toggles** — the original's on/off buttons, now chips with per-verse overrides,
+- **Register toggles** — the original's on/off buttons, now rubric tabs with per-verse overrides,
   "All" / "मूलम् only" shortcuts, and the reader's choice stored per corpus.
 - **Script conversion** — the original loaded the Aksharamukha plugin from a CDN on every page. It is
   now built in (`src/assets/js/lipi.js`): Devanāgarī → Telugu and → IAST, converting the whole page
@@ -123,6 +156,8 @@ assistive technology, and remembered between visits:
 - **Deep links.** Every verse and entry has a stable id and a copy-link button:
   `/texts/hitopadesha/#v-042` scrolls to that verse and highlights it.
 - **Reading size** control, for corpora that are dense on a phone.
+- **Gaṇa facets** on the dhātupāṭha, composing with the search box, with live `<mark>` highlighting
+  of the matched text.
 - Speaker filtering in the Gītā, kāṇḍa jump-nav in the Rāmāyaṇa, per-puzzle and reveal-all answers
   in the prahelikās, language switching within a course.
 
@@ -134,13 +169,20 @@ assistive technology, and remembered between visits:
 - **No third-party script runs on load.** Videos are a click-to-load facade — the only external
   request is the still thumbnail, and the player (`youtube-nocookie.com`) is injected on click. The
   facade degrades to its own artwork if the thumbnail host is unreachable.
-- Long corpora use `content-visibility` so a 2 000-entry page still paints immediately, and the
-  Hitopadeśa page is 20 % smaller than the original's despite carrying more markup per verse.
+- The Hitopadeśa page gzips to 130 KB and the 2 101-row dhātupāṭha to 54 KB — smaller on the wire
+  than the original's 57 KB, with a ninth column of content the original hid and a badge system
+  the original lacked. Column labels for the mobile card layout are stamped once by column
+  position rather than repeated as a data attribute 18 909 times.
 - Semantic landmarks, skip link, visible focus rings, `prefers-reduced-motion`, `aria-pressed` on
   every toggle, live regions on result counts, and a print stylesheet.
+- **Every text pair meets WCAG AA in both themes** (28 of 58 audited pairs reach AAA), verified by
+  a contrast pass over the token set. Two of the brief's pigments — saffron at 3.95:1 and brass at
+  3.24:1 on parchment — fail AA at body size, so each keeps its specified hue for fills, rules and
+  large display and gains a darker sibling (`--saffron-text`, `--gold-text`) wherever it carries
+  words. CLS is 0 on every page but the home hero (0.02, from the font swap); FCP 96–520 ms.
 - Canonical URLs, Open Graph tags, `sitemap.xml`, `robots.txt`, and a 404 page.
-- Verified in Chromium: **26/26 behaviour tests pass, 1 912 internal links and asset references
-  resolve, zero console errors.**
+- Verified in Chromium: **54/54 behaviour tests pass, 1 913 internal links and asset references
+  resolve, no duplicate ids, zero console errors.**
 
 ### Pages added
 
