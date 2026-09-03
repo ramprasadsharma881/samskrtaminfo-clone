@@ -1,0 +1,1119 @@
+
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Course - suravani</title>
+        <meta name="description" content="Learn and Read Sanskrit - Samskrtam - Course - suravani">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/et-line-icon.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/style.css?v=16">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/vendor/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/freeze-table.js"></script>
+        <script type="text/javascript" src="js/samskrtam.js"></script>
+
+                    <script id="aksharamukhascript" src="https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha/aksharamukha-web-plugin/aksharamukha-v3.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                        <!-- <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"><img src="img/logo/logif.jpeg" alt="Samskrtam logo" style="width:30px;height:20px" /></a>
+                            </div>
+                        </div> -->
+                        <div class="col-md-12 col-sm-12">
+                            <div class="header-top-right text-md-end">
+                                <ul>
+                                    <li><a href="home.php">Home</a></li>
+                                    <li><a href="home.php">Contact</a></li>
+                                    <li><a href="home.php">About</a></li>
+                                    <li><a href="donate.php">Donate</a></li>
+                                    <li><a href="home.php">Useful Links</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Area Start -->
+        <div class="banner-area-wrapper">
+            <div class="banner-area1 text-center">  
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="banner-content-wrapper">
+                                <div class="banner-content">
+                                    <h2></h2> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Banner Area End -->
+        <!-- Header Area Start -->
+		<header class="top">
+			<div class="header-area two header-sticky">
+				<div class="container">
+					<div class="row">
+                        <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"></a>
+                            </div>
+                        </div>
+						<div class="col-md-9 col-sm-7 col-6">
+                            <div class="content-wrapper text-end">
+                                <!-- Main Menu Start -->
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="stotras.php">Stotras</a></li>
+                                            <li><a href="home.php">Songs</a></li>
+                                             <li class="hidden-sm"><a href="texts.php">Text Contents</a></li>
+                                             <li class="hidden-sm"><a href="courses.php">Lessons</a></li>
+                                             <li class="hidden-sm"><a href="home.php">Articles</a></li>    
+                                             <li class="hidden-sm"><a href="prahelikas.php">ప్రహేళికలు</a></li>                                         
+                                            <li><a href="home.php">Other</a>
+                                                <ul>
+                                                    <li><a href="home.php">Worker Links</a></li>
+                                                    <li><a href="donate.php">Donate</a></li>
+                                                    <li><a href="donate.php">Blogs</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--Search Form Start-->
+<!--                                 <div class="search-btn">
+                                    <ul class="header-search search-toggle">
+                                        <li class="search-menu">
+                                            <i class="fa fa-search"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="search">
+                                        <div class="search-form">
+                                            <form id="search-form" action="#">
+                                                <input type="search" placeholder="Search here..." name="search" />
+                                                <button type="submit">
+                                                    <span><i class="fa fa-search"></i></span>
+                                                </button>
+                                            </form>                                
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!--End of Search Form-->
+                                <!-- Main Menu End -->
+                            </div>
+						</div>
+                        <div class="col-12">
+                            <div class="mobile-menu hidden-sm"></div> 
+                        </div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Area End -->
+
+
+    <div class="course-area pt-50 pb-50">
+        <div class="container">
+
+            <div style="color: green;">
+                <a href="home.php" class="crumb">Home</a> >> <a href="courses.php" class="crumb">Lessons</a> >> 
+                SURAVANI VILASAH - Hindi            </div>
+
+            <div class="subscribe-content section-title text-center pb-50">
+                <h2>SURAVANI VILASAH - Hindi</h2>
+            </div>
+
+            <div class="row">
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-00-Parichaya, Orientation - 9th June 22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/vVuQW2DagAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-01-Pronunciation-Vowels-11thJune22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/ZCXBFHh6yME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson01-Pronunciation-Vowels.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-02-Pronunciation-Consonants, -14thJune22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/bJC29hOCr7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson02-Pronunciation -Conjunct-Consonants.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-03-Padam,Anupurvi,Bhashamsah-16thJune22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/nUklkKrvY2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson03-Dhatus01A-Dhaturupas-Padam,Anupurvi,Bhashamshah.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-04-LatLakara-Prathama-21stJune22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/EymIuMoREko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson04-Dhatus01B-Dhaturupas-LatLakara-Prathama.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-05-Dhaturupas-Lat-Madhyama Uttama-23rdJune22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/ZDkMMedshUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson05-Dhatus01C-Dhaturupas-LatLakara-Madhyama Uttama.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-06-Dhatupatha,DhatuGanas-25thJune22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/xDKPOAIxLQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-07-Dhaturupas,Gunas,Rupantaranam-09thJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/KsPYjk-itxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson07-Dhatus03-DhaturupasPractice,Gunas,Rupantaranam.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-08-Upasargas-1/2-12thJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/XpQWF6ZH6dM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson08-Others01-Upasargas-1.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-09-Upasargas-2/2-14thJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/1gquuTbIAeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson09-Others02-Upasargas-2.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-10-Shabdas-1-AkarantaPrathama-16thJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/OvZVyntvZ2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-11-Shabdas-2-AkarantaSambodhana-19thJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/Y1bbK3swGKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson11-Shabdas01B-AkararantaPum-Sambodhana,Vakya,Pratyayas.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-12-Shabdas-3-Akaranta-Dvitiya-23rdJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/IcyNFlMHDi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson12-Shabdas02A-AkararantaPum-Dvitiya.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-13-Shabdas-02B-AkarantaDvitiya-2/2-26thJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/KvalRBHoV1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson13-Shabdas02B-AkararantaPum-Dvitiya2, Makara, Sandhi-Scha, VarnaNames.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-14-Shabdas-03-AkarantaNapum--28thJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/HOnuitPnXkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson14-Shabdas03-AkararantaNapum-Prathama,Dvitiya.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-15-Other02-Avyaya-30thJuly22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/9tfJiPdtXxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-16-Shabdas04-AkararantaPum-Triitiya-04thAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/8kCAFETKnWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson16-Shabdas04-AkararantaPum-Triitiya.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-17-VachanaParivartanam,Natva,Avyaya-09thAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/hMo-LtKqLCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson17-Others03-VachanaParivartanam,Natva,Avyaya-thaa.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-18-AkararantaPum-Chaturthi,Avyaya-d-13thAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/Yl186pUu8uY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson18-Shabdas05-AkararantaPum-Chaturthi,Avyaya-dA (LAPTOP-DVIAF3P5_s conflicted copy 2022-08-23).pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-19-AkararantaPum-Panchami,Avyaya-taH-16thAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/bn_j6XJnhM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson19-Shabdas06-AkararantaPum-Panchami,Avyaya-tah.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-20-AkararantaPum-Shashthi,Avyaya-di-18thAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/gjjA7OxuyZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson20-Shabdas07-AkararantaPum-Shashthi-Avyaya-Dina.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-21-AkararantaPum-Saptam,Avyaya-tra-23rdAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/6P_g-PL0sqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson21-Shabdas08-AkararantaPum-Saptami-Avyaya-tra.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-22-I-U-kararantaPum-25thAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/l8VTP1ZJFxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson22-Shabdas09-Ikararanta-UkarantaPum-AllVs.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-23 Atmanepada-1- 27thAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/0oankn1WgPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson23-Dhatus04A-AtmaneIntro-Prathama-1.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-24 Atmanepada-2/2-30thAug22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/kd9_d0vdTLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson24-Dhatus04B-Atmane-Madhyama-6,Atmane-Uttama-4.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-25 Concepts Revision and Anvaya-1stSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/suJnsHWmrHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson25-Practice-Dhatus,Shabdas-Anvaya,Atmane-10.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-26 AkararantaStri-Prathama,Dvitiya-3rdSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/js2t3whQVLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson26-Shabdas11-AkararantaStri-Prathama,Dvitiya.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-27 AkararantaStri-Truti,Chatu,Panch-6thSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/xjFPx-0ZBds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson27-Shabdas12-AkararantaStree-Triitiya,Chaturthee,Panchami.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-28 AkararantaStri-Shashthi,Saptami-8thSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/7hS5UACLorA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson28-Shabdas13-AkararantaStree-Shashthi-Saptami.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-29 i-I-u-U-kararantaStri-AllVs-10thSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/ayElc5Yrj68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson29-Shabdas14-Stree-Linga-i-I-u-U-kArAntas-AllVs.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;"> L-30 -Dhatus05A-laNlakAra-PastTense-1/3-13thSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/jscqODwAXqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson30-Dhatus05A-laNlakAra-PastTense.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-31 -Dhatus05B-laNlakAra-PastTense-2/3-15thSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/HkmIjyLgzcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson31-Dhatus05B-laNlakAra-PastTense-2.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-32 -Dhatus05C-laNlakAra-PastTense-3/3-17thSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/NyfC0FYu-JY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Teluugu/Suravani-Lesson32-Dhatus05C-laNlakAra-PastTense-3,Kr-Dhatu.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">Beginner Samskrta Lessons in Hindi SuravaniVilasah -Practice Session20thSep22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/a3emGBNh_zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-33 -Sarvanamas  Intro-1/3-11thOct22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/DFCh522D0RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson33-SarvaNama01-Intro,Tad,Etad,Yad.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-34 -Sarvanamas  Intro-2/3-13thOct22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/kfjpjakZfrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson34-SarvaNama02-Intro,Tad,Etad,Yad-Rupas-2.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;"> L-35 -Sarvanamas -3/3-15thOct22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/D53ZTmiqMAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson35-SarvaNama03-AsmadYushmad.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-36 -Imperative,Lot-18thOct22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/vR8UhNyBtXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson36-Dhatus06-Imperative.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-37 -Visheshanas-20thOct22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/Rv4gbyx49kY/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson37-Others04-Visheshanas.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;"> L-38 -I-U-Napums-R-kArAntas-3Lingas-1stNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/jGCk8tXMTYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson38-Shabdas15--I-U-Napums-R-kArAntas-Stree-Pum-Napum-AllVs.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-39 -Potential VidhiLin Lakara-05thNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/MH-Qg8Pb0-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson39-Dhatus07-Potential.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;"> L-40-Halantas-3Lingas-AllVs-08thNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/DsEzUIAjgmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson40-Shabdas16-Halantas-Stree-Pum-Napum-AllVs.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-41-Dhatus09-Type2DhatuVibhaga-10thNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/g7ixDN_-lZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson41-Dhatus09-Type2-DhatuVibhaga,.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-42-Dhatus10-DhatuGanas, -12thNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/zLjji7WBkIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-43-Dhatus10-Lakaras-15thNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/OObqO-MNKcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson43-Dhatus10-Lakaras and Dhatu Ganas.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-44-Dhatus10A-Bhavishyat-Lrt-1of2-22ndNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/zlWJisn4seg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson44-Dhatus10A-Bhavishyat-Lrt-1of2.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;"> L-45-Dhatus10B-Bhavishyat-Lrt-2of2-24thNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/1PMLf2zZGME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson45-Dhatus10B-Bhavishyat-Lrt-2of2.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;"> L-46-Dhatus11-Nijantas, Causals-26thNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/YRVtLzuRT-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson46-Dhatus11-Nijantas.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-47-Others05-SandhisIntro,Visarga-29thNov22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/2l_cYRPCsSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson47-Others05-SandhisIntro-Anusvara,Makara-VisargaTypes.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-48-Dhatus12-Krdanta--Shatr,Shanac-01stDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/Xo3rImscOq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson48-Dhatus12-Krdanta-Anavyayas-Shatr,Shanac.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-49-Others06A-ComputerInternetTools-03rdDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/schSHHU78bA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson49-Others06A-ComputerInternetTools.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-50-Others06B-ComputerInternetTools2/2-06thDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/rLdUKfmRFCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;"> L-51-Others07-Sankhya, Numbers-03rdDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/ZhsBQN9Ph7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson51-Others07-Sankhya.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-52-Karmani,Bhave-1/3-20thDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/UcTAOV0zpfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson52-Dhatus12-Karmani,Bhave-1.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-53-Karmani,Bhave-2/3-22ndDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/NfnTRN_lxZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson53-Dhatus13B-Karmani,Bhave-2.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-54-Karmani,Bhave-3/3-24thDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/qjN9rjzxE9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson54-Dhatus13C-Karmani,Bhave-3.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-Revision-Simple Subhashitas-10thDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/pjFomwTukx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-55-Dhatus14A-Krdanta- Kta-29thDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/jz4H2sKv2qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-56-Dhatus14B-Krdanta- Ktavatu-31stDec22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/EJLUcPKLK58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson56-Dhatus14B-Krdanta- Ktavatu.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-57-Dhatus15-Krdanta- Ktva Lyap-5thJan22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/9AN2q9RjyvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-58-Others08-VibhaktiSimilarities-4thMar22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/m4Nm9-El8Ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson58-Others08-VibhaktiSimilarities.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-59-Shabdas10A-VibhaktiAreas-7thMar22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/UJQ8eN7L810" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson59-Shabdas10A-VibhaktiAreas.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-60-Shabdas10B-VibhaktiAreas-2-09thMar22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/PSlMv4vctYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson60-Shabdas10B-VibhaktiAreas-2.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-61-Shabdas10C-VibhaktiAreas-3-11thMar22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/HH39bceZGO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson61-Shabdas10B-VibhaktiAreas-3.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-62-Dhatus16-Krdanta Avyayas -Tumun-14thMar22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/uNr0eaKAcro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson62-Dhatus16-Krdanta-Avyayas -Tumun.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-63-Dhatus16-Krdanta Anavyayas -Tavyar-16thMar22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/g5HUHJxWl1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/Suravani-Lesson63-Dhatus16-Krdanta-Anavyayas -Tavyat.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-64-Krdanta,Dhatus-18thMar22</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/MaKZzjSjbrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                            <div>
+                                <a href="assets/pdfs/suravani/Hindi/.pdf" download class="btn btn-success mb-1 d-md-block" style="font-size:20px;display:block"><i class="bi bi-file-earmark-pdf">Download PDF</i></a>
+                            </div>       
+                        </div>
+                    </div>  
+            </div>
+        </div>
+    </div>    
+
+    
+        <!-- Footer Start -->
+        <footer class="footer-area">
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-widget pr-60">
+                                <div class="footer-logo pb-5">
+                                    <a href="home.php"><img src="images/logo.png" alt="Samskrtam" style="width:200px"></a>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/svarvaniprakash"><i class="zmdi zmdi-facebook customicon"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest customicon"></i></a></li>
+                                        <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured"><i class="zmdi zmdi-youtube customicon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/svarvani24/"><i class="zmdi zmdi-instagram customicon"></i></a></li>
+                                        <li><a href="https://twitter.com/SvarvaniS"><i class="zmdi zmdi-twitter customicon"></i></a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+<!--                         <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <h3>information</h3>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="#">Other info</a></li>
+                                    <li><a href="#">TimeTable</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>useful links</h3>
+                                <ul>
+                                    <li><a href="https://twitter.com/SvarvaniS">Twitter</a></li>
+                                    <li><a href="https://www.facebook.com/svarvaniprakash">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/svarvani24/">Instagram</a></li>
+                                    <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured">YouTube</a></li>
+                                    <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>get in touch</h3>
+                                <p>Please reach us at: </p>
+                                <p>samskrta.usha@gmail.com<br>https://samskrtam.info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Copyright © <a href="index.html">Svarvani Prakasha</a> 2023. All Right Reserved By <a href="https://samskrtam.info" target="_blank">Svarvani</a></p>
+                        </div> 
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+
+        
+        <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/samskrtam.js"></script>
+    </body>
+</html>    

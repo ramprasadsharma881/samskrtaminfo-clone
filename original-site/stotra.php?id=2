@@ -1,0 +1,307 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Stotra - Totakashtakam</title>
+        <meta name="description" content="Learn and Read Sanskrit - Samskrtam - Stotra - Totakashtakam">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/et-line-icon.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/style.css?v=16">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/vendor/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/freeze-table.js"></script>
+        <script type="text/javascript" src="js/samskrtam.js"></script>
+
+                    <script id="aksharamukhascript" src="https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha/aksharamukha-web-plugin/aksharamukha-v3.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                        <!-- <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"><img src="img/logo/logif.jpeg" alt="Samskrtam logo" style="width:30px;height:20px" /></a>
+                            </div>
+                        </div> -->
+                        <div class="col-md-12 col-sm-12">
+                            <div class="header-top-right text-md-end">
+                                <ul>
+                                    <li><a href="home.php">Home</a></li>
+                                    <li><a href="home.php">Contact</a></li>
+                                    <li><a href="home.php">About</a></li>
+                                    <li><a href="donate.php">Donate</a></li>
+                                    <li><a href="home.php">Useful Links</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Area Start -->
+        <div class="banner-area-wrapper">
+            <div class="banner-area1 text-center">  
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="banner-content-wrapper">
+                                <div class="banner-content">
+                                    <h2></h2> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Banner Area End -->
+        <!-- Header Area Start -->
+		<header class="top">
+			<div class="header-area two header-sticky">
+				<div class="container">
+					<div class="row">
+                        <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"></a>
+                            </div>
+                        </div>
+						<div class="col-md-9 col-sm-7 col-6">
+                            <div class="content-wrapper text-end">
+                                <!-- Main Menu Start -->
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="stotras.php">Stotras</a></li>
+                                            <li><a href="home.php">Songs</a></li>
+                                             <li class="hidden-sm"><a href="texts.php">Text Contents</a></li>
+                                             <li class="hidden-sm"><a href="courses.php">Lessons</a></li>
+                                             <li class="hidden-sm"><a href="home.php">Articles</a></li>    
+                                             <li class="hidden-sm"><a href="prahelikas.php">ప్రహేళికలు</a></li>                                         
+                                            <li><a href="home.php">Other</a>
+                                                <ul>
+                                                    <li><a href="home.php">Worker Links</a></li>
+                                                    <li><a href="donate.php">Donate</a></li>
+                                                    <li><a href="donate.php">Blogs</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--Search Form Start-->
+<!--                                 <div class="search-btn">
+                                    <ul class="header-search search-toggle">
+                                        <li class="search-menu">
+                                            <i class="fa fa-search"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="search">
+                                        <div class="search-form">
+                                            <form id="search-form" action="#">
+                                                <input type="search" placeholder="Search here..." name="search" />
+                                                <button type="submit">
+                                                    <span><i class="fa fa-search"></i></span>
+                                                </button>
+                                            </form>                                
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!--End of Search Form-->
+                                <!-- Main Menu End -->
+                            </div>
+						</div>
+                        <div class="col-12">
+                            <div class="mobile-menu hidden-sm"></div> 
+                        </div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Area End -->
+
+
+    <div class="course-area pt-50 pb-50">
+        <div class="container">
+
+            <div style="color: green;">
+                <a href="home.php" class="crumb">Home</a> >> <a href="stotras.php" class="crumb">Stotras</a> >> 
+                Totakashtakam            </div>
+
+            <div class="subscribe-content section-title text-center pb-50">
+                <h2>Totakashtakam</h2>
+            </div>
+
+            <div class="course-content sanskrit" style="text-align: center;margin-bottom:2em">
+            <div style="padding-bottom: 1em;">
+                    <h2 style="font-size: 1.5em;">Click these buttons to toggle the corresponding sections on/off.</h2>
+                </div>
+                <div>
+                    <button id="b1" class="lang-btn" style="margin:0.2em">Plain text</button>
+                    <button id="b2" class="lang-btn" style="margin:0.2em">Hyphenated text</button>
+                    <button id="b3" class="lang-btn" style="margin:0.2em">Plain Text with Meaning- Dev and IAST</button>
+                </div>
+            </div>
+
+            <div class="row sanskrit">
+
+                
+                <div id="section4" class="total" style="font-size:1em">
+                    Introduction:</br>Namaste</br>This is a stotra on Shri Adi Shankaracharya by one of his disciples who is known to be a dull-witted, unintelligent person, but later achieved the zenith  of all knowledge and attained the brahmajnana through the grace of guru. He dedicates this stotra to him. </br>Language and feeling are very deep and heart-touching in this stotra. The small 12-lettered meter is very attractive to the beginner students. Hence I choose this stotra at the fundamental level of my teaching.</br>May Shri Adi Shankaracharya Swami bless us all.</br>
+                </div>
+                
+
+                <div class="embed-responsive embed-responsive-16x9" style="text-align:center;margin:auto;padding:1em">
+                    <iframe class="embed-responsive-item" width="870" height="458" src="https://www.youtube.com/embed/ztRmo2T9Rvg?si=cQFcum2sGhlkRAGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                </div>
+
+                <div id="section1" class="total b1">
+                    Mulam plain:</br>॥तोटकाष्टकम्॥</br>अथ तोटकाष्टकम्</br></br>विदिताखिलशास्त्रसुधाजलधे</br>महितोपनिषत्कथितार्थनिधे ।</br>हृदये कलये विमलं चरणं </br>भव शङ्कर देशिक मे शरणम् ॥१॥</br></br>करुणावरुणालय पालय मां</br>भवसागरदुःखविदूनहृदम् ।</br>रचयाखिलदर्शनतत्त्वविदं </br>भव शङ्कर देशिक मे शरणम् ॥२॥</br></br>भवता जनता सुहिता भविता</br>निजबोधविचारण चारुमते ।</br>कलयेश्वरजीवविवेकविदं </br>भव शङ्कर देशिक मे शरणम् ॥३॥</br></br>भव एव भवानिति मे नितरां </br>समजायत चेतसि कौतुकिता ।</br>मम वारय मोहमहाजलधिं </br>भव शङ्कर देशिक मे शरणम् ॥४॥</br></br>सुकृतेऽधिकृते बहुधा भवतो</br>भविता समदर्शनलालसता ।</br>अतिदीनमिमं परिपालय मां </br>भव शङ्कर देशिक मे शरणम् ॥५॥</br></br>जगतीमवितुं कलिताकृतयो</br>विचरन्ति महामहसश्छलतः ।</br>अहिमांशुरिवात्र विभासि गुरो </br>भव शङ्कर देशिक मे शरणम् ॥६॥</br></br>गुरुपुङ्गव पुङ्गवकेतन ते </br>समतामयतां नहि कोऽपि सुधीः ।</br>शरणागतवत्सल तत्त्वनिधे </br>भव शङ्कर देशिक मे शरणम् ॥७॥</br></br>विदिता न मया विशदैककला </br>न च किञ्चन काञ्चनमस्ति गुरो ।</br>द्रुतमेव विधेहि कृपां सहजां </br>भव शङ्कर देशिक मे शरणम् ॥८॥</br>इति तोटकाष्टकम्</br>---------------</br></br>
+                </div>
+                
+                <div id="section2" class="total b2">
+                    Mulam with hyphens:</br>॥तोटकाष्टकम्॥</br>अथ तोटकाष्टकम्</br></br>विदिता-खिल-शास्त्र-सुधा-जलधे</br>महितोप-निषत्-कथितार्थ-निधे ।</br>हृदये कलये विमलं चरणं </br>भव शङ्कर देशिक मे शरणम् ॥१॥</br></br>करुणा-वरुणा-लय पालय मां</br>भव-सागर-दुःख-विदून-हृदम् ।</br>रचया-खिल-दर्शन-तत्त्व-विदं </br>भव शङ्कर देशिक मे शरणम् ॥२॥</br></br>भवता जनता सुहिता भविता</br>निज-बोध-विचारण चारुमते ।</br>कल-येश्वर-जीव-विवेक-विदं </br>भव शङ्कर देशिक मे शरणम् ॥३॥</br></br>भव एव भवा-निति मे नितरां </br>सम-जायत चेतसि कौतुकिता ।</br>मम वारय मोह-महा-जलधिं </br>भव शङ्कर देशिक मे शरणम् ॥४॥</br></br>सुकृतेऽ-धिकृते बहुधा भवतो</br>भविता सम-दर्शन-लालसता ।</br>अति-दीन-मिमं परि-पालय मां </br>भव शङ्कर देशिक मे शरणम् ॥५॥</br></br>जगती-मवितुं कलिता-कृतयो</br>विचरन्ति महा-महसश्-छलतः ।</br>अहिमांशु-रिवात्र विभासि गुरो </br>भव शङ्कर देशिक मे शरणम् ॥६॥</br></br>गुरु-पुङ्गव पुङ्गव-केतन ते </br>समता-मयतां नहि कोऽपि सुधीः ।</br>शरणा-गत-वत्सल तत्त्व-निधे </br>भव शङ्कर देशिक मे शरणम् ॥७॥</br></br>विदिता न मया विशदैक-कला </br>न च किञ्चन काञ्चन-मस्ति गुरो ।</br>द्रुत-मेव विधेहि कृपां सहजां </br>भव शङ्कर देशिक मे शरणम् ॥८॥</br></br>---------------</br>
+                </div>
+                
+                <div id="section3" class="total b3">
+                    Mulam with meaning:</br></br>॥तोटकाष्टकम्॥</br>अथ तोटकाष्टकम्</br></br>विदिता-खिल-शास्त्र-सुधा-जलधे</br>महितोप-निषत्-कथितार्थ-निधे ।</br>हृदये कलये विमलं चरणं </br>भव शङ्कर देशिक मे शरणम् ॥१॥</br>viditā-khila-śāstra-sudhā-jaladhe</br>mahitopa-niṣat-kathitārtha-nidhe ।</br>hṛdaye kalaye vimalaṃ caraṇaṃ </br>bhava śaṅkara deśika me śaraṇam ॥1॥</br>Meaning-</br>One who is the knower (vidita-) of all (-akhila-) the ocean of (-jaladhe) scriptural (-śāstra-) nectar (-sudhā-); </br>one by whom the treasure (-nidhe) of honoured (mahita-) upanishadic (-upaniṣat-) meaning (-artha-) is explained (-kathita-);</br>In my heart (hṛdaye) I hold (kalaye) (your) spotless (vimalaṃ) foot (caraṇaṃ); O teacher (deśika) śaṅkara,  you be (bhava) my (me) refuge (śaraṇam) ॥1॥</br></br>करुणा-वरुणा-लय पालय मां</br>भव-सागर-दुःख-विदून-हृदम् ।</br>रचया-खिल-दर्शन-तत्त्व-विदं </br>भव शङ्कर देशिक मे शरणम् ॥२॥</br>karuṇā-varuṇā-laya pālaya māṃ</br>bhava-sāgara-duḥkha-vidūna-hṛdam ।</br>racayā-khila-darśana-tattva-vidaṃ </br>bhava śaṅkara deśika me śaraṇam ॥2॥</br>Meaning-</br>O the great water repository that is ocean (-varuṇa-ālaya) of grace (karuṇā-),  protect (pālaya) me (māṃ);</br>(I), the one whose heart (-hṛdam) is afflicted (-vidūna-) by the sorrow (-duḥkha-)of the ocean (-sāgara-) of the world (bhava-) </br>make me (racaya) the knower (-vidaṃ) of the entire (akhila-) essential nature (-tattva-) of the God-discovering (philosophical) systems (-darśana-)  </br>O teacher (deśika) śaṅkara,  you be (bhava) my (me) refuge (śaraṇam) ॥2॥</br></br>भवता जनता सुहिता भविता</br>निज-बोध-विचारण चारुमते ।</br>कल-येश्वर-जीव-विवेक-विदं </br>भव शङ्कर देशिक मे शरणम् ॥३॥</br>bhavatā janatā suhitā bhavitā</br>nija-bodha-vicāraṇa cārumate ।</br>kala-yeśvara-jīva-viveka-vidaṃ </br>bhava śaṅkara deśika me śaraṇam ॥3॥</br>Meaning-</br>The people (janatā) will be made (bhavitā) satisfied (suhitā) by you (bhavatā);</br>O the one who has beautiful mind (cārumate); O the one with  understanding (-bodha-) of the self (nija-) inquiry (vicāraṇa) ।</br>Hold (kalaya) (in heart) the one who knows (-vidaṃ) the discrimination (-viveka-) between the God (-īśvara-) and the individual (-jīva-) </br>O teacher (deśika) śaṅkara,  you be (bhava) my (me) refuge (śaraṇam)॥3॥</br></br>भव एव भवा-निति मे नितरां </br>सम-जायत चेतसि कौतुकिता ।</br>मम वारय मोह-महा-जलधिं </br>भव शङ्कर देशिक मे शरणम् ॥४॥</br>bhava eva bhavā-niti me nitarāṃ </br>sama-jāyata cetasi kautukitā ।</br>mama vāraya moha-mahā-jaladhiṃ </br>bhava śaṅkara deśika me śaraṇam ॥4॥</br>Meaning-</br>You are (bhavān) indeed Shiva Himself (bhava eva) thus (iti) in my (me) heart (cetasi) always (nitarāṃ) aroused (sama-jāyata) the festivity (kautukitā) </br>Prevent (vāraya) the great (-mahā-) ocean (-jaladhiṃ) of delusion (moha-) in me (mama)   </br>O teacher (deśika) śaṅkara,  you be (bhava) my (me) refuge (śaraṇam) ॥4॥</br></br>सुकृतेऽ-धिकृते बहुधा भवतो</br>भविता सम-दर्शन-लालसता ।</br>अति-दीन-मिमं परि-पालय मां </br>भव शङ्कर देशिक मे शरणम् ॥५॥</br>sukṛte'-dhikṛte bahudhā bhavato</br>bhavitā sama-darśana-lālasatā ।</br>ati-dīna-mimaṃ pari-pālaya māṃ </br>bhava śaṅkara deśika me śaraṇam ॥5॥</br>Meaning-</br>When the fruit of good actions (sukṛte) is abundant (adhikṛte) and manifold (bahudhā), the craving (-lālasatā) for seeing everything equally (sama-darśana-) with you (bhavato) will arise (bhavitā).</br>Protect (pari-pālaya) this person (imaṃ) (that is) me (māṃ) who is very pitiable (ati-dīnam);   </br>O teacher (deśika) śaṅkara,  you be (bhava) my (me) refuge (śaraṇam) ॥5॥</br></br>जगती-मवितुं कलिता-कृतयो</br>विचरन्ति महा-महसश्-छलतः ।</br>अहिमांशु-रिवात्र विभासि गुरो </br>भव शङ्कर देशिक मे शरणम् ॥६॥</br>jagatī-mavituṃ kalitā-kṛtayo</br>vicaranti mahā-mahasaś-chalataḥ ।</br>ahimāṃśu-rivātra vibhāsi guro </br>bhava śaṅkara deśika me śaraṇam ॥6॥</br>Meaning-</br>Great persons (mahā-mahasaḥ) wander about (vicaranti) assuming (kalita-)  different forms (-ākṛtayo) by disguise (chalataḥ) in order to protect (avituṃ) the world (jagatīm)।</br>O Guru (guro), you are shining (vibhāsi) here (atra) like (iva) the Sun (ahimāṃśuḥ);</br>O teacher (deśika) śaṅkara,  you be (bhava) my (me) refuge (śaraṇam)</br> ॥6॥</br></br>गुरु-पुङ्गव पुङ्गव-केतन ते </br>समता-मयतां नहि कोऽपि सुधीः ।</br>शरणा-गत-वत्सल तत्त्व-निधे </br>भव शङ्कर देशिक मे शरणम् ॥७॥</br>guru-puṅgava puṅgava-ketana te </br>samatā-mayatāṃ nahi ko'pi sudhīḥ ।</br>śaraṇā-gata-vatsala tattva-nidhe </br>bhava śaṅkara deśika me śaraṇam ॥7॥</br>Meaning-</br>O the best among teachers (guru-puṅgava), O the best among men (puṅgava-ketana), no intellectual (nahi ko'pi sudhīḥ) stands (ayatāṃ) equal (samatām) to you (te).</br>O the one who shows love and care (-vatsala) for the refugee (śaraṇāgata-), o the treasure for the real essesnce (tattva-nidhe), </br>O teacher (deśika) śaṅkara,  you be (bhava) my (me) refuge (śaraṇam) ॥7॥</br></br>विदिता न मया विशदैक-कला </br>न च किञ्चन काञ्चन-मस्ति गुरो ।</br>द्रुत-मेव विधेहि कृपां सहजां </br>भव शङ्कर देशिक मे शरणम् ॥८॥</br>viditā na mayā viśadaika-kalā </br>na ca kiñcana kāñcana-masti guro ।</br>druta-meva vidhehi kṛpāṃ sahajāṃ </br>bhava śaṅkara deśika me śaraṇam ॥8॥</br>Meaning-</br>This very evident (viśadā) one single art (eka-kalā) is not (na) known (viditā) by me (mayā). </br>O Guru (guro), there is not even (na ca asti) some (kiñcana) gold (kāñcanam).</br>Show (vidhehi) the grace (kṛpāṃ) (which is) natural (sahajāṃ) (to you) immediately (drutam eva)    </br>O teacher (deśika) śaṅkara,  you be (bhava) my (me) refuge (śaraṇam)</br> ॥8॥</br></br>---------------</br></br>
+                </div>
+                 
+            </div>
+
+        </div>
+    </div>    
+
+    <script>
+
+
+    function toggleSection(whichclass){
+
+        var appClasses = document.getElementsByClassName(whichclass);
+
+        for (var i = 0; i < appClasses.length; i ++) {
+            if(appClasses[i].style.display === 'none'){
+                appClasses[i].style.display = '';
+            }
+            else{
+                appClasses[i].style.display = 'none';
+            }
+        }
+    }
+
+    $(document).ready(function () {
+        $("#b1,#b2,#b3").click(function() {
+                $(this).toggleClass("inactive lang-btn");
+                toggleSection(this.id);
+            });
+    })
+
+
+</script>
+
+    
+        <!-- Footer Start -->
+        <footer class="footer-area">
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-widget pr-60">
+                                <div class="footer-logo pb-5">
+                                    <a href="home.php"><img src="images/logo.png" alt="Samskrtam" style="width:200px"></a>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/svarvaniprakash"><i class="zmdi zmdi-facebook customicon"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest customicon"></i></a></li>
+                                        <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured"><i class="zmdi zmdi-youtube customicon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/svarvani24/"><i class="zmdi zmdi-instagram customicon"></i></a></li>
+                                        <li><a href="https://twitter.com/SvarvaniS"><i class="zmdi zmdi-twitter customicon"></i></a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+<!--                         <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <h3>information</h3>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="#">Other info</a></li>
+                                    <li><a href="#">TimeTable</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>useful links</h3>
+                                <ul>
+                                    <li><a href="https://twitter.com/SvarvaniS">Twitter</a></li>
+                                    <li><a href="https://www.facebook.com/svarvaniprakash">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/svarvani24/">Instagram</a></li>
+                                    <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured">YouTube</a></li>
+                                    <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>get in touch</h3>
+                                <p>Please reach us at: </p>
+                                <p>samskrta.usha@gmail.com<br>https://samskrtam.info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Copyright © <a href="index.html">Svarvani Prakasha</a> 2023. All Right Reserved By <a href="https://samskrtam.info" target="_blank">Svarvani</a></p>
+                        </div> 
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+
+        
+        <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/samskrtam.js"></script>
+    </body>
+</html>    

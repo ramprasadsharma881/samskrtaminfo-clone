@@ -1,0 +1,550 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Prahelika - పాటలు సినీ గీతాలు</title>
+        <meta name="description" content="Learn and Read Sanskrit - Samskrtam - ప్రహేళికలు - పాటలు సినీ గీతాలు">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/et-line-icon.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/style.css?v=16">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/vendor/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/freeze-table.js"></script>
+        <script type="text/javascript" src="js/samskrtam.js"></script>
+
+                    <script id="aksharamukhascript" src="https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha/aksharamukha-web-plugin/aksharamukha-v3.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                        <!-- <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"><img src="img/logo/logif.jpeg" alt="Samskrtam logo" style="width:30px;height:20px" /></a>
+                            </div>
+                        </div> -->
+                        <div class="col-md-12 col-sm-12">
+                            <div class="header-top-right text-md-end">
+                                <ul>
+                                    <li><a href="home.php">Home</a></li>
+                                    <li><a href="home.php">Contact</a></li>
+                                    <li><a href="home.php">About</a></li>
+                                    <li><a href="donate.php">Donate</a></li>
+                                    <li><a href="home.php">Useful Links</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Area Start -->
+        <div class="banner-area-wrapper">
+            <div class="banner-area1 text-center">  
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="banner-content-wrapper">
+                                <div class="banner-content">
+                                    <h2></h2> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Banner Area End -->
+        <!-- Header Area Start -->
+		<header class="top">
+			<div class="header-area two header-sticky">
+				<div class="container">
+					<div class="row">
+                        <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"></a>
+                            </div>
+                        </div>
+						<div class="col-md-9 col-sm-7 col-6">
+                            <div class="content-wrapper text-end">
+                                <!-- Main Menu Start -->
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="stotras.php">Stotras</a></li>
+                                            <li><a href="home.php">Songs</a></li>
+                                             <li class="hidden-sm"><a href="texts.php">Text Contents</a></li>
+                                             <li class="hidden-sm"><a href="courses.php">Lessons</a></li>
+                                             <li class="hidden-sm"><a href="home.php">Articles</a></li>    
+                                             <li class="hidden-sm"><a href="prahelikas.php">ప్రహేళికలు</a></li>                                         
+                                            <li><a href="home.php">Other</a>
+                                                <ul>
+                                                    <li><a href="home.php">Worker Links</a></li>
+                                                    <li><a href="donate.php">Donate</a></li>
+                                                    <li><a href="donate.php">Blogs</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--Search Form Start-->
+<!--                                 <div class="search-btn">
+                                    <ul class="header-search search-toggle">
+                                        <li class="search-menu">
+                                            <i class="fa fa-search"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="search">
+                                        <div class="search-form">
+                                            <form id="search-form" action="#">
+                                                <input type="search" placeholder="Search here..." name="search" />
+                                                <button type="submit">
+                                                    <span><i class="fa fa-search"></i></span>
+                                                </button>
+                                            </form>                                
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!--End of Search Form-->
+                                <!-- Main Menu End -->
+                            </div>
+						</div>
+                        <div class="col-12">
+                            <div class="mobile-menu hidden-sm"></div> 
+                        </div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Area End -->
+
+
+<div class="course-area pt-20 pb-50">
+    <div class="container">
+        
+        <div style="color: green;" class="pb-10">
+            <a href="home.php" class="crumb">Home</a> >> 
+            <a href="prahelikas.php" class="crumb">ప్రహేళికలు</a> >> 
+            పాటలు సినీ గీతాలు        </div>
+
+        <div class="subscribe-content section-title text-center pb-30">
+            <h2>పాటలు సినీ గీతాలు</h2>
+            <h3 style="font-size: 1.2em; margin-top: 5px;">పూర్తి ప్రహేళిక కోసం "మరిన్ని ప్రశ్నలు - రీడ్ మోర్" నొక్కండి. ప్రశ్న చదివి సమాధానం ఆలోచించండి. సరైన సమాధానం తెలుసుకునేందుకు "సమా" నొక్కండి</h3>
+        </div>
+
+                        <div class="puzzle-block mb-20" id="puzzle_container_1" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 5.1</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">ఘంటసాల పాడిన ఈ తెలుగు సినీగీతాలను గుర్తించండి</h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_0" class="original b1" onclick="toggleAnswer('1_0')" style="cursor:pointer">
+                                        1. చిన్తితం ఏకం, ఘటితం తు అన్యద్                                    </div>
+                                    <button onclick="toggleAnswer('1_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_0" class="original b2 answer-text" style="display:none; ">
+                                    స: అనుకొన్నదొక్కటి అయినది ఒక్కటి                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_1" class="original b1" onclick="toggleAnswer('1_1')" style="cursor:pointer">
+                                        2. ఉన్మీలన్నేత్రయోః సహస్రసంవిదః సన్తి కిల                                    </div>
+                                    <button onclick="toggleAnswer('1_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_1" class="original b2 answer-text" style="display:none; ">
+                                    స: విరిసే కన్నులలో వేయిబాసలున్నవిలే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_2" class="original b1" onclick="toggleAnswer('1_2')" style="cursor:pointer">
+                                        3. మాం పాలయితుం చలిత్వా ఆగతోసి కిమ్                                    </div>
+                                    <button onclick="toggleAnswer('1_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_2" class="original b2 answer-text" style="display:none; ">
+                                    స: నను పాలింపగ నడచి వచ్చితివా                                </div>
+                            </div> 
+                        <div id="more_questions_1" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_3" class="original b1" onclick="toggleAnswer('1_3')" style="cursor:pointer">
+                                        4. మోదభరితం ఆర్య గురో మోదభరితం ఆర్య                                    </div>
+                                    <button onclick="toggleAnswer('1_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_3" class="original b2 answer-text" style="display:none; ">
+                                    స: నందామయా గురుడ నందామయ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_4" class="original b1" onclick="toggleAnswer('1_4')" style="cursor:pointer">
+                                        5. హే భగవతా కృతాః మనుష్యాః, హే మనుష్యకృతాః భగవన్తః                                    </div>
+                                    <button onclick="toggleAnswer('1_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_4" class="original b2 answer-text" style="display:none; ">
+                                    స: దేవుడు చేసిన మనుషుల్లారా, మనుషులు చేసిన దేవుళ్ళారా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_5" class="original b1" onclick="toggleAnswer('1_5')" style="cursor:pointer">
+                                        6. హే నాగరిక-పాలకపత్ని                                    </div>
+                                    <button onclick="toggleAnswer('1_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_5" class="original b2 answer-text" style="display:none; ">
+                                    స: ఓహో బస్తీ దొరసాని                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_6" class="original b1" onclick="toggleAnswer('1_6')" style="cursor:pointer">
+                                        7. కశ్చిదాయాస్యతీతి, కిమపి కరిష్యతీతి                                    </div>
+                                    <button onclick="toggleAnswer('1_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_6" class="original b2 answer-text" style="display:none; ">
+                                    స: ఎవరో వస్తారని ఏదో చేస్తారని                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_7" class="original b1" onclick="toggleAnswer('1_7')" style="cursor:pointer">
+                                        8. కస్మాయపి శిరః మా అవనమయ                                    </div>
+                                    <button onclick="toggleAnswer('1_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_7" class="original b2 answer-text" style="display:none; ">
+                                    స: ఎవరికీ తలవంచకు                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_8" class="original b1" onclick="toggleAnswer('1_8')" style="cursor:pointer">
+                                        9. సర్పస్య ప్రతీకారః ద్వాదశవత్సరాః (యావత్), మయి జ్వలత్ప్రతీకారః శతవత్సరాః యావత్                                    </div>
+                                    <button onclick="toggleAnswer('1_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_8" class="original b2 answer-text" style="display:none; ">
+                                    స: నాగుపాము పగ పన్నెండేళ్ళు, నాలో రగిలే పగ నూరేళ్ళు                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_9" class="original b1" onclick="toggleAnswer('1_9')" style="cursor:pointer">
+                                        10. నరః ఏవ మాహాత్మా                                    </div>
+                                    <button onclick="toggleAnswer('1_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_9" class="original b2 answer-text" style="display:none; ">
+                                    స: మానవుడే మహనీయుడు                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_10" class="original b1" onclick="toggleAnswer('1_10')" style="cursor:pointer">
+                                        11. నటనానాం రాజపత్నీ త్వమేవ                                    </div>
+                                    <button onclick="toggleAnswer('1_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_10" class="original b2 answer-text" style="display:none; ">
+                                    స: వగలరాణివి నీవే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_11" class="original b1" onclick="toggleAnswer('1_11')" style="cursor:pointer">
+                                        12. మమ ప్రార్థనాం శ్రుత్వా, అపరాధం క్షాన్త్వా, అవతు, దయాం దర్శయిత్వా                                    </div>
+                                    <button onclick="toggleAnswer('1_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_11" class="original b2 answer-text" style="display:none; ">
+                                    స: నా మొరను మీరాలకించి అపరాధము మన్నించి కావరామీ దయ చూపి                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_12" class="original b1" onclick="toggleAnswer('1_12')" style="cursor:pointer">
+                                        13. ధేనుం-బుద్ధిః యత్ర అభవత్ తద్ రాష్ట్రం                                    </div>
+                                    <button onclick="toggleAnswer('1_12')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_12" class="original b2 answer-text" style="display:none; ">
+                                    స: గాంధీపుట్టినదేశం                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_1')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_1" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_1', 'btn_more_1')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_2" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 5.2</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            Srinivas                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">లఘుప్రహేళిక. కాదు, కాదు,  'బృహత్' ప్రహేళిక.</h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_0" class="original b1" onclick="toggleAnswer('2_0')" style="cursor:pointer">
+                                        1. రాజరాజచోళుడు కట్టించిన పెద్ద గుడి                                    </div>
+                                    <button onclick="toggleAnswer('2_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_0" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహదీశ్వరాలయం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_1" class="original b1" onclick="toggleAnswer('2_1')" style="cursor:pointer">
+                                        2. 'అసతో మా సద్గమయ...' అని చెప్పిన ఉపనిషత్తు                                    </div>
+                                    <button onclick="toggleAnswer('2_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_1" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహదారణ్యకోపనిషత్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_2" class="original b1" onclick="toggleAnswer('2_2')" style="cursor:pointer">
+                                        3. పౌరుషహీనపాండవమధ్యముడు                                    </div>
+                                    <button onclick="toggleAnswer('2_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_2" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహన్నలః                                </div>
+                            </div> 
+                        <div id="more_questions_2" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_3" class="original b1" onclick="toggleAnswer('2_3')" style="cursor:pointer">
+                                        4. 'పొగ తాగనివాడు దున్నపోతై పుట్టున్' అన్న మాట ఈ గ్రంథంలో ఉన్నదట                                    </div>
+                                    <button onclick="toggleAnswer('2_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_3" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహన్నారదీయం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_4" class="original b1" onclick="toggleAnswer('2_4')" style="cursor:pointer">
+                                        5. పుష్యమిత్రుడి చేత మరణించిన మౌర్యరాజు                                    </div>
+                                    <button onclick="toggleAnswer('2_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_4" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహద్రథుడు                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_5" class="original b1" onclick="toggleAnswer('2_5')" style="cursor:pointer">
+                                        6. వరాహమిహిరుడి ఎన్‌సైక్లోపిడియా                                    </div>
+                                    <button onclick="toggleAnswer('2_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_5" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహత్సంహితా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_6" class="original b1" onclick="toggleAnswer('2_6')" style="cursor:pointer">
+                                        7. కథాసరిత్సాగరానికి ఆధారమైన గ్రంథం                                    </div>
+                                    <button onclick="toggleAnswer('2_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_6" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహత్కథా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_7" class="original b1" onclick="toggleAnswer('2_7')" style="cursor:pointer">
+                                        8. చిత్సుఖుడు వ్రాసిన అద్వైతమతప్రవర్తకుడి గెలుపు కథ                                    </div>
+                                    <button onclick="toggleAnswer('2_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_7" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహచ్ఛంకరవిజయమ్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_8" class="original b1" onclick="toggleAnswer('2_8')" style="cursor:pointer">
+                                        9. 'మెగాలిథిక్ ఏజ్' కు తెలుగు మాట                                    </div>
+                                    <button onclick="toggleAnswer('2_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_8" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహచ్ఛిలాయుగము                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_9" class="original b1" onclick="toggleAnswer('2_9')" style="cursor:pointer">
+                                        10. ఇక్ష్వాకుల తరువాత తెలుగునాట పాతికేళ్ళ పాలన చేసిన రాజులు                                    </div>
+                                    <button onclick="toggleAnswer('2_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_9" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహత్పలాయనులు                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_10" class="original b1" onclick="toggleAnswer('2_10')" style="cursor:pointer">
+                                        11. కుమారిలభట్టు ఇచ్చిన పెద్ద ఇంజెక్షన్                                    </div>
+                                    <button onclick="toggleAnswer('2_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_10" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహట్టీకా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_11" class="original b1" onclick="toggleAnswer('2_11')" style="cursor:pointer">
+                                        12. పనసపండు                                    </div>
+                                    <button onclick="toggleAnswer('2_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_11" class="original b2 answer-text" style="display:none; ">
+                                    స: బృహత్ఫలమ్                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_2')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_2" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_2', 'btn_more_2')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+</div>    
+
+<script>
+    function toggleAnswer(uniqueID){
+        $('#a' + uniqueID).show();
+    }
+
+    function showMoreQuestions(contentID, btnID) {
+        $('#' + contentID).slideDown();
+        $('#' + btnID).hide();
+    }
+
+    function showPuzzleAnswers(containerID){
+        $('#' + containerID + ' .answer-text').show();
+    }
+
+    $(document).ready(function () {
+        $('.answer-text').hide();
+    });
+</script>
+
+
+        <!-- Footer Start -->
+        <footer class="footer-area">
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-widget pr-60">
+                                <div class="footer-logo pb-5">
+                                    <a href="home.php"><img src="images/logo.png" alt="Samskrtam" style="width:200px"></a>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/svarvaniprakash"><i class="zmdi zmdi-facebook customicon"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest customicon"></i></a></li>
+                                        <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured"><i class="zmdi zmdi-youtube customicon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/svarvani24/"><i class="zmdi zmdi-instagram customicon"></i></a></li>
+                                        <li><a href="https://twitter.com/SvarvaniS"><i class="zmdi zmdi-twitter customicon"></i></a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+<!--                         <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <h3>information</h3>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="#">Other info</a></li>
+                                    <li><a href="#">TimeTable</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>useful links</h3>
+                                <ul>
+                                    <li><a href="https://twitter.com/SvarvaniS">Twitter</a></li>
+                                    <li><a href="https://www.facebook.com/svarvaniprakash">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/svarvani24/">Instagram</a></li>
+                                    <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured">YouTube</a></li>
+                                    <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>get in touch</h3>
+                                <p>Please reach us at: </p>
+                                <p>samskrta.usha@gmail.com<br>https://samskrtam.info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Copyright © <a href="index.html">Svarvani Prakasha</a> 2023. All Right Reserved By <a href="https://samskrtam.info" target="_blank">Svarvani</a></p>
+                        </div> 
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+
+        
+        <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/samskrtam.js"></script>
+    </body>
+</html>

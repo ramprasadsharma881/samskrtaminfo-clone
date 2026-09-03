@@ -1,0 +1,2057 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Prahelika - స్తోత్రావగాహన</title>
+        <meta name="description" content="Learn and Read Sanskrit - Samskrtam - ప్రహేళికలు - స్తోత్రావగాహన">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/et-line-icon.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/style.css?v=16">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/vendor/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/freeze-table.js"></script>
+        <script type="text/javascript" src="js/samskrtam.js"></script>
+
+                    <script id="aksharamukhascript" src="https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha/aksharamukha-web-plugin/aksharamukha-v3.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                        <!-- <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"><img src="img/logo/logif.jpeg" alt="Samskrtam logo" style="width:30px;height:20px" /></a>
+                            </div>
+                        </div> -->
+                        <div class="col-md-12 col-sm-12">
+                            <div class="header-top-right text-md-end">
+                                <ul>
+                                    <li><a href="home.php">Home</a></li>
+                                    <li><a href="home.php">Contact</a></li>
+                                    <li><a href="home.php">About</a></li>
+                                    <li><a href="donate.php">Donate</a></li>
+                                    <li><a href="home.php">Useful Links</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Area Start -->
+        <div class="banner-area-wrapper">
+            <div class="banner-area1 text-center">  
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="banner-content-wrapper">
+                                <div class="banner-content">
+                                    <h2></h2> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Banner Area End -->
+        <!-- Header Area Start -->
+		<header class="top">
+			<div class="header-area two header-sticky">
+				<div class="container">
+					<div class="row">
+                        <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"></a>
+                            </div>
+                        </div>
+						<div class="col-md-9 col-sm-7 col-6">
+                            <div class="content-wrapper text-end">
+                                <!-- Main Menu Start -->
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="stotras.php">Stotras</a></li>
+                                            <li><a href="home.php">Songs</a></li>
+                                             <li class="hidden-sm"><a href="texts.php">Text Contents</a></li>
+                                             <li class="hidden-sm"><a href="courses.php">Lessons</a></li>
+                                             <li class="hidden-sm"><a href="home.php">Articles</a></li>    
+                                             <li class="hidden-sm"><a href="prahelikas.php">ప్రహేళికలు</a></li>                                         
+                                            <li><a href="home.php">Other</a>
+                                                <ul>
+                                                    <li><a href="home.php">Worker Links</a></li>
+                                                    <li><a href="donate.php">Donate</a></li>
+                                                    <li><a href="donate.php">Blogs</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--Search Form Start-->
+<!--                                 <div class="search-btn">
+                                    <ul class="header-search search-toggle">
+                                        <li class="search-menu">
+                                            <i class="fa fa-search"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="search">
+                                        <div class="search-form">
+                                            <form id="search-form" action="#">
+                                                <input type="search" placeholder="Search here..." name="search" />
+                                                <button type="submit">
+                                                    <span><i class="fa fa-search"></i></span>
+                                                </button>
+                                            </form>                                
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!--End of Search Form-->
+                                <!-- Main Menu End -->
+                            </div>
+						</div>
+                        <div class="col-12">
+                            <div class="mobile-menu hidden-sm"></div> 
+                        </div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Area End -->
+
+
+<div class="course-area pt-20 pb-50">
+    <div class="container">
+        
+        <div style="color: green;" class="pb-10">
+            <a href="home.php" class="crumb">Home</a> >> 
+            <a href="prahelikas.php" class="crumb">ప్రహేళికలు</a> >> 
+            స్తోత్రావగాహన        </div>
+
+        <div class="subscribe-content section-title text-center pb-30">
+            <h2>స్తోత్రావగాహన</h2>
+            <h3 style="font-size: 1.2em; margin-top: 5px;">పూర్తి ప్రహేళిక కోసం "మరిన్ని ప్రశ్నలు - రీడ్ మోర్" నొక్కండి. ప్రశ్న చదివి సమాధానం ఆలోచించండి. సరైన సమాధానం తెలుసుకునేందుకు "సమా" నొక్కండి</h3>
+        </div>
+
+                        <div class="puzzle-block mb-20" id="puzzle_container_1" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.1</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి శ్రీచండికాస్తుతి స్తోత్రంలో పంక్తులను గుర్తించండి- <a href="https://sanskritdocuments.org/doc_devii/chaNDikAstutiH.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/chaNDikAstutiH.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_0" class="original b1" onclick="toggleAnswer('1_0')" style="cursor:pointer">
+                                        1. ఏకాంతంగా ఉండే ఓ నదీ మధ్యలో చేసిపెట్టిన ఆశ్రమం కలదానను (1)                                    </div>
+                                    <button onclick="toggleAnswer('1_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_0" class="original b2 answer-text" style="display:none; ">
+                                    స: వివిక్తతర-గోమతీ-జఠర-మధ్య-సిద్ధాశ్రమాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_1" class="original b1" onclick="toggleAnswer('1_1')" style="cursor:pointer">
+                                        2. వేప చెట్టు మొదటిలో నివాసం ఉన్నదానను (1)                                    </div>
+                                    <button onclick="toggleAnswer('1_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_1" class="original b2 answer-text" style="display:none; ">
+                                    స: నింబమూలాలయాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_2" class="original b1" onclick="toggleAnswer('1_2')" style="cursor:pointer">
+                                        3. ప్రత్యేకమైన ఇల్లు కలిగినది (2)                                    </div>
+                                    <button onclick="toggleAnswer('1_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_2" class="original b2 answer-text" style="display:none; ">
+                                    స: విశేష-వేశ్మావహాం                                </div>
+                            </div> 
+                        <div id="more_questions_1" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_3" class="original b1" onclick="toggleAnswer('1_3')" style="cursor:pointer">
+                                        4. నమస్కరిస్తున్న మనుషుల చిత్తయానం (2)                                    </div>
+                                    <button onclick="toggleAnswer('1_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_3" class="original b2 answer-text" style="display:none; ">
+                                    స: నమజ్జన-మనోరథా...                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_4" class="original b1" onclick="toggleAnswer('1_4')" style="cursor:pointer">
+                                        5. సంతతం వికసించే పద్మపు (3)                                    </div>
+                                    <button onclick="toggleAnswer('1_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_4" class="original b2 answer-text" style="display:none; ">
+                                    స: నిరంతర-సముల్లసత్కమల                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_5" class="original b1" onclick="toggleAnswer('1_5')" style="cursor:pointer">
+                                        6. ముక్కోణపు జలాశయాలు (చుట్టూ) కలిగినదానను (3)                                    </div>
+                                    <button onclick="toggleAnswer('1_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_5" class="original b2 answer-text" style="display:none; ">
+                                    స: త్రికోణ-సరసీమయీం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_6" class="original b1" onclick="toggleAnswer('1_6')" style="cursor:pointer">
+                                        7. కమలాల రేకుల వేలు (4)                                    </div>
+                                    <button onclick="toggleAnswer('1_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_6" class="original b2 answer-text" style="display:none; ">
+                                    స: పద్మినీదల-సహస్ర                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_7" class="original b1" onclick="toggleAnswer('1_7')" style="cursor:pointer">
+                                        8. అనుక్షణం (విచ్చుకునే లేదా) తెరుచుకునే (4)                                    </div>
+                                    <button onclick="toggleAnswer('1_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_7" class="original b2 answer-text" style="display:none; ">
+                                    స: ప్రతిక్షణ-సమున్మిషత్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_8" class="original b1" onclick="toggleAnswer('1_8')" style="cursor:pointer">
+                                        9. పట్టున ఆపదలను విరిచేస్తుంది (5)                                    </div>
+                                    <button onclick="toggleAnswer('1_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_8" class="original b2 answer-text" style="display:none; ">
+                                    స: ఝటితి ఖండయత్యాపదః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_9" class="original b1" onclick="toggleAnswer('1_9')" style="cursor:pointer">
+                                        10. సభలో ఉద్ధతులను దండిస్తుంది (5)                                    </div>
+                                    <button onclick="toggleAnswer('1_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_9" class="original b2 answer-text" style="display:none; ">
+                                    స: సదసి దండయత్యుద్ధతాన్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_10" class="original b1" onclick="toggleAnswer('1_10')" style="cursor:pointer">
+                                        11. బాగా చక్కగా పూజింపబడినది (6)                                    </div>
+                                    <button onclick="toggleAnswer('1_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_10" class="original b2 answer-text" style="display:none; ">
+                                    స: సమభ్యర్చితా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_11" class="original b1" onclick="toggleAnswer('1_11')" style="cursor:pointer">
+                                        12. కొత్త కొత్త మాటలచేత స్తుతింపబడునది (6)                                    </div>
+                                    <button onclick="toggleAnswer('1_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_11" class="original b2 answer-text" style="display:none; ">
+                                    స: నవనవైర్వచోభిః స్తుతా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_12" class="original b1" onclick="toggleAnswer('1_12')" style="cursor:pointer">
+                                        13. పక్షుల గుంపుల తీయని అరుపులతో సేవింపబడునది (7)                                    </div>
+                                    <button onclick="toggleAnswer('1_12')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_12" class="original b2 answer-text" style="display:none; ">
+                                    స: విహగ-మండలీ-మధురరావ-సంసేవితాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_13" class="original b1" onclick="toggleAnswer('1_13')" style="cursor:pointer">
+                                        14. కిందజారిపడే పువ్వుల సువాసనలు ప్రసరించి నింపేసే ఆశ్రమం కలిగినది (7)                                    </div>
+                                    <button onclick="toggleAnswer('1_13')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_13" class="original b2 answer-text" style="display:none; ">
+                                    స: スఖలత్కుసుమ-సౌరభ-ప్రసర-పూర్యమాణాశ్రమాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_14" class="original b1" onclick="toggleAnswer('1_14')" style="cursor:pointer">
+                                        15. శత్రువుల గుంపులకు కత్తి అయిన దానను (8)                                    </div>
+                                    <button onclick="toggleAnswer('1_14')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_14" class="original b2 answer-text" style="display:none; ">
+                                    స: ద్విషత్కుల-కృపాణికాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q1_15" class="original b1" onclick="toggleAnswer('1_15')" style="cursor:pointer">
+                                        16. మువ్విధాల దుఃఖాన్ని పోగొట్టేదానను (8)                                    </div>
+                                    <button onclick="toggleAnswer('1_15')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a1_15" class="original b2 answer-text" style="display:none; ">
+                                    స: త్రివిధ-దుఃఖ-నిర్వాసికాం                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_1')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_1" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_1', 'btn_more_1')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_2" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.2</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి కుండలినీస్తవ స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య. పంక్తుల క్రమం యథాతథం- <a href="https://sanskritdocuments.org/doc_devii/kuNDalinIstava.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/kuNDalinIstava.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_0" class="original b1" onclick="toggleAnswer('2_0')" style="cursor:pointer">
+                                        1. మంచి మాటలలో తిరిగేది (29)                                    </div>
+                                    <button onclick="toggleAnswer('2_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_0" class="original b2 answer-text" style="display:none; ">
+                                    స: సద్వాక్యసంచారిణీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_1" class="original b1" onclick="toggleAnswer('2_1')" style="cursor:pointer">
+                                        2. పాము ఆఖారంలో పడుకున్నదానా (30)                                    </div>
+                                    <button onclick="toggleAnswer('2_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_1" class="original b2 answer-text" style="display:none; ">
+                                    స: సర్పాకృతిర్నిద్రితా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_2" class="original b1" onclick="toggleAnswer('2_2')" style="cursor:pointer">
+                                        3. ప్రయోజనం నెరవేరినవాడు తన తప్పు తెలిసినవాడు (31)                                    </div>
+                                    <button onclick="toggleAnswer('2_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_2" class="original b2 answer-text" style="display:none; ">
+                                    స: సిద్ధార్థీ నిజదోషవిత్                                </div>
+                            </div> 
+                        <div id="more_questions_2" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_3" class="original b1" onclick="toggleAnswer('2_3')" style="cursor:pointer">
+                                        4. ప్రయోజనం నెరవేరిన వంశంలో పుట్టినవారిచేత (32)                                    </div>
+                                    <button onclick="toggleAnswer('2_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_3" class="original b2 answer-text" style="display:none; ">
+                                    స: సిద్ధకులోద్భవైః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_4" class="original b1" onclick="toggleAnswer('2_4')" style="cursor:pointer">
+                                        5. లోకం మొదలైన గొప్ప సుఖాన్ని ప్రహారం చేయునది (33)                                    </div>
+                                    <button onclick="toggleAnswer('2_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_4" class="original b2 answer-text" style="display:none; ">
+                                    స: సంసారాదిమహాసుఖప్రహరణీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_5" class="original b1" onclick="toggleAnswer('2_5')" style="cursor:pointer">
+                                        6. తనకైతాను పుట్టినవాడి మహిళామణిని (34)                                    </div>
+                                    <button onclick="toggleAnswer('2_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_5" class="original b2 answer-text" style="display:none; ">
+                                    స: స్వయంభువనితాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_6" class="original b1" onclick="toggleAnswer('2_6')" style="cursor:pointer">
+                                        7. సన్నని మార్గంలో పోయేదానా (35)                                    </div>
+                                    <button onclick="toggleAnswer('2_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_6" class="original b2 answer-text" style="display:none; ">
+                                    స: సూక్ష్మపథగే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_7" class="original b1" onclick="toggleAnswer('2_7')" style="cursor:pointer">
+                                        8. చంద్రుళ్ళ వంద ఆనందాల ముఖం కలది (36)                                    </div>
+                                    <button onclick="toggleAnswer('2_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_7" class="original b2 answer-text" style="display:none; ">
+                                    స: శశిశతానందాననాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_8" class="original b1" onclick="toggleAnswer('2_8')" style="cursor:pointer">
+                                        9. పొద్దుగాల లేచి (37)                                    </div>
+                                    <button onclick="toggleAnswer('2_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_8" class="original b2 answer-text" style="display:none; ">
+                                    స: ప్రాతరుత్థాయ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_9" class="original b1" onclick="toggleAnswer('2_9')" style="cursor:pointer">
+                                        10. మూలత్త్వంలో మునిగినవాడు (38)                                    </div>
+                                    <button onclick="toggleAnswer('2_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_9" class="original b2 answer-text" style="display:none; ">
+                                    స: బ్రహ్మలీనో                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_10" class="original b1" onclick="toggleAnswer('2_10')" style="cursor:pointer">
+                                        11. ఆచార్య మాటల భర్త (39)                                    </div>
+                                    <button onclick="toggleAnswer('2_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_10" class="original b2 answer-text" style="display:none; ">
+                                    స: గురుగీష్పతిః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q2_11" class="original b1" onclick="toggleAnswer('2_11')" style="cursor:pointer">
+                                        12. అందరికీ దేవతలకు అధిపతి (40)                                    </div>
+                                    <button onclick="toggleAnswer('2_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a2_11" class="original b2 answer-text" style="display:none; ">
+                                    స: సర్వసురేశ్వరః                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_2')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_2" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_2', 'btn_more_2')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_3" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.3</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి ఆర్యాపంచదశీస్తోత్రం స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య. పంక్తుల క్రమం యథాతథం- <a href="https://sanskritdocuments.org/doc_devii/aaryaa15.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/aaryaa15.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_0" class="original b1" onclick="toggleAnswer('3_0')" style="cursor:pointer">
+                                        1. చేతిలో అందమైన ధనుస్సు బాణాలు కలిగినది (1)                                    </div>
+                                    <button onclick="toggleAnswer('3_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_0" class="original b2 answer-text" style="display:none; ">
+                                    స: కరకలితచాపబాణాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_1" class="original b1" onclick="toggleAnswer('3_1')" style="cursor:pointer">
+                                        2. శేషుడు కూడా (2)                                    </div>
+                                    <button onclick="toggleAnswer('3_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_1" class="original b2 answer-text" style="display:none; ">
+                                    స: శేషోఽపి                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_2" class="original b1" onclick="toggleAnswer('3_2')" style="cursor:pointer">
+                                        3. కమల రేకులవంటి కన్నుల కలిగినదానను (3)                                    </div>
+                                    <button onclick="toggleAnswer('3_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_2" class="original b2 answer-text" style="display:none; ">
+                                    స: ఇందీవరదలనయనామ్                                </div>
+                            </div> 
+                        <div id="more_questions_3" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_3" class="original b1" onclick="toggleAnswer('3_3')" style="cursor:pointer">
+                                        4. కోమలమైన శివుని ఎదకమలంలో అందమైన ఆడహంసను (4)                                    </div>
+                                    <button onclick="toggleAnswer('3_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_3" class="original b2 answer-text" style="display:none; ">
+                                    స: లలితశివహృదయకమలకలహంసీం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_4" class="original b1" onclick="toggleAnswer('3_4')" style="cursor:pointer">
+                                        5. విష్ణువు, ఇంద్రుడు, శివునిచే నమస్కరింపబడేదానా (5)                                    </div>
+                                    <button onclick="toggleAnswer('3_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_4" class="original b2 answer-text" style="display:none; ">
+                                    స: హరీంద్రభవవంద్యే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_5" class="original b1" onclick="toggleAnswer('3_5')" style="cursor:pointer">
+                                        6. మూడులోకాలలోని మోహమనే అంధకారం (6)                                    </div>
+                                    <button onclick="toggleAnswer('3_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_5" class="original b2 answer-text" style="display:none; ">
+                                    స: త్రైలోక్యమోహతిమిరం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_6" class="original b1" onclick="toggleAnswer('3_6')" style="cursor:pointer">
+                                        7. అన్ని మనోరథాలను ఇచ్చుదానా (7)                                    </div>
+                                    <button onclick="toggleAnswer('3_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_6" class="original b2 answer-text" style="display:none; ">
+                                    స: సకలమనోరథదానే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_7" class="original b1" onclick="toggleAnswer('3_7')" style="cursor:pointer">
+                                        8. చేతికి వలయం ఉన్న దానా (8)                                    </div>
+                                    <button onclick="toggleAnswer('3_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_7" class="original b2 answer-text" style="display:none; ">
+                                    స: కంకణహస్తే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_8" class="original b1" onclick="toggleAnswer('3_8')" style="cursor:pointer">
+                                        9. శివుని నృత్యాన్ని చూసేదానా (9)                                    </div>
+                                    <button onclick="toggleAnswer('3_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_8" class="original b2 answer-text" style="display:none; ">
+                                    స: హరనటనసాక్షిభూతే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_9" class="original b1" onclick="toggleAnswer('3_9')" style="cursor:pointer">
+                                        10. సుకుమారమైన మృత్యురహిత ఖాద్యం అలల దండ అయినదానా (10)                                    </div>
+                                    <button onclick="toggleAnswer('3_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_9" class="original b2 answer-text" style="display:none; ">
+                                    స: లావణ్యామృతతరంగమాలే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_10" class="original b1" onclick="toggleAnswer('3_10')" style="cursor:pointer">
+                                        11. రణమున అరిచిన నీ కొడుకుకు ఇష్టమైన తల్లీ (11)                                    </div>
+                                    <button onclick="toggleAnswer('3_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_10" class="original b2 answer-text" style="display:none; ">
+                                    స: హేరంబప్రియజనని                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_11" class="original b1" onclick="toggleAnswer('3_11')" style="cursor:pointer">
+                                        12. మంచివాక్కు అనే అమృతధారను (12)                                    </div>
+                                    <button onclick="toggleAnswer('3_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_11" class="original b2 answer-text" style="display:none; ">
+                                    స: సువాక్సుధధారాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_12" class="original b1" onclick="toggleAnswer('3_12')" style="cursor:pointer">
+                                        13. దయ అనే సముద్రమా (13)                                    </div>
+                                    <button onclick="toggleAnswer('3_12')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_12" class="original b2 answer-text" style="display:none; ">
+                                    స: కరుణాపయోనిధే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_13" class="original b1" onclick="toggleAnswer('3_13')" style="cursor:pointer">
+                                        14. వందవేలకన్నా ఎక్కువదితిసుతుల గుంపు (14)                                    </div>
+                                    <button onclick="toggleAnswer('3_13')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_13" class="original b2 answer-text" style="display:none; ">
+                                    స: లక్షాధికదైత్యకులం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q3_14" class="original b1" onclick="toggleAnswer('3_14')" style="cursor:pointer">
+                                        15. హ-ర-ఈ-మ్ అనే నాదం ఆటలో ఉండేదానా (15)                                    </div>
+                                    <button onclick="toggleAnswer('3_14')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a3_14" class="original b2 answer-text" style="display:none; ">
+                                    స: హ్రీంకారకేలిభవనే                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_3')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_3" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_3', 'btn_more_3')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_4" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.4</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి శ్రీకాలికాష్టకం స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య- ముఖ్య గమనిక- అథ స్తుతిః అని ఉంటుంది- దాని కిందనుంచి లెక్కపెట్టండి- <a href="https://sanskritdocuments.org/doc_devii/kAlikAShTakam.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/kAlikAShTakam.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_0" class="original b1" onclick="toggleAnswer('4_0')" style="cursor:pointer">
+                                        1. బ్రహ్మా మొదలైన సురులు ముగ్గురు వారు (1)                                    </div>
+                                    <button onclick="toggleAnswer('4_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_0" class="original b2 answer-text" style="display:none; ">
+                                    స: విరంచ్యాదిదేవాస్త్రయస్తే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_1" class="original b1" onclick="toggleAnswer('4_1')" style="cursor:pointer">
+                                        2. మూడు గుణాలను (1)                                    </div>
+                                    <button onclick="toggleAnswer('4_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_1" class="original b2 answer-text" style="display:none; ">
+                                    స: గుణాంస్త్రీన్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_2" class="original b1" onclick="toggleAnswer('4_2')" style="cursor:pointer">
+                                        3. మంచి హృదయం కలవారిని ఆనందింపచేసేది (2)                                    </div>
+                                    <button onclick="toggleAnswer('4_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_2" class="original b2 answer-text" style="display:none; ">
+                                    స: సుహృత్పోషిణీ                                </div>
+                            </div> 
+                        <div id="more_questions_4" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_3" class="original b1" onclick="toggleAnswer('4_3')" style="cursor:pointer">
+                                        4. మాట కట్టిపడేయవలసింది (2)                                    </div>
+                                    <button onclick="toggleAnswer('4_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_3" class="original b2 answer-text" style="display:none; ">
+                                    స: వచస్తంభనీయం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_4" class="original b1" onclick="toggleAnswer('4_4')" style="cursor:pointer">
+                                        5. సురులస్థానాన్ని ఇచ్చేది (3)                                    </div>
+                                    <button onclick="toggleAnswer('4_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_4" class="original b2 answer-text" style="display:none; ">
+                                    స: స్వర్గదాత్రీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_5" class="original b1" onclick="toggleAnswer('4_5')" style="cursor:pointer">
+                                        6. కోరినకోర్కెలు తీర్చే తీగ (3)                                    </div>
+                                    <button onclick="toggleAnswer('4_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_5" class="original b2 answer-text" style="display:none; ">
+                                    స: కల్పవల్లీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_6" class="original b1" onclick="toggleAnswer('4_6')" style="cursor:pointer">
+                                        7. మంచి భక్తులయందు ప్రీతి కలిగినది (4)                                    </div>
+                                    <button onclick="toggleAnswer('4_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_6" class="original b2 answer-text" style="display:none; ">
+                                    స: సుభక్తానురక్తా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_7" class="original b1" onclick="toggleAnswer('4_7')" style="cursor:pointer">
+                                        8. నామమననం, ఏకాగ్రచిత్తత, అర్చనం- అనే అమృతం చేత బురదను కడిగేది (4)                                    </div>
+                                    <button onclick="toggleAnswer('4_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_7" class="original b2 answer-text" style="display:none; ">
+                                    స: జపధ్యానపూజాసుధాధౌతపంకా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_8" class="original b1" onclick="toggleAnswer('4_8')" style="cursor:pointer">
+                                        9. జ్ఞానం, ఆనందపు దుంప (5)                                    </div>
+                                    <button onclick="toggleAnswer('4_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_8" class="original b2 answer-text" style="display:none; ">
+                                    స: చిదానందకందం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_9" class="original b1" onclick="toggleAnswer('4_9')" style="cursor:pointer">
+                                        10. నాలుగవ ఋతువులోని కోటి నెలవంకలు వెలుగుల పుంజం (5)                                    </div>
+                                    <button onclick="toggleAnswer('4_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_9" class="original b2 answer-text" style="display:none; ">
+                                    స: శరచ్చంద్రకోటిప్రభాపుంజబింబం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_10" class="original b1" onclick="toggleAnswer('4_10')" style="cursor:pointer">
+                                        11. గొప్ప మబ్బువలె నల్లని (6)                                    </div>
+                                    <button onclick="toggleAnswer('4_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_10" class="original b2 answer-text" style="display:none; ">
+                                    స: మహామేఘకాలీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_11" class="original b1" onclick="toggleAnswer('4_11')" style="cursor:pointer">
+                                        12. విస్మయం కలిగించే ఆకృతి, కలయిక మాయ (6)                                    </div>
+                                    <button onclick="toggleAnswer('4_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_11" class="original b2 answer-text" style="display:none; ">
+                                    స: విచిత్రాకృతిర్యోగమాయా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_12" class="original b1" onclick="toggleAnswer('4_12')" style="cursor:pointer">
+                                        13. గొప్ప రహస్య తలపు (7)                                    </div>
+                                    <button onclick="toggleAnswer('4_12')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_12" class="original b2 answer-text" style="display:none; ">
+                                    స: మహాగుప్తభావం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_13" class="original b1" onclick="toggleAnswer('4_13')" style="cursor:pointer">
+                                        14. ఏకాగ్రచిత్తతతో పవిత్రమైనదానిచేత (7)                                    </div>
+                                    <button onclick="toggleAnswer('4_13')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_13" class="original b2 answer-text" style="display:none; ">
+                                    స: ధ్యానపూతేన                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_14" class="original b1" onclick="toggleAnswer('4_14')" style="cursor:pointer">
+                                        15. ఏకాగ్రచిత్తతతో కలిసిన (8)                                    </div>
+                                    <button onclick="toggleAnswer('4_14')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_14" class="original b2 answer-text" style="display:none; ">
+                                    స: ధ్యానయుక్తం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q4_15" class="original b1" onclick="toggleAnswer('4_15')" style="cursor:pointer">
+                                        16. ఏడున్నొక్క ఫలితాలు (8)                                    </div>
+                                    <button onclick="toggleAnswer('4_15')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a4_15" class="original b2 answer-text" style="display:none; ">
+                                    స: అష్టసిద్ధిః                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_4')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_4" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_4', 'btn_more_4')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_5" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.5</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి శ్రీకామాక్షీస్తోత్రం స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య- <a href="https://sanskritdocuments.org/doc_devii/kAmAkShIstotram4.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/kAmAkShIstotram4.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_0" class="original b1" onclick="toggleAnswer('5_0')" style="cursor:pointer">
+                                        1. ఓ మన్మథుని శత్రువుకు ఇష్టురాలా (1)                                    </div>
+                                    <button onclick="toggleAnswer('5_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_0" class="original b2 answer-text" style="display:none; ">
+                                    స: కామారికాంతే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_1" class="original b1" onclick="toggleAnswer('5_1')" style="cursor:pointer">
+                                        2. ఓ కోరికకోటి స్థానంలో పూజింపబడేదానా (1)                                    </div>
+                                    <button onclick="toggleAnswer('5_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_1" class="original b2 answer-text" style="display:none; ">
+                                    స: కామకోటిస్థపూజ్యే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_2" class="original b1" onclick="toggleAnswer('5_2')" style="cursor:pointer">
+                                        3. భూతాలు, రాక్షసులు, శరీరరహిత ప్రాణులు, చాలా చెడ్డ ప్రాణులను సంహరించేదానను (2)                                    </div>
+                                    <button onclick="toggleAnswer('5_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_2" class="original b2 answer-text" style="display:none; ">
+                                    స: భూతరక్షఃపిశాచాతిదుష్టాన్ హరంతీం                                </div>
+                            </div> 
+                        <div id="more_questions_5" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_3" class="original b1" onclick="toggleAnswer('5_3')" style="cursor:pointer">
+                                        4. కోరికలేనివారిచే సులువుగా పొందబడేదానా (2)                                    </div>
+                                    <button onclick="toggleAnswer('5_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_3" class="original b2 answer-text" style="display:none; ">
+                                    స: కామహీనైస్సుగమ్యాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_4" class="original b1" onclick="toggleAnswer('5_4')" style="cursor:pointer">
+                                        5. ఇంద్రుడు మొదలైన వారిచే ఆదరింపబడేదానా (3)                                    </div>
+                                    <button onclick="toggleAnswer('5_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_4" class="original b2 answer-text" style="display:none; ">
+                                    స: ఇంద్రాదిమాన్యే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_5" class="original b1" onclick="toggleAnswer('5_5')" style="cursor:pointer">
+                                        6. సృష్టికర్త స్థితికర్త మొదలైనవారిచే నమస్కరింపబడేదానా (3)                                    </div>
+                                    <button onclick="toggleAnswer('5_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_5" class="original b2 answer-text" style="display:none; ">
+                                    స: బ్రహ్మవిష్ణ్వాదివంద్యే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_6" class="original b1" onclick="toggleAnswer('5_6')" style="cursor:pointer">
+                                        7. వనరాజును ఎక్కినదానా (4)                                    </div>
+                                    <button onclick="toggleAnswer('5_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_6" class="original b2 answer-text" style="display:none; ">
+                                    స: సింహాధిరూఢే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_7" class="original b1" onclick="toggleAnswer('5_7')" style="cursor:pointer">
+                                        8. సజ్జనుల హృదయమనే కమలంలో దాగున్నదానా (4)                                    </div>
+                                    <button onclick="toggleAnswer('5_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_7" class="original b2 answer-text" style="display:none; ">
+                                    స: సాధుహృత్పద్మగూఢే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_8" class="original b1" onclick="toggleAnswer('5_8')" style="cursor:pointer">
+                                        9. కమల దళాల వంటి కన్నులు కలిగినదానను (5)                                    </div>
+                                    <button onclick="toggleAnswer('5_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_8" class="original b2 answer-text" style="display:none; ">
+                                    స: కంజపత్రాభనేత్రాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_9" class="original b1" onclick="toggleAnswer('5_9')" style="cursor:pointer">
+                                        10. లక్ష్మీయుతుడైన కుమారుని పుత్రునిగా కలిగినదానను (5)                                    </div>
+                                    <button onclick="toggleAnswer('5_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_9" class="original b2 answer-text" style="display:none; ">
+                                    స: శ్రీస్కందపుత్రాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_10" class="original b1" onclick="toggleAnswer('5_10')" style="cursor:pointer">
+                                        11. నిలకడలేని కనుకొసల ఆటలు సలిపేదానను (6)                                    </div>
+                                    <button onclick="toggleAnswer('5_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_10" class="original b2 answer-text" style="display:none; ">
+                                    స: చంచలాపాంగలీలాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q5_11" class="original b1" onclick="toggleAnswer('5_11')" style="cursor:pointer">
+                                        12. కోరికలు తీర్చే తీగను సేవిస్తున్నాను (6)                                    </div>
+                                    <button onclick="toggleAnswer('5_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a5_11" class="original b2 answer-text" style="display:none; ">
+                                    స: కల్పవల్లీముపాసే                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_5')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_5" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_5', 'btn_more_5')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_6" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.6</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి మీనాక్షీ పంచరత్నం స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య- <a href="https://sanskritdocuments.org/doc_devii/miinaakshii5.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/miinaakshii5.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_0" class="original b1" onclick="toggleAnswer('6_0')" style="cursor:pointer">
+                                        1. వంకీలు, హారాలతో దేదీప్యమానంగా ఉండుదానను (1)                                    </div>
+                                    <button onclick="toggleAnswer('6_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_0" class="original b2 answer-text" style="display:none; ">
+                                    స: కేయూరహారోజ్జ్వలాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_1" class="original b1" onclick="toggleAnswer('6_1')" style="cursor:pointer">
+                                        2. నవ్వుచున్నప్పుడు ప్రకాశించే పళ్ళవరుస కలదానను (1)                                    </div>
+                                    <button onclick="toggleAnswer('6_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_1" class="original b2 answer-text" style="display:none; ">
+                                    స: స్మితదంతపంక్తిరుచిరాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_2" class="original b1" onclick="toggleAnswer('6_2')" style="cursor:pointer">
+                                        3. స్థితి-సృష్టి-కారులచే ఇంద్రునిచే పూజింపబడే పాదాలు కలదానను (1)                                    </div>
+                                    <button onclick="toggleAnswer('6_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_2" class="original b2 answer-text" style="display:none; ">
+                                    స: విష్ణుబ్రహ్మసురేంద్రసేవితపదాం                                </div>
+                            </div> 
+                        <div id="more_questions_6" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_3" class="original b1" onclick="toggleAnswer('6_3')" style="cursor:pointer">
+                                        4. నిండు చంద్రుని వలె ఉన్న ముఖకాంతి కలదానను (2)                                    </div>
+                                    <button onclick="toggleAnswer('6_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_3" class="original b2 answer-text" style="display:none; ">
+                                    స: పూర్ణేందువక్త్రప్రభాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_4" class="original b1" onclick="toggleAnswer('6_4')" style="cursor:pointer">
+                                        5. కమలపు కాంతితో ప్రకాశవంతమైనదానను (2)                                    </div>
+                                    <button onclick="toggleAnswer('6_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_4" class="original b2 answer-text" style="display:none; ">
+                                    స: పద్మప్రభాభాసురాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_5" class="original b1" onclick="toggleAnswer('6_5')" style="cursor:pointer">
+                                        6. అన్నీ కోరికల ఫలాలను ఇచ్చుదానను (2)                                    </div>
+                                    <button onclick="toggleAnswer('6_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_5" class="original b2 answer-text" style="display:none; ">
+                                    స: సర్వాభీష్టఫలప్రదాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_6" class="original b1" onclick="toggleAnswer('6_6')" style="cursor:pointer">
+                                        7. శుభంకలిగించేవాని ఎడమపక్క నిలిచేదానను (3)                                    </div>
+                                    <button onclick="toggleAnswer('6_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_6" class="original b2 answer-text" style="display:none; ">
+                                    స: శివవామభాగనిలయాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_7" class="original b1" onclick="toggleAnswer('6_7')" style="cursor:pointer">
+                                        8. చుక్క మధ్యలో నిలుచుదానను (3)                                    </div>
+                                    <button onclick="toggleAnswer('6_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_7" class="original b2 answer-text" style="display:none; ">
+                                    స: బిందుమధ్యవసతిం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_8" class="original b1" onclick="toggleAnswer('6_8')" style="cursor:pointer">
+                                        9. అందమైన ఆరుముఖాలవాడు విఘ్నాధిపతులకు తల్లి అయినదానను (3)                                    </div>
+                                    <button onclick="toggleAnswer('6_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_8" class="original b2 answer-text" style="display:none; ">
+                                    స: శ్రీమత్షణ్ముఖవిఘ్నరాజజననీం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_9" class="original b1" onclick="toggleAnswer('6_9')" style="cursor:pointer">
+                                        10. లక్ష్మీయుతురాలైన అందమైన నాయకురాలిని (4)                                    </div>
+                                    <button onclick="toggleAnswer('6_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_9" class="original b2 answer-text" style="display:none; ">
+                                    స: శ్రీమత్సుందరనాయకీం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_10" class="original b1" onclick="toggleAnswer('6_10')" style="cursor:pointer">
+                                        11. విష్ణువు చెల్లెలిని (4)                                    </div>
+                                    <button onclick="toggleAnswer('6_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_10" class="original b2 answer-text" style="display:none; ">
+                                    స: నారాయణస్యానుజాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_11" class="original b1" onclick="toggleAnswer('6_11')" style="cursor:pointer">
+                                        12. సరస్వతీ-కృష్ణుడు-లయ-వాయిద్యాలను వాయించటంలో ఆనందించేదానను (4)                                    </div>
+                                    <button onclick="toggleAnswer('6_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_11" class="original b2 answer-text" style="display:none; ">
+                                    స: వీణావేణుమృదంగవాద్యรసికాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_12" class="original b1" onclick="toggleAnswer('6_12')" style="cursor:pointer">
+                                        13. రకరకాల ప్రయోజనాలను సిద్ధింపచేసేదానను (5)                                    </div>
+                                    <button onclick="toggleAnswer('6_12')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_12" class="original b2 answer-text" style="display:none; ">
+                                    స: నానార్థసిద్ధిప్రదాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_13" class="original b1" onclick="toggleAnswer('6_13')" style="cursor:pointer">
+                                        14. విష్ణువు చేత పూజింపబడేదానను (5)                                    </div>
+                                    <button onclick="toggleAnswer('6_13')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_13" class="original b2 answer-text" style="display:none; ">
+                                    స: నారాయణేనార్చితాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q6_14" class="original b1" onclick="toggleAnswer('6_14')" style="cursor:pointer">
+                                        15. దయాభావమనే దానికి సముద్రం వంటిదానను (5)                                    </div>
+                                    <button onclick="toggleAnswer('6_14')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a6_14" class="original b2 answer-text" style="display:none; ">
+                                    స: కారుణ్యవారాంనిధిం                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_6')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_6" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_6', 'btn_more_6')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_7" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.7</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి మహాగాయత్రీ స్తోత్రంలో పంక్తులను గుర్తించండి. కోష్టకాలలో చరణసంఖ్య. పంక్తుల క్రమం యథాతథం- <a href="https://sanskritdocuments.org/doc_devii/mahAgAyatrilIlAstuti.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/mahAgAyatrilIlAstuti.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_0" class="original b1" onclick="toggleAnswer('7_0')" style="cursor:pointer">
+                                        1. చాలా కష్టమైనదైన ఆపదల సముద్రాన్ని వెంటనే దాటాలనుకుని (1)                                    </div>
+                                    <button onclick="toggleAnswer('7_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_0" class="original b2 answer-text" style="display:none; ">
+                                    స: సుదుస్తరం ద్రుతం తితీర్షురాపదర్ణవం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_1" class="original b1" onclick="toggleAnswer('7_1')" style="cursor:pointer">
+                                        2. దయ చాలా అందంగా ఉన్నది (2)                                    </div>
+                                    <button onclick="toggleAnswer('7_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_1" class="original b2 answer-text" style="display:none; ">
+                                    స: కృపాతిశోభతే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_2" class="original b1" onclick="toggleAnswer('7_2')" style="cursor:pointer">
+                                        3. చంద్రుని ఖండంతో అందంగా అలంకరింపబడిన (3)                                    </div>
+                                    <button onclick="toggleAnswer('7_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_2" class="original b2 answer-text" style="display:none; ">
+                                    స: సుధాంశుఖండమండితైః                                </div>
+                            </div> 
+                        <div id="more_questions_7" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_3" class="original b1" onclick="toggleAnswer('7_3')" style="cursor:pointer">
+                                        4. అందరు దేవతలచే నమస్కరింపబడేది (4)                                    </div>
+                                    <button onclick="toggleAnswer('7_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_3" class="original b2 answer-text" style="display:none; ">
+                                    స: సమస్తదేవవందితాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_4" class="original b1" onclick="toggleAnswer('7_4')" style="cursor:pointer">
+                                        5. పూర్ణమైన భావమండలంపై వెలుగులు చేసే ఆమెను (5)                                    </div>
+                                    <button onclick="toggleAnswer('7_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_4" class="original b2 answer-text" style="display:none; ">
+                                    స: అఖండ భావమండలప్రకాశకారిణీం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_5" class="original b1" onclick="toggleAnswer('7_5')" style="cursor:pointer">
+                                        6. అగ్ని, చంద్ర, సూర్యులే కన్నులుగా కలదానను (6)                                    </div>
+                                    <button onclick="toggleAnswer('7_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_5" class="original b2 answer-text" style="display:none; ">
+                                    స: శుచీందుసూర్యలోచనాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_6" class="original b1" onclick="toggleAnswer('7_6')" style="cursor:pointer">
+                                        7. పూతీగవలె (సుకుమారంగా) ఉన్న రూపం కలది (7)                                    </div>
+                                    <button onclick="toggleAnswer('7_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_6" class="original b2 answer-text" style="display:none; ">
+                                    స: లతాయమానవిగ్రహా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_7" class="original b1" onclick="toggleAnswer('7_7')" style="cursor:pointer">
+                                        8. ఆమె ఐదు ముఖాలనే కమలాలు (8)                                    </div>
+                                    <button onclick="toggleAnswer('7_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_7" class="original b2 answer-text" style="display:none; ">
+                                    స: తన్ముఖారవిందపంచకం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_8" class="original b1" onclick="toggleAnswer('7_8')" style="cursor:pointer">
+                                        9. ఆరు పీడలచే నిత్యం పీడితమైనవానిని (9)                                    </div>
+                                    <button onclick="toggleAnswer('7_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_8" class="original b2 answer-text" style="display:none; ">
+                                    స: షడూర్మినిత్యపీడితం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_9" class="original b1" onclick="toggleAnswer('7_9')" style="cursor:pointer">
+                                        10. తన చూపువేసినంత మాత్రంచేత భక్తుల పాపాలను కడిగినది (10)                                    </div>
+                                    <button onclick="toggleAnswer('7_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_9" class="original b2 answer-text" style="display:none; ">
+                                    స: స్వదృష్టిపాతధూతభక్తకల్మషా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_10" class="original b1" onclick="toggleAnswer('7_10')" style="cursor:pointer">
+                                        11. దయాదృష్టితో చూస్తున్నావు (11)                                    </div>
+                                    <button onclick="toggleAnswer('7_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_10" class="original b2 answer-text" style="display:none; ">
+                                    స: దయాదృశేక్షసే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q7_11" class="original b1" onclick="toggleAnswer('7_11')" style="cursor:pointer">
+                                        12. తనసొంత అధీనంలో ఉన్న శక్తి ఈశ్వరి (12)                                    </div>
+                                    <button onclick="toggleAnswer('7_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a7_11" class="original b2 answer-text" style="display:none; ">
+                                    స: స్వతంత్రశక్తిరీశ్వరీ                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_7')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_7" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_7', 'btn_more_7')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_8" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.8</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి ఈ అంబాష్టకం స్తోత్రంలో మాటలను గుర్తించండి- (పంక్తుల క్రమం యథాతథం) (కోష్టకాలలో చరణాల సంఖ్య) <a href="https://sanskritdocuments.org/doc_devii/ambAShTakam.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/ambAShTakam.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_0" class="original b1" onclick="toggleAnswer('8_0')" style="cursor:pointer">
+                                        1. అధికంగా అందమైన (1)                                    </div>
+                                    <button onclick="toggleAnswer('8_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_0" class="original b2 answer-text" style="display:none; ">
+                                    స: చారుతర                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_1" class="original b1" onclick="toggleAnswer('8_1')" style="cursor:pointer">
+                                        2. పర్వతరాజు కూతురు (1)                                    </div>
+                                    <button onclick="toggleAnswer('8_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_1" class="original b2 answer-text" style="display:none; ">
+                                    స: అగాధిపసుతా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_2" class="original b1" onclick="toggleAnswer('8_2')" style="cursor:pointer">
+                                        3. నీరిచ్చే మేఘం వంటి నల్లరంగు కురులున్నదానా (2)                                    </div>
+                                    <button onclick="toggleAnswer('8_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_2" class="original b2 answer-text" style="display:none; ">
+                                    స: జలదనీలాకచే                                </div>
+                            </div> 
+                        <div id="more_questions_8" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_3" class="original b1" onclick="toggleAnswer('8_3')" style="cursor:pointer">
+                                        4. కొండరాజు కూతురు (2)                                    </div>
+                                    <button onclick="toggleAnswer('8_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_3" class="original b2 answer-text" style="display:none; ">
+                                    స: శైలాధిరాజతనయా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_4" class="original b1" onclick="toggleAnswer('8_4')" style="cursor:pointer">
+                                        5. సంతతిని ఇవ్వటంలో నిపుణురాలు (3)                                    </div>
+                                    <button onclick="toggleAnswer('8_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_4" class="original b2 answer-text" style="display:none; ">
+                                    స: పుత్రాదిదాననిపుణా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_5" class="original b1" onclick="toggleAnswer('8_5')" style="cursor:pointer">
+                                        6. ద్వీపంలో పుట్టిన వ్యాసుడు మొదలగు (4)                                    </div>
+                                    <button onclick="toggleAnswer('8_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_5" class="original b2 answer-text" style="display:none; ">
+                                    స: ద్వైపాయనప్రభృతి                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_6" class="original b1" onclick="toggleAnswer('8_6')" style="cursor:pointer">
+                                        7. పాపాల బావిలోనుండి (4)                                    </div>
+                                    <button onclick="toggleAnswer('8_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_6" class="original b2 answer-text" style="display:none; ">
+                                    స: దురితకూపాదుదంచయతు మాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_7" class="original b1" onclick="toggleAnswer('8_7')" style="cursor:pointer">
+                                        8. ఆ కాళీ నా మనసును భ్రమరంలాగా చేయుగాక (5)                                    </div>
+                                    <button onclick="toggleAnswer('8_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_7" class="original b2 answer-text" style="display:none; ">
+                                    స: సాలీకరోతు మమ కాలీ మనః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_8" class="original b1" onclick="toggleAnswer('8_8')" style="cursor:pointer">
+                                        9. చందమామ వంటి ముఖపద్మం కలిగిన దానిని (6)                                    </div>
+                                    <button onclick="toggleAnswer('8_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_8" class="original b2 answer-text" style="display:none; ">
+                                    స: శశిసంకాశివక్త్రకమలాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_9" class="original b1" onclick="toggleAnswer('8_9')" style="cursor:pointer">
+                                        10. పొడుగాటి కురులు కలిగినది (7)                                    </div>
+                                    <button onclick="toggleAnswer('8_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_9" class="original b2 answer-text" style="display:none; ">
+                                    స: లంబాలకా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_10" class="original b1" onclick="toggleAnswer('8_10')" style="cursor:pointer">
+                                        11. బింబఫలములవంటి అధరాలు కలిగినది (7)                                    </div>
+                                    <button onclick="toggleAnswer('8_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_10" class="original b2 answer-text" style="display:none; ">
+                                    స: బింబాధరా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q8_11" class="original b1" onclick="toggleAnswer('8_11')" style="cursor:pointer">
+                                        12. ఉదారంగా నిలిచినది (8)                                    </div>
+                                    <button onclick="toggleAnswer('8_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a8_11" class="original b2 answer-text" style="display:none; ">
+                                    స: ఉదారనిలయా                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_8')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_8" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_8', 'btn_more_8')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_9" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.9</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి ఈ దుర్గాచంద్రకలాస్తుతి స్తోత్రంలో పంక్తులను గుర్తించండి-(పంక్తుల క్రమం యథాతథం- కోష్టకాలలో శ్లోక సంఖ్య) <a href="https://sanskritdocuments.org/doc_devii/durgAchandra.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/durgAchandra.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_0" class="original b1" onclick="toggleAnswer('9_0')" style="cursor:pointer">
+                                        1. బ్రహ్మా, విష్ణు, మహేశ్వరులచే స్తుతింపబడేదానా (1)                                    </div>
+                                    <button onclick="toggleAnswer('9_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_0" class="original b2 answer-text" style="display:none; ">
+                                    స: వేధోహరీశ్వరస్తుత్యాం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_1" class="original b1" onclick="toggleAnswer('9_1')" style="cursor:pointer">
+                                        2. తేనెరాచ్చసుడు వాడితోటివాడిని చంపినదానా (2)                                    </div>
+                                    <button onclick="toggleAnswer('9_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_1" class="original b2 answer-text" style="display:none; ">
+                                    స: మధుకైటభయోర్నిహన్త్రీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_2" class="original b1" onclick="toggleAnswer('9_2')" style="cursor:pointer">
+                                        3. ఆయుధాల సంచయంతో సంపన్నమైనదానా (3)                                    </div>
+                                    <button onclick="toggleAnswer('9_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_2" class="original b2 answer-text" style="display:none; ">
+                                    స: సంపన్నశస్త్రనికరా                                </div>
+                            </div> 
+                        <div id="more_questions_9" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_3" class="original b1" onclick="toggleAnswer('9_3')" style="cursor:pointer">
+                                        4. మంచుకొండ కూతురు (4)                                    </div>
+                                    <button onclick="toggleAnswer('9_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_3" class="original b2 answer-text" style="display:none; ">
+                                    స: ప్రాలేయశైలతనయా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_4" class="original b1" onclick="toggleAnswer('9_4')" style="cursor:pointer">
+                                        5. కమలం వంటి వెలుగైనరూపం కలిగిన అందమైన శరీరం కలదానా (4)                                    </div>
+                                    <button onclick="toggleAnswer('9_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_4" class="original b2 answer-text" style="display:none; ">
+                                    స: కువలయచ్ఛవిచారుదేహా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_5" class="original b1" onclick="toggleAnswer('9_5')" style="cursor:pointer">
+                                        6. లోకానికి తల్లిని నిరంతరం స్తుతిస్తున్నాను (6)                                    </div>
+                                    <button onclick="toggleAnswer('9_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_5" class="original b2 answer-text" style="display:none; ">
+                                    స: విశ్వమాతరమజస్రమభిష్టవీమి                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_6" class="original b1" onclick="toggleAnswer('9_6')" style="cursor:pointer">
+                                        7. తల్లి ఆపదలనుండి నన్ను రక్షించుగాక (7)                                    </div>
+                                    <button onclick="toggleAnswer('9_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_6" class="original b2 answer-text" style="display:none; ">
+                                    స: అమ్బికా సమభిరక్షతు మాం విపద్భ్యః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_7" class="original b1" onclick="toggleAnswer('9_7')" style="cursor:pointer">
+                                        8. ఆ మొదటిదేవుని యువతిని (8)                                    </div>
+                                    <button onclick="toggleAnswer('9_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_7" class="original b2 answer-text" style="display:none; ">
+                                    స: తామాదిదేవతరుణీం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_8" class="original b1" onclick="toggleAnswer('9_8')" style="cursor:pointer">
+                                        9. బ్రహ్మ, విష్ణు, మహేశ్వరులు మువ్వురూ సంతోషంగా ఉన్నారు (11)                                    </div>
+                                    <button onclick="toggleAnswer('9_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_8" class="original b2 answer-text" style="display:none; ">
+                                    స: ప్రీతాః పితామహరమేశహరాస్త్రయోఽపి                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_9" class="original b1" onclick="toggleAnswer('9_9')" style="cursor:pointer">
+                                        10. అన్ని లోకాలను ఉద్భవింపచేసినది (12)                                    </div>
+                                    <button onclick="toggleAnswer('9_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_9" class="original b2 answer-text" style="display:none; ">
+                                    స: సర్వజగత్సవిత్రీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_10" class="original b1" onclick="toggleAnswer('9_10')" style="cursor:pointer">
+                                        11. ఆవులకాసేవారి ఆడవారు ఎవరి పూజచేత వచ్చిన పుణ్యమాత్రం వల్ల (16)                                    </div>
+                                    <button onclick="toggleAnswer('9_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_10" class="original b2 answer-text" style="display:none; ">
+                                    స: గోపాఙ్గనాః కిల యదర్చనపుణ్యమాత్రాత్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q9_11" class="original b1" onclick="toggleAnswer('9_11')" style="cursor:pointer">
+                                        12. రెండు సంధ్యలలో చదవాలి (18)                                    </div>
+                                    <button onclick="toggleAnswer('9_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a9_11" class="original b2 answer-text" style="display:none; ">
+                                    స: సన్ధ్యయోరనుసన్ధేయా                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_9')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_9" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_9', 'btn_more_9')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_10" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.10</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి ఈ గిరిజాదశకస్తోత్రంలో పంక్తులను గుర్తించండి-(పంక్తుల క్రమం యథాతథం) <a href="https://sanskritdocuments.org/doc_devii/annapUrNAstotram.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/annapUrNAstotram.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_0" class="original b1" onclick="toggleAnswer('10_0')" style="cursor:pointer">
+                                        1. సగం చందమామ ముఖంతో అందమైన నుదుట ఆరులో సగమవ కన్ను ఉన్నదానా                                    </div>
+                                    <button onclick="toggleAnswer('10_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_0" class="original b2 answer-text" style="display:none; ">
+                                    స: అర్ధేన్దు-మౌలి-సులలాట-షడర్ధనేత్రే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_1" class="original b1" onclick="toggleAnswer('10_1')" style="cursor:pointer">
+                                        2. ఆకలిగొన్న నాకోసం                                    </div>
+                                    <button onclick="toggleAnswer('10_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_1" class="original b2 answer-text" style="display:none; ">
+                                    స: క్షుధితాయ మహ్యం                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_2" class="original b1" onclick="toggleAnswer('10_2')" style="cursor:pointer">
+                                        3. పాలన్నం గిన్నె, శ్రేష్ఠమైన బంగారపు గరిటె చేత ఉన్నదానా                                    </div>
+                                    <button onclick="toggleAnswer('10_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_2" class="original b2 answer-text" style="display:none; ">
+                                    స: దుగ్ధాన్నపాత్ర-వర-కాఞ్చన-దర్విహస్తే                                </div>
+                            </div> 
+                        <div id="more_questions_10" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_3" class="original b1" onclick="toggleAnswer('10_3')" style="cursor:pointer">
+                                        4. చేతులు జోడించి ఉన్న ఇంద్రాదులచే ఎదురుగా                                    </div>
+                                    <button onclick="toggleAnswer('10_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_3" class="original b2 answer-text" style="display:none; ">
+                                    స: శక్రాదిభిర్ముకులితాఞ్జలిభిః పురస్తాత్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_4" class="original b1" onclick="toggleAnswer('10_4')" style="cursor:pointer">
+                                        5. వేదాలు ఆగమాలలోని సూక్తాల మంత్రాలతో                                    </div>
+                                    <button onclick="toggleAnswer('10_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_4" class="original b2 answer-text" style="display:none; ">
+                                    స: నిగమాగమ-సూక్తమన్త్రైః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_5" class="original b1" onclick="toggleAnswer('10_5')" style="cursor:pointer">
+                                        6. ఓ దేవి, ఋగ్వేదం మొదలైనవన్నీ నీ ఆటల పలుకులు                                    </div>
+                                    <button onclick="toggleAnswer('10_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_5" class="original b2 answer-text" style="display:none; ">
+                                    స: లీలావచాంసి తవ దేవి ఋగాదివేదాః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_6" class="original b1" onclick="toggleAnswer('10_6')" style="cursor:pointer">
+                                        7. చంద్రవంక నగగా వేసుకున్న వాడి సగం ఒంట్లో ఉన్నదానా                                    </div>
+                                    <button onclick="toggleAnswer('10_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_6" class="original b2 answer-text" style="display:none; ">
+                                    స: శశికలాభరణార్ధదేహే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_7" class="original b1" onclick="toggleAnswer('10_7')" style="cursor:pointer">
+                                        8. మూడు సంధ్యలలో అందరు రాజులచే                                    </div>
+                                    <button onclick="toggleAnswer('10_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_7" class="original b2 answer-text" style="display:none; ">
+                                    స: సన్ధ్యాత్రయే సకల-భూసుర-సేవ్యమానే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_8" class="original b1" onclick="toggleAnswer('10_8')" style="cursor:pointer">
+                                        9. భార్యలు, పిల్లలు, సేవకులు, అతిథులు అన్నం కోరినవారై ఉన్నారు                                    </div>
+                                    <button onclick="toggleAnswer('10_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_8" class="original b2 answer-text" style="display:none; ">
+                                    స: జాయాః సుతాః పరిజనాతిథయోఽన్నకామాః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_9" class="original b1" onclick="toggleAnswer('10_9')" style="cursor:pointer">
+                                        10. మంచి (నిజమైన) భక్తులకు కోరినకోరికలిచ్చే లత వంటిదానా                                    </div>
+                                    <button onclick="toggleAnswer('10_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_9" class="original b2 answer-text" style="display:none; ">
+                                    స: సద్భక్తకల్పలతికే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_10" class="original b1" onclick="toggleAnswer('10_10')" style="cursor:pointer">
+                                        11. భూమిపై ఏకైక నమస్కారయోగ్యురాలా                                    </div>
+                                    <button onclick="toggleAnswer('10_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_10" class="original b2 answer-text" style="display:none; ">
+                                    స: భువనైకవన్ద్యే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q10_11" class="original b1" onclick="toggleAnswer('10_11')" style="cursor:pointer">
+                                        12. కరుణతో నిండిన కన్నులు కలదానా                                    </div>
+                                    <button onclick="toggleAnswer('10_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a10_11" class="original b2 answer-text" style="display:none; ">
+                                    స: కారుణ్యపూర్ణనయనే                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_10')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_10" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_10', 'btn_more_10')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_11" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.11</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">సూచనలను బట్టి లలితాసహస్రనామస్తోత్రంలో (37 నుండి 42 వరకు) ఈ నామాలను గుర్తించండి-(పంక్తుల క్రమం యథాతథం) <a href="https://sanskritdocuments.org/doc_devii/lalitacomplete.html" target="_blank" style="color: blue; text-decoration: underline;">https://sanskritdocuments.org/doc_devii/lalitacomplete.html</a></h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_0" class="original b1" onclick="toggleAnswer('11_0')" style="cursor:pointer">
+                                        1. వంశపుస్త్రీ                                    </div>
+                                    <button onclick="toggleAnswer('11_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_0" class="original b2 answer-text" style="display:none; ">
+                                    స: కులాంగనా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_1" class="original b1" onclick="toggleAnswer('11_1')" style="cursor:pointer">
+                                        2. మొదటిచక్రంలో నివసించేది                                    </div>
+                                    <button onclick="toggleAnswer('11_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_1" class="original b2 answer-text" style="display:none; ">
+                                    స: మూలాధారైకనిలయా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_2" class="original b1" onclick="toggleAnswer('11_2')" style="cursor:pointer">
+                                        3. విలువైనరాయి తో ప్రారంభమయ్యే చక్రంలో ప్రభవించినది                                    </div>
+                                    <button onclick="toggleAnswer('11_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_2" class="original b2 answer-text" style="display:none; ">
+                                    స: మణిపూరాంతరుదితా                                </div>
+                            </div> 
+                        <div id="more_questions_11" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_3" class="original b1" onclick="toggleAnswer('11_3')" style="cursor:pointer">
+                                        4. అమృతంలో లోనిరసాన్ని కురిపించేది                                    </div>
+                                    <button onclick="toggleAnswer('11_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_3" class="original b2 answer-text" style="display:none; ">
+                                    స: సుధాసారాభివర్షిణీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_4" class="original b1" onclick="toggleAnswer('11_4')" style="cursor:pointer">
+                                        5. ఆరు రథాంగాలపైన నిలిచేది                                    </div>
+                                    <button onclick="toggleAnswer('11_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_4" class="original b2 answer-text" style="display:none; ">
+                                    స: షట్చక్రోపరిసంస్థితా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_5" class="original b1" onclick="toggleAnswer('11_5')" style="cursor:pointer">
+                                        6. తామరతూడు అంత సన్ననిది                                    </div>
+                                    <button onclick="toggleAnswer('11_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_5" class="original b2 answer-text" style="display:none; ">
+                                    స: బిసతంతుతనీయసీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_6" class="original b1" onclick="toggleAnswer('11_6')" style="cursor:pointer">
+                                        7. ప్రపంచమనే వనానికి గొడ్డలి                                    </div>
+                                    <button onclick="toggleAnswer('11_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_6" class="original b2 answer-text" style="display:none; ">
+                                    స: భవారణ్యకుఠారికా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_7" class="original b1" onclick="toggleAnswer('11_7')" style="cursor:pointer">
+                                        8. నమ్మినవారికై అదృష్టాన్ని ఇచ్చేది                                    </div>
+                                    <button onclick="toggleAnswer('11_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_7" class="original b2 answer-text" style="display:none; ">
+                                    స: భక్తసౌభాగ్యదాయినీ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_8" class="original b1" onclick="toggleAnswer('11_8')" style="cursor:pointer">
+                                        9. సమర్పణకు అధీనమయ్యేది                                    </div>
+                                    <button onclick="toggleAnswer('11_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_8" class="original b2 answer-text" style="display:none; ">
+                                    స: భక్తివశ్యా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_9" class="original b1" onclick="toggleAnswer('11_9')" style="cursor:pointer">
+                                        10. చీకటిలో పిల్లలకు వేసేదాన్ని పోగొట్టేది                                    </div>
+                                    <button onclick="toggleAnswer('11_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_9" class="original b2 answer-text" style="display:none; ">
+                                    స: భయాపహా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_10" class="original b1" onclick="toggleAnswer('11_10')" style="cursor:pointer">
+                                        11. తెల్లకమలంలో శ్వేతవసనంలో కూర్చునే దేవతచే పూజింపబేడేది                                    </div>
+                                    <button onclick="toggleAnswer('11_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_10" class="original b2 answer-text" style="display:none; ">
+                                    స: శారదారాధ్యా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q11_11" class="original b1" onclick="toggleAnswer('11_11')" style="cursor:pointer">
+                                        12. ఆశ్వయుజకార్తీకమాసాల ఋతువు లో చంద్రుని పగిది ఉండునది                                    </div>
+                                    <button onclick="toggleAnswer('11_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a11_11" class="original b2 answer-text" style="display:none; ">
+                                    స: శరచ్చంద్రనిభాననా                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_11')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_11" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_11', 'btn_more_11')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+                        <div class="puzzle-block mb-20" id="puzzle_container_12" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+                    
+                    <div class="course-content text-center mb-10"> 
+                        <h2 class="telugu b2" style="">ప్రహేళిక 1.12</h2>
+                        
+                        <div style="font-size: 0.85em; color: #666;" class="b2">
+                            సంకా ఉషారాణి                        </div>
+
+                        
+                        <h2 style="font-size: 1.2em; margin-top: 5px;" class="telugu b6">ఈ స్తోత్రంలో పదాలను సూచనవాక్యం ద్వారా గుర్తు పట్టండి-</h2> 
+
+                         
+                    </div>
+
+                    <div class="row telugu total" style="line-height: 2.2em;">
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_0" class="original b1" onclick="toggleAnswer('12_0')" style="cursor:pointer">
+                                        1. దండాలు పెడుతున్నాను                                    </div>
+                                    <button onclick="toggleAnswer('12_0')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_0" class="original b2 answer-text" style="display:none; ">
+                                    స: నమామి                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_1" class="original b1" onclick="toggleAnswer('12_1')" style="cursor:pointer">
+                                        2. కార్యం సిద్ధించినవానిని నేను                                    </div>
+                                    <button onclick="toggleAnswer('12_1')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_1" class="original b2 answer-text" style="display:none; ">
+                                    స: కృతకృత్యోఽహమ్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_2" class="original b1" onclick="toggleAnswer('12_2')" style="cursor:pointer">
+                                        3. మళ్ళీ స్తుతించెను                                    </div>
+                                    <button onclick="toggleAnswer('12_2')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_2" class="original b2 answer-text" style="display:none; ">
+                                    స: పునస్తుష్టావ                                </div>
+                            </div> 
+                        <div id="more_questions_12" style="display:none; width: 100%;">                            <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_3" class="original b1" onclick="toggleAnswer('12_3')" style="cursor:pointer">
+                                        4. ఆటంకాలను చంపేసేవానికై                                    </div>
+                                    <button onclick="toggleAnswer('12_3')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_3" class="original b2 answer-text" style="display:none; ">
+                                    స: విఘ్నహన్త్రే                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_4" class="original b1" onclick="toggleAnswer('12_4')" style="cursor:pointer">
+                                        5. కొలవలనంత గారడీ (అవిద్య)చేత                                    </div>
+                                    <button onclick="toggleAnswer('12_4')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_4" class="original b2 answer-text" style="display:none; ">
+                                    స: అమేయమాయయా                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_5" class="original b1" onclick="toggleAnswer('12_5')" style="cursor:pointer">
+                                        6. చివరలేనంత మహత్తును ధరించినవాడా                                    </div>
+                                    <button onclick="toggleAnswer('12_5')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_5" class="original b2 answer-text" style="display:none; ">
+                                    స: అనన్తమహిమాధార                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_6" class="original b1" onclick="toggleAnswer('12_6')" style="cursor:pointer">
+                                        7. కపటులకు భ్రమను కలిగించేవాడికై                                    </div>
+                                    <button onclick="toggleAnswer('12_6')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_6" class="original b2 answer-text" style="display:none; ">
+                                    స: మాయిభ్యో మోహదాయ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_7" class="original b1" onclick="toggleAnswer('12_7')" style="cursor:pointer">
+                                        8. గొప్ప ఎలుక బండివాడికై                                    </div>
+                                    <button onclick="toggleAnswer('12_7')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_7" class="original b2 answer-text" style="display:none; ">
+                                    స: మహాఖువాహనాయైవ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_8" class="original b1" onclick="toggleAnswer('12_8')" style="cursor:pointer">
+                                        9. రకరకాల తేడాలతో నిండనవాడికై                                    </div>
+                                    <button onclick="toggleAnswer('12_8')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_8" class="original b2 answer-text" style="display:none; ">
+                                    స: నానాభేదమయాయ                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_9" class="original b1" onclick="toggleAnswer('12_9')" style="cursor:pointer">
+                                        10. నీ కాళ్ళ (రెండు) కమలాలకు                                    </div>
+                                    <button onclick="toggleAnswer('12_9')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_9" class="original b2 answer-text" style="display:none; ">
+                                    స: త్వత్పాదపద్మయోః                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_10" class="original b1" onclick="toggleAnswer('12_10')" style="cursor:pointer">
+                                        11. తిండి విడుదలను కలిగించేవాడిని                                    </div>
+                                    <button onclick="toggleAnswer('12_10')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_10" class="original b2 answer-text" style="display:none; ">
+                                    స: భుక్తిముక్తిప్రదాయకమ్                                </div>
+                            </div> 
+                                                    <div class="question-wrapper" style="margin-bottom: 10px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;">  
+                                    <div id="q12_11" class="original b1" onclick="toggleAnswer('12_11')" style="cursor:pointer">
+                                        12. మంచి కదలిక పొందుతాడు                                    </div>
+                                    <button onclick="toggleAnswer('12_11')" style="padding: 0; width: 28px; height: 28px; cursor: pointer; background:green; color:white; font-size:smaller; border:none; border-radius:3px;">సమా.</button>
+                                </div>
+                                <div id="a12_11" class="original b2 answer-text" style="display:none; ">
+                                    స: సద్గతిమాప్నుయాత్                                </div>
+                            </div> 
+                        
+                                                        <div style="margin-top: 5px; text-align: left;">
+                                    <button class="lang-btn" style="font-size: 0.75em; padding: 3px 12px;" 
+                                            onclick="showPuzzleAnswers('puzzle_container_12')">
+                                        ఈ ప్రహేళిక అన్ని సమాధానాలు
+                                    </button>
+                                </div>
+                            </div> 
+                            <div style="margin: 5px 0; text-align: left;">
+                                <button id="btn_more_12" class="btn-link" style="color: green; border: 1px solid green; padding: 1px 8px; cursor: pointer; background: transparent; font-size: 0.8em;" 
+                                        onclick="showMoreQuestions('more_questions_12', 'btn_more_12')">
+                                    + మరిన్ని ప్రశ్నలు (Show More)
+                                </button>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+</div>    
+
+<script>
+    function toggleAnswer(uniqueID){
+        $('#a' + uniqueID).show();
+    }
+
+    function showMoreQuestions(contentID, btnID) {
+        $('#' + contentID).slideDown();
+        $('#' + btnID).hide();
+    }
+
+    function showPuzzleAnswers(containerID){
+        $('#' + containerID + ' .answer-text').show();
+    }
+
+    $(document).ready(function () {
+        $('.answer-text').hide();
+    });
+</script>
+
+
+        <!-- Footer Start -->
+        <footer class="footer-area">
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-widget pr-60">
+                                <div class="footer-logo pb-5">
+                                    <a href="home.php"><img src="images/logo.png" alt="Samskrtam" style="width:200px"></a>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/svarvaniprakash"><i class="zmdi zmdi-facebook customicon"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest customicon"></i></a></li>
+                                        <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured"><i class="zmdi zmdi-youtube customicon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/svarvani24/"><i class="zmdi zmdi-instagram customicon"></i></a></li>
+                                        <li><a href="https://twitter.com/SvarvaniS"><i class="zmdi zmdi-twitter customicon"></i></a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+<!--                         <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <h3>information</h3>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="#">Other info</a></li>
+                                    <li><a href="#">TimeTable</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>useful links</h3>
+                                <ul>
+                                    <li><a href="https://twitter.com/SvarvaniS">Twitter</a></li>
+                                    <li><a href="https://www.facebook.com/svarvaniprakash">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/svarvani24/">Instagram</a></li>
+                                    <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured">YouTube</a></li>
+                                    <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>get in touch</h3>
+                                <p>Please reach us at: </p>
+                                <p>samskrta.usha@gmail.com<br>https://samskrtam.info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Copyright © <a href="index.html">Svarvani Prakasha</a> 2023. All Right Reserved By <a href="https://samskrtam.info" target="_blank">Svarvani</a></p>
+                        </div> 
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+
+        
+        <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/samskrtam.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1018 @@
+
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Course - amarakosa</title>
+        <meta name="description" content="Learn and Read Sanskrit - Samskrtam - Course - amarakosa">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/et-line-icon.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/style.css?v=16">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/vendor/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/freeze-table.js"></script>
+        <script type="text/javascript" src="js/samskrtam.js"></script>
+
+                    <script id="aksharamukhascript" src="https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha/aksharamukha-web-plugin/aksharamukha-v3.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                        <!-- <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"><img src="img/logo/logif.jpeg" alt="Samskrtam logo" style="width:30px;height:20px" /></a>
+                            </div>
+                        </div> -->
+                        <div class="col-md-12 col-sm-12">
+                            <div class="header-top-right text-md-end">
+                                <ul>
+                                    <li><a href="home.php">Home</a></li>
+                                    <li><a href="home.php">Contact</a></li>
+                                    <li><a href="home.php">About</a></li>
+                                    <li><a href="donate.php">Donate</a></li>
+                                    <li><a href="home.php">Useful Links</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Area Start -->
+        <div class="banner-area-wrapper">
+            <div class="banner-area1 text-center">  
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="banner-content-wrapper">
+                                <div class="banner-content">
+                                    <h2></h2> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Banner Area End -->
+        <!-- Header Area Start -->
+		<header class="top">
+			<div class="header-area two header-sticky">
+				<div class="container">
+					<div class="row">
+                        <div class="col-md-3 col-sm-5 col-6">
+                            <div class="logo">
+                                <a href="home.php"></a>
+                            </div>
+                        </div>
+						<div class="col-md-9 col-sm-7 col-6">
+                            <div class="content-wrapper text-end">
+                                <!-- Main Menu Start -->
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="stotras.php">Stotras</a></li>
+                                            <li><a href="home.php">Songs</a></li>
+                                             <li class="hidden-sm"><a href="texts.php">Text Contents</a></li>
+                                             <li class="hidden-sm"><a href="courses.php">Lessons</a></li>
+                                             <li class="hidden-sm"><a href="home.php">Articles</a></li>    
+                                             <li class="hidden-sm"><a href="prahelikas.php">ప్రహేళికలు</a></li>                                         
+                                            <li><a href="home.php">Other</a>
+                                                <ul>
+                                                    <li><a href="home.php">Worker Links</a></li>
+                                                    <li><a href="donate.php">Donate</a></li>
+                                                    <li><a href="donate.php">Blogs</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--Search Form Start-->
+<!--                                 <div class="search-btn">
+                                    <ul class="header-search search-toggle">
+                                        <li class="search-menu">
+                                            <i class="fa fa-search"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="search">
+                                        <div class="search-form">
+                                            <form id="search-form" action="#">
+                                                <input type="search" placeholder="Search here..." name="search" />
+                                                <button type="submit">
+                                                    <span><i class="fa fa-search"></i></span>
+                                                </button>
+                                            </form>                                
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!--End of Search Form-->
+                                <!-- Main Menu End -->
+                            </div>
+						</div>
+                        <div class="col-12">
+                            <div class="mobile-menu hidden-sm"></div> 
+                        </div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Area End -->
+
+
+    <div class="course-area pt-50 pb-50">
+        <div class="container">
+
+            <div style="color: green;">
+                <a href="home.php" class="crumb">Home</a> >> <a href="courses.php" class="crumb">Lessons</a> >> 
+                Amarakosha - Telugu            </div>
+
+            <div class="subscribe-content section-title text-center pb-50">
+                <h2>Amarakosha - Telugu</h2>
+            </div>
+
+            <div class="row">
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-01-Introduction to the work and author, class rules</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/atAf3uoD4ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-02-Shloka -01 -Prarthana Shlokas </span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/76BfSX7FXg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-03-Shloka-02 - Background and Purpose</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/fY-UbRWnJLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-04-Shloka 5 to 10 lines</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/GxbDHSQHqMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-05-11 & 12 lines Shloka -06 -Words on Svarga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/xqXfKdg3ddA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-06-Shloka -7, 8, 9 -Words on celestial god</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/N4_g3YJHgqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-07-Shloka -10, 11 -Words on Gods categories </span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/w7UxNrScSOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-08-hloka -12 to 15- Words on Asura and Buddha</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/EtrojmT-ggc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-09-Shloka -16 to 20- Words on Brahma, Vishnu</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/mx6XSrUMz68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-10-Shloka - 21st to 24th</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/9lo4jqW8D3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-11-Shloka - 25th to 28th-Kama,Lakshmi,Vishnu Articles</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/gZDz-6QU0f8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-12- Shloka - 29th to 35th-Words on Garutman, Shiva</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/sRjVQbBBI7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-13-Shloka - 35th to 37th-Words of Shiva etc.</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/nW0tQ1VM5Ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-14-Shloka - 38th to 40th-Words of Ganesha, Skanda</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/niEIdIG1910" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-15-Shlokas - 41st to 44tth-Words of Indra, Things </span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/UMQL-2YXsSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-16-Shlokas - 41st to 44tth-Words of Indra, Structure</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/rIQcmsDejOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-17-Shlokas - 41st to 44tth-Words of Indra, Structure</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/0nW_dejmPaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-18-Shlokas - 45th to 52nd-Words of items on Svarga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/sKULHwOUu8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-19-Shlokas - 53rd to 55th-Words of Agni</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/6pzMWtfeMQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-20-Shlokas - 53rd to 55th- Words on Agni- structure </span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/Csy1oZH0LHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-21-Shlokas - 56th to 57th- Revision, Agni Things</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/ZfGKWB0Wa68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-22-Shlokas - 58th to 60th-Words on Yama, Rakshasa</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/zYSiGpgowfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-23-Shlokas - 61st to 64th-Words for Varuna And Vayu </span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/xi965wlt5VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-24-Shlokas - 64th to 66th-Words of Vayu,Speed,Quick</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/CmqBkzJdD7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-25-Shlokas - 67th to 69th-Words on Atishaya, Kubera</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/WEuzdgmnatU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-26-Shlokas - 70th to 71st-Words on Kubera</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/Grt01Sk9yzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-27-Shlokas - Vyoma Varga- Words on Akasha</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/y-NASPuywFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-28-Shlokas - Digvarga- 1 to 3 </span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/g7ZJjgxUkVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-29-Shlokas - Digvarga-3,4 Diggajas and wives</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/AkCn6UKskPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-30-Shlokas - Digvarga-5,6 </span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/buRWLi2Eqfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-31-Shlokas - Digvarga-7,8</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/Y6Cv_qLt0M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-32-Shlokas - Digvarga-9,10</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/JcP-UKbtc1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-33-Shlokas - Digvarga-11,12</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/vYbdCdBmFdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-34-Shlokas - Digvarga-13,14</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/mL7tQZHzE7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-35-Shlokas - Digvarga-15,16</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/E19OXFy5Lro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-36-Shlokas - Digvarga-17,18</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/5KR-1bIwWP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-37-Shlokas - Digvarga-17,18</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/zP0uzPlHt_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-38-Shlokas - Kalavarga-1 to 4</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/a82y3lNC6qQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-39-Shlokas - Kalavarga-5 to 8</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/dlHyX3fEi3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-40-Shlokas - Kalavarga-9 to 12</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/a0map-CIzKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-41-Shlokas - Kalavarga-13 to 20</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/AMjpke4nNxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-42-Shlokas - Kalavarga-21 to 23</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/FWrxl7JnSoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-43-Shlokas - Kalavarga-24 to 29</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/jI-ijEGzIdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-44-Shlokas - DheeVarga-1 to 5</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/hcs7B8GgqKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-45-- Shlokas - DheeVarga-6 to 10</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/0kmDwWeBG_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-46-Shlokas - DheeVarga-11 to 16</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/lFpVOSiE07E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-47-Shlokas - ShabdaVarga-1 to 6</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/ZMjjE66hg-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-48-Shlokas - ShabdaVarga-7 to 14</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/rvfEXFP3RAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-49-Shlokas - ShabdaVarga-15 to 20</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/9hYoZehm2sM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-50-Shlokas - ShabdaVarga-25 to 35</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/kazxRm5g4pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-51- Shlokas - ShabdaVarga-36 to 45</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/lumYM3wxb58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-52-Shlokas - ShabdaVarga-46 to 50</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/ZAopmWDWsmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-53-Shlokas - Natya Varga- 1st to 5th</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/hmI-c0ZaQtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-54-Shlokas - Natya Varga- 6th to 10th</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/Ix2QVIsGf2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-55-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/mK36BsL8cH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-56-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/8DSPdx0wl24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-57-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/qd5DBVmgUh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-58-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/DOcrTMHbTbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-59-Shlokas - Natya Varga-</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/CDX243JJY7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-60-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/bbuDRrIJAqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-61-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/DvKfmJkeqjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-62-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/p_gczafTWkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-63-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/hXUxIMPhHow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-64-Shlokas - Patalabhogi Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/KE-Gfps-Q5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-65-Shlokas - Natya Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/ybf-9g1aG5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-66-Shlokas - Vari Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/AHGL3vC2tc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-67-Shlokas - Vari Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/g4BXDl4sYPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-68-Shlokas - Vari Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/lATWMoTshvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-69-Shlokas - Vari Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/C-6A-sNwi9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-70-Shlokas -Vari Varga</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/H2CDm3rFv-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-71-Shlokas - Second Kanda</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/NZhmAQFPUZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-72-Shlokas - Second Kanda</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/hlZO8zFywtc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-73-Shlokas - Second Kanda</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/t4w-9g5-RpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-74-Shlokas - Second Kanda</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/YOzEnm-6mUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-75-Shlokas -Second Kanda</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/flReeR7wwxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-76-Shlokas - Second Kanda</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/63vDMe-uTUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course mb-70">
+                            <div>
+                                <span class="btn btn-primary mb-1 courseBlueButton" style="font-size:20px;">L-77-Shlokas - Second Kanda-Lines 223 to 233</span>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16x9">
+                                <iframe class="embed-responsive-item" width="370" height="208" src="https://www.youtube.com/embed/glT6eBYdXkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                            </div>       
+                        </div>
+                    </div>  
+            </div>
+        </div>
+    </div>    
+
+    
+        <!-- Footer Start -->
+        <footer class="footer-area">
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-widget pr-60">
+                                <div class="footer-logo pb-5">
+                                    <a href="home.php"><img src="images/logo.png" alt="Samskrtam" style="width:200px"></a>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/svarvaniprakash"><i class="zmdi zmdi-facebook customicon"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest customicon"></i></a></li>
+                                        <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured"><i class="zmdi zmdi-youtube customicon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/svarvani24/"><i class="zmdi zmdi-instagram customicon"></i></a></li>
+                                        <li><a href="https://twitter.com/SvarvaniS"><i class="zmdi zmdi-twitter customicon"></i></a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+<!--                         <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <h3>information</h3>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="#">Other info</a></li>
+                                    <li><a href="#">TimeTable</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>useful links</h3>
+                                <ul>
+                                    <li><a href="https://twitter.com/SvarvaniS">Twitter</a></li>
+                                    <li><a href="https://www.facebook.com/svarvaniprakash">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/svarvani24/">Instagram</a></li>
+                                    <li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured">YouTube</a></li>
+                                    <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>get in touch</h3>
+                                <p>Please reach us at: </p>
+                                <p>samskrta.usha@gmail.com<br>https://samskrtam.info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Copyright © <a href="index.html">Svarvani Prakasha</a> 2023. All Right Reserved By <a href="https://samskrtam.info" target="_blank">Svarvani</a></p>
+                        </div> 
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+
+        
+        <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/samskrtam.js"></script>
+    </body>
+</html>    
