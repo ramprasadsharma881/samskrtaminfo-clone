@@ -921,6 +921,7 @@ def build_stotras(stotras: list, details: list, home: dict) -> None:
 </div>
 <section class="section" style="padding-top:0">
   <div class="wrap">
+    <h2 class="visually-hidden">Stotras</h2>
     <div class="grid grid--3" id="stotra-list">{cards}
       <p class="empty-state" data-empty hidden>No stotra matches that search.</p>
     </div>
@@ -1067,7 +1068,7 @@ def build_texts_index(texts: list, home: dict) -> None:
             n += 1
         groups += f"""<section class="section section--tight">
   <div class="wrap">
-    <div class="section-head"><span class="eyebrow">{e(g['title'])}</span></div>
+    <div class="section-head"><h2 class="eyebrow">{e(g['title'])}</h2></div>
     <div class="grid grid--3">{items}</div>
   </div>
 </section>"""
@@ -1371,8 +1372,12 @@ def build_dhatupathah(home: dict) -> None:
 </div>
 <section class="section" style="padding-top:0">
   <div class="wrap">
-    <div class="table-wrap" id="dhatu-table" data-highlight>
+    <div class="table-wrap" id="dhatu-table" data-highlight tabindex="0"
+         role="region" aria-labelledby="dhatu-caption">
       <table class="data">
+        <caption id="dhatu-caption" class="visually-hidden">Dhātupāṭha —
+          {len(rows)} roots with gaṇa, pada, meaning and forms. The table
+          scrolls sideways; on a narrow screen each root is a card.</caption>
         <thead><tr>{head}</tr></thead>
         <tbody>{''.join(rows)}</tbody>
       </table>
@@ -1613,6 +1618,7 @@ def build_lessons(courses: list, details: list, home: dict) -> None:
 <section class="section" style="padding-top:0">
   <div class="wrap">
     <div style="max-width:520px;margin-bottom:1.5rem">{filter_field('course-list', 'Filter courses…', 'course-count')}</div>
+    <h2 class="visually-hidden">Courses</h2>
     <div class="grid grid--3" id="course-list">{cards}
       <p class="empty-state" data-empty hidden>No course matches that search.</p>
     </div>
@@ -1747,7 +1753,10 @@ def build_prahelikas(data: dict, home: dict) -> None:
   </div>
 </section>
 <section class="section" style="padding-top:0">
-  <div class="wrap"><div class="grid grid--3">{cards}</div></div>
+  <div class="wrap">
+    <h2 class="visually-hidden">ప్రహేళికల సంపుటాలు</h2>
+    <div class="grid grid--3">{cards}</div>
+  </div>
 </section>"""
     page(path="prahelikas/index.html", depth=1, title="ప్రహేళికలు",
          description="Telugu-language Sanskrit puzzles — read the clue, work out the line, then reveal the answer.",

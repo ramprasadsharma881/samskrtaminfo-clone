@@ -21,6 +21,20 @@
     }
   };
 
+  /* ---- the sitewide polite live region --------------------------------
+     Several controls change the page without moving focus — toggling a
+     register, switching script, filtering a list. Sighted readers see the
+     result; this is how everyone else hears it. Repeats are nudged so an
+     identical message is still announced. */
+  var announceTimer;
+  function announce(msg) {
+    var el = document.getElementById("live-status");
+    if (!el || !msg) return;
+    clearTimeout(announceTimer);
+    el.textContent = "";
+    announceTimer = setTimeout(function () { el.textContent = msg; }, 60);
+  }
+
   /* ===================================================================== */
   /* Theme                                                                  */
   /* ===================================================================== */
@@ -143,10 +157,14 @@
         b.setAttribute("aria-pressed", String(b.getAttribute("data-lipi-set") === script));
       });
     }
+    var NAMES = { devanagari: "Devanāgarī", telugu: "Telugu", iast: "IAST" };
     function set(script) {
       window.Lipi.apply(script);
       store.set("lipi", script);
       paint(script);
+      /* every filter's haystack was built from the old script's text */
+      filterRuns.forEach(function (f) { if (f.reindex) f.reindex(); });
+      announce("Script: " + (NAMES[script] || script));
     }
     buttons.forEach(function (b) {
       b.addEventListener("click", function () { set(b.getAttribute("data-lipi-set")); });
@@ -192,6 +210,9 @@
         var i = on.indexOf(name);
         if (i > -1) on.splice(i, 1); else on.push(name);
         paint();
+        announce((b.textContent || name).trim() + ": " +
+                 (on.indexOf(name) > -1 ? "shown" : "hidden") +
+                 ". " + on.length + " of " + all.length + " registers showing.");
       });
     });
 
@@ -376,7 +397,15 @@
         }
       }
 
-      filterRuns.push({ scope: scope, run: run });
+      /* Switching script rewrites every text node on the page, so a
+         haystack built from the old one no longer matches what the reader
+         can see. Drop it and re-run whatever is in the box. */
+      function reindex() {
+        haystacks = null;
+        if (input.value.trim()) run();
+      }
+
+      filterRuns.push({ scope: scope, run: run, reindex: reindex });
 
       var t;
       input.addEventListener("input", function () {

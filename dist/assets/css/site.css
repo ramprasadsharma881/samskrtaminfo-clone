@@ -664,8 +664,8 @@ p:last-child { margin-bottom: 0; }
 
 .btn--primary,
 .btn--accent {
-  background: var(--saffron);
-  border-color: var(--saffron);
+  background: var(--saffron-text);
+  border-color: var(--saffron-text);
   color: #fff;
   /* a warm brass lift rather than a neutral drop shadow */
   box-shadow: 0 1px 0 var(--gold-line), 0 3px 12px var(--saffron-glow);
@@ -921,10 +921,7 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
               inset 0 0 24px rgba(28, 25, 23, 0.14);
 }
 
-.footer-soon {
-  color: var(--colophon-soft);
-  opacity: 0.75;
-}
+.footer-soon { color: var(--colophon-soft); }
 .footer-soon::after {
   content: "soon";
   font-family: var(--font-ui);
@@ -1035,6 +1032,7 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
 .section-head h2 { margin-bottom: 0.4rem; }
 .section-head p { color: var(--ink-soft); margin: 0; }
 
+h2.eyebrow, h3.eyebrow { margin-top: 0; }
 .eyebrow {
   display: block;
   font-family: var(--font-ui);
@@ -1837,6 +1835,7 @@ mark {
    -------------------------------------------------------------------------- */
 /* One scrollbar, not two: the page scrolls and the column heads stick under
    whatever chrome is above them (JS measures it into --sticky-total). */
+.table-wrap:focus-visible { outline: 2px solid var(--saffron); outline-offset: 2px; }
 .table-wrap {
   overflow-x: auto;
   overflow-y: visible;
