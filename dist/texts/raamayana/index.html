@@ -5,20 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>श्रीमद्रामायण-विषयाणामनुक्रमणिका · Samskrtam</title>
 <meta name="description" content="श्रीमद्रामायण-विषयाणामनुक्रमणिका — Sanskrit text arranged in anvaya order with meanings in brackets.">
-<link rel="canonical" href="https://samskrtam.info/texts/raamayana">
+<link rel="canonical" href="https://samskrtam.info/texts/raamayana/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Svarvāṇī Prakāśa · Sevā Nikuñjam">
 <meta property="og:title" content="श्रीमद्रामायण-विषयाणामनुक्रमणिका · Samskrtam">
 <meta property="og:description" content="श्रीमद्रामायण-विषयाणामनुक्रमणिका — Sanskrit text arranged in anvaya order with meanings in brackets.">
 <meta property="og:image" content="https://samskrtam.info/assets/img/logo.png">
-<meta property="og:url" content="https://samskrtam.info/texts/raamayana">
+<meta property="og:url" content="https://samskrtam.info/texts/raamayana/">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#1b2a4a">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf6ee">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121114">
 <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../../assets/img/logo.png">
+<link rel="preload" href="../../assets/fonts/CharterIndologique.otf" as="font" type="font/otf" crossorigin>
 <link rel="preload" href="../../assets/fonts/Sanskrit2003.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="../../assets/css/site.css">
-<script>try{var t=localStorage.getItem('svp:theme');if(t)document.documentElement.setAttribute('data-theme',t);
+<script>try{var t=localStorage.getItem('svp:theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);
 var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])document.documentElement.style.setProperty('--read-scale',m[s]);}catch(e){}</script>
 
 </head>
@@ -31,35 +33,39 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <img src="../../assets/img/logo.png" alt="" width="42" height="42">
       <span class="brand-text" data-no-lipi>
         <span class="brand-name">Samskrtam</span>
-        <span class="brand-sub">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</span>
+        <span class="brand-sub" lang="sa">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</span>
       </span>
     </a>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <ul><li><a href="../../">Home</a></li><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/" aria-current="page">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/" class="telu">ప్రహేళికలు</a></li><li><a href="../../about/">About</a></li><li><a href="../../about/#contact">Contact</a></li><li><a href="../../donate/">Donate</a></li></ul>
-    </nav>
     <div class="header-tools tools-anchor">
       <button class="icon-btn" data-prefs-toggle aria-expanded="false" aria-controls="prefs-panel" aria-label="Reading preferences" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg></button>
-      <button class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch theme" type="button"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
-      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
       <div class="prefs" id="prefs-panel" hidden>
-        <h5>Text size</h5>
-        <div class="prefs__row">
-          <button type="button" data-size="s" aria-pressed="false">A</button>
-          <button type="button" data-size="m" aria-pressed="true">A</button>
-          <button type="button" data-size="l" aria-pressed="false">A</button>
-          <button type="button" data-size="xl" aria-pressed="false">A</button>
+        <p class="prefs__legend" id="prefs-size">Text size</p>
+        <div class="prefs__row" role="group" aria-labelledby="prefs-size">
+          <button type="button" data-size="s" aria-pressed="false" aria-label="Small text">A</button>
+          <button type="button" data-size="m" aria-pressed="true" aria-label="Normal text">A</button>
+          <button type="button" data-size="l" aria-pressed="false" aria-label="Large text">A</button>
+          <button type="button" data-size="xl" aria-pressed="false" aria-label="Extra large text">A</button>
         </div>
-        <h5>Script · लिपिः</h5>
-        <div class="prefs__row">
-          <button type="button" data-lipi-set="devanagari" aria-pressed="true" class="deva">देव</button>
-          <button type="button" data-lipi-set="telugu" aria-pressed="false" class="telu">తెలు</button>
-          <button type="button" data-lipi-set="iast" aria-pressed="false">IAST</button>
+        <p class="prefs__legend" id="prefs-lipi">Script · <span lang="sa">लिपिः</span></p>
+        <div class="prefs__row" role="group" aria-labelledby="prefs-lipi">
+          <button type="button" data-lipi-set="devanagari" aria-pressed="true" class="deva" lang="sa" aria-label="Devanagari">देव</button>
+          <button type="button" data-lipi-set="telugu" aria-pressed="false" class="telu" lang="te" aria-label="Telugu">తెలు</button>
+          <button type="button" data-lipi-set="iast" aria-pressed="false" aria-label="IAST transliteration">IAST</button>
         </div>
         <p style="margin:0;font-size:.8rem;color:var(--ink-faint)">Converts every Devanāgarī passage on the page. Theme follows your device unless you pick one with the sun / moon button.</p>
       </div>
+      <button class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch theme" type="button"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
+    <!-- The nav follows the button that reveals it, so a forward Tab from the
+         menu toggle lands inside the menu instead of skipping past the page.
+         Its visual position is set by CSS, not by document order. -->
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul><li><a href="../../">Home</a></li><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/" aria-current="page">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/">Prahelikās</a></li><li><a href="../../about/">About</a></li><li><a href="../../about/#contact">Contact</a></li><li><a href="../../donate/">Donate</a></li></ul>
+    </nav>
   </div>
 </header>
+<p class="visually-hidden" id="live-status" role="status" aria-live="polite"></p>
 <main id="main">
 <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../../texts/">Texts</a></li><li><span class="deva">श्रीमद्रामायण-विषयाणामनुक्रमणिका</span></li></ol></nav>
 <section class="section section--tight">
@@ -70,7 +76,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
   </div>
 </section>
 <section class="section" style="padding-top:0">
-  <div class="wrap"><figure class="text-plate"><img src="../../assets/img/Raamaayan.jpg" alt="" loading="lazy"></figure><div class="panel" style="margin-bottom:1.75rem"><p class="deva scripture">Click on a button to go that Kanda.</p></div><div class="jumpnav"><a href="#topSection">उपोद्घातः</a><a href="#firstSection">बालकाण्डे</a><a href="#secondSection">अयोध्याकाण्डे</a><a href="#thirdSection">अरण्यकाण्डे</a><a href="#fourthSection">किष्किन्धाकाण्डे</a><a href="#fifthSection">सुन्दरकाण्डे</a><a href="#sixthSection">युद्धकाण्डे</a><a href="#seventhSection">उत्तरकाण्डे</a><a href="#eighthSection">प्रक्षिप्तसर्गे</a></div><section class="scroll-block" id="topSection"><h3>उपोद्घातः</h3><pre>॥श्रीहरिः॥
+  <div class="wrap"><figure class="text-plate"><img src="../../assets/img/Raamaayan.jpg" alt="" loading="lazy"></figure><div class="panel" style="margin-bottom:1.75rem"><p class="deva scripture">Click on a button to go that Kanda.</p></div><div class="jumpnav"><a href="#topSection">उपोद्घातः</a><a href="#firstSection">बालकाण्डे</a><a href="#secondSection">अयोध्याकाण्डे</a><a href="#thirdSection">अरण्यकाण्डे</a><a href="#fourthSection">किष्किन्धाकाण्डे</a><a href="#fifthSection">सुन्दरकाण्डे</a><a href="#sixthSection">युद्धकाण्डे</a><a href="#seventhSection">उत्तरकाण्डे</a><a href="#eighthSection">प्रक्षिप्तसर्गे</a></div><section class="scroll-block" id="topSection"><h3>उपोद्घातः</h3><pre lang="sa">॥श्रीहरिः॥
 ॥श्रीसीतारामचन्द्राभ्यां नमः॥
 माहात्म्यसहितश्रीमद्वाल्मीकीयरामायणस्थविषयाणामनुक्रमः
 श्रीमद्वाल्मीकीयरामायणस्य पाठविधिः
@@ -81,7 +87,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ३ - माघमासे रामायणश्रवणफलम् राज्ञः सुमते राज्ञ्याः सत्यवत्याश्च पूर्वजन्मेतिहासः
 ४ - चैत्रमासे रामायणपठनश्रवणमाहात्म्यं कलिकाख्यव्याधस्योत्तङ्कमुनेश्च कथा
 ५ - रामायणस्य नवाहश्रवणविधेर्माहात्म्यस्य फलस्य च वर्णनम्
-                </pre></section><section class="scroll-block" id="firstSection"><h3>बालकाण्डे</h3><pre>१ - नारदेन वाल्मीकिं प्रति संक्षेपतः श्रीरामचरित्रस्य श्रावणम्
+                </pre></section><section class="scroll-block" id="firstSection"><h3>बालकाण्डे</h3><pre lang="sa">१ - नारदेन वाल्मीकिं प्रति संक्षेपतः श्रीरामचरित्रस्य श्रावणम्
 २ - रामायणकाव्यस्योपक्रमः तमसातटे क्रौञ्चवधात् संतप्तस्य वाल्मीकेः शोकस्य श्लोकरूपतया प्रकटनं ;
 ब्रह्मणस्तं प्रति रामचरितमयकाव्यनिर्माणार्थमादेशः
 ३ - रामायणकाव्यगतानां विषयाणां संक्षेपेणोल्लेखः
@@ -92,7 +98,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ८ - पुत्रकामस्य राज्ञोऽश्वमेधाय प्रस्तावो मन्त्रिभिर्ब्राह्मणैश्च तस्यानुमोदनम्
 ९ - सुमन्त्रेणर्ष्यशृङ्गवृत्तानास्य संक्षेपेण वर्णनम्
 १० - ऋष्यशृङ्गस्याङ्गदेश आगमनं शान्तया सह विवाहश्च
-                    </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre>११ - सुमन्त्रस्य सम्मत्या राज्ञा दशरथेनाङ्गराजगृहाच्छान्तर्ष्यशृङ्गयोः स्वेगृहे समानयनम्
+                    </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre lang="sa">११ - सुमन्त्रस्य सम्मत्या राज्ञा दशरथेनाङ्गराजगृहाच्छान्तर्ष्यशृङ्गयोः स्वेगृहे समानयनम्
 १२ - राज्ञ ऋषीन् प्रति यज्ञं कारयितुं प्रस्तावः ; ऋषिभी राजानं प्रति राज्ञा चामात्यान् प्रति यज्ञसामग्री-सम्भरणायादेशदानम्
 १३ - राज्ञो वसिष्ठं प्रति यज्ञसमारम्भायानुरोधस्तेन तदर्थं सेवकानां नियुक्ति राज्ञामामन्त्रणाय तस्य सुमन्त्रं
 प्रत्यादेशः समागतनरेशानां सत्कारः सपत्नीकेन राज्ञा यज्ञदीक्षाया ग्रहणं च
@@ -167,7 +173,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ७५ - दशरथवाक्यमनाकर्ण्य परशुरामेण श्रीरामस्य वैष्णवधनुषि बाणं संधातुं प्रेरणम्
 ७६ - श्रीरामेण वैष्णवं धनुरारोप्यामोघेन शरेण परशुरामस्य तपःप्राप्तानां पुण्यलोकानां विनाशनं परशुरामस्य महेन्द्रपर्वतं प्रत्यागमनम्
 ७७ - पुत्रैः स्नुषाभिश्च सह दशरथस्यायोध्यायां प्रवेशः, शत्रुघ्नसहितस्य भरतस्य मातुलगहे गमनं श्रीरामस्य सद्वृत्त्या समेषां संतोषः श्रीसीतारामयोर्मिथः प्रेम्णो वर्णनम्
-                    </pre></details></section><section class="scroll-block" id="secondSection"><h3>अयोध्याकाण्डे</h3><pre>१ - श्रीरामसुद्गणानां वर्णनं श्रीरामं यौवराज्ये स्थापयितुं दशरथस्य विचारस्तदर्थं मन्त्रणां कर्तुं विभिन्ननरेशानां पौराणां जानपदानां च राज्ञा स्वसंसदि समाह्वानम्
+                    </pre></details></section><section class="scroll-block" id="secondSection"><h3>अयोध्याकाण्डे</h3><pre lang="sa">१ - श्रीरामसुद्गणानां वर्णनं श्रीरामं यौवराज्ये स्थापयितुं दशरथस्य विचारस्तदर्थं मन्त्रणां कर्तुं विभिन्ननरेशानां पौराणां जानपदानां च राज्ञा स्वसंसदि समाह्वानम्
 २ - दशरथकर्तृकः श्रीरामराज्याभिषेकप्रस्तावः संसत्सदस्यैः श्रीरामगुणानां वर्णनं कुर्वद्भिरुक्तप्रस्तावस्य सहर्षं युक्तियुक्तं समर्थनम्
 ३ - वसिष्ठवामदेवौ प्रति श्रीरामराज्याभिषेकसामग्रीसंग्रहार्थं राज्ञो दशरथस्यानुरोधस्ताभ्यां सेवकान् प्रति तदनुरूपादेशस्य दानं राजाज्ञया सुमन्त्रेण श्रीरामस्य राजसभायामानयनं राज्ञा श्रीरामं प्रति हितस्योपदेशश्च
 ४ - श्वो रामाभिषेकं निश्चित्य राज्ञा सुमन्त्रं प्रेष्य तेन समानीतं श्रीरामं प्रति किञ्चिदावश्यकं निवेद्य तस्य स्वगृहे प्रस्थापनं श्रीरामेण कौसल्याभवनं गत्वा मातरं प्रति स्वाभिषेकवृत्तस्य सूचनं मातुराशिषं प्राप्य लक्ष्मणेन सह प्रेमपूर्वकं वार्तालापं कृत्वा स्वकीये भवने तस्य गमनम्
@@ -177,7 +183,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ८ - मन्थरया पुनः श्रीरामराज्याभिषेकस्य कैकेयीकृतेऽनिष्टकरत्वे प्रतिपादिते कैकेय्या श्रीरामगुणान् वर्णयित्वा तदीयाभिषेकस्य समर्थनं तदनु कुब्जया पुनः श्रीरामराज्यस्य भरताय भयोत्पादकत्वं प्रतिपाद्य कैकेय्या मनसि भेदभावोत्पादनम्
 ९ - कुब्जायाः कुचक्रेण कैकेय्याः कोपभवने प्रवेशः
 १० - कैकेय्याः सद्मनि समागतस्य दशरथस्य तां कोपभवनगतामवलोक्य दुःखं तेन तस्यै सात्त्वनाप्रदानं च
-                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre>११ - कैकेय्या राजानं प्रतिज्ञया बद्ध्वा तेन प्राक् प्रदत्तौ वरौ स्मारयित्वा तयोरेकेन भरताभिषेकस्यापरेण च श्रीरामकर्तृकचतुर्दशवर्षाधिकवनवासस्य च याचनम्
+                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre lang="sa">११ - कैकेय्या राजानं प्रतिज्ञया बद्ध्वा तेन प्राक् प्रदत्तौ वरौ स्मारयित्वा तयोरेकेन भरताभिषेकस्यापरेण च श्रीरामकर्तृकचतुर्दशवर्षाधिकवनवासस्य च याचनम्
 १२ - राज्ञो दशरथस्य चिन्ता विलापश्च तेन कैकेय्या भर्त्सनं सान्त्वनं तादृशवरयाच्ञातो विन्त्विर्तितुमनुरोधकरणं च
 १३ - राज्ञो विलापः कैकेयीं प्रति तस्यानुनयो विनयश्च
 १४ - कैकेय्या राज्ञः सत्ये दृढतरावस्थानाय प्रेरणं निजप्रार्थितवरपूर्तये तं प्रति दुराग्रहप्रकटनं च अन्तःपुरद्वारमागत्य वसिष्ठेन सुमन्त्रस्य महाराजसंनिधौ प्रेषणं राजाज्ञया सुमन्त्रस्य श्रीराममानेतुं ततो गमनं च
@@ -290,7 +296,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ११७ - अत्रेराश्रमं गतायां श्रीरामादीनां तेन सत्कारोऽनसूयया च सीतायाः समादरः
 ११८ - सीतानसूयासंवादोऽनसूयया सीतायै प्रेमोपहारस्य दानमनसूयया पृष्टया सीतया तान् प्रति स्वीयस्वयंवरवृत्तानास्य वर्णनम्
 ११९ - अनसूयादेशेन सीतायास्तत्प्रदत्तानां दिव्यवस्त्राभूषणानां धारण कृत्वा श्रीरामस्य पार्श्वे गमनं श्रीरामादीनां रात्रावाश्रमे स्थित्वा प्रातरन्यत्र गन्तुमृषिभ्योऽनुज्ञाया ग्रहणम्
-                    </pre></details></section><section class="scroll-block" id="thirdSection"><h3>अरण्यकाण्डे</h3><pre>१ - सीतालक्ष्मणसहितस्य श्रीरामस्य तापसाश्रममण्डले सत्कारः
+                    </pre></details></section><section class="scroll-block" id="thirdSection"><h3>अरण्यकाण्डे</h3><pre lang="sa">१ - सीतालक्ष्मणसहितस्य श्रीरामस्य तापसाश्रममण्डले सत्कारः
 २ - वने श्रीरामादीन् प्रति विराधस्याक्रमणम्
 ३ - विराधश्रीरामसंवादः श्रीरामेण सलक्ष्मणेन विराधस्योपरि प्रहरणं विराधस्य तौ द्वावपि भ्रातरौ गृहीत्वा वनान्तरे गमनम्
 ४ - श्रीरामलक्ष्मणकर्तृको विराधस्य वधः
@@ -300,7 +306,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ८ - प्रातः सुतीक्ष्णेनानुज्ञातस्य लक्ष्मणसीतासहितस्य श्रीरामस्य ततः प्रस्थानम्
 ९ - अनागसां देहिनामहिंसनायाहिंसाधर्मस्य पालनाय च सीतायाः श्रीरामं प्रति प्रार्थनम्
 १० - श्रीरामेण मुनीनां संरक्षणाय रक्षसां वधाय कृतायाः प्रतिज्ञायाः पालने दृढमवस्थानाय स्वविचारस्य प्रकटनम्
-                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre>११ - पञ्चाप्सरस्तीर्थस्य माण्डकर्णिमुनेश्च कथा नानाश्रमेषु विहृत्य श्रीरामप्रभृतीनां सुतीक्ष्णस्याश्रमे समागमनं तत्र किञ्चित्कालं स्थित्वा मुनेराज्ञयागस्त्यभ्रातुरगस्त्य  चाश्रमयोर्गमनमगस्त्यप्रभावस्य च वर्णनम्
+                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre lang="sa">११ - पञ्चाप्सरस्तीर्थस्य माण्डकर्णिमुनेश्च कथा नानाश्रमेषु विहृत्य श्रीरामप्रभृतीनां सुतीक्ष्णस्याश्रमे समागमनं तत्र किञ्चित्कालं स्थित्वा मुनेराज्ञयागस्त्यभ्रातुरगस्त्य  चाश्रमयोर्गमनमगस्त्यप्रभावस्य च वर्णनम्
 १२ - श्रीरामप्रभृतीनामगस्त्यस्याश्रमे प्रवेशस्तत्र तेषामातिथ्यं मुनेः सकाशाच्च तेभ्यो दिव्यास्त्रशस्त्राणां प्राप्तिः
 १३ - महर्षिणागस्त्येन श्रीरामं प्रति परितोषं प्रकट्य सीतायाः प्रशंसनं श्रीरामेण पृष्टेन तेन पञ्चवट्यामाश्रमं निर्माय तत्रावस्थातुमाज्ञाप्रदानं श्रीरामप्रभृतीनां ततः प्रस्थानं च
 १४ - पञ्चवटीमार्गे जटायुषो दर्शनं तस्य श्रीरामं प्रति स्वस्य विस्तरेण परिचयदानम्
@@ -372,7 +378,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ७४ - श्रीरामलक्ष्मणाभ्यां पम्पातटे मतङ्गवने शबर्य्या आश्रमं गत्वा तस्याः सत्कारस्य ग्रहणं तया सह
 मतङ्गवनस्य निरीक्षणं शबर्य्या स्वशरीरस्याहुतिं दत्त्वा ततो दिव्यधाम्नि गमनम्
 ७५ - श्रीरामलक्ष्मणयोर्वार्तालापस्तयोः पम्पातटे गमनम्
-                </pre></details></section><section class="scroll-block" id="fourthSection"><h3>किष्किन्धाकाण्डे</h3><pre>१ - पम्पाया दर्शनेन श्रीरामस्य व्याकुलत्वं श्रीरामेण लक्ष्मणं प्रति पम्पाशोभायास्तत्रत्योद्दीपनसामग्र्याश्च वर्णनं लक्ष्मणेन श्रीरामस्य प्रबोधनमृष्यमूकं गच्छन्तौ तौ द्वौ भ्रातरौ वीक्ष्य सुग्रीवस्यान्येषां च वानराणां भयम्
+                </pre></details></section><section class="scroll-block" id="fourthSection"><h3>किष्किन्धाकाण्डे</h3><pre lang="sa">१ - पम्पाया दर्शनेन श्रीरामस्य व्याकुलत्वं श्रीरामेण लक्ष्मणं प्रति पम्पाशोभायास्तत्रत्योद्दीपनसामग्र्याश्च वर्णनं लक्ष्मणेन श्रीरामस्य प्रबोधनमृष्यमूकं गच्छन्तौ तौ द्वौ भ्रातरौ वीक्ष्य सुग्रीवस्यान्येषां च वानराणां भयम्
 २ - सुग्रीवस्य वानराणां चाशङ्का हनुमता तस्या निवारणं सुग्रीवेण श्रीरामलक्ष्यणयोर्भावं, समीक्षितुं हनुमतस्तत्सविधे प्रेषणम्
 ३ - हनुमता श्रीरामलक्ष्मणयोर्वने आगमनस्य किं कारणमितिजिज्ञासाकरणमात्मनः सुग्रीवस्य च परिचयदानं श्रीरामेण तद्वचनानां प्रशंसनं कृत्वा लक्ष्मणस्य स्वपक्षतो वार्ताकरणे नियोजनं लक्ष्मणेन स्वीयेऽभ्यर्थने स्वीकृते हनुमतो हर्षश्च
 ४ - लक्ष्मणेन श्रीरामवनागमनस्य सीताहरणस्य च वृत्तान्तस्य वर्णनं तत्र सीतान्वेषणे सुग्रीवः सहयोगं करोत्वितीच्छायाः प्रकटनं हनुमता तयोराश्वासनपूर्वकमात्मना सह नयनम्
@@ -382,7 +388,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ८ - सुग्रीवेण श्रीरामं प्रति निजदुःखनिवेदनं श्रीरामेण तमाश्वास्य तयोरुभयोर्भ्रात्रौर्वैरस्य किं कारणमिति प्रश्नकरणम्
 ९ - सुग्रीवेण श्रीरामं प्रति वालिना सह स्वकीयवैरसम्बन्धिकारणस्य कथनम्
 १० - भ्रात्रा सह वैरकारणस्य कथनप्रसंगे सुग्रीवेण स्वकर्तृके वालिनः प्रसादने वालिकर्तृके च स्वस्य निष्कासने घटितस्य वृत्तान्तस्य वर्णनम्
-                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre>११ - सुग्रीवेण वालिनः पराक्रमस्य वर्णनं वालिना दुन्दुभिं हत्वा तस्य शवस्य मतङ्गवने क्षेपणं मतङ्गमुनिना वालिने शापदानं श्रीरामेण दुन्दुभेरस्थिसमूहस्य दूरे क्षेपणं सुग्रीवेण तं प्रति तालभेदनार्थमाग्रहकरणम्
+                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre lang="sa">११ - सुग्रीवेण वालिनः पराक्रमस्य वर्णनं वालिना दुन्दुभिं हत्वा तस्य शवस्य मतङ्गवने क्षेपणं मतङ्गमुनिना वालिने शापदानं श्रीरामेण दुन्दुभेरस्थिसमूहस्य दूरे क्षेपणं सुग्रीवेण तं प्रति तालभेदनार्थमाग्रहकरणम्
 १२ - श्रीरामेण सप्ततालवृक्षाणां भेदनं श्रीरामस्याज्ञया सुग्रीवेण किष्किन्धायामागत्य वालिनो युद्धायाह्वानं युद्धे ततः पराजितस्य तस्य मतङ्गवने पलायनं तत्र श्रीरामेण तस्य समाश्वासनं तदभिज्ञानार्थं गले गजपुष्पीलतां निक्षिप्य तस्य पुनः प्रेषणं च
 १३ - श्रीरामादीनां मार्गे वृक्षान् विविधजन्तूञ्जलाशयांश्च सप्तजनाश्रमं च दूरतः पश्यतां पुनः किष्किन्धायां प्रवेशः
 १४ - वालिनो वधाय श्रीरामस्याश्वासनं प्राप्य सुग्रीवस्य घोरं गर्जनम्
@@ -439,7 +445,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ६५ - पर्यायेण वानरैः स्वस्वदूरगमनशक्तिपरिमाणस्य प्रतिपादनं जाम्बवदङ्गयोः संलापो जाम्बवतो हनुमन्तं प्रेरयितुं तत्पार्श्वे गमनम्
 ६६ - हनुमदुत्पत्तिकथां श्रावयित्वा जाम्बवता समुद्रलङ्घनाय तस्य प्रोत्साहनम्
 ६७ - हनुमता समुद्रं लङ्घयीतुमुत्साहस्य प्रकाशनं जाम्बवता तस्य प्रशंसनं वेगेनोत्प्लवनाय हनुमतो महेन्द्रपर्वत आरोहणम्
-                </pre></details></section><section class="scroll-block" id="fifthSection"><h3>सुन्दरकाण्डे</h3><pre>१ - हनुमता समुद्रस्य लङ्घनं मैनाकेन तस्य सत्कारस्ततः सुरसायाः पराजयः सिंहिकाया वधं कृत्वा तस्य दक्षिणतटे गमनं तत्र तेन लङ्काशोभाया निरीक्षणम्
+                </pre></details></section><section class="scroll-block" id="fifthSection"><h3>सुन्दरकाण्डे</h3><pre lang="sa">१ - हनुमता समुद्रस्य लङ्घनं मैनाकेन तस्य सत्कारस्ततः सुरसायाः पराजयः सिंहिकाया वधं कृत्वा तस्य दक्षिणतटे गमनं तत्र तेन लङ्काशोभाया निरीक्षणम्
 २ - लङ्कापुर्या वर्णनं तत्र प्रवेशविषये हनुमतो विचारो लघुरूपधरस्य तस्य पुर्यां प्रवेशस्तदानीं चन्द्रोदयशोभाया वर्णनम्
 ३ - लङ्कामवलोक्य हनुमतो विस्मयस्तत्र प्रविशतस्तस्य लङ्कयावरोधस्तत्प्रहारेण पीडितया तया तस्मै पुर्य्यां प्रवेष्टुमनुमतिदानम्
 ४ - हनुमता लङ्कायां रावणस्यान्तःपुरे च प्रवेशः
@@ -449,7 +455,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ८ - हनुमता पुनः पुष्पकस्य दर्शनम्
 ९ - रावणस्य भवनं पुष्पकविमानं सुन्दरनिवेशनं चावलोक्य हनुमता तत्र सुप्तानां सहस्रशः सुन्दरीणां समवलोकनम्
 १० - अन्तःपुरे सुप्तं रावणं प्रगाढनिद्रानिमग्नास्तस्य स्त्रियश्च दृष्ट्वा मन्दोदरीं सीतां मत्वा हनुमतो हर्षः
-                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre>११ - नासौ सीतेति निश्चित्य हनुमता पुनरन्तःपुरे पानभूमौ च सीताया अनुसंधानं तन्मनसि धर्मलोपाशङ्का तस्याः स्वतो निवारणं च
+                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre lang="sa">११ - नासौ सीतेति निश्चित्य हनुमता पुनरन्तःपुरे पानभूमौ च सीताया अनुसंधानं तन्मनसि धर्मलोपाशङ्का तस्याः स्वतो निवारणं च
 १२ - सीतामरणाशङ्कया हनुमतः शैथिल्यं पुनरुत्साहमवलम्ब्य स्थानान्तरेषु तेन तस्या अन्वेषणं कुत्रापि तामनवाप्य तस्य पुनश्चिन्ता च
 १३ - सीताविनाशाशङ्कया हनुमतश्चिन्ता सीतानुपलव्धिसूचनादनर्थंसम्भाव्य हनुमतोऽपरावर्तनाय निश्चयः पुनरन्वेषणविचारश्च, अशोकवाटिकायामनुसंधानविषये विविधं पर्यालोचनं च
 १४ - अशोकवनिकायां प्रविश्य तस्याः शोभाया दर्शनमेकस्मिन्नशोके प्रच्छन्नीभूतेन हनुमता तत एव तस्या अनुसंधानम् 
@@ -508,7 +514,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ६६ - चूडामणिं दृष्ट्वा सीतावृत्तमुपलभ्य च श्रीरामस्य सीताकृते विलापः
 ६७ - हनुमता श्रीरामं प्रति सीतासंदेशस्य श्रावणम् 
 ६८ - सीतायाः संदेहस्य स्वकर्तृकतन्निवारणस्य च वृत्तान्तस्य हनुमता वर्णनम्               
-                </pre></details></section><section class="scroll-block" id="sixthSection"><h3>युद्धकाण्डे</h3><pre>१ - हनुमन्तं प्रशस्य श्रीरामकर्तृकस्तस्य परिष्वङ्गः समुद्रतरणार्थं तस्य चिन्ताकरणं च
+                </pre></details></section><section class="scroll-block" id="sixthSection"><h3>युद्धकाण्डे</h3><pre lang="sa">१ - हनुमन्तं प्रशस्य श्रीरामकर्तृकस्तस्य परिष्वङ्गः समुद्रतरणार्थं तस्य चिन्ताकरणं च
 २ - सुग्रीवेण श्रीरामस्य प्रोत्साहनम्
 ३ - लङ्काया दुर्गद्वारसैन्यविभागसंक्रमप्रभृतीन् वर्णयित्वा तत्र वानरसेनाप्रस्थापनाय हनुमतः श्रीरामं प्रति प्रार्थना 
 ४ - श्रीरामप्रभृतिभिः सह वानरसैन्यस्य प्रस्थानं सागरतटे निवेशश्च
@@ -518,7 +524,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ८ - प्रहस्तदुर्मुखवज्रद्रंष्ट्रनिकुम्भवज्रहनुभी रावणस्य समक्षं शत्रुसेनां निपातयितुं स्वोत्साहस्य प्रदर्शनम्
 ९ - श्रीरामस्याजेयतां प्रतिपाद्य दीयतामस्य मैथिलीति विभीषणस्य रावणं प्रत्यनुनयः
 १० - रावणभवनं गत्वापशकुनभयं प्रदर्श्य सीतानिवर्तनाय रावणं प्रति विभीषणस्य प्रार्थना, तामनङ्गीकृत्य रावणेन तस्य ततो विसर्जनम्
-                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre>११ - रावणस्य तत्सभासदां च संसदि समवायः
+                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre lang="sa">११ - रावणस्य तत्सभासदां च संसदि समवायः
 १२ - पुर्याः परिरक्षणाय सैनिकानां नियुक्तिः सीतायां स्वीयामासक्तिं प्रतिपाद्य रावणेन तस्या हरणप्रसंगस्य वर्णनं भाविकर्तव्यनिर्णयाय सभासत्सम्मतेः प्रार्थनं कुम्भकर्णेन रावणं निर्भर्त्स्य समस्तशत्रुवधभारस्य स्वयमेवोत्थापनम्
 १३ - महापार्श्वेन सीतां प्रति बलात्कारं कर्तुं रावणस्य प्रोत्साहनं रावणेन शापवशात् तथाकरणे स्वकीयासमर्थतायाः प्रतिपादनं निजपराक्रमस्य प्रशंसनं च
 १४ - श्रीरामस्याजेयतां प्रतिपाद्य विभीषणेन रावणं प्रति सीताया रामपार्श्वे प्रेषणायैव सम्मतिदानम्
@@ -636,7 +642,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 १२६ - हनुमता भरतं प्रति श्रीरामलक्ष्मणसीताकर्तृकवनवाससम्बन्धिना समेषां वृत्तानां श्रावणम्
 १२७ - अयोध्यायां श्रीरामस्य सत्कारार्थमायोजनम्, श्रीरामं प्रत्युद्गन्तुमनसां सर्वेषां जनानां भरतेन सह नन्दिग्रामे गमनम्, श्रीरामस्यागमनं भरतादिभिः सह तस्य समागमः पुष्पकविमानस्य तेन कुबेरपार्श्वे प्रेषणं च
 १२८ - भरतेन श्रीरामाय राज्यस्य पुनः प्रत्यर्पणं श्रीरामस्य नगरे गमनं राज्येऽभिषेकः वानराणां प्रस्थापनं ग्रन्थस्य माहात्म्यं च
-                </pre></details></section><section class="scroll-block" id="seventhSection"><h3>उत्तरकाण्डे</h3><pre>१ - श्रीरामस्य राजसभायां महर्षिणामागमनं तैः सह तस्य वार्तालापः श्रीरामस्य प्रश्नाश्च
+                </pre></details></section><section class="scroll-block" id="seventhSection"><h3>उत्तरकाण्डे</h3><pre lang="sa">१ - श्रीरामस्य राजसभायां महर्षिणामागमनं तैः सह तस्य वार्तालापः श्रीरामस्य प्रश्नाश्च
 २ - अगस्त्येन पुलस्त्य गुणतपसोर्वर्णनं ततो विश्रवस उत्पत्तेः कथनं च
 ३ - विश्रवसो वैश्रवणस्योत्पत्तेस्तपसो वरप्राप्तेर्लङ्कायां निवासस्य च वर्णनम्
 ४ - राक्षसवंशवर्णनं हेतिविद्युत्केशसुकेशानामुत्पत्तिः
@@ -646,7 +652,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ८ - माल्यवतो युद्धं पराजयश्च सुमालिप्रभृतीनां रक्षसां रसातले प्रवेशः
 ९ - रावणप्रभृतीनां जन्म तेषां तपःकरणार्थं गोकर्णाश्रमे प्रवेशः
 १० - रावणादीनां तपोवरप्राप्तिश्च
-                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre>११ - रावणस्य संदेशं श्रुत्वा पितुराज्ञया लङ्कां हित्वा कुबेरस्य कैलासे गमनम् लङ्कायां रावणस्याभिषेको रक्षसां वासश्च
+                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre lang="sa">११ - रावणस्य संदेशं श्रुत्वा पितुराज्ञया लङ्कां हित्वा कुबेरस्य कैलासे गमनम् लङ्कायां रावणस्याभिषेको रक्षसां वासश्च
 १२ - शूर्पणखाया विवाहो रावणादीनां च परिणयो मेघनादस्य जन्म च
 १३ - रावणेन निर्मापिते शयनागारे कुम्भकर्णस्य शयनं रावणस्यात्याचारः कुबेरेण दूतं प्रेष्य तस्य प्रबोधनं क्रुद्धेन रावणेन दूतस्य वधश्च
 १४ - मन्त्रिभिः सहितस्य रावणस्य यक्षाणामुपर्याक्रमणं तेषां पराजयश्च
@@ -695,7 +701,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ५७ - वसिष्ठकर्तृकं नूतनदेहधारणं निमेः प्राणिनां नयनेषु निवासश्च
 ५८ - ययातिं प्रति शुक्राचार्यस्य शापः
 ५९ - ययातिना पुत्राय पूरवे वार्धक्यं दत्त्वा तदीय यौवनस्य ग्रहणं भोगतृप्तेन तेन पुनश्चिरकालमनु तस्मै तदीययौवनस्य प्रत्यावर्तनं पूरोः पितू राज्येऽभिषेको यदुं प्रति पितुः शापश्च 
-                </pre></details></section><section class="scroll-block" id="eighthSection"><h3>प्रक्षिप्तसर्गे</h3><pre>१ - श्रीरामद्वारि कार्यार्थिनः शून आगमनं राजसभायां तमानेतुं श्रीरामस्य लक्ष्मणं प्रत्यादेशः
+                </pre></details></section><section class="scroll-block" id="eighthSection"><h3>प्रक्षिप्तसर्गे</h3><pre lang="sa">१ - श्रीरामद्वारि कार्यार्थिनः शून आगमनं राजसभायां तमानेतुं श्रीरामस्य लक्ष्मणं प्रत्यादेशः
 २ - श्वानं प्रति श्रीरामस्य न्यायस्तदिच्छया तत्ताडकस्य ब्राह्मणस्य मठाधीशपदे प्रतिष्ठापनं शुना मठाधीशत्वदोषाणां प्रतिपादनम् 
 
 ६० - श्रीरामस्य राजसभायां यमुनातीरवासिनामृषीणां शुभागमनं श्रीरामेण तान् सत्कृत्य तेषामभीष्टं पूरयितुं प्रतिज्ञापनमृषिभिस्तस्य प्रशंसनं च
@@ -709,7 +715,7 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
 ६८ - लवणासुरस्याहारार्थं निर्गमनं शत्रुघ्नस्य मधुपुरीद्वारि समवस्थानं निवृत्तेन लवणेन सह तस्य सरोषो वार्तालापश्च
 ६९ - शत्रुघ्नलवणयोर्युद्धं लवणस्य वधश्च
 ७० - देवेभ्यो लब्धवरस्य शत्रुघ्नस्य मधुपुरीं निवेश्य ततः श्रीरामपार्श्वे गन्तुं विचारः
-                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre>७१ - अल्पैः सैनिकैः सह शत्रुघ्नस्यायोध्यां प्रति प्रस्थानं मार्गे वाल्मीक्याश्रमे श्रीरामचरितस्य गानं श्रुत्वा तेषां विस्मयः
+                </pre><details class="expander"><summary>Read the rest · अधिकम्</summary><pre lang="sa">७१ - अल्पैः सैनिकैः सह शत्रुघ्नस्यायोध्यां प्रति प्रस्थानं मार्गे वाल्मीक्याश्रमे श्रीरामचरितस्य गानं श्रुत्वा तेषां विस्मयः
 ७२ - वाल्मीकितो लब्धानुज्ञस्य शनुघ्नस्यायोध्यां गत्वा श्रीरामादिभिः सह समागमः सप्त दिनानि तत्रोषित्वा ततः पुनर्मधुरां प्रति प्रस्थानं च
 ७३ - स्वीयं मृतं बालकमुपादाय राजद्वारि समागत्य कस्यचिद् ब्राह्मणस्य विलापः
 ७४ - नारदेन श्रीरामं प्रति तपस्विनः शूद्रस्याधर्माचरणमेव विप्रबालकमरणे कारणमिति कथनम्
@@ -760,25 +766,25 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
         <img class="footer-seal" src="../../assets/img/logo.png" alt="Svarvāṇī Prakāśa · Sevā Nikuñjam seal" width="74" height="74">
         <p style="font-family:var(--font-deva);font-size:1.05rem;margin-bottom:.25rem">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</p>
         <p style="font-size:.9rem">Svarvāṇī Prakāśa · Sevā Nikuñjam</p>
-        <p class="footer-motto">संस्कृतं स्वधर्मस्य मूलम्</p>
+        <p class="footer-motto" lang="sa">संस्कृतं स्वधर्मस्य मूलम्</p>
         <div class="social"><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a><a href="https://www.pinterest.com/" rel="noopener" target="_blank" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.6 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.6 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.6 2.1-4.6 4.4 0 .9.3 1.8.8 2.3.1.1.1.2.1.3l-.3 1.1c0 .2-.1.2-.3.1-1.3-.6-2-2.4-2-3.9 0-3.2 2.3-6.1 6.7-6.1 3.5 0 6.2 2.5 6.2 5.8 0 3.5-2.2 6.3-5.2 6.3-1 0-2-.5-2.3-1.2l-.6 2.4c-.2.9-.8 2-1.2 2.6A10 10 0 1 0 12 2z"/></svg></a><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank" aria-label="Youtube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5a2.5 2.5 0 0 0-1.8 1.8C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.1V8.9l6 3.1z"/></svg></a><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.8-.1zm0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm8.4-11.2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg></a><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.2 2H21l-6.4 7.3L22 22h-5.9l-4.6-6-5.3 6H3.4l6.8-7.8L2.3 2h6l4.2 5.5zm-1 18h1.6L7.9 3.7H6.2z"/></svg></a></div>
       </div>
       <div>
-        <h4>Explore</h4>
-        <ul><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/">ప్రహేళికలు</a></li><li><a href="../../about/">About</a></li><li><a href="../../donate/">Donate</a></li></ul>
+        <h2>Explore</h2>
+        <ul><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/">Prahelikās</a></li><li><a href="../../about/">About</a></li><li><a href="../../donate/">Donate</a></li></ul>
       </div>
       <div>
-        <h4>Useful links</h4>
+        <h2>Useful links</h2>
         <ul><li><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank">Facebook</a></li><li><a href="https://www.pinterest.com/" rel="noopener" target="_blank">Pinterest</a></li><li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank">Youtube</a></li><li><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank">Instagram</a></li><li><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank">Twitter</a></li></ul>
       </div>
       <div>
-        <h4>Announced</h4>
+        <h2>Announced</h2>
         <ul><li><span class="footer-soon">Songs</span></li><li><span class="footer-soon">Articles</span></li><li><span class="footer-soon">Worker Links</span></li><li><span class="footer-soon">Blogs</span></li><li><span class="footer-soon">FAQs</span></li></ul>
         <p style="font-size:.82rem;margin-top:.9rem">Listed on the school's menu,
           not yet published.</p>
       </div>
       <div>
-        <h4>Get in touch</h4>
+        <h2>Get in touch</h2>
         <p>Please reach us at:</p>
         <ul>
           <li><a href="mailto:samskrta.usha@gmail.com">samskrta.usha@gmail.com</a></li>

@@ -63,6 +63,11 @@
     function setOpen(open) {
       nav.setAttribute("data-open", String(open));
       toggle.setAttribute("aria-expanded", String(open));
+      /* the menu is fixed; without this the page slides out from under it */
+      document.body.setAttribute("data-nav-open", String(open));
+      if (!open && document.activeElement && nav.contains(document.activeElement)) {
+        toggle.focus();
+      }
     }
     toggle.addEventListener("click", function () {
       setOpen(nav.getAttribute("data-open") !== "true");
@@ -356,8 +361,19 @@
             : items.length + " entries";
         }
         if (clear) clear.hidden = !input.value;
+        /* Most lists nest their empty state inside the filtered scope; the
+           dhatu table cannot, because the scope is the scrolling table frame.
+           Look inside first, then alongside. */
         var empty = $("[data-empty]", scope);
-        if (empty) empty.hidden = shown !== 0;
+        if (!empty && scope.parentNode) {
+          empty = $(":scope > [data-empty]", scope.parentNode);
+        }
+        if (empty) {
+          empty.hidden = shown !== 0;
+          /* a table filtered to nothing is a sticky header bar over blank
+             paper — take the frame away with the rows */
+          if (scope.classList.contains("table-wrap")) scope.hidden = shown === 0;
+        }
       }
 
       filterRuns.push({ scope: scope, run: run });
@@ -571,47 +587,38 @@
   /* ===================================================================== */
   /* Puzzle answers                                                         */
   /* ===================================================================== */
+  /* The answers are <details>: they open without this file. Everything here
+     is the extra — the running count, and the reveal-all for a whole puzzle. */
   function initPuzzles() {
-    function progress(scope) {
-      var box = scope && scope.closest ? scope.closest(".puzzle") : null;
+    function progress(box) {
       if (!box) return;
       var el = $("[data-progress]", box);
       if (!el) return;
       var total = box.getAttribute("data-total") || $$(".qa", box).length;
-      var open = $$(".qa__a", box).filter(function (a) { return !a.hidden; }).length;
+      var open = $$(".qa[open]", box).length;
       el.textContent = open + " / " + total;
       el.setAttribute("data-done", String(String(open) === String(total)));
+      var all = $("[data-reveal-all]", box);
+      if (all) {
+        /* the button follows the answers, however they were opened */
+        var every = String(open) === String(total) && open > 0;
+        all.setAttribute("aria-pressed", String(every));
+        all.textContent = all.getAttribute(every ? "data-label-hide" : "data-label-show");
+      }
     }
 
-    function toggle(btn) {
-      var wrap = btn.closest(".qa");
-      if (!wrap) return;
-      var ans = $(".qa__a", wrap);
-      var reveal = $(".qa__btn", wrap);
-      if (!ans || !reveal) return;
-      ans.hidden = !ans.hidden;
-      reveal.setAttribute("aria-expanded", String(!ans.hidden));
-      progress(wrap);
-    }
-    $$(".qa__btn").forEach(function (b) {
-      b.addEventListener("click", function () { toggle(b); });
+    $$(".qa").forEach(function (d) {
+      d.addEventListener("toggle", function () { progress(d.closest(".puzzle")); });
     });
-    $$(".qa__q").forEach(function (q) {
-      q.addEventListener("click", function () { toggle(q); });
-      q.addEventListener("keydown", function (e) {
-        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(q); }
-      });
-    });
-    $$("[data-progress]").forEach(function (el) { progress(el); });
+    $$(".puzzle").forEach(function (box) { progress(box); });
+
     $$("[data-reveal-all]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var scope = btn.closest(".puzzle") || document;
+        var scope = btn.closest(".puzzle");
+        if (!scope) return;
         var open = btn.getAttribute("aria-pressed") !== "true";
-        $$(".qa__a", scope).forEach(function (a) { a.hidden = !open; });
-        $$(".qa__btn", scope).forEach(function (b) { b.setAttribute("aria-expanded", String(open)); });
-        btn.setAttribute("aria-pressed", String(open));
-        btn.textContent = open ? btn.getAttribute("data-label-hide") : btn.getAttribute("data-label-show");
-        progress(btn);
+        $$(".qa", scope).forEach(function (d) { d.open = open; });
+        progress(scope);
       });
     });
   }

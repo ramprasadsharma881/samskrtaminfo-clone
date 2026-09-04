@@ -32,8 +32,11 @@ MEDIA_MAP = [
     ("audio", "assets/audio"),
     ("assets/pdfs", "assets/pdfs"),
 ]
+# favicon.png is deliberately absent: the school's shipped one is a stock mark
+# from the template they built on. tools/make_favicon.py cuts a replacement from
+# their own typeface and their own motto; it lives in src/assets/img/ and is
+# copied with the rest of src/assets/. The original is still in original-site/.
 MEDIA_FILES = [
-    ("img/favicon.png", "assets/img/favicon.png"),
     ("fonts/Sanskrit2003.ttf", "assets/fonts/Sanskrit2003.ttf"),
     ("fonts/suranna.ttf", "assets/fonts/suranna.ttf"),
     ("fonts/CharterIndologique.otf", "assets/fonts/CharterIndologique.otf"),
@@ -246,18 +249,21 @@ def render_stanzas(body: str) -> str:
     for i, st in enumerate(items):
         # the opening ॥श्री…॥ / अथ … lines name the stotra; they are not verses
         if i < 2 and len(st["lines"]) == 1 and not st.get("gloss") and not st.get("iast"):
-            parts.append(f'<p class="stanza__head deva">{st["lines"][0]}</p>')
+            parts.append(f'<p class="stanza__head deva" lang="sa">{st["lines"][0]}</p>')
             continue
         lines = "".join(f'<span class="stanza__line">{ln}</span>' for ln in st["lines"])
         iast = ""
         if st.get("iast"):
-            iast = ('<div class="stanza__iast latn">'
+            iast = ('<div class="stanza__iast latn" lang="sa-Latn">'
                     + "".join(f'<span class="stanza__line">{ln}</span>' for ln in st["iast"])
                     + "</div>")
-        gloss = f'<div class="stanza__gloss latn">{st["gloss"]}</div>' if st.get("gloss") else ""
-        script = "deva" if st["kind"] == "verse" else "latn"
+        gloss = f'<div class="stanza__gloss latn" lang="en">{st["gloss"]}</div>' if st.get("gloss") else ""
+        verse = st["kind"] == "verse"
+        script = "deva" if verse else "latn"
+        lang = "sa" if verse else "en"
         parts.append(
-            f'<div class="stanza"><div class="stanza__text {script}">{lines}</div>{iast}{gloss}</div>'
+            f'<div class="stanza"><div class="stanza__text {script}" lang="{lang}">{lines}</div>'
+            f'{iast}{gloss}</div>'
         )
     return "".join(parts)
 
@@ -274,6 +280,19 @@ def linkify(text: str) -> str:
     if "<a " in text:
         return text
     return URL_RE.sub(lambda m: f'<a href="{m.group(1)}" rel="noopener">{m.group(1)}</a>', text)
+
+
+# Every register's language, so assistive technology speaks the verse with the
+# right phoneme engine instead of reading Sanskrit as English.
+LANG_OF_LAYER = {
+    "hindyartham": "hi",
+    "english": "en",
+    "vishleshanam": "en",
+}
+
+
+def lang_attr(key: str) -> str:
+    return f' lang="{LANG_OF_LAYER.get(key, "sa")}"'
 
 
 def set_register(key: str, value: str) -> str:
@@ -346,15 +365,18 @@ def icon(name: str, cls: str = "") -> str:
 # --------------------------------------------------------------------------- #
 # chrome
 # --------------------------------------------------------------------------- #
+# Stotras, Prahelikās and the rest are all Latin transliterations of the
+# school's own words — the nav reads consistently, and each page carries the
+# name in its own script as its heading and breadcrumb.
 NAV = [
-    ("", "Home", "मुखपृष्ठम्"),
-    ("stotras/", "Stotras", "स्तोत्राणि"),
-    ("texts/", "Texts", "ग्रन्थाः"),
-    ("lessons/", "Lessons", "पाठाः"),
-    ("prahelikas/", "ప్రహేళికలు", ""),
-    ("about/", "About", "परिचयः"),
-    ("about/#contact", "Contact", "सम्पर्कः"),
-    ("donate/", "Donate", "सहयोगः"),
+    ("", "Home"),
+    ("stotras/", "Stotras"),
+    ("texts/", "Texts"),
+    ("lessons/", "Lessons"),
+    ("prahelikas/", "Prahelikās"),
+    ("about/", "About"),
+    ("about/#contact", "Contact"),
+    ("donate/", "Donate"),
 ]
 
 # The original's menu also listed Songs, Articles, Worker Links, Blogs and FAQs.
@@ -367,7 +389,7 @@ ANNOUNCED = ["Songs", "Articles", "Worker Links", "Blogs", "FAQs"]
 def header(depth: int, active: str) -> str:
     r = rel(depth)
     links = []
-    for href, label, _ in NAV:
+    for href, label in NAV:
         current = ' aria-current="page"' if href == active else ""
         sc = script_class(label)
         cls = f' class="{sc}"' if sc else ""
@@ -379,35 +401,39 @@ def header(depth: int, active: str) -> str:
       <img src="{r}assets/img/logo.png" alt="" width="42" height="42">
       <span class="brand-text" data-no-lipi>
         <span class="brand-name">Samskrtam</span>
-        <span class="brand-sub">{e(SITE_ORG)}</span>
+        <span class="brand-sub" lang="sa">{e(SITE_ORG)}</span>
       </span>
     </a>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <ul>{''.join(links)}</ul>
-    </nav>
     <div class="header-tools tools-anchor">
       <button class="icon-btn" data-prefs-toggle aria-expanded="false" aria-controls="prefs-panel" aria-label="Reading preferences" type="button">{icon('text')}</button>
-      <button class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch theme" type="button">{icon('sun', 'i-sun')}{icon('moon', 'i-moon')}</button>
-      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu" type="button">{icon('menu')}</button>
       <div class="prefs" id="prefs-panel" hidden>
-        <h5>Text size</h5>
-        <div class="prefs__row">
-          <button type="button" data-size="s" aria-pressed="false">A</button>
-          <button type="button" data-size="m" aria-pressed="true">A</button>
-          <button type="button" data-size="l" aria-pressed="false">A</button>
-          <button type="button" data-size="xl" aria-pressed="false">A</button>
+        <p class="prefs__legend" id="prefs-size">Text size</p>
+        <div class="prefs__row" role="group" aria-labelledby="prefs-size">
+          <button type="button" data-size="s" aria-pressed="false" aria-label="Small text">A</button>
+          <button type="button" data-size="m" aria-pressed="true" aria-label="Normal text">A</button>
+          <button type="button" data-size="l" aria-pressed="false" aria-label="Large text">A</button>
+          <button type="button" data-size="xl" aria-pressed="false" aria-label="Extra large text">A</button>
         </div>
-        <h5>Script · लिपिः</h5>
-        <div class="prefs__row">
-          <button type="button" data-lipi-set="devanagari" aria-pressed="true" class="deva">देव</button>
-          <button type="button" data-lipi-set="telugu" aria-pressed="false" class="telu">తెలు</button>
-          <button type="button" data-lipi-set="iast" aria-pressed="false">IAST</button>
+        <p class="prefs__legend" id="prefs-lipi">Script · <span lang="sa">लिपिः</span></p>
+        <div class="prefs__row" role="group" aria-labelledby="prefs-lipi">
+          <button type="button" data-lipi-set="devanagari" aria-pressed="true" class="deva" lang="sa" aria-label="Devanagari">देव</button>
+          <button type="button" data-lipi-set="telugu" aria-pressed="false" class="telu" lang="te" aria-label="Telugu">తెలు</button>
+          <button type="button" data-lipi-set="iast" aria-pressed="false" aria-label="IAST transliteration">IAST</button>
         </div>
         <p style="margin:0;font-size:.8rem;color:var(--ink-faint)">Converts every Devanāgarī passage on the page. Theme follows your device unless you pick one with the sun / moon button.</p>
       </div>
+      <button class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch theme" type="button">{icon('sun', 'i-sun')}{icon('moon', 'i-moon')}</button>
+      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu" type="button">{icon('menu')}</button>
     </div>
+    <!-- The nav follows the button that reveals it, so a forward Tab from the
+         menu toggle lands inside the menu instead of skipping past the page.
+         Its visual position is set by CSS, not by document order. -->
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>{''.join(links)}</ul>
+    </nav>
   </div>
-</header>"""
+</header>
+<p class="visually-hidden" id="live-status" role="status" aria-live="polite"></p>"""
 
 
 def footer(depth: int, home: dict) -> str:
@@ -423,7 +449,7 @@ def footer(depth: int, home: dict) -> str:
     )
     explore = "".join(
         f'<li><a href="{r}{href}">{e(label)}</a></li>'
-        for href, label, _ in NAV[1:] if not href.startswith("about/#")
+        for href, label in NAV[1:] if not href.startswith("about/#")
     )
     announced = "".join(
         f'<li><span class="footer-soon">{e(x)}</span></li>' for x in ANNOUNCED
@@ -435,25 +461,25 @@ def footer(depth: int, home: dict) -> str:
         <img class="footer-seal" src="{r}assets/img/logo.png" alt="{e(SITE_ORG_LATIN)} seal" width="74" height="74">
         <p style="font-family:var(--font-deva);font-size:1.05rem;margin-bottom:.25rem">{e(SITE_ORG)}</p>
         <p style="font-size:.9rem">{e(SITE_ORG_LATIN)}</p>
-        <p class="footer-motto">{e(MOTTO)}</p>
+        <p class="footer-motto" lang="sa">{e(MOTTO)}</p>
         <div class="social">{social}</div>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h2>Explore</h2>
         <ul>{explore}</ul>
       </div>
       <div>
-        <h4>Useful links</h4>
+        <h2>Useful links</h2>
         <ul>{useful}</ul>
       </div>
       <div>
-        <h4>Announced</h4>
+        <h2>Announced</h2>
         <ul>{announced}</ul>
         <p style="font-size:.82rem;margin-top:.9rem">Listed on the school's menu,
           not yet published.</p>
       </div>
       <div>
-        <h4>Get in touch</h4>
+        <h2>Get in touch</h2>
         <p>Please reach us at:</p>
         <ul>
           <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
@@ -483,10 +509,21 @@ def crumbs(depth: int, trail: list[tuple[str, str]]) -> str:
     return f'<nav class="crumbs wrap" aria-label="Breadcrumb"><ol>{"".join(items)}</ol></nav>'
 
 
+NOINDEX: set[str] = set()
+
+
 def page(*, path: str, depth: int, title: str, description: str, body: str,
-         active: str = "", home: dict, head_extra: str = "") -> None:
+         active: str = "", home: dict, head_extra: str = "",
+         indexable: bool = True) -> None:
     r = rel(depth)
-    canonical = f"{BASE_URL}/{path.replace('index.html', '')}".rstrip("/") or BASE_URL
+    # keep the trailing slash: it is what every internal link, the sitemap and
+    # the served path use, so stripping it split the signal and cost a redirect
+    canonical = f"{BASE_URL}/{path.replace('index.html', '')}"
+    if not indexable:
+        # a real page a reader may land on, but nothing for an index to rank:
+        # follow the links out of it, do not list it
+        NOINDEX.add(path)
+        head_extra = '<meta name="robots" content="noindex, follow">\n' + head_extra
     full_title = title if title == SITE_NAME else f"{title} · {SITE_NAME}"
     markup = f"""<!doctype html>
 <html lang="en">
@@ -503,12 +540,14 @@ def page(*, path: str, depth: int, title: str, description: str, body: str,
 <meta property="og:image" content="{BASE_URL}/assets/img/logo.png">
 <meta property="og:url" content="{e(canonical)}">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#1b2a4a">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf6ee">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121114">
 <link rel="icon" type="image/png" href="{r}assets/img/favicon.png">
 <link rel="apple-touch-icon" href="{r}assets/img/logo.png">
+<link rel="preload" href="{r}assets/fonts/CharterIndologique.otf" as="font" type="font/otf" crossorigin>
 <link rel="preload" href="{r}assets/fonts/Sanskrit2003.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="{r}assets/css/site.css">
-<script>try{{var t=localStorage.getItem('svp:theme');if(t)document.documentElement.setAttribute('data-theme',t);
+<script>try{{var t=localStorage.getItem('svp:theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);
 var s=localStorage.getItem('svp:size'),m={{s:.9,m:1,l:1.15,xl:1.3}};if(s&&m[s])document.documentElement.style.setProperty('--read-scale',m[s]);}}catch(e){{}}</script>
 {head_extra}
 </head>
@@ -610,14 +649,29 @@ def page_hero(eyebrow: str, title: str, lede: str = "", deva: bool = True) -> st
 # --------------------------------------------------------------------------- #
 # 1. Home
 # --------------------------------------------------------------------------- #
+# The Devanagari here is the school's own — read off the six banner images they
+# drew for these tiles, where the section name was baked into the artwork. The
+# banners repeated nothing but the name, in six different stock typefaces; the
+# name is kept, the plank is drawn in the site's own hand instead. The English
+# line is their own second line from the same banner.
 TILE_TARGETS = {
-    "Stotras": ("stotras/", "स्तोत्राणि", "Chant along with recordings in Devanāgarī, Telugu and IAST."),
-    "Text": ("texts/", "ग्रन्थाः", "Verse-by-verse commentaries, anvayas and reference tables."),
-    "Lessons": ("lessons/", "पाठाः", "Structured video courses in Hindi, Telugu and English."),
-    "Songs": (None, "गीतानि", "Coming soon."),
-    "Interesting": ("prahelikas/", "ప్రహేళికలు", "Puzzles that make you look closely at a verse."),
-    "faqs": (None, "प्रश्नाः", "Coming soon."),
+    "Stotras":     ("stotras/", "स्तोत्राणि", "Stotras",
+                    "Chant along with recordings in Devanāgarī, Telugu and IAST."),
+    "Songs":       (None, "गीतानि", "Songs", ""),
+    "Text":        ("texts/", "अध्येयांशाः", "Text Contents",
+                    "Verse-by-verse commentaries, anvayas and reference tables."),
+    "Lessons":     ("lessons/", "संस्कृत-पाठाः", "Samskrta Lessons",
+                    "Structured video courses in Hindi, Telugu and English."),
+    "Interesting": (None, "लेखाः", "Interesting Articles", ""),
+    "faqs":        (None, "ज्ञेयांशाः, सङ्केताश्च", "F.A.Q s, Links", ""),
 }
+
+# The school links प्रहेलिकाः from its menu but never gave it a tile. It is real,
+# finished work — three collections of puzzles — so it gets one here.
+EXTRA_TILES = [
+    ("prahelikas/", "प्रहेलिकाः", "ప్రహేళికలు",
+     "Puzzles that make you look closely at a verse."),
+]
 
 WELCOME_META = {
     "sanskrit": ("संस्कृतम्", "deva", "var(--saffron)", "sa"),
@@ -640,38 +694,47 @@ def build_home(home: dict, texts: list, courses: list, stotras: list, prahelikas
         )
 
     videos = "".join(
-        f'<div><h3 style="font-size:1.05rem;text-transform:uppercase;letter-spacing:.14em;'
-        f'font-family:var(--font-sans);color:var(--ink-faint)">{e(v["title"].title())}</h3>'
+        f'<div><h3 class="eyebrow latn">{e(v["title"].title())}</h3>'
         f'{video(v["youtube"], v["title"])}</div>'
         for v in home.get("videos", [])
     )
 
     tiles = ""
-    for t in home.get("tiles", []):
-        target, deva, blurb = TILE_TARGETS.get(t["label"], (None, "", ""))
-        img = f'<div class="card__media"><img src="assets/img/{asset(Path(t["image"]).name)}" alt="" loading="lazy"></div>'
+    entries = [
+        (TILE_TARGETS.get(t["label"], (None, t["label"], "", ""))[0],
+         TILE_TARGETS.get(t["label"], (None, t["label"], "", ""))[1],
+         TILE_TARGETS.get(t["label"], (None, t["label"], "", ""))[2],
+         TILE_TARGETS.get(t["label"], (None, t["label"], "", ""))[3],
+         t.get("image", ""))
+        for t in home.get("tiles", [])
+    ] + [(t[0], t[1], t[2], t[3], "") for t in EXTRA_TILES]
+
+    for i, (target, deva, latin, blurb, image) in enumerate(entries):
+        if USE_ORIGINAL_TEXT_COVERS and image:
+            face = (f'<div class="card__media"><img src="assets/img/{asset(Path(image).name)}" '
+                    f'alt="" loading="lazy" width="400" height="225"></div>')
+        else:
+            face = cover(deva, i)
+        caption = e(blurb) if target else '<span class="badge badge--saffron">Coming soon</span>'
         inner = (
-            f'{img}<div class="card__body">'
-            f'<h3 class="card__title deva">{e(deva or t["label"])}</h3>'
-            f'<p class="card__meta">{e(blurb)}</p></div>'
+            f'{face}<div class="card__body">'
+            f'<p class="card__kicker">{e(latin)}</p>'
+            f'<p class="card__meta">{caption}</p></div>'
         )
         if target:
             tiles += f'<a class="card card--link" href="{target}">{inner}</a>'
         else:
-            tiles += (
-                f'<div class="card" aria-disabled="true" style="opacity:.62">{img}'
-                f'<div class="card__body"><h3 class="card__title deva">{e(deva or t["label"])}</h3>'
-                f'<p class="card__meta"><span class="badge badge--saffron">Coming soon</span></p></div></div>'
-            )
+            tiles += f'<div class="card card--muted" aria-disabled="true">{inner}</div>' 
 
     n_verses = len(load("hitopadesha")["verses"]) + len(load("subhashitas")["verses"])
     n_lessons = sum(len(c["lessons"]) for c in load("course_details"))
+    n_courses = len({c["key"] for c in load("course_details") if c["lessons"]})
     n_dhatus = len(load("dhatupathah")["rows"])
     n_puzzles = sum(len(q["questions"]) for s in prahelikas["sets"] for q in s["puzzles"])
 
     stats = [
         (f"{n_verses}", "verses with word-split, anvaya and gloss", "texts/"),
-        (f"{n_lessons}", "recorded lessons across 12 courses", "lessons/"),
+        (f"{n_lessons}", f"recorded lessons across {n_courses} courses", "lessons/"),
         (f"{n_dhatus:,}", "dhātus in the धातुपाठविस्तरः table", "texts/dhatupathah/"),
         (f"{n_puzzles}", "prahelikā questions to test yourself", "prahelikas/"),
     ]
@@ -687,9 +750,10 @@ def build_home(home: dict, texts: list, courses: list, stotras: list, prahelikas
   <div class="wrap hero__inner">
     <p class="hero__eyebrow">{e(SITE_ORG_LATIN)}</p>
     <h1>The light of <span style="color:var(--saffron)">Saṃskṛtam</span></h1>
-    <p class="hero__motto deva">{e(MOTTO)}</p>
+    <p class="hero__motto deva" lang="sa">{e(MOTTO)}</p>
     <p class="hero__lede">A pāṭhaśālā for reading Śrīmadrāmāyaṇa, the Mahābhārata and the śāstras
-      in the original — with word-splits, anvayas, glosses and recorded pronunciation for every verse.</p>
+      in the original — every verse split into its words, re-ordered, glossed and paraphrased,
+      with chanting recorded for the Hitopadeśa verses finished so far.</p>
     <div class="cluster hero__cta">
       <a class="btn btn--accent" href="lessons/">Begin the lessons {icon('arrow')}</a>
       <a class="btn btn--ghost" href="texts/">{icon('book')} Enter the library</a>
@@ -1036,15 +1100,15 @@ def build_verse_corpus(name: str, route: str, home: dict) -> None:
             f = v["fields"][k]
             rows += (
                 f'<div class="layer" data-layer="{e(k)}">'
-                f'<div class="layer__label">{e(f["label"])}</div>'
-                f'<div class="layer__value">{set_register(k, f["value"])}</div></div>'
+                f'<div class="layer__label" lang="sa">{e(f["label"])}</div>'
+                f'<div class="layer__value"{lang_attr(k)}>{set_register(k, f["value"])}</div></div>'
             )
         audio_html = ""
         if v.get("audio") and media_exists(v["audio"]):
             have_audio += 1
             audio_html = (
                 f'<div class="layer" data-layer="audio">'
-                f'<div class="layer__label">उच्चारणम्</div>'
+                f'<div class="layer__label" lang="sa">उच्चारणम्</div>'
                 f'<div class="layer__value"><audio controls preload="none" '
                 f'src="../../assets/{asset(v["audio"])}"></audio></div></div>'
             )
@@ -1162,8 +1226,8 @@ def build_adhyayanam(home: dict) -> None:
                     value = "".join(f'<span class="pada">{e(x)}</span>' for x in lines)
                 rows += (
                     f'<div class="layer" data-layer="{key}">'
-                    f'<div class="layer__label">{e(label)}</div>'
-                    f'<div class="layer__value {cls}">{value}</div></div>'
+                    f'<div class="layer__label" lang="sa">{e(label)}</div>'
+                    f'<div class="layer__value {cls}"{lang_attr(key)}>{value}</div></div>'
                 )
             cards.append(f"""<article class="verse" id="{gid}" data-search>
   <div class="verse__head">
@@ -1335,8 +1399,8 @@ def verse_cards(verses: list, prefix: str) -> str:
             f = v["fields"][k]
             rows += (
                 f'<div class="layer" data-layer="{e(k)}">'
-                f'<div class="layer__label">{e(f["label"])}</div>'
-                f'<div class="layer__value">{set_register(k, f["value"])}</div></div>'
+                f'<div class="layer__label" lang="sa">{e(f["label"])}</div>'
+                f'<div class="layer__value"{lang_attr(k)}>{set_register(k, f["value"])}</div></div>'
             )
         out.append(
             f'<article class="verse" id="{vid}" data-search>'
@@ -1371,11 +1435,11 @@ def build_pre_corpus(name: str, route: str, eyebrow: str, home: dict, jump: bool
         first, rest = s["parts"][0], s["parts"][1:]
         more = ""
         if rest:
-            inner = "".join(f"<pre>{linkify(e(p))}</pre>" for p in rest)
+            inner = "".join(f'<pre lang="sa">{linkify(e(p))}</pre>' for p in rest)
             more = f'<details class="expander"><summary>Read the rest · अधिकम्</summary>{inner}</details>'
         blocks += (
             f'<section class="scroll-block" id="{e(s["id"])}">{heading}'
-            f"<pre>{linkify(e(first))}</pre>{more}</section>"
+            f'<pre lang="sa">{linkify(e(first))}</pre>{more}</section>'
         )
 
     intro = ""
@@ -1399,17 +1463,13 @@ def build_pre_corpus(name: str, route: str, eyebrow: str, home: dict, jump: bool
 # --------------------------------------------------------------------------- #
 def build_gita(home: dict) -> None:
     data = load("gita")
+    # One token per speaker, defined in the stylesheet and overridden for the
+    # dark theme there. The chip and the speeches it filters must always be the
+    # same colour; literal hex in the markup could not follow the theme.
     chips = "".join(
-        f'<button class="chip deva" type="button" data-speaker-toggle="{e(s["key"])}" aria-pressed="true" '
-        f'style="--chip:{{krishna:"#1e5fa8",arjuna:"#b8322f",sanjaya:"#0f766e",dritarashtra:"#7a4bb8"}}">'
-        f'{e(s["label"])}</button>'
-        for s in data["speakers"]
-    )
-    # inline style above needs literal colours, not a JS object
-    colours = {"krishna": "#1e5fa8", "arjuna": "#b8322f", "sanjaya": "#0f766e", "dritarashtra": "#7a4bb8"}
-    chips = "".join(
-        f'<button class="chip deva" type="button" data-speaker-toggle="{e(s["key"])}" aria-pressed="true" '
-        f'style="--chip:{colours.get(s["key"], "var(--gold)")}">'
+        f'<button class="chip deva" type="button" data-speaker-toggle="{e(s["key"])}" '
+        f'aria-pressed="true" lang="sa" '
+        f'style="--chip:var(--sp-{e(s["key"])}, var(--gold))">'
         f'{e(s["label"])}</button>'
         for s in data["speakers"]
     )
@@ -1429,8 +1489,8 @@ def build_gita(home: dict) -> None:
                 avatar = '<span class="speech__avatar" aria-hidden="true"></span>'
             speeches += (
                 f'<article class="speech" data-speaker="{e(b["speaker"])}">{avatar}'
-                f'<div><p class="speech__name">{e(b["speaker_label"])}</p>'
-                f'<p class="speech__text">{e(b["text"])}</p></div></article>'
+                f'<div><p class="speech__name" lang="sa">{e(b["speaker_label"])}</p>'
+                f'<p class="speech__text" lang="sa">{e(b["text"])}</p></div></article>'
             )
         body_blocks += (
             f'<div class="chapter-head" id="head-{e(c["id"])}"><h3 id="{e(c["id"])}">{e(c["title"])}</h3></div>'
@@ -1470,19 +1530,19 @@ def build_vishnu(home: dict) -> None:
         )
         speeches += (
             f'<article class="speech" data-speaker="{e(b["speaker"])}">{avatar}'
-            f'<div><p class="speech__text">{linkify(e(b["text"]))}</p></div></article>'
+            f'<div><p class="speech__text" lang="sa">{linkify(e(b["text"]))}</p></div></article>'
         )
     sections = ""
     for s in data["sections"]:
         first, rest = s["parts"][0], s["parts"][1:]
         more = ""
         if rest:
-            inner = "".join(f"<pre>{linkify(e(p))}</pre>" for p in rest)
+            inner = "".join(f'<pre lang="sa">{linkify(e(p))}</pre>' for p in rest)
             more = f'<details class="expander"><summary>Read the rest · अधिकम्</summary>{inner}</details>'
         heading = f"<h3>{e(s['title'])}</h3>" if s["title"] else ""
         sections += (
             f'<section class="scroll-block" id="{e(s["id"])}">{heading}'
-            f"<pre>{linkify(e(first))}</pre>{more}</section>"
+            f'<pre lang="sa">{linkify(e(first))}</pre>{more}</section>'
         )
     intro = '<div class="panel" style="margin-bottom:1.75rem">' + "".join(
         f'<p class="deva scripture">{p}</p>' for p in data.get("intro", [])
@@ -1549,7 +1609,7 @@ def build_lessons(courses: list, details: list, home: dict) -> None:
 
     total = sum(len(d["lessons"]) for d in details)
     body = crumbs(1, [("", "Home"), (None, "Lessons")]) + f"""
-{page_hero('पाठाः', 'Courses', f'{total} recorded lessons across {len(unique)} courses, taught in Hindi, Telugu and English. Each lesson links its video and, where one exists, a downloadable worksheet.', deva=False)}
+{page_hero('पाठाः', 'Lessons', f'{total} recorded lessons in {len(unique)} courses, taught in Hindi, Telugu and English. Each lesson links its video and, where one exists, a downloadable worksheet.', deva=False)}
 <section class="section" style="padding-top:0">
   <div class="wrap">
     <div style="max-width:520px;margin-bottom:1.5rem">{filter_field('course-list', 'Filter courses…', 'course-count')}</div>
@@ -1588,13 +1648,47 @@ def build_lessons(courses: list, details: list, home: dict) -> None:
                 here = other["lang"] == d["lang"]
                 current = ' aria-current="page"' if here else ""
                 lang_switch += (
-                    f'<a class="chip" href="../{e(other["key"])}-{e(other["lang"])}/"{current} '
-                    f'aria-pressed="{"true" if here else "false"}" style="--chip:var(--saffron)">'
+                    f'<a class="chip" href="../{e(other["key"])}-{e(other["lang"])}/"{current}'
+                    f' lang="{e(other["lang"])}" style="--chip:var(--saffron)">'
                     f'{e(LANG_NATIVE.get(other["lang"], other["lang"]))}</a>'
                 )
 
-        body = crumbs(2, [("", "Home"), ("lessons/", "Lessons"), (None, d["title"])]) + f"""
-{page_hero('पाठमाला', d['title'], f'{len(d["lessons"])} recorded lessons, in order.', deva=False)}
+        n_lessons = len(d["lessons"])
+        crumb = crumbs(2, [("", "Home"), ("lessons/", "Lessons"), (None, d["title"])])
+
+        if not n_lessons:
+            # Six of these courses are announced but not yet recorded. A filter
+            # box over nothing, and "no lesson matches that search" before the
+            # reader has typed anything, is worse than saying so plainly.
+            others = "".join(
+                f'<a class="btn btn--ghost btn--sm" href="../{e(o["key"])}-{e(o["lang"])}/">'
+                f'{e(LANG_NATIVE.get(o["lang"], o["lang"]))}</a>'
+                for o in details
+                if o["key"] == d["key"] and o["lessons"]
+            )
+            alt = (f'<p class="latn">This course is recorded in '
+                   f'{"another language" if others.count("<a") == 1 else "other languages"}:</p>'
+                   f'<div class="cluster">{others}</div>') if others else ""
+            body = crumb + f"""
+{page_hero('पाठमाला', d['title'], 'Announced by the pāṭhaśālā. No lessons recorded yet.', deva=False)}
+<section class="section" style="padding-top:0">
+  <div class="wrap-narrow">
+    <div class="panel">
+      <p class="latn">The pāṭhaśālā lists this course, but has not published any
+      recordings for it yet. When lessons appear on their channel they will be
+      listed here.</p>
+      {alt}
+      <p class="latn"><a href="../">Browse the courses that are recorded →</a></p>
+    </div>
+  </div>
+</section>"""
+            page(path=f"lessons/{d['key']}-{d['lang']}/index.html", depth=2, title=d["title"],
+                 description=f"{d['title']} — announced by the pāṭhaśālā; no lessons recorded yet.",
+                 body=body, active="lessons/", home=home, indexable=False)
+            continue
+
+        body = crumb + f"""
+{page_hero('पाठमाला', d['title'], f'{n_lessons} recorded lessons, in order.', deva=False)}
 <div class="toolbar">
   <div class="wrap toolbar__inner">
     <span class="toolbar__label">Language</span>
@@ -1613,7 +1707,7 @@ def build_lessons(courses: list, details: list, home: dict) -> None:
   </div>
 </section>"""
         page(path=f"lessons/{d['key']}-{d['lang']}/index.html", depth=2, title=d["title"],
-             description=f"{d['title']} — {len(d['lessons'])} recorded Sanskrit lessons.",
+             description=f"{d['title']} — {n_lessons} recorded Sanskrit lessons.",
              body=body, active="lessons/", home=home)
 
 
@@ -1664,14 +1758,19 @@ def build_prahelikas(data: dict, home: dict) -> None:
         for p in s["puzzles"]:
             qa = ""
             for i, q in enumerate(p["questions"]):
-                qa += f"""<div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">{e(q['q'])}</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>{e(q['a'])}</p>
-</div>"""
+                # <details> rather than two aria-expanded controls over a
+                # hidden <p>: the answer opens with no JavaScript at all, the
+                # keyboard works without being taught to, and one element owns
+                # the state instead of three trying to agree on it.
+                qa += f"""<details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">{e(q['q'])}</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">{e(q['a'])}</p>
+</details>"""
             puzzles += f"""<article class="puzzle" data-search data-total="{len(p['questions'])}">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -1804,7 +1903,7 @@ def build_extras(home: dict) -> None:
 
     urls = []
     for path, _ in pages_written:
-        if path == "404.html":
+        if path == "404.html" or path in NOINDEX:
             continue
         loc = f"{BASE_URL}/{path[:-len('index.html')] if path.endswith('index.html') else path}"
         urls.append(f"  <url><loc>{e(loc)}</loc></url>")

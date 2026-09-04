@@ -5,20 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Texts · Samskrtam</title>
 <meta name="description" content="Sanskrit texts with verse-by-verse commentary, anvayas and reference tables.">
-<link rel="canonical" href="https://samskrtam.info/texts">
+<link rel="canonical" href="https://samskrtam.info/texts/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Svarvāṇī Prakāśa · Sevā Nikuñjam">
 <meta property="og:title" content="Texts · Samskrtam">
 <meta property="og:description" content="Sanskrit texts with verse-by-verse commentary, anvayas and reference tables.">
 <meta property="og:image" content="https://samskrtam.info/assets/img/logo.png">
-<meta property="og:url" content="https://samskrtam.info/texts">
+<meta property="og:url" content="https://samskrtam.info/texts/">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#1b2a4a">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf6ee">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121114">
 <link rel="icon" type="image/png" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/logo.png">
+<link rel="preload" href="../assets/fonts/CharterIndologique.otf" as="font" type="font/otf" crossorigin>
 <link rel="preload" href="../assets/fonts/Sanskrit2003.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="../assets/css/site.css">
-<script>try{var t=localStorage.getItem('svp:theme');if(t)document.documentElement.setAttribute('data-theme',t);
+<script>try{var t=localStorage.getItem('svp:theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);
 var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])document.documentElement.style.setProperty('--read-scale',m[s]);}catch(e){}</script>
 
 </head>
@@ -31,35 +33,39 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <img src="../assets/img/logo.png" alt="" width="42" height="42">
       <span class="brand-text" data-no-lipi>
         <span class="brand-name">Samskrtam</span>
-        <span class="brand-sub">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</span>
+        <span class="brand-sub" lang="sa">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</span>
       </span>
     </a>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <ul><li><a href="../">Home</a></li><li><a href="../stotras/">Stotras</a></li><li><a href="../texts/" aria-current="page">Texts</a></li><li><a href="../lessons/">Lessons</a></li><li><a href="../prahelikas/" class="telu">ప్రహేళికలు</a></li><li><a href="../about/">About</a></li><li><a href="../about/#contact">Contact</a></li><li><a href="../donate/">Donate</a></li></ul>
-    </nav>
     <div class="header-tools tools-anchor">
       <button class="icon-btn" data-prefs-toggle aria-expanded="false" aria-controls="prefs-panel" aria-label="Reading preferences" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg></button>
-      <button class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch theme" type="button"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
-      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
       <div class="prefs" id="prefs-panel" hidden>
-        <h5>Text size</h5>
-        <div class="prefs__row">
-          <button type="button" data-size="s" aria-pressed="false">A</button>
-          <button type="button" data-size="m" aria-pressed="true">A</button>
-          <button type="button" data-size="l" aria-pressed="false">A</button>
-          <button type="button" data-size="xl" aria-pressed="false">A</button>
+        <p class="prefs__legend" id="prefs-size">Text size</p>
+        <div class="prefs__row" role="group" aria-labelledby="prefs-size">
+          <button type="button" data-size="s" aria-pressed="false" aria-label="Small text">A</button>
+          <button type="button" data-size="m" aria-pressed="true" aria-label="Normal text">A</button>
+          <button type="button" data-size="l" aria-pressed="false" aria-label="Large text">A</button>
+          <button type="button" data-size="xl" aria-pressed="false" aria-label="Extra large text">A</button>
         </div>
-        <h5>Script · लिपिः</h5>
-        <div class="prefs__row">
-          <button type="button" data-lipi-set="devanagari" aria-pressed="true" class="deva">देव</button>
-          <button type="button" data-lipi-set="telugu" aria-pressed="false" class="telu">తెలు</button>
-          <button type="button" data-lipi-set="iast" aria-pressed="false">IAST</button>
+        <p class="prefs__legend" id="prefs-lipi">Script · <span lang="sa">लिपिः</span></p>
+        <div class="prefs__row" role="group" aria-labelledby="prefs-lipi">
+          <button type="button" data-lipi-set="devanagari" aria-pressed="true" class="deva" lang="sa" aria-label="Devanagari">देव</button>
+          <button type="button" data-lipi-set="telugu" aria-pressed="false" class="telu" lang="te" aria-label="Telugu">తెలు</button>
+          <button type="button" data-lipi-set="iast" aria-pressed="false" aria-label="IAST transliteration">IAST</button>
         </div>
         <p style="margin:0;font-size:.8rem;color:var(--ink-faint)">Converts every Devanāgarī passage on the page. Theme follows your device unless you pick one with the sun / moon button.</p>
       </div>
+      <button class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch theme" type="button"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
+    <!-- The nav follows the button that reveals it, so a forward Tab from the
+         menu toggle lands inside the menu instead of skipping past the page.
+         Its visual position is set by CSS, not by document order. -->
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul><li><a href="../">Home</a></li><li><a href="../stotras/">Stotras</a></li><li><a href="../texts/" aria-current="page">Texts</a></li><li><a href="../lessons/">Lessons</a></li><li><a href="../prahelikas/">Prahelikās</a></li><li><a href="../about/">About</a></li><li><a href="../about/#contact">Contact</a></li><li><a href="../donate/">Donate</a></li></ul>
+    </nav>
   </div>
 </header>
+<p class="visually-hidden" id="live-status" role="status" aria-live="polite"></p>
 <main id="main">
 <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><span>Texts</span></li></ol></nav>
 <section class="section section--tight">
@@ -93,25 +99,25 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
         <img class="footer-seal" src="../assets/img/logo.png" alt="Svarvāṇī Prakāśa · Sevā Nikuñjam seal" width="74" height="74">
         <p style="font-family:var(--font-deva);font-size:1.05rem;margin-bottom:.25rem">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</p>
         <p style="font-size:.9rem">Svarvāṇī Prakāśa · Sevā Nikuñjam</p>
-        <p class="footer-motto">संस्कृतं स्वधर्मस्य मूलम्</p>
+        <p class="footer-motto" lang="sa">संस्कृतं स्वधर्मस्य मूलम्</p>
         <div class="social"><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a><a href="https://www.pinterest.com/" rel="noopener" target="_blank" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.6 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.6 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.6 2.1-4.6 4.4 0 .9.3 1.8.8 2.3.1.1.1.2.1.3l-.3 1.1c0 .2-.1.2-.3.1-1.3-.6-2-2.4-2-3.9 0-3.2 2.3-6.1 6.7-6.1 3.5 0 6.2 2.5 6.2 5.8 0 3.5-2.2 6.3-5.2 6.3-1 0-2-.5-2.3-1.2l-.6 2.4c-.2.9-.8 2-1.2 2.6A10 10 0 1 0 12 2z"/></svg></a><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank" aria-label="Youtube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5a2.5 2.5 0 0 0-1.8 1.8C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.1V8.9l6 3.1z"/></svg></a><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.8-.1zm0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm8.4-11.2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg></a><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.2 2H21l-6.4 7.3L22 22h-5.9l-4.6-6-5.3 6H3.4l6.8-7.8L2.3 2h6l4.2 5.5zm-1 18h1.6L7.9 3.7H6.2z"/></svg></a></div>
       </div>
       <div>
-        <h4>Explore</h4>
-        <ul><li><a href="../stotras/">Stotras</a></li><li><a href="../texts/">Texts</a></li><li><a href="../lessons/">Lessons</a></li><li><a href="../prahelikas/">ప్రహేళికలు</a></li><li><a href="../about/">About</a></li><li><a href="../donate/">Donate</a></li></ul>
+        <h2>Explore</h2>
+        <ul><li><a href="../stotras/">Stotras</a></li><li><a href="../texts/">Texts</a></li><li><a href="../lessons/">Lessons</a></li><li><a href="../prahelikas/">Prahelikās</a></li><li><a href="../about/">About</a></li><li><a href="../donate/">Donate</a></li></ul>
       </div>
       <div>
-        <h4>Useful links</h4>
+        <h2>Useful links</h2>
         <ul><li><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank">Facebook</a></li><li><a href="https://www.pinterest.com/" rel="noopener" target="_blank">Pinterest</a></li><li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank">Youtube</a></li><li><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank">Instagram</a></li><li><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank">Twitter</a></li></ul>
       </div>
       <div>
-        <h4>Announced</h4>
+        <h2>Announced</h2>
         <ul><li><span class="footer-soon">Songs</span></li><li><span class="footer-soon">Articles</span></li><li><span class="footer-soon">Worker Links</span></li><li><span class="footer-soon">Blogs</span></li><li><span class="footer-soon">FAQs</span></li></ul>
         <p style="font-size:.82rem;margin-top:.9rem">Listed on the school's menu,
           not yet published.</p>
       </div>
       <div>
-        <h4>Get in touch</h4>
+        <h2>Get in touch</h2>
         <p>Please reach us at:</p>
         <ul>
           <li><a href="mailto:samskrta.usha@gmail.com">samskrta.usha@gmail.com</a></li>

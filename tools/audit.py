@@ -94,6 +94,12 @@ def outbound(s: BeautifulSoup) -> set[str]:
     }
 
 
+# Assets that ship but are referenced by no page, on purpose.
+TILE_ART = {"Stotras.JPG", "Songs.JPG", "Text.JPG",
+            "Lessons.JPG", "Interesting.JPG", "faqs.JPG"}
+EXPECTED_UNUSED = {"loading.gif"} | TILE_ART
+
+
 def main() -> int:
     if not DIST.exists():
         sys.exit("dist/ not found — run tools/build.py first")
@@ -206,10 +212,18 @@ def main() -> int:
             check(f"{kind}: {len(have)} shipped", len(have) == 3)
             continue
         if kind == "images":
-            orphan = [o for o in orphan if o != "loading.gif"]
+            # Deliberately unreferenced, each for a stated reason. Everything
+            # else missing from a page is a regression and must fail.
+            orphan = [o for o in orphan if o not in EXPECTED_UNUSED]
             if "loading.gif" in have:
                 notes.append("loading.gif is unused — the original needed a spinner "
                              "while it fetched adhyayanam.xml; these pages are pre-rendered")
+            if TILE_ART & have:
+                notes.append("the six home tile banners are unused — one stock wooden "
+                             "plank each, carrying only the section name in a different "
+                             "stock typeface. The school's own wording from them is kept "
+                             "as the tile titles; set USE_ORIGINAL_TEXT_COVERS = True in "
+                             "tools/build.py to mount the banners again")
         check(f"{kind}: {len(have)} shipped, {len(have & used)} referenced", not orphan,
               f"orphans {orphan[:6]}")
 

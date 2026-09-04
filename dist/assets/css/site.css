@@ -87,6 +87,7 @@
   --layer-anvaya: #6b21a8;
   --layer-prati: #b45309;
   --layer-taatparyam: #9f222b;
+  --layer-audio: var(--teal);
   --layer-extra: #1d4ed8;
 
   /* the footer is a colophon page: dark stock, warm ink */
@@ -188,6 +189,7 @@
   --layer-anvaya: #c49bfa;
   --layer-prati: #f6ad55;
   --layer-taatparyam: #f87171;
+  --layer-audio: var(--teal);
   --layer-extra: #60a5fa;
 
   --colophon-bg: #0d0c0f;
@@ -244,7 +246,8 @@
     --layer-anvaya: #c49bfa;
     --layer-prati: #f6ad55;
     --layer-taatparyam: #f87171;
-    --layer-extra: #60a5fa;
+    --layer-audio: var(--teal);
+  --layer-extra: #60a5fa;
 
     --colophon-bg: #0d0c0f;
     --colophon-ink: #ece3d5;
@@ -440,9 +443,12 @@ p:last-child { margin-bottom: 0; }
 .section--tight { padding-block: clamp(1.9rem, 3vw, 2.75rem) clamp(1.1rem, 2vw, 1.75rem); }
 
 .grid { display: grid; gap: clamp(1.1rem, 2.2vw, 1.75rem); }
-.grid--3 { grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
-.grid--2 { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
-.grid--tiles { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+/* min() so a track can never demand more width than the viewport actually has —
+   below the stated minimum the grid collapses to one column instead of
+   pushing the page sideways. */
+.grid--3 { grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)); }
+.grid--2 { grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); }
+.grid--tiles { grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); }
 
 .stack > * + * { margin-top: var(--stack-gap, 1rem); }
 .cluster { display: flex; flex-wrap: wrap; gap: 0.55rem; align-items: center; }
@@ -590,6 +596,10 @@ p:last-child { margin-bottom: 0; }
 
 @media (max-width: 1020px) {
   .nav-toggle { display: inline-grid; }
+  /* .nav carries margin-left:auto, which is what pushes the tools to the right
+     edge. Below this width the nav is display:none and stops being a flex item,
+     so the tools have to claim that margin themselves. */
+  .header-tools { margin-left: auto; }
   .nav {
     position: fixed;
     inset: var(--sticky-top) 0 auto 0;
@@ -602,10 +612,26 @@ p:last-child { margin-bottom: 0; }
     overflow-y: auto;
   }
   .nav[data-open="true"] { display: block; }
+  /* while it is open it owns the screen: the page behind it must not scroll
+     out from under the reader's thumb */
+  body[data-nav-open="true"] { overflow: hidden; }
   .nav ul { flex-direction: column; align-items: stretch; gap: 0; }
   .nav li + li { border-top: 1px solid var(--line-faint); }
   .nav a { padding: 0.85rem 0.4rem; font-size: 1.06rem; }
   .nav a::after { left: 0.4rem; right: auto; width: 26px; bottom: 0.5rem; }
+}
+
+/* On the narrowest phones the seal, the school's name and the three tools add
+   up to more than the line can hold. Tighten the tracking and the gaps rather
+   than truncate the name or drop the Devanagari subtitle — both are identity. */
+@media (max-width: 400px) {
+  .brand { gap: 0.55rem; }
+  .brand img { width: 36px; height: 36px; }
+  .brand-name { font-size: 0.82rem; letter-spacing: 0.1em; }
+  .brand-sub { font-size: 0.78rem; }
+  .header-tools { gap: 0.15rem; }
+  .icon-btn { width: 34px; height: 34px; }
+  .icon-btn svg { width: 17px; height: 17px; }
 }
 
 /* --------------------------------------------------------------------------
@@ -746,6 +772,20 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   line-height: 1.6;
   margin: 0;
 }
+/* the roman name under a drawn cover — the catalogue line beneath the spine */
+.card__kicker {
+  font-family: var(--font-ui);
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: var(--ink-primary);
+  margin: 0 0 0.3rem;
+  transition: color 0.18s;
+}
+.card--link:hover .card__kicker { color: var(--saffron-text); }
+/* a section the school has not filled yet: present, plainly not ready */
+.card--muted { background: var(--paper-subtle); box-shadow: none; }
+.card--muted .cover { filter: saturate(0.42) brightness(1.04); }
+.card--muted .card__kicker { color: var(--ink-soft); }
 
 /* The school's own artwork is period raster banner art. Mounting it as a
    plate — warm mat, hairline frame, breathing room — lets it sit beside
@@ -867,6 +907,12 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   border: 1px solid var(--line-faint);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-warm-sm);
+}
+:root[data-theme="dark"] .text-plate img,
+:root[data-theme="dark"] .card__media img { filter: brightness(0.9) saturate(0.92); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .text-plate img,
+  :root:not([data-theme="light"]) .card__media img { filter: brightness(0.9) saturate(0.92); }
 }
 .text-plate img {
   width: 100%;
@@ -1192,7 +1238,8 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
    verses: each one is set as a stanza, with its transliteration beneath it
    and the English rendering below both.
    -------------------------------------------------------------------------- */
-.stanzas { display: grid; gap: 1.1rem; }
+.stanzas { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.1rem; }
+.stanza, .stanza__head { min-width: 0; }
 .stanza__head {
   font-family: var(--font-deva);
   font-size: calc(1.32rem * var(--read-scale));
@@ -1210,6 +1257,9 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   box-shadow: var(--shadow-warm-sm);
 }
 .stanza__line { display: block; }
+/* A samāsa can run longer than a phone is wide. Break it only when it truly
+   will not fit — break-word, not anywhere, so ordinary lines stay intact. */
+.stanza__head, .stanza__text, .stanza__iast, .stanza__gloss { overflow-wrap: break-word; }
 .stanza__text {
   font-family: var(--font-deva);
   font-size: calc(1.24rem * var(--read-scale));
@@ -1277,7 +1327,9 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   .toolbar__inner > * { grid-column: 1 !important; justify-self: stretch !important; }
   .toolbar__search { min-width: 0; }
 }
-@media (max-width: 760px) {
+/* Was 760px, which left 761-900px — every landscape phone — stacked into three
+   full rows of chrome, over half the screen height before a single verse. */
+@media (max-width: 900px) {
   .toolbar .chip-row {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -1302,6 +1354,9 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   }
   .toolbar__inner > .cluster > .toolbar__search { min-width: 0; }
   .toolbar .field input { padding-block: 0.48rem; font-size: 0.94rem; }
+}
+@media (max-width: 400px) {
+  .toolbar .chip-row { margin-inline: 0; padding-inline: 0; }
 }
 
 /* --------------------------------------------------------------------------
@@ -1339,7 +1394,7 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   color: var(--gold-text);
   padding: 0.1rem 0.72rem 0.16rem;
   border: 1px solid var(--gold-line);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
   background: var(--surface);
   box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--gold) 12%, transparent);
 }
@@ -1430,8 +1485,11 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   font-family: var(--font-ui);
   font-size: calc(1.02rem * var(--read-scale));
   line-height: var(--lead-latn);
+  /* Latin prose needs a measure. Without one these ran to ~144 characters a
+     line on a wide screen — the eye loses its place returning. */
+  max-width: var(--measure-latn);
 }
-.layer[data-layer="audio"] { --layer-color: var(--teal); }
+.layer[data-layer="audio"] { --layer-color: var(--layer-audio); }
 
 /* प्रतिपदार्थः is a list of term = gloss pairs; set it as one, so the eye can
    scan the headwords instead of wading through a semicolon soup. */
@@ -1467,7 +1525,7 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   gap: 0.7rem 0.85rem;
   padding: 0.5rem 0.95rem 0.5rem 0.55rem;
   border: 1px solid var(--gold-line);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
   background: var(--gold-tint);
   max-width: min(100%, 560px);
   width: 100%;
@@ -1583,6 +1641,7 @@ a.card :where(h1, h2, h3, h4, p) { text-decoration: none; }
   line-height: var(--lead-deva);
   margin: 0 0 1.1rem;
   color: var(--ink-body);
+  max-width: 46em;
 }
 .scroll-block pre:last-child { margin-bottom: 0; }
 
@@ -1633,14 +1692,22 @@ details.expander[open] > summary { margin-bottom: 1rem; }
   background: var(--sp, var(--gold));
 }
 /* Each speaker is illuminated in his own pigment. */
-.speech[data-speaker="krishna"] { --sp: #1e5fa8; }        /* peacock blue */
-.speech[data-speaker="arjuna"] { --sp: var(--crimson); }  /* hero cinnabar */
-.speech[data-speaker="sanjaya"] { --sp: var(--teal); }    /* sage emerald */
-.speech[data-speaker="dritarashtra"] { --sp: var(--amethyst); } /* imperial */
-:root[data-theme="dark"] .speech[data-speaker="krishna"] { --sp: #7fb0e8; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .speech[data-speaker="krishna"] { --sp: #7fb0e8; }
+/* The filter chips read the same tokens, so a speaker is one colour on the
+   page whichever theme is on — not one blue in the toolbar and another below. */
+:root {
+  --sp-krishna: #1e5fa8;              /* peacock blue */
+  --sp-arjuna: var(--crimson);        /* hero cinnabar */
+  --sp-sanjaya: var(--teal);          /* sage emerald */
+  --sp-dritarashtra: var(--amethyst); /* imperial */
 }
+:root[data-theme="dark"] { --sp-krishna: #7fb0e8; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --sp-krishna: #7fb0e8; }
+}
+.speech[data-speaker="krishna"] { --sp: var(--sp-krishna); }
+.speech[data-speaker="arjuna"] { --sp: var(--sp-arjuna); }
+.speech[data-speaker="sanjaya"] { --sp: var(--sp-sanjaya); }
+.speech[data-speaker="dritarashtra"] { --sp: var(--sp-dritarashtra); }
 /* Śrī Bhagavān carries a gold keyline and a faint aura; the others do not. */
 .speech[data-speaker="krishna"] {
   border-color: var(--gold-line);
@@ -1777,6 +1844,16 @@ mark {
   border-radius: var(--radius-md);
   background: var(--surface);
   box-shadow: var(--shadow-warm-sm);
+  /* the table is wider than the frame; fade the right edge so it reads as
+     continuing rather than clipped, the way the chip rows do */
+  background-image: linear-gradient(90deg, var(--surface) 30%, transparent),
+                    linear-gradient(90deg, transparent, var(--surface) 70%),
+                    linear-gradient(90deg, rgba(28, 25, 23, 0.13), transparent 14px),
+                    linear-gradient(90deg, transparent calc(100% - 14px), rgba(28, 25, 23, 0.13));
+  background-position: 0 0, 100% 0, 0 0, 100% 0;
+  background-repeat: no-repeat;
+  background-size: 34px 100%, 34px 100%, 14px 100%, 14px 100%;
+  background-attachment: local, local, scroll, scroll;
 }
 table.data {
   width: 100%;
@@ -1851,7 +1928,13 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
 @media (max-width: 768px) {
   .table-wrap { max-height: none; overflow: visible; border: 0; background: none; box-shadow: none; }
   table.data { min-width: 0; display: block; font-size: calc(1rem * var(--read-scale)); }
-  table.data thead { display: none; }
+  /* display:none would take the column heads away from a screen reader too;
+     the cells still refer to them by scope. Hide them from the eye only. */
+  table.data thead {
+    position: absolute; width: 1px; height: 1px;
+    margin: -1px; padding: 0; border: 0;
+    clip-path: inset(50%); overflow: hidden; white-space: nowrap;
+  }
   table.data tbody { display: grid; gap: 0.75rem; grid-template-columns: minmax(0, 1fr); }
   table.data tbody tr {
     display: grid;
@@ -1867,6 +1950,9 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
     box-shadow: var(--shadow-warm-sm);
   }
   table.data tbody tr:hover td { background: transparent; }
+  /* nowrap is right inside the scrolling table frame; in a card there is no
+     frame left to scroll, so a long annotation would push the page sideways */
+  table.data td .tag, table.data td .dhatu { white-space: normal; }
   table.data td {
     display: grid;
     grid-column: 1 / -1;
@@ -1940,9 +2026,25 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
   line-height: var(--lead-telu);
 }
 
+/* Each riddle is a <details>. The summary is the whole row — question and
+   reveal together — so the browser gives us the keyboard, the focus ring and
+   the open state for free, and the answers are readable with JS switched off. */
 .qa { border-bottom: 1px solid var(--line-faint); padding: 0.85rem 0; }
 .qa:last-child { border-bottom: 0; padding-bottom: 0; }
-.qa__row { display: flex; gap: 0.75rem; align-items: flex-start; }
+.qa__row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  cursor: pointer;
+  list-style: none;
+}
+.qa__row::-webkit-details-marker { display: none; }
+.qa__row::marker { content: ""; }
+.qa__row:focus-visible {
+  outline: 2px solid var(--saffron);
+  outline-offset: 3px;
+  border-radius: var(--radius-xs);
+}
 /* the riddle line itself, distinct from the Telugu gloss beneath it */
 .qa__q {
   overflow-wrap: anywhere;
@@ -1955,10 +2057,11 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
   margin: 0;
   transition: color 0.16s;
 }
-.qa__q:hover { color: var(--saffron-text); }
+.qa__row:hover .qa__q { color: var(--saffron-text); }
 
 /* The reveal is a quiet marginal cue, not a green button repeated 158 times. */
 .qa__btn {
+  display: inline-block;
   flex: 0 0 auto;
   margin-top: 0.1rem;
   border: 1px solid var(--line);
@@ -1973,16 +2076,21 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
   transition: all 0.18s;
   white-space: nowrap;
 }
-.qa__btn:hover { border-color: var(--gold); background: var(--gold-tint); color: var(--saffron-text); }
-.qa__btn[aria-expanded="true"] {
+/* Both labels are real text in the document — one is simply not displayed.
+   Generated content would have read correctly on screen but vanished from the
+   page's actual text, and these are the school's own Telugu words. */
+.qa__hide, .qa[open] .qa__show { display: none; }
+.qa[open] .qa__hide { display: inline; }
+.qa__row:hover .qa__btn { border-color: var(--gold); background: var(--gold-tint); color: var(--saffron-text); }
+.qa[open] .qa__btn {
   border-color: var(--gold);
   background: var(--gold);
   color: #fff;
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--gold) 16%, transparent);
 }
-:root[data-theme="dark"] .qa__btn[aria-expanded="true"] { color: #17130f; }
+:root[data-theme="dark"] .qa[open] .qa__btn { color: #17130f; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .qa__btn[aria-expanded="true"] { color: #17130f; }
+  :root:not([data-theme="light"]) .qa[open] .qa__btn { color: #17130f; }
 }
 
 /* the reveal: a short unfold with a brief brass glow as it settles */
@@ -2143,13 +2251,14 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
   opacity: 0;
   pointer-events: none;
   transform: translateY(12px);
-  transition: opacity 0.22s, transform 0.22s, background 0.16s;
+  visibility: hidden;
+  transition: opacity 0.22s, transform 0.22s, background 0.16s, visibility 0.22s;
   box-shadow: var(--shadow-warm-lg);
   background: var(--surface);
   border-color: var(--line-strong);
   color: var(--ink-soft);
 }
-.to-top[data-visible="true"] { opacity: 1; pointer-events: auto; transform: none; }
+.to-top[data-visible="true"] { opacity: 1; pointer-events: auto; transform: none; visibility: visible; }
 .to-top:hover { background: var(--saffron); border-color: var(--saffron); color: #fff; }
 
 /* --------------------------------------------------------------------------
@@ -2427,6 +2536,26 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
 }
 
 /* --------------------------------------------------------------------------
+   28b · Touch targets
+   A mouse pointer is a pixel; a fingertip is about 9mm. On a touch screen the
+   controls grow to meet it — without disturbing the tighter, more editorial
+   sizing a desktop reader sees. Held back below 400px, where the header has
+   no room to spare.
+   -------------------------------------------------------------------------- */
+@media (pointer: coarse) and (min-width: 400px) {
+  .icon-btn { width: 44px; height: 44px; }
+  .verse__tools .icon-btn { width: 40px; height: 40px; }
+  .chip { min-height: 40px; padding-block: 0.42rem; }
+  .btn--sm { min-height: 40px; padding-block: 0.5rem; }
+  .qa__btn { min-height: 44px; }
+  .player__play { width: 44px; height: 44px; }
+  .player__opt { min-height: 36px; padding-block: 0.35rem; }
+  .field__clear { width: 40px; height: 40px; }
+  .nav a { padding-block: 1rem; }
+  .to-top { width: 48px; height: 48px; }
+}
+
+/* --------------------------------------------------------------------------
    29 · Print
    -------------------------------------------------------------------------- */
 @media print {
@@ -2440,4 +2569,16 @@ table.data td:nth-child(9) { color: var(--ink-faint); font-size: 0.94em; }
     break-inside: avoid;
   }
   .layer[hidden] { display: grid !important; }
+  /* the head row keeps its screen ink otherwise — a solid black bar of toner */
+  table.data thead th {
+    background: #fff !important;
+    color: #000 !important;
+    border-bottom: 1px solid #000;
+    position: static;
+  }
+  /* a 900px-wide table silently loses its last columns off the right edge of
+     the paper; print the card layout instead, which fits any sheet */
+  .table-wrap { overflow: visible !important; max-height: none; background: none; border: 0; box-shadow: none; }
+  table.data { min-width: 0 !important; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #444; }
 }

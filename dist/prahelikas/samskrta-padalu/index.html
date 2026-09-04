@@ -5,20 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>సంస్కృత పదాలు · Samskrtam</title>
 <meta name="description" content="సంస్కృత పదాలు — 151 Sanskrit puzzle questions in Telugu.">
-<link rel="canonical" href="https://samskrtam.info/prahelikas/samskrta-padalu">
+<link rel="canonical" href="https://samskrtam.info/prahelikas/samskrta-padalu/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Svarvāṇī Prakāśa · Sevā Nikuñjam">
 <meta property="og:title" content="సంస్కృత పదాలు · Samskrtam">
 <meta property="og:description" content="సంస్కృత పదాలు — 151 Sanskrit puzzle questions in Telugu.">
 <meta property="og:image" content="https://samskrtam.info/assets/img/logo.png">
-<meta property="og:url" content="https://samskrtam.info/prahelikas/samskrta-padalu">
+<meta property="og:url" content="https://samskrtam.info/prahelikas/samskrta-padalu/">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#1b2a4a">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf6ee">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121114">
 <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../../assets/img/logo.png">
+<link rel="preload" href="../../assets/fonts/CharterIndologique.otf" as="font" type="font/otf" crossorigin>
 <link rel="preload" href="../../assets/fonts/Sanskrit2003.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="../../assets/css/site.css">
-<script>try{var t=localStorage.getItem('svp:theme');if(t)document.documentElement.setAttribute('data-theme',t);
+<script>try{var t=localStorage.getItem('svp:theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);
 var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])document.documentElement.style.setProperty('--read-scale',m[s]);}catch(e){}</script>
 
 </head>
@@ -31,35 +33,39 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <img src="../../assets/img/logo.png" alt="" width="42" height="42">
       <span class="brand-text" data-no-lipi>
         <span class="brand-name">Samskrtam</span>
-        <span class="brand-sub">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</span>
+        <span class="brand-sub" lang="sa">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</span>
       </span>
     </a>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <ul><li><a href="../../">Home</a></li><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/" aria-current="page" class="telu">ప్రహేళికలు</a></li><li><a href="../../about/">About</a></li><li><a href="../../about/#contact">Contact</a></li><li><a href="../../donate/">Donate</a></li></ul>
-    </nav>
     <div class="header-tools tools-anchor">
       <button class="icon-btn" data-prefs-toggle aria-expanded="false" aria-controls="prefs-panel" aria-label="Reading preferences" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg></button>
-      <button class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch theme" type="button"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
-      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
       <div class="prefs" id="prefs-panel" hidden>
-        <h5>Text size</h5>
-        <div class="prefs__row">
-          <button type="button" data-size="s" aria-pressed="false">A</button>
-          <button type="button" data-size="m" aria-pressed="true">A</button>
-          <button type="button" data-size="l" aria-pressed="false">A</button>
-          <button type="button" data-size="xl" aria-pressed="false">A</button>
+        <p class="prefs__legend" id="prefs-size">Text size</p>
+        <div class="prefs__row" role="group" aria-labelledby="prefs-size">
+          <button type="button" data-size="s" aria-pressed="false" aria-label="Small text">A</button>
+          <button type="button" data-size="m" aria-pressed="true" aria-label="Normal text">A</button>
+          <button type="button" data-size="l" aria-pressed="false" aria-label="Large text">A</button>
+          <button type="button" data-size="xl" aria-pressed="false" aria-label="Extra large text">A</button>
         </div>
-        <h5>Script · लिपिः</h5>
-        <div class="prefs__row">
-          <button type="button" data-lipi-set="devanagari" aria-pressed="true" class="deva">देव</button>
-          <button type="button" data-lipi-set="telugu" aria-pressed="false" class="telu">తెలు</button>
-          <button type="button" data-lipi-set="iast" aria-pressed="false">IAST</button>
+        <p class="prefs__legend" id="prefs-lipi">Script · <span lang="sa">लिपिः</span></p>
+        <div class="prefs__row" role="group" aria-labelledby="prefs-lipi">
+          <button type="button" data-lipi-set="devanagari" aria-pressed="true" class="deva" lang="sa" aria-label="Devanagari">देव</button>
+          <button type="button" data-lipi-set="telugu" aria-pressed="false" class="telu" lang="te" aria-label="Telugu">తెలు</button>
+          <button type="button" data-lipi-set="iast" aria-pressed="false" aria-label="IAST transliteration">IAST</button>
         </div>
         <p style="margin:0;font-size:.8rem;color:var(--ink-faint)">Converts every Devanāgarī passage on the page. Theme follows your device unless you pick one with the sun / moon button.</p>
       </div>
+      <button class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch theme" type="button"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <button class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
+    <!-- The nav follows the button that reveals it, so a forward Tab from the
+         menu toggle lands inside the menu instead of skipping past the page.
+         Its visual position is set by CSS, not by document order. -->
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul><li><a href="../../">Home</a></li><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/" aria-current="page">Prahelikās</a></li><li><a href="../../about/">About</a></li><li><a href="../../about/#contact">Contact</a></li><li><a href="../../donate/">Donate</a></li></ul>
+    </nav>
   </div>
 </header>
+<p class="visually-hidden" id="live-status" role="status" aria-live="polite"></p>
 <main id="main">
 <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../../prahelikas/" class="telu">ప్రహేళికలు</a></li><li><span class="telu">సంస్కృత పదాలు</span></li></ol></nav>
 <section class="section section--tight">
@@ -92,98 +98,111 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 13</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. హిమాలయపర్వతం ఉమకు = --గురుః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ఉమాగురుః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. సతీర్థుడు, ఒకే ఆచార్యుడు కలవాడు = --గురుః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ఏకగురుః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. ఆచార్యుల వరుస, పారంపర్య ఆదేశం అట = గురు--</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గురుక్రమః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. పెద్దపెద్దవారిని చంపేవాడు = గురు-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గురుఘ్నః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. పుష్యనక్షత్రం, బృహస్పతి ఈ నక్షత్రపు దేవత కనుక = గురు---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గురుదైవతః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. పెద్ద ఆకులు కలది = గురు--</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గురుపత్రా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. పుష్పరాగమణి, పెద్ద మణి అట = గురు--</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గురురత్నం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. రహస్య ఆచార్యుడు = --గురుః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గుహ్యగురుః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. బృహస్పతి = --గురుః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దేవగురుః, సురగురుః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. శుక్రుడు = --గురుః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దైత్యగురుః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. నమస్కారాలచేత పెద్ద, బ్రాహ్మణుడే = --గురుః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: నమోగురుః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. లౌకికవిద్యలనిచ్చే ఆచార్యుడు = --గురుః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: శిక్షాగురుః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">13. మన్మథుని నాన్నగారు = --గురుః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: స్మరగురుః</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. హిమాలయపర్వతం ఉమకు = --గురుః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ఉమాగురుః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. సతీర్థుడు, ఒకే ఆచార్యుడు కలవాడు = --గురుః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ఏకగురుః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. ఆచార్యుల వరుస, పారంపర్య ఆదేశం అట = గురు--</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గురుక్రమః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. పెద్దపెద్దవారిని చంపేవాడు = గురు-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గురుఘ్నః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. పుష్యనక్షత్రం, బృహస్పతి ఈ నక్షత్రపు దేవత కనుక = గురు---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గురుదైవతః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. పెద్ద ఆకులు కలది = గురు--</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గురుపత్రా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. పుష్పరాగమణి, పెద్ద మణి అట = గురు--</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గురురత్నం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. రహస్య ఆచార్యుడు = --గురుః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గుహ్యగురుః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. బృహస్పతి = --గురుః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దేవగురుః, సురగురుః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. శుక్రుడు = --గురుః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దైత్యగురుః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. నమస్కారాలచేత పెద్ద, బ్రాహ్మణుడే = --గురుః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: నమోగురుః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. లౌకికవిద్యలనిచ్చే ఆచార్యుడు = --గురుః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: శిక్షాగురుః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">13. మన్మథుని నాన్నగారు = --గురుః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: స్మరగురుః</p>
+</details>
 </article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -197,91 +216,103 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. ఒక రామాయణనదీ = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: తమసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. వేగంగా = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అఞ్జసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. ఊపిరి అవయవం = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: నాసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. నీళ్ళు కావాలనిపించే స్థితి = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: పిపాసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. నీఅంతటివాడు లేడనటం = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ప్రశంసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. పైపదానికే అంత్యప్రాసతో కోరిక = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ఆశంసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. ఒక హృదయార్థక దేవి = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మానసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. ఆకాశం = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: విహాయసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. అకస్మాత్తుగా = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సహసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. చెల్లెలు = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: స్వసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. గాంధీవాదానికి విరుద్ధం = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: హింసా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. హనుమంతుడికి పరీక్ష పెట్టిన దేవరాక్షసి = --సా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సురసా</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. ఒక రామాయణనదీ = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: తమసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. వేగంగా = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అఞ్జసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. ఊపిరి అవయవం = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: నాసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. నీళ్ళు కావాలనిపించే స్థితి = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: పిపాసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. నీఅంతటివాడు లేడనటం = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ప్రశంసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. పైపదానికే అంత్యప్రాసతో కోరిక = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ఆశంసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. ఒక హృదయార్థక దేవి = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మానసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. ఆకాశం = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: విహాయసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. అకస్మాత్తుగా = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సహసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. చెల్లెలు = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: స్వసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. గాంధీవాదానికి విరుద్ధం = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: హింసా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. హనుమంతుడికి పరీక్ష పెట్టిన దేవరాక్షసి = --సా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సురసా</p>
+</details>
 </article><article class="puzzle" data-search data-total="13">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -295,98 +326,111 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 13</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. అబద్ధం = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అలీకం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. చిన్న ఏలక్కాయ = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ఏలీకా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. మంచి వంశానికి చెందిన = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: కులీన</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. కర్కట = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: కులీరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. గుఱ్ఱపుకళ్లెము = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ఖలీన</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. క ముందు విసర్గ = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: జిహ్వామూలీయః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. చాలా విశాలమైన వ్యక్తిత్వంకల = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: శాలీనః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. (భగవంతుడి) ఆటతో కూడిన = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సలీలః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. వివాహంలో భోజనం వండించే తంతు = -లీ---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: స్థాలీపాకం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. రఘువంశం రాజు, రఘు తండ్రి = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దిలీపః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. పై ఆయన కొడుకు తద్ధితంతో వాయించండి = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దైలీపిః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. బాణం = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: నాలీక</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">13. సంలగ్నం = -లీ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: నిలీనం</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. అబద్ధం = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అలీకం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. చిన్న ఏలక్కాయ = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ఏలీకా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. మంచి వంశానికి చెందిన = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: కులీన</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. కర్కట = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: కులీరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. గుఱ్ఱపుకళ్లెము = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ఖలీన</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. క ముందు విసర్గ = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: జిహ్వామూలీయః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. చాలా విశాలమైన వ్యక్తిత్వంకల = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: శాలీనః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. (భగవంతుడి) ఆటతో కూడిన = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సలీలః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. వివాహంలో భోజనం వండించే తంతు = -లీ---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: స్థాలీపాకం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. రఘువంశం రాజు, రఘు తండ్రి = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దిలీపః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. పై ఆయన కొడుకు తద్ధితంతో వాయించండి = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దైలీపిః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. బాణం = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: నాలీక</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">13. సంలగ్నం = -లీ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: నిలీనం</p>
+</details>
 </article><article class="puzzle" data-search data-total="13">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -400,98 +444,111 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 13</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. భాద్రశుక్లచతుర్దశీవ్రతం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. ఆరోగ్యంకోసం భానుని వ్రతం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అర్కవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. చాన్ద్రాయణం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ఇన్దువ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. భాద్రశుక్లసప్తమీవిశేషః ‘(ఆడ)కోడిని’ దీక్ష</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: కుక్కుటీవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. కుబేరుడు చేసి ధనం సంపాదించిన “డబ్బుసంబంధి”వ్రతం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ధన్యవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. రాత్రి భోజనం చేసే దీక్ష</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: నక్తవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. ఆకాశరంగు దీక్ష అట-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: నీలవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. ప్రతినెలా శుక్ల పక్ష ‘ఐదవ’తిథి వ్రతం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: పఞ్చమీవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. ప్రాణులభర్త ‘శివుడి’ వ్రతం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: పాశుపతవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. శ్రీకృష్ణునివంటి కొడుకునిచ్చే వ్రతం ‘పాపంకాని’ దీక్ష</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: పుణ్యకవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. పన్నెండేళ్ళ ‘గొప్ప’దీక్ష</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మహావ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. కృష్ణపత్నీదీక్ష</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: రుక్మిణీవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">13. ఇందువాసరంలో చేసే దీక్ష, శివపూజ</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సోమవారవ్రతం</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. భాద్రశుక్లచతుర్దశీవ్రతం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. ఆరోగ్యంకోసం భానుని వ్రతం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అర్కవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. చాన్ద్రాయణం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ఇన్దువ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. భాద్రశుక్లసప్తమీవిశేషః ‘(ఆడ)కోడిని’ దీక్ష</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: కుక్కుటీవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. కుబేరుడు చేసి ధనం సంపాదించిన “డబ్బుసంబంధి”వ్రతం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ధన్యవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. రాత్రి భోజనం చేసే దీక్ష</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: నక్తవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. ఆకాశరంగు దీక్ష అట-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: నీలవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. ప్రతినెలా శుక్ల పక్ష ‘ఐదవ’తిథి వ్రతం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: పఞ్చమీవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. ప్రాణులభర్త ‘శివుడి’ వ్రతం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: పాశుపతవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. శ్రీకృష్ణునివంటి కొడుకునిచ్చే వ్రతం ‘పాపంకాని’ దీక్ష</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: పుణ్యకవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. పన్నెండేళ్ళ ‘గొప్ప’దీక్ష</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మహావ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. కృష్ణపత్నీదీక్ష</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: రుక్మిణీవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">13. ఇందువాసరంలో చేసే దీక్ష, శివపూజ</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సోమవారవ్రతం</p>
+</details>
 </article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -505,91 +562,103 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. నా జలాశయం కాదు, ఓర్వలేనితనం = --సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మత్సరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. మందుకు పోవుడు = --సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అగ్రేసరః, పురస్సరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. నిరవకాశః = ---సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనవసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. అవతలకు లేదా పక్కకు తొలగటం = --సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అపసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. దగ్గరగా మసిలేవాడు = --సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అభిసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. ధూలిరంగు, ఈషత్ పాండువర్ణః = -సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ధూసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. సింహం జూలు = -సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: కేసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. చుట్టుపక్కల = --సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: పరిసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. ఏడు = --సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సంవత్సరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. పైదే, ఆదివృద్ధితో కొట్టండి, గణనం చేయువాడు ప్రకటమవుతాడు = --సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సాంవత్సరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. వారపు దినం = -సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: వాసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. ముందుపోవువాడు = --సరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: పురఃసరః</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. నా జలాశయం కాదు, ఓర్వలేనితనం = --సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మత్సరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. మందుకు పోవుడు = --సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అగ్రేసరః, పురస్సరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. నిరవకాశః = ---సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనవసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. అవతలకు లేదా పక్కకు తొలగటం = --సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అపసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. దగ్గరగా మసిలేవాడు = --సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అభిసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. ధూలిరంగు, ఈషత్ పాండువర్ణః = -సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ధూసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. సింహం జూలు = -సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: కేసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. చుట్టుపక్కల = --సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: పరిసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. ఏడు = --సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సంవత్సరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. పైదే, ఆదివృద్ధితో కొట్టండి, గణనం చేయువాడు ప్రకటమవుతాడు = --సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సాంవత్సరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. వారపు దినం = -సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: వాసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. ముందుపోవువాడు = --సరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: పురఃసరః</p>
+</details>
 </article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -603,91 +672,103 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. ఇంద్రియాలకు కనిపించని(వాడు) = --చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అగోచరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. వెనకతిరిగేవాడు = --చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనుచరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. విద్యాధరుడు, పక్షి, మేఘం, వాయువు, ఆకాశంలో తిరిగే = --శ్చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: నభశ్చర</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. రహస్యంగా తిరిగేవాడు = --చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గుప్తచరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. స్థావర-జంగమ = --చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: చరాచరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. ఇంద్రియార్థం, శబ్దస్పర్శరూపరసగంధరూపం = -చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గోచరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. నీటిలో జీవి = --చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: జలేచరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. రాచ్చసుడు = --చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: నిశాచరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. ఆరణ్యకుడు = --చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: వనేచరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. దొంగా దొంగా = --చ్చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అధశ్చరః, పటచ్చరః, పాటచ్చరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. సాడేసాతీ, నెమ్మదిగా తిరిగేవాడు = --శ్చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: శనైశ్చరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. వెంటతిరిగేవాడు = --చరః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సహచరః</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. ఇంద్రియాలకు కనిపించని(వాడు) = --చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అగోచరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. వెనకతిరిగేవాడు = --చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనుచరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. విద్యాధరుడు, పక్షి, మేఘం, వాయువు, ఆకాశంలో తిరిగే = --శ్చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: నభశ్చర</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. రహస్యంగా తిరిగేవాడు = --చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గుప్తచరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. స్థావర-జంగమ = --చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: చరాచరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. ఇంద్రియార్థం, శబ్దస్పర్శరూపరసగంధరూపం = -చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గోచరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. నీటిలో జీవి = --చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: జలేచరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. రాచ్చసుడు = --చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: నిశాచరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. ఆరణ్యకుడు = --చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: వనేచరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. దొంగా దొంగా = --చ్చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అధశ్చరః, పటచ్చరః, పాటచ్చరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. సాడేసాతీ, నెమ్మదిగా తిరిగేవాడు = --శ్చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: శనైశ్చరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. వెంటతిరిగేవాడు = --చరః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సహచరః</p>
+</details>
 </article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -701,91 +782,103 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. చివరలేనిది, ఆకాశం (3) = ---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. చివర లేనివాడు, విష్ణువు (3) = ---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. చివరలేనివాడిని గెలిచినవాడు, పదునాలుగవ జినుడట (4/6) = =</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తజిత్, అనన్తతీర్థకృత్</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. అడ్డులేకుండా (4) = ----</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తరం, నిరన్తరం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. ధర్మరాజు ఊదేదానిపేరు (3,3) = ------</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తవిజయః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. చివరలేని వీరత్వం కలవాడు, ఇరవైమూడవ జినుడట (3,2) = -----</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తవీర్య్యః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. ఇవాల్టి నోము (3,2) = -----</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తవ్రతం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. వాసుకి పత్నీ, లెక్కలేనన్ని తలలుకల (3,2) = -----</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తశీర్షా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. శేషనాగుడు (3,2) = -----</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తదేవః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. కేరళ రాజధానిలో బొబ్బుని ఉన్న దేవుడు (3,4) = -------</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తపద్మనాభః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. ట్రావెంకోర్, శ్రీరంగపట్టణం (3,3) = ------</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనన్తశయన</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. కేరళరాజధాని (7) = -------</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: తిరువనంతపురం</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. చివరలేనిది, ఆకాశం (3) = ---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. చివర లేనివాడు, విష్ణువు (3) = ---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. చివరలేనివాడిని గెలిచినవాడు, పదునాలుగవ జినుడట (4/6) = =</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తజిత్, అనన్తతీర్థకృత్</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. అడ్డులేకుండా (4) = ----</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తరం, నిరన్తరం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. ధర్మరాజు ఊదేదానిపేరు (3,3) = ------</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తవిజయః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. చివరలేని వీరత్వం కలవాడు, ఇరవైమూడవ జినుడట (3,2) = -----</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తవీర్య్యః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. ఇవాల్టి నోము (3,2) = -----</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తవ్రతం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. వాసుకి పత్నీ, లెక్కలేనన్ని తలలుకల (3,2) = -----</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తశీర్షా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. శేషనాగుడు (3,2) = -----</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తదేవః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. కేరళ రాజధానిలో బొబ్బుని ఉన్న దేవుడు (3,4) = -------</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తపద్మనాభః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. ట్రావెంకోర్, శ్రీరంగపట్టణం (3,3) = ------</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనన్తశయన</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. కేరళరాజధాని (7) = -------</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: తిరువనంతపురం</p>
+</details>
 </article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -799,91 +892,103 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. సమూహభర్త = గణ--</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణపతిః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. దైవజ్ఞుడు, జ్యోతిష్కుడు = గణ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణకః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. పైనాయన భార్య = గణ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణకీ</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. లెక్కించుట = గణ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణనం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. దుర్గా, సమూహాధ్యక్షురాలు = గణ---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణనాయికా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. ఆదిత్యాదులు = గణ---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణదేవతాః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. పక్షపాతిత్వం, సమూహత్వం = గణ-</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణతా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. లెక్కింపదగ్గ = గణ--</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణనీయ</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. కైలాసమే, సమూహగిరి అట = గణ---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణపర్వతః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. కొన్ని రాత్రులు కలిపి జట్టుగా = గణ---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణరాత్రమ్</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. సమూహవ్రతీ = గణ--</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణదీక్షీ</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. వర్గాధ్యక్షుడు = గణ---</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గణనాయకః</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. సమూహభర్త = గణ--</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణపతిః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. దైవజ్ఞుడు, జ్యోతిష్కుడు = గణ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణకః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. పైనాయన భార్య = గణ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణకీ</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. లెక్కించుట = గణ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణనం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. దుర్గా, సమూహాధ్యక్షురాలు = గణ---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణనాయికా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. ఆదిత్యాదులు = గణ---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణదేవతాః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. పక్షపాతిత్వం, సమూహత్వం = గణ-</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణతా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. లెక్కింపదగ్గ = గణ--</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణనీయ</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. కైలాసమే, సమూహగిరి అట = గణ---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణపర్వతః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. కొన్ని రాత్రులు కలిపి జట్టుగా = గణ---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణరాత్రమ్</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. సమూహవ్రతీ = గణ--</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణదీక్షీ</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. వర్గాధ్యక్షుడు = గణ---</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గణనాయకః</p>
+</details>
 </article><article class="puzzle" data-search data-total="15">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -897,112 +1002,127 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 15</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. కాయం = దేహః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దేహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. పాపం, దుఃఖం = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అంహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. యుద్ధంలో సైన్యాకార విన్యాసం = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: వ్యూహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. దిన(న్) = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. కల్పన = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ఊహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. శివకుమారన్ = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గుహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. అంతరిక్షవాసి, పట్టు = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గ్రహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. భస్మీకరణమ్ = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దాహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. పాలపాత్ర, పితకటం, పాలు = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దోహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. వెనకనుంచి కీడు చేయుట = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ద్రోహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. గొప్ప, ఒక లోకం = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. మతితప్పుట = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మోహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">13. అయస్సు = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: లోహః, లౌహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">14. గాండ్రిస్త అడ్విల ఉంటది = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సింహః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">15. తైలం, ప్రేమ = -హః</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: స్నేహః</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. కాయం = దేహః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దేహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. పాపం, దుఃఖం = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అంహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. యుద్ధంలో సైన్యాకార విన్యాసం = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: వ్యూహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. దిన(న్) = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. కల్పన = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ఊహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. శివకుమారన్ = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గుహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. అంతరిక్షవాసి, పట్టు = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గ్రహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. భస్మీకరణమ్ = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దాహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. పాలపాత్ర, పితకటం, పాలు = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దోహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. వెనకనుంచి కీడు చేయుట = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ద్రోహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. గొప్ప, ఒక లోకం = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. మతితప్పుట = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మోహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">13. అయస్సు = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: లోహః, లౌహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">14. గాండ్రిస్త అడ్విల ఉంటది = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సింహః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">15. తైలం, ప్రేమ = -హః</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: స్నేహః</p>
+</details>
 </article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -1016,91 +1136,103 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. అక్కరలేని</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనవసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. అక్కర ఉన్న, సందర్భం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అవసరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. గృహం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ఆవసథం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. సూరీడు దినం చేసేవాడా?</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దివసకరః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. స్వర్గనివాసుల సభ</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దేవసభా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. బట్ట</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: వసనం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. ఉన్నచోట సౌకర్యం</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: వసతి</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. ఓ ఋతువు</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: వసన్తః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. ‘రోజు-మొహం’ ప్రభాతమా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: దివసముఖం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. అపసవ్యమే, దక్షిణం (పవయోరభేదః)</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అవసవ్యం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. ఎర్రని బట్టలవాడు</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: రక్తవసనః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. అందరి అవసరం, సంస్కృతంలో అర్ధరాత్రి అట</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సర్వావసరః</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. అక్కరలేని</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనవసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. అక్కర ఉన్న, సందర్భం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అవసరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. గృహం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ఆవసథం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. సూరీడు దినం చేసేవాడా?</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దివసకరః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. స్వర్గనివాసుల సభ</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దేవసభా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. బట్ట</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: వసనం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. ఉన్నచోట సౌకర్యం</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: వసతి</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. ఓ ఋతువు</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: వసన్తః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. ‘రోజు-మొహం’ ప్రభాతమా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: దివసముఖం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. అపసవ్యమే, దక్షిణం (పవయోరభేదః)</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అవసవ్యం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. ఎర్రని బట్టలవాడు</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: రక్తవసనః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. అందరి అవసరం, సంస్కృతంలో అర్ధరాత్రి అట</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సర్వావసరః</p>
+</details>
 </article><article class="puzzle" data-search data-total="12">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -1114,91 +1246,103 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 12</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. అణపత్వం సూక్ష్మత్వసిద్ధి = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అణిమా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. హ్రస్వత్వసిద్ధి = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: లఘిమా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. పెద్దగ పెరగటం = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మహిమా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. బరువుసిద్ధి = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: గరిమా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. పేరులేనివాడు = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: అనామా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. అచేతనత్వం = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: జడిమా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. పుట్టుక, జన్మే = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: జనిమా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. మూడు ధమాలావాడు = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: త్రిధామా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. గట్టితనం = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: ద్రఢిమా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. నృత్యాదులలో ఛాయాచిత్రంకోసం స్థిరంగా నిలిచి ఇచ్చేది = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: భఙ్గిమా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. ఇంద్రుడే = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: సుత్రామా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. ఇంద్రుడి మామగారు = --మా</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: పులోమా</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. అణపత్వం సూక్ష్మత్వసిద్ధి = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అణిమా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. హ్రస్వత్వసిద్ధి = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: లఘిమా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. పెద్దగ పెరగటం = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మహిమా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. బరువుసిద్ధి = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: గరిమా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. పేరులేనివాడు = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: అనామా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. అచేతనత్వం = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: జడిమా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. పుట్టుక, జన్మే = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: జనిమా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. మూడు ధమాలావాడు = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: త్రిధామా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. గట్టితనం = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: ద్రఢిమా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. నృత్యాదులలో ఛాయాచిత్రంకోసం స్థిరంగా నిలిచి ఇచ్చేది = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: భఙ్గిమా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. ఇంద్రుడే = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: సుత్రామా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. ఇంద్రుడి మామగారు = --మా</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: పులోమా</p>
+</details>
 </article><article class="puzzle" data-search data-total="13">
   <header class="puzzle__head">
     <div class="puzzle__title">
@@ -1212,98 +1356,111 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
       <span class="puzzle__progress telu" data-progress aria-live="polite">0 / 13</span>
     </div>
   </header>
-  <div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">1. తేనెను చేసేవాడు భ్రమరుడు = మధు_ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుకరః, మధుకృత్</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">2. తేనెను తాగేవాడు భ్రమరుడు = మధు_, మధు_ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుపః, మధుపాయీ</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">3. ఇద్దరు రక్కసులు = మధు_ _ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుకైటభౌ</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">4. తేనెతట్టు = మధు_ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుకోషః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">5. ఈ రక్కసుని చంపినవాడు = మధు_ _, మధు_ _ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుజిత్, మధుసూదనః, మధుభిత్, మధురిపుః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">6. షోడశోపచారాలలో ఒకటి = మధు_ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుపర్కః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">7. కృష్ణుని మామ రాజ్యంలో నగరం = మధు_ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుపురీ</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">8. తేనెటీగ = మధు_ _ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుమక్షికా</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">9. తీయని = మధు_</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధురం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">10. వానరుల పార్టీ చేసుకున్న చోటు = మధు_ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధువనం</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">11. తేనెసేకరించే దీక్షకలవాడు, భ్రమరుడే = మధు_ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధువ్రతః</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">12. వసంతుడు, స్నేహితుడు = మధు_ _, మధు_ _ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుసఖః, మధుసుహృత్</p>
-</div><div class="qa">
-  <div class="qa__row">
-    <p class="qa__q telu" tabindex="0" role="button" aria-expanded="false">13. కోకిలః, తీయని గొంతు కల = మధు_ _</p>
-    <button class="qa__btn" type="button" aria-expanded="false"
-            aria-label="సమాధానం చూడండి">సమాధానం చూడండి</button>
-  </div>
-  <p class="qa__a telu" hidden>స: మధుస్వరః</p>
-</div>
+  <details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">1. తేనెను చేసేవాడు భ్రమరుడు = మధు_ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుకరః, మధుకృత్</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">2. తేనెను తాగేవాడు భ్రమరుడు = మధు_, మధు_ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుపః, మధుపాయీ</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">3. ఇద్దరు రక్కసులు = మధు_ _ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుకైటభౌ</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">4. తేనెతట్టు = మధు_ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుకోషః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">5. ఈ రక్కసుని చంపినవాడు = మధు_ _, మధు_ _ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుజిత్, మధుసూదనః, మధుభిత్, మధురిపుః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">6. షోడశోపచారాలలో ఒకటి = మధు_ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుపర్కః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">7. కృష్ణుని మామ రాజ్యంలో నగరం = మధు_ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుపురీ</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">8. తేనెటీగ = మధు_ _ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుమక్షికా</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">9. తీయని = మధు_</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధురం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">10. వానరుల పార్టీ చేసుకున్న చోటు = మధు_ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధువనం</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">11. తేనెసేకరించే దీక్షకలవాడు, భ్రమరుడే = మధు_ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధువ్రతః</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">12. వసంతుడు, స్నేహితుడు = మధు_ _, మధు_ _ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుసఖః, మధుసుహృత్</p>
+</details><details class="qa">
+  <summary class="qa__row">
+    <span class="qa__q telu">13. కోకిలః, తీయని గొంతు కల = మధు_ _</span>
+    <span class="qa__btn telu" aria-hidden="true"><span
+      class="qa__show">సమాధానం చూడండి</span><span
+      class="qa__hide">సమాధానం దాచు</span></span>
+  </summary>
+  <p class="qa__a telu">స: మధుస్వరః</p>
+</details>
 </article>
       <p class="empty-state" data-empty hidden>ఏ ప్రహేళిక సరిపోలలేదు.</p>
     </div>
@@ -1317,25 +1474,25 @@ var s=localStorage.getItem('svp:size'),m={s:.9,m:1,l:1.15,xl:1.3};if(s&&m[s])doc
         <img class="footer-seal" src="../../assets/img/logo.png" alt="Svarvāṇī Prakāśa · Sevā Nikuñjam seal" width="74" height="74">
         <p style="font-family:var(--font-deva);font-size:1.05rem;margin-bottom:.25rem">स्वर्वाणीप्रकाश-सेवानिकुञ्जम्</p>
         <p style="font-size:.9rem">Svarvāṇī Prakāśa · Sevā Nikuñjam</p>
-        <p class="footer-motto">संस्कृतं स्वधर्मस्य मूलम्</p>
+        <p class="footer-motto" lang="sa">संस्कृतं स्वधर्मस्य मूलम्</p>
         <div class="social"><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a><a href="https://www.pinterest.com/" rel="noopener" target="_blank" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.6 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.6 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.6 2.1-4.6 4.4 0 .9.3 1.8.8 2.3.1.1.1.2.1.3l-.3 1.1c0 .2-.1.2-.3.1-1.3-.6-2-2.4-2-3.9 0-3.2 2.3-6.1 6.7-6.1 3.5 0 6.2 2.5 6.2 5.8 0 3.5-2.2 6.3-5.2 6.3-1 0-2-.5-2.3-1.2l-.6 2.4c-.2.9-.8 2-1.2 2.6A10 10 0 1 0 12 2z"/></svg></a><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank" aria-label="Youtube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5a2.5 2.5 0 0 0-1.8 1.8C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.1V8.9l6 3.1z"/></svg></a><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.8-.1zm0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm8.4-11.2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg></a><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.2 2H21l-6.4 7.3L22 22h-5.9l-4.6-6-5.3 6H3.4l6.8-7.8L2.3 2h6l4.2 5.5zm-1 18h1.6L7.9 3.7H6.2z"/></svg></a></div>
       </div>
       <div>
-        <h4>Explore</h4>
-        <ul><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/">ప్రహేళికలు</a></li><li><a href="../../about/">About</a></li><li><a href="../../donate/">Donate</a></li></ul>
+        <h2>Explore</h2>
+        <ul><li><a href="../../stotras/">Stotras</a></li><li><a href="../../texts/">Texts</a></li><li><a href="../../lessons/">Lessons</a></li><li><a href="../../prahelikas/">Prahelikās</a></li><li><a href="../../about/">About</a></li><li><a href="../../donate/">Donate</a></li></ul>
       </div>
       <div>
-        <h4>Useful links</h4>
+        <h2>Useful links</h2>
         <ul><li><a href="https://www.facebook.com/svarvaniprakash" rel="noopener" target="_blank">Facebook</a></li><li><a href="https://www.pinterest.com/" rel="noopener" target="_blank">Pinterest</a></li><li><a href="https://www.youtube.com/c/SvarvaniPrakashaTheLightofSamskrtam/featured" rel="noopener" target="_blank">Youtube</a></li><li><a href="https://www.instagram.com/svarvani24/" rel="noopener" target="_blank">Instagram</a></li><li><a href="https://twitter.com/SvarvaniS" rel="noopener" target="_blank">Twitter</a></li></ul>
       </div>
       <div>
-        <h4>Announced</h4>
+        <h2>Announced</h2>
         <ul><li><span class="footer-soon">Songs</span></li><li><span class="footer-soon">Articles</span></li><li><span class="footer-soon">Worker Links</span></li><li><span class="footer-soon">Blogs</span></li><li><span class="footer-soon">FAQs</span></li></ul>
         <p style="font-size:.82rem;margin-top:.9rem">Listed on the school's menu,
           not yet published.</p>
       </div>
       <div>
-        <h4>Get in touch</h4>
+        <h2>Get in touch</h2>
         <p>Please reach us at:</p>
         <ul>
           <li><a href="mailto:samskrta.usha@gmail.com">samskrta.usha@gmail.com</a></li>
